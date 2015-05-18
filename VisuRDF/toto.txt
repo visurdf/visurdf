@@ -1,0 +1,975 @@
+i=  0
+predicate name  : type
+Objet N° : 0
+predicate qname  : http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/gd.PTR021PO_EO
+
+object : @�P
+
+i=  1
+predicate name  : Grandeur.période_acquisition
+predicate qname  : http://www.cluster-connexion.org/SDS#Grandeur.période_acquisition
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/gd.PTR021PO_EO
+
+object : 10
+
+i=  2
+predicate name  : Grandeur.période_historisation
+predicate qname  : http://www.cluster-connexion.org/SDS#Grandeur.période_historisation
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/gd.PTR021PO_EO
+
+object : 60
+
+i=  3
+predicate name  : Grandeur_discrète.maximum
+predicate qname  : http://www.cluster-connexion.org/SDS#Grandeur_discrète.maximum
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/gd.PTR021PO_EO
+
+object : 1
+
+i=  4
+predicate name  : Grandeur_discrète.minimum
+predicate qname  : http://www.cluster-connexion.org/SDS#Grandeur_discrète.minimum
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/gd.PTR021PO_EO
+
+object : 0
+
+i=  5
+predicate name  : Grandeur_discrète.libellés
+predicate qname  : http://www.cluster-connexion.org/SDS#Grandeur_discrète.libellés
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/gd.PTR021PO_EO
+
+object : @�P
+
+i=  6
+predicate name  : Grandeur_discrète.libellés
+predicate qname  : http://www.cluster-connexion.org/SDS#Grandeur_discrète.libellés
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/gd.PTR021PO_EO
+
+object : @�P
+
+i=  7
+predicate name  : Grandeur_discrète.valeur_discrète
+predicate qname  : http://www.cluster-connexion.org/SDS#Grandeur_discrète.valeur_discrète
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/gd.PTR021PO_EO
+
+object : @�P
+
+i=  8
+predicate name  : Objet_identifié.catégorie_AP929
+predicate qname  : http://www.cluster-connexion.org/SDS#Objet_identifié.catégorie_AP929
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/gd.PTR021PO_EO
+
+object : configuration_physique
+
+i=  9
+predicate name  : Objet_identifié.définition
+predicate qname  : http://www.cluster-connexion.org/SDS#Objet_identifié.définition
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/gd.PTR021PO_EO
+
+object : Etat enclenché
+
+i=  10
+predicate name  : Objet_identifié.icone
+predicate qname  : http://www.cluster-connexion.org/SDS#Objet_identifié.icone
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/gd.PTR021PO_EO
+
+object : 
+
+i=  11
+predicate name  : Objet_identifié.repère_fonctionnel
+predicate qname  : http://www.cluster-connexion.org/SDS#Objet_identifié.repère_fonctionnel
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/gd.PTR021PO_EO
+
+object : @�P
+
+i=  12
+predicate name  : type
+Objet N° : 12
+predicate qname  : http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/li.FERME
+
+object : @�P
+
+i=  13
+predicate name  : Libellé_valeur_discrète.valeur
+predicate qname  : http://www.cluster-connexion.org/SDS#Libellé_valeur_discrète.valeur
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/li.FERME
+
+object : 0
+
+i=  14
+predicate name  : Libellé_valeur_discrète.message
+predicate qname  : http://www.cluster-connexion.org/SDS#Libellé_valeur_discrète.message
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/li.FERME
+
+object : FERME
+
+i=  15
+predicate name  : Objet_identifié.catégorie_AP929
+predicate qname  : http://www.cluster-connexion.org/SDS#Objet_identifié.catégorie_AP929
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/li.FERME
+
+object : configuration_physique
+
+i=  16
+predicate name  : Objet_identifié.définition
+predicate qname  : http://www.cluster-connexion.org/SDS#Objet_identifié.définition
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/li.FERME
+
+object : 
+
+i=  17
+predicate name  : Objet_identifié.icone
+predicate qname  : http://www.cluster-connexion.org/SDS#Objet_identifié.icone
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/li.FERME
+
+object : 
+
+i=  18
+predicate name  : type
+Objet N° : 18
+predicate qname  : http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/li.OUVERT
+
+object : @�P
+
+i=  19
+predicate name  : Libellé_valeur_discrète.valeur
+predicate qname  : http://www.cluster-connexion.org/SDS#Libellé_valeur_discrète.valeur
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/li.OUVERT
+
+object : 1
+
+i=  20
+predicate name  : Libellé_valeur_discrète.message
+predicate qname  : http://www.cluster-connexion.org/SDS#Libellé_valeur_discrète.message
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/li.OUVERT
+
+object : OUVERT
+
+i=  21
+predicate name  : Objet_identifié.catégorie_AP929
+predicate qname  : http://www.cluster-connexion.org/SDS#Objet_identifié.catégorie_AP929
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/li.OUVERT
+
+object : configuration_physique
+
+i=  22
+predicate name  : Objet_identifié.définition
+predicate qname  : http://www.cluster-connexion.org/SDS#Objet_identifié.définition
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/li.OUVERT
+
+object : 
+
+i=  23
+predicate name  : Objet_identifié.icone
+predicate qname  : http://www.cluster-connexion.org/SDS#Objet_identifié.icone
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/li.OUVERT
+
+object : 
+
+i=  24
+predicate name  : type
+Objet N° : 24
+predicate qname  : http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/li.ARRET
+
+object : @�P
+
+i=  25
+predicate name  : Libellé_valeur_discrète.valeur
+predicate qname  : http://www.cluster-connexion.org/SDS#Libellé_valeur_discrète.valeur
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/li.ARRET
+
+object : 0
+
+i=  26
+predicate name  : Libellé_valeur_discrète.message
+predicate qname  : http://www.cluster-connexion.org/SDS#Libellé_valeur_discrète.message
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/li.ARRET
+
+object : ARRET
+
+i=  27
+predicate name  : Objet_identifié.catégorie_AP929
+predicate qname  : http://www.cluster-connexion.org/SDS#Objet_identifié.catégorie_AP929
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/li.ARRET
+
+object : configuration_physique
+
+i=  28
+predicate name  : Objet_identifié.définition
+predicate qname  : http://www.cluster-connexion.org/SDS#Objet_identifié.définition
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/li.ARRET
+
+object : 
+
+i=  29
+predicate name  : Objet_identifié.icone
+predicate qname  : http://www.cluster-connexion.org/SDS#Objet_identifié.icone
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/li.ARRET
+
+object : 
+
+i=  30
+predicate name  : type
+Objet N° : 30
+predicate qname  : http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/li.MARCHE
+
+object : @�P
+
+i=  31
+predicate name  : Libellé_valeur_discrète.valeur
+predicate qname  : http://www.cluster-connexion.org/SDS#Libellé_valeur_discrète.valeur
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/li.MARCHE
+
+object : 1
+
+i=  32
+predicate name  : Libellé_valeur_discrète.message
+predicate qname  : http://www.cluster-connexion.org/SDS#Libellé_valeur_discrète.message
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/li.MARCHE
+
+object : MARCHE
+
+i=  33
+predicate name  : Objet_identifié.catégorie_AP929
+predicate qname  : http://www.cluster-connexion.org/SDS#Objet_identifié.catégorie_AP929
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/li.MARCHE
+
+object : configuration_physique
+
+i=  34
+predicate name  : Objet_identifié.définition
+predicate qname  : http://www.cluster-connexion.org/SDS#Objet_identifié.définition
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/li.MARCHE
+
+object : 
+
+i=  35
+predicate name  : Objet_identifié.icone
+predicate qname  : http://www.cluster-connexion.org/SDS#Objet_identifié.icone
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/li.MARCHE
+
+object : 
+
+i=  36
+predicate name  : type
+Objet N° : 36
+predicate qname  : http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/li.NORMAL
+
+object : @�P
+
+i=  37
+predicate name  : Libellé_valeur_discrète.valeur
+predicate qname  : http://www.cluster-connexion.org/SDS#Libellé_valeur_discrète.valeur
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/li.NORMAL
+
+object : 0
+
+i=  38
+predicate name  : Libellé_valeur_discrète.message
+predicate qname  : http://www.cluster-connexion.org/SDS#Libellé_valeur_discrète.message
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/li.NORMAL
+
+object : NORMAL
+
+i=  39
+predicate name  : Objet_identifié.catégorie_AP929
+predicate qname  : http://www.cluster-connexion.org/SDS#Objet_identifié.catégorie_AP929
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/li.NORMAL
+
+object : configuration_physique
+
+i=  40
+predicate name  : Objet_identifié.définition
+predicate qname  : http://www.cluster-connexion.org/SDS#Objet_identifié.définition
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/li.NORMAL
+
+object : 
+
+i=  41
+predicate name  : Objet_identifié.icone
+predicate qname  : http://www.cluster-connexion.org/SDS#Objet_identifié.icone
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/li.NORMAL
+
+object : 
+
+i=  42
+predicate name  : type
+Objet N° : 42
+predicate qname  : http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/li.DEFAUT
+
+object : @�P
+
+i=  43
+predicate name  : Libellé_valeur_discrète.valeur
+predicate qname  : http://www.cluster-connexion.org/SDS#Libellé_valeur_discrète.valeur
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/li.DEFAUT
+
+object : 1
+
+i=  44
+predicate name  : Libellé_valeur_discrète.message
+predicate qname  : http://www.cluster-connexion.org/SDS#Libellé_valeur_discrète.message
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/li.DEFAUT
+
+object : DEFAUT
+
+i=  45
+predicate name  : Objet_identifié.catégorie_AP929
+predicate qname  : http://www.cluster-connexion.org/SDS#Objet_identifié.catégorie_AP929
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/li.DEFAUT
+
+object : configuration_physique
+
+i=  46
+predicate name  : Objet_identifié.définition
+predicate qname  : http://www.cluster-connexion.org/SDS#Objet_identifié.définition
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/li.DEFAUT
+
+object : 
+
+i=  47
+predicate name  : Objet_identifié.icone
+predicate qname  : http://www.cluster-connexion.org/SDS#Objet_identifié.icone
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/li.DEFAUT
+
+object : 
+
+i=  48
+predicate name  : type
+Objet N° : 48
+predicate qname  : http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/nv.0
+
+object : @�P
+
+i=  49
+predicate name  : Nature_valeur.nature_de_la_valeur
+predicate qname  : http://www.cluster-connexion.org/SDS#Nature_valeur.nature_de_la_valeur
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/nv.0
+
+object : 0
+
+i=  50
+predicate name  : Objet_identifié.catégorie_AP929
+predicate qname  : http://www.cluster-connexion.org/SDS#Objet_identifié.catégorie_AP929
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/nv.0
+
+object : configuration_physique
+
+i=  51
+predicate name  : Objet_identifié.définition
+predicate qname  : http://www.cluster-connexion.org/SDS#Objet_identifié.définition
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/nv.0
+
+object : Mesure acquise
+
+i=  52
+predicate name  : Objet_identifié.icone
+predicate qname  : http://www.cluster-connexion.org/SDS#Objet_identifié.icone
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/nv.0
+
+object : 
+
+i=  53
+predicate name  : type
+Objet N° : 53
+predicate qname  : http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/rf.PTR007VB
+
+object : @�P
+
+i=  54
+predicate name  : Repère_fonctionnel.nom
+predicate qname  : http://www.cluster-connexion.org/SDS#Repère_fonctionnel.nom
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/rf.PTR007VB
+
+object : PTR007VB
+
+i=  55
+predicate name  : type
+Objet N° : 55
+predicate qname  : http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/rf.PTR021PO
+
+object : @�P
+
+i=  56
+predicate name  : Repère_fonctionnel.nom
+predicate qname  : http://www.cluster-connexion.org/SDS#Repère_fonctionnel.nom
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/rf.PTR021PO
+
+object : PTR021PO
+
+i=  57
+predicate name  : type
+Objet N° : 57
+predicate qname  : http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/rf.PTR021PO_EO
+
+object : @�P
+
+i=  58
+predicate name  : Repère_fonctionnel.nom
+predicate qname  : http://www.cluster-connexion.org/SDS#Repère_fonctionnel.nom
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/rf.PTR021PO_EO
+
+object : PTR021PO_EO
+
+i=  59
+predicate name  : type
+Objet N° : 59
+predicate qname  : http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/vd.PTR021PO_EO.ua
+
+object : @�P
+
+i=  60
+predicate name  : Objet_identifié.catégorie_AP929
+predicate qname  : http://www.cluster-connexion.org/SDS#Objet_identifié.catégorie_AP929
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/vd.PTR021PO_EO.ua
+
+object : configuration_physique
+
+i=  61
+predicate name  : Objet_identifié.définition
+predicate qname  : http://www.cluster-connexion.org/SDS#Objet_identifié.définition
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/vd.PTR021PO_EO.ua
+
+object : 
+
+i=  62
+predicate name  : Objet_identifié.icone
+predicate qname  : http://www.cluster-connexion.org/SDS#Objet_identifié.icone
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/vd.PTR021PO_EO.ua
+
+object : 
+
+i=  63
+predicate name  : Valeur_liée_à_une_grandeur.contexte
+predicate qname  : http://www.cluster-connexion.org/SDS#Valeur_liée_à_une_grandeur.contexte
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/vd.PTR021PO_EO.ua
+
+object : @�P
+
+i=  64
+predicate name  : type
+Objet N° : 64
+predicate qname  : http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/eq.PTR007VB
+
+object : @�P
+
+i=  65
+predicate name  : Objet_identifié.catégorie_AP929
+predicate qname  : http://www.cluster-connexion.org/SDS#Objet_identifié.catégorie_AP929
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/eq.PTR007VB
+
+object : configuration_physique
+
+i=  66
+predicate name  : Objet_identifié.définition
+predicate qname  : http://www.cluster-connexion.org/SDS#Objet_identifié.définition
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/eq.PTR007VB
+
+object : Vanne d'isolement amont 021PO
+
+i=  67
+predicate name  : Objet_identifié.icone
+predicate qname  : http://www.cluster-connexion.org/SDS#Objet_identifié.icone
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/eq.PTR007VB
+
+object : 
+
+i=  68
+predicate name  : Objet_identifié.repère_fonctionnel
+predicate qname  : http://www.cluster-connexion.org/SDS#Objet_identifié.repère_fonctionnel
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/eq.PTR007VB
+
+object : @�P
+
+i=  69
+predicate name  : Equipement.port
+predicate qname  : http://www.cluster-connexion.org/SDS#Equipement.port
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/eq.PTR007VB
+
+object : @�P
+
+i=  70
+predicate name  : Equipement.port
+predicate qname  : http://www.cluster-connexion.org/SDS#Equipement.port
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/eq.PTR007VB
+
+object : @�P
+
+i=  71
+predicate name  : type
+Objet N° : 71
+predicate qname  : http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/eq.PTR021PO
+
+object : @�P
+
+i=  72
+predicate name  : Objet_identifié.catégorie_AP929
+predicate qname  : http://www.cluster-connexion.org/SDS#Objet_identifié.catégorie_AP929
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/eq.PTR021PO
+
+object : configuration_physique
+
+i=  73
+predicate name  : Objet_identifié.définition
+predicate qname  : http://www.cluster-connexion.org/SDS#Objet_identifié.définition
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/eq.PTR021PO
+
+object : Pompe refroidissement ligne 1
+
+i=  74
+predicate name  : Objet_identifié.icone
+predicate qname  : http://www.cluster-connexion.org/SDS#Objet_identifié.icone
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/eq.PTR021PO
+
+object : 
+
+i=  75
+predicate name  : Objet_identifié.repère_fonctionnel
+predicate qname  : http://www.cluster-connexion.org/SDS#Objet_identifié.repère_fonctionnel
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/eq.PTR021PO
+
+object : @�P
+
+i=  76
+predicate name  : Equipement.port
+predicate qname  : http://www.cluster-connexion.org/SDS#Equipement.port
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/eq.PTR021PO
+
+object : @�P
+
+i=  77
+predicate name  : Equipement.port
+predicate qname  : http://www.cluster-connexion.org/SDS#Equipement.port
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/eq.PTR021PO
+
+object : @�P
+
+i=  78
+predicate name  : Equipement.fonction_procédé
+predicate qname  : http://www.cluster-connexion.org/SDS#Equipement.fonction_procédé
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/eq.PTR021PO
+
+object : @�P
+
+i=  79
+predicate name  : Equipement.fonction_procédé
+predicate qname  : http://www.cluster-connexion.org/SDS#Equipement.fonction_procédé
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/eq.PTR021PO
+
+object : @�P
+
+i=  80
+predicate name  : type
+Objet N° : 80
+predicate qname  : http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/po.PTR007VB.1
+
+object : @�P
+
+i=  81
+predicate name  : Port.rôle
+predicate qname  : http://www.cluster-connexion.org/SDS#Port.rôle
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/po.PTR007VB.1
+
+object : entrée
+
+i=  82
+predicate name  : Port.fluide
+predicate qname  : http://www.cluster-connexion.org/SDS#Port.fluide
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/po.PTR007VB.1
+
+object : eau
+
+i=  83
+predicate name  : Objet_identifié.catégorie_AP929
+predicate qname  : http://www.cluster-connexion.org/SDS#Objet_identifié.catégorie_AP929
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/po.PTR007VB.1
+
+object : configuration_physique
+
+i=  84
+predicate name  : Objet_identifié.définition
+predicate qname  : http://www.cluster-connexion.org/SDS#Objet_identifié.définition
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/po.PTR007VB.1
+
+object : 
+
+i=  85
+predicate name  : Objet_identifié.icone
+predicate qname  : http://www.cluster-connexion.org/SDS#Objet_identifié.icone
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/po.PTR007VB.1
+
+object : 
+
+i=  86
+predicate name  : type
+Objet N° : 86
+predicate qname  : http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/po.PTR007VB.2
+
+object : @�P
+
+i=  87
+predicate name  : Port.rôle
+predicate qname  : http://www.cluster-connexion.org/SDS#Port.rôle
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/po.PTR007VB.2
+
+object : sortie
+
+i=  88
+predicate name  : Port.fluide
+predicate qname  : http://www.cluster-connexion.org/SDS#Port.fluide
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/po.PTR007VB.2
+
+object : eau
+
+i=  89
+predicate name  : Objet_identifié.catégorie_AP929
+predicate qname  : http://www.cluster-connexion.org/SDS#Objet_identifié.catégorie_AP929
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/po.PTR007VB.2
+
+object : configuration_physique
+
+i=  90
+predicate name  : Objet_identifié.définition
+predicate qname  : http://www.cluster-connexion.org/SDS#Objet_identifié.définition
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/po.PTR007VB.2
+
+object : 
+
+i=  91
+predicate name  : Objet_identifié.icone
+predicate qname  : http://www.cluster-connexion.org/SDS#Objet_identifié.icone
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/po.PTR007VB.2
+
+object : 
+
+i=  92
+predicate name  : type
+Objet N° : 92
+predicate qname  : http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/po.PTR021PO.1
+
+object : @�P
+
+i=  93
+predicate name  : Port.rôle
+predicate qname  : http://www.cluster-connexion.org/SDS#Port.rôle
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/po.PTR021PO.1
+
+object : entrée
+
+i=  94
+predicate name  : Port.fluide
+predicate qname  : http://www.cluster-connexion.org/SDS#Port.fluide
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/po.PTR021PO.1
+
+object : eau
+
+i=  95
+predicate name  : Objet_identifié.catégorie_AP929
+predicate qname  : http://www.cluster-connexion.org/SDS#Objet_identifié.catégorie_AP929
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/po.PTR021PO.1
+
+object : configuration_physique
+
+i=  96
+predicate name  : Objet_identifié.définition
+predicate qname  : http://www.cluster-connexion.org/SDS#Objet_identifié.définition
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/po.PTR021PO.1
+
+object : 
+
+i=  97
+predicate name  : Objet_identifié.icone
+predicate qname  : http://www.cluster-connexion.org/SDS#Objet_identifié.icone
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/po.PTR021PO.1
+
+object : 
+
+i=  98
+predicate name  : type
+Objet N° : 98
+predicate qname  : http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/po.PTR021PO.2
+
+object : @�P
+
+i=  99
+predicate name  : Port.rôle
+predicate qname  : http://www.cluster-connexion.org/SDS#Port.rôle
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/po.PTR021PO.2
+
+object : sortie
+
+i=  100
+predicate name  : Port.fluide
+predicate qname  : http://www.cluster-connexion.org/SDS#Port.fluide
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/po.PTR021PO.2
+
+object : eau
+
+i=  101
+predicate name  : Objet_identifié.catégorie_AP929
+predicate qname  : http://www.cluster-connexion.org/SDS#Objet_identifié.catégorie_AP929
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/po.PTR021PO.2
+
+object : configuration_physique
+
+i=  102
+predicate name  : Objet_identifié.définition
+predicate qname  : http://www.cluster-connexion.org/SDS#Objet_identifié.définition
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/po.PTR021PO.2
+
+object : 
+
+i=  103
+predicate name  : Objet_identifié.icone
+predicate qname  : http://www.cluster-connexion.org/SDS#Objet_identifié.icone
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/po.PTR021PO.2
+
+object : 
+
+i=  104
+predicate name  : type
+Objet N° : 104
+predicate qname  : http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/jo.199
+
+object : @�P
+
+i=  105
+predicate name  : Jonction.port
+predicate qname  : http://www.cluster-connexion.org/SDS#Jonction.port
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/jo.199
+
+object : @�P
+
+i=  106
+predicate name  : Jonction.port
+predicate qname  : http://www.cluster-connexion.org/SDS#Jonction.port
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/jo.199
+
+object : @�P
+
+i=  107
+predicate name  : type
+Objet N° : 107
+predicate qname  : http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/fp.PTR.REF001
+
+object : @�P
+
+i=  108
+predicate name  : Objet_identifié.catégorie_AP929
+predicate qname  : http://www.cluster-connexion.org/SDS#Objet_identifié.catégorie_AP929
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/fp.PTR.REF001
+
+object : exigence_de_conception
+
+i=  109
+predicate name  : Objet_identifié.définition
+predicate qname  : http://www.cluster-connexion.org/SDS#Objet_identifié.définition
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/fp.PTR.REF001
+
+object : Brassage refroidissement bâche PTR par 021PO et 031RF
+
+i=  110
+predicate name  : Objet_identifié.icone
+predicate qname  : http://www.cluster-connexion.org/SDS#Objet_identifié.icone
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/fp.PTR.REF001
+
+object : 
+
+i=  111
+predicate name  : type
+Objet N° : 111
+predicate qname  : http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/fp.PTR.REF002
+
+object : @�P
+
+i=  112
+predicate name  : Objet_identifié.catégorie_AP929
+predicate qname  : http://www.cluster-connexion.org/SDS#Objet_identifié.catégorie_AP929
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/fp.PTR.REF002
+
+object : exigence_de_conception
+
+i=  113
+predicate name  : Objet_identifié.définition
+predicate qname  : http://www.cluster-connexion.org/SDS#Objet_identifié.définition
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/fp.PTR.REF002
+
+object : Brassage refroidissement bâche PTR par 021PO et 032RF
+
+i=  114
+predicate name  : Objet_identifié.icone
+predicate qname  : http://www.cluster-connexion.org/SDS#Objet_identifié.icone
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/fp.PTR.REF002
+
+object : 
+
+i=  115
+predicate name  : type
+Objet N° : 115
+predicate qname  : http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/fp.PTR.REF003
+
+object : @�P
+
+i=  116
+predicate name  : Objet_identifié.catégorie_AP929
+predicate qname  : http://www.cluster-connexion.org/SDS#Objet_identifié.catégorie_AP929
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/fp.PTR.REF003
+
+object : exigence_de_conception
+
+i=  117
+predicate name  : Objet_identifié.définition
+predicate qname  : http://www.cluster-connexion.org/SDS#Objet_identifié.définition
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/fp.PTR.REF003
+
+object : Brassage refroidissement bâche PTR par 022PO et 031RF
+
+i=  118
+predicate name  : Objet_identifié.icone
+predicate qname  : http://www.cluster-connexion.org/SDS#Objet_identifié.icone
+
+Subject blank: file:///cal/homes/rtaponno/inf380/VisuRDF/fp.PTR.REF003
+
+object : 
+
+size= -1 str=je/suis/toto

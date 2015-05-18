@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- edited with XMLSpy v2014 rel. 2 sp1 (http://www.altova.com) by Jean-François Cabadi (ALSTOM POWER TURBO SYSTEM) -->
+<rdf:RDF xmlns:cims="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:m="http://www.cluster-connexion.org/SDS#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+	<m:Repère_fonctionnel rdf:ID="rf_REA108">
+		<m:Repère_fonctionnel.nom>REA108</m:Repère_fonctionnel.nom>
+	</m:Repère_fonctionnel>
+	<m:Repère_fonctionnel rdf:ID="rf_REA041PO">
+		<m:Repère_fonctionnel.nom>REA041PO</m:Repère_fonctionnel.nom>
+	</m:Repère_fonctionnel>
+	<m:Repère_fonctionnel rdf:ID="rf_REA042PO">
+		<m:Repère_fonctionnel.nom>REA042PO</m:Repère_fonctionnel.nom>
+	</m:Repère_fonctionnel>
+	<m:Repère_fonctionnel rdf:ID="rf_1RRA101VP">
+		<m:Repère_fonctionnel.nom>1RRA101VP</m:Repère_fonctionnel.nom>
+	</m:Repère_fonctionnel>
+	<m:Equipement rdf:ID="eq_REA041PO">
+		<m:Objet_identifié.définition>pompe borication ligne 1</m:Objet_identifié.définition>
+		<m:Objet_identifié.icone>cnxvtor.png</m:Objet_identifié.icone>
+		<m:Equipement.catégorie>PPE</m:Equipement.catégorie>
+		<m:Objet_identifié.repère_fonctionnel rdf:resource="#rf_REA041PO"/>
+	</m:Equipement>
+	<m:Equipement rdf:ID="eq_REA042PO">
+		<m:Objet_identifié.définition>pompe borication ligne 2</m:Objet_identifié.définition>
+		<m:Objet_identifié.icone>cnxvtor.png</m:Objet_identifié.icone>
+		<m:Equipement.catégorie>PPE</m:Equipement.catégorie>
+		<m:Objet_identifié.repère_fonctionnel rdf:resource="#rf_REA042PO"/>
+		<m:Equipement.fonction_procédé rdf:resource="#fp_REA4"/>
+		<m:Equipement.fonction_procédé rdf:resource="#fp_REA5"/>
+	</m:Equipement>
+	<m:Fonction_CC rdf:ID="fc_REA106">
+		<m:Objet_identifié.définition>Sélection lignage brassage 2</m:Objet_identifié.définition>
+	</m:Fonction_CC>
+	<m:Fonction_CC rdf:ID="fc_REA041PO">
+		<m:Objet_identifié.définition>Commande REA041PO</m:Objet_identifié.définition>
+		<m:Objet_identifié.repère_fonctionnel rdf:resource="#rf_REA041PO"/>
+	</m:Fonction_CC>
+	<m:Fonction_CC rdf:ID="fc_REA042PO">
+		<m:Objet_identifié.définition>Commande REA042PO</m:Objet_identifié.définition>
+		<m:Objet_identifié.repère_fonctionnel rdf:resource="#rf_REA042PO"/>
+	</m:Fonction_CC>
+	<m:Fonction_procédé rdf:ID="fp_REA1">
+		<m:Objet_identifié.définition>Préparation stockage acide borique</m:Objet_identifié.définition>
+	</m:Fonction_procédé>
+	<m:Fonction_procédé rdf:ID="fp_REA2">
+		<m:Objet_identifié.définition>Préparation stockage eau déminéralisée</m:Objet_identifié.définition>
+	</m:Fonction_procédé>
+	<m:Fonction_procédé rdf:ID="fp_REA3">
+		<m:Objet_identifié.définition>Dilution eau primaire</m:Objet_identifié.définition>
+	</m:Fonction_procédé>
+	<m:Fonction_procédé rdf:ID="fp_REA4">
+		<m:Objet_identifié.définition>Borication eau primaire</m:Objet_identifié.définition>
+	</m:Fonction_procédé>
+	<m:Fonction_procédé rdf:ID="fp_REA5">
+		<m:Objet_identifié.définition>Appoint circuit primaire</m:Objet_identifié.définition>
+	</m:Fonction_procédé>
+</rdf:RDF>
