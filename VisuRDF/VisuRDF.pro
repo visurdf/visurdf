@@ -5,8 +5,7 @@
 #-------------------------------------------------
 
 QT       += core
-
-QT       -= gui
+QT       += svg
 
 CONFIG += link_pkgconfig
 
@@ -26,7 +25,9 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp \
-    visurdfextractor.cpp
+    visurdfextractor.cpp \
+    classesvg.cpp
 
 HEADERS += \
-    visurdfextractor.h
+    visurdfextractor.h \
+    classesvg.h
