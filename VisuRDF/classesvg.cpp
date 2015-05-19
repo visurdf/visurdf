@@ -17,11 +17,13 @@ classesvg::classesvg()
     pen.setColor(color);
 
     /*------------- Déclaration des paramètres du fichier SVG -------------------*/
-    generator.setFileName("/home/genne/Documents/Clem/inf380/visurdf/testSVG.svg");
+    generator.setFileName("testSVG.svg");
     generator.setSize(QSize(400, 400));
     generator.setViewBox(QRect(0, 0, 400, 400));
     generator.setTitle("SVG Generator Example Drawing");
     generator.setDescription("Dessin svg pour une démonstration");
+
+
 
     /*Parametre du rectangle*/
 
