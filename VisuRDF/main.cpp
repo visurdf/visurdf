@@ -9,7 +9,6 @@ int main(int argc, char *argv[])
 
     QApplication A(argc,argv);
 
-
     VisuRDFExtractor visuRDFExtractor;
     classesvg C;
 
