@@ -2,6 +2,7 @@
 #include "visurdfextractor.h"
 #include <list>
 #include <map>
+#include <algorithm> //to use "find"
 
 using namespace std;
 
@@ -22,11 +23,11 @@ Analyseur::Analyseur(VisuRDFExtractor *extractor) {
 
     // recuperer la Map GrapheRDF
 
-    GrapheRDF MapDesObjets; //= extractor.getMap();
+    GrapheRDF mapDesObjets; //= extractor.getMap();
     int id = 0;
 
     // Pour chaque classe :
-    for (GrapheRDF::iterator itGraphe = MapDesObjets.begin(); itGraphe != MapDesObjets.end(); ) {
+    for (GrapheRDF::iterator itGraphe = mapDesObjets.begin(); itGraphe != mapDesObjets.end(); ) {
 
         string classe = itGraphe->first;
 
@@ -34,13 +35,13 @@ Analyseur::Analyseur(VisuRDFExtractor *extractor) {
         Type* nouveauType = new Type(classe);
 
         list < ObjetRDF > listeObjets = itGraphe->second;
-        // contient tous les objets du type "classe"
+        // contient tous les objets du type "nouveauType"
 
         // initialisation des attributs du Type
         int nombreObjetsClasse = 0;
         list < string > proprietesNonVidesDuType; // initialiser liste ?
 
-        // Pour chaque objet de la classe :
+        // Pour chaque objet du type :
         for (list < ObjetRDF >::iterator itObjets = listeObjets.begin(); itObjets != listeObjets.end(); itObjets++) {
 
             nombreObjetsClasse++;
@@ -49,16 +50,23 @@ Analyseur::Analyseur(VisuRDFExtractor *extractor) {
 
             // creation de l'objet
             Objet* nouvelObjet = new Objet(id, classe, listeProprietesObjet);
+            // ----> est-ce qu'on met un type au lieu du string pour la classe ?
 
             // ajout de l'objet a la liste
             tousLesObjets.push_back(*nouvelObjet);
 
-            // ajout de la propriete a la liste proprietesNonVides
-            // parcourir les proprietes, pour chacune :
-                // si la valeur n'est pas nulle
-                // et si elle n'est pas deja dans la liste
-                // l'ajouter a la liste
+            // ajout des proprietes a la liste proprietesNonVidesDuType
+            for (ObjetRDF::iterator itProprietesObjet = listeProprietesObjet.begin(); itProprietesObjet != listeProprietesObjet.end(); ) {
+                string propriete = itProprietesObjet->first;
+                list < string > listeValeurs = itProprietesObjet->second;
 
+                if (!listeValeurs.empty()) { // liste non vide
+                    if (find(proprietesNonVidesDuType.begin(), proprietesNonVidesDuType.end(), propriete) == proprietesNonVidesDuType.end()){
+                        //La liste ne contient pas la propriete, donc on l'ajoute
+                        proprietesNonVidesDuType.push_back(propriete);
+                    }
+                }
+            }
         }
 
         nouveauType->setNbObjet(nombreObjetsClasse);
