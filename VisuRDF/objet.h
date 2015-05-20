@@ -16,8 +16,6 @@ public:
     void setLargeur(int l);
 
 
-
-
 };
 
 #endif // OBJET_H
