@@ -7,11 +7,6 @@ class Type
 {
 public:
 
-    QString nomType;
-
-    int nbObjets;
-    std::list<QString> proprietesNonVides;
-
     Type(QString nomType);
     ~Type();
     void setProprietes(std::list<QString>);
@@ -19,6 +14,12 @@ public:
     int getNbObjet();
     std::list<QString> getProprietes();
     QString getNom();
+
+private :
+
+    QString nomType;
+    int nbObjets;
+    std::list<QString> proprietesNonVides;
 
 };
 

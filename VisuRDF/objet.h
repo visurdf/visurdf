@@ -6,14 +6,17 @@
 class Objet
 {
 public:
-    int id;
-    QString nomType;
-    QMap<QString, QString> proprietes;
-    int largeurMax;
 
     Objet(int id, QString nomType, QMap<QString,QString> proprietes);
     ~Objet();
     void setLargeur(int l);
+
+private :
+
+    int id;
+    QString nomType;
+    QMap<QString, QString> proprietes;
+    int largeurMax;
 
 
 };

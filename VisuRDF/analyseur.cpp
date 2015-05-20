@@ -4,11 +4,21 @@ using namespace std;
 
 analyseur::analyseur() {
 
-    // extractor :
-    // - une map avec tous les objets : (classe, liste de objets de la classe(map de propriétés de l'objet))
-    // - liste des classes (string)
-    // - liste des propriétés d'une classe (classe en entrée, liste de string en sortie)
+    /*
+    extractor :
+      - une map avec tous les objets : (classe, liste de objets de la classe(map de propriétés de l'objet))
+      - liste des classes (string)
+      - liste des propriétés d'une classe (classe en entrée, liste de string en sortie)
+    */
 
+    // instancier un extractor
+
+    typedef map<string, list> Map;
+    Map MapDesObjets = extractor.getMap();
+
+    for (Map::iterator k = MapDesObjets.begin(); k != MapDesObjets.end(); ) {
+
+    }
 
     // creer la liste d'objets
     // on récupère la map de l'extracteur
