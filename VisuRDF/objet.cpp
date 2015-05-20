@@ -1,7 +1,7 @@
 #include "objet.h"
 
 
-Objet::Objet(int id, string nomType, proprieteMap proprietes) : id(id), nomType(nomType), proprietes(proprietes)
+Objet::Objet(int id, string nomType, ObjetRDF proprietes) : id(id), nomType(nomType), proprietes(proprietes)
 {
 
 }
@@ -16,7 +16,7 @@ int Objet::getLargeur(){
     return largeurMax;
 }
 
-proprieteMap Objet::getProprietes(){
+ObjetRDF Objet::getProprietes(){
     return proprietes;
 }
 
@@ -34,9 +34,11 @@ void Objet::setLargeur(){
 
     list<string> proprieteConcatenee ;
 
-    for(proprieteMap::const_iterator it = proprietes.begin(); it!=proprietes.end(); it++){
+    for(ObjetRDF::const_iterator it = proprietes.begin(); it!=proprietes.end(); it++){
         string nom = it->first;
-        string valeur = it->second;
+        list<string> listeValeur = it->second;
+        list<string>::iterator it2 = listeValeur.begin();
+        string valeur = *it2;
         string concatene = nom + " : " + valeur;
         proprieteConcatenee.push_back(concatene);
     }

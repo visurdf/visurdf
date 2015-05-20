@@ -5,6 +5,8 @@
 #include <list>
 #include <iostream>
 #include <string>
+#include "visurdfextractor.h"
+
 using namespace std;
 
 typedef map<string,string> proprieteMap;
@@ -14,15 +16,15 @@ class Objet
 public:
     int id;
     string nomType;
-    proprieteMap proprietes;
+    ObjetRDF proprietes;
     int largeurMax;
 
-    Objet(int id, string nomType, proprieteMap proprietes);
+    Objet(int id, string nomType, ObjetRDF proprietes);
     ~Objet();
 
     void setLargeur();
     string getNomType();
-    proprieteMap getProprietes();
+    ObjetRDF getProprietes();
     int getLargeur();
 
 
