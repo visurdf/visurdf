@@ -1,10 +1,7 @@
 #include "objet.h"
 #include "visurdfextractor.h"
 
-<<<<<<< HEAD
-=======
 
->>>>>>> marjo
 Objet::Objet(int id, string nomType, ObjetRDF proprietes) : id(id), nomType(nomType), proprietes(proprietes)
 {
 
