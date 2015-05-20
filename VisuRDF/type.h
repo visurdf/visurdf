@@ -10,14 +10,14 @@ public:
     QString nomType;
 
     int nbObjets;
-    list<QString> proprietesNonVides;
+    std::list<QString> proprietesNonVides;
 
     Type(QString nomType);
     ~Type();
-    void setProprietes(list<QString>);
+    void setProprietes(std::list<QString>);
     void setNbObjet(int);
     int getNbObjet();
-    list<QString> getProprietes();
+    std::list<QString> getProprietes();
     QString getNom();
 
 };

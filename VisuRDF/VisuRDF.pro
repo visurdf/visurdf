@@ -25,9 +25,13 @@ TEMPLATE = app
 SOURCES += main.cpp \
     visurdfextractor.cpp \
     classesvg.cpp \
-    analyseur.cpp
+    analyseur.cpp \
+    objet.cpp \
+    type.cpp
 
 HEADERS += \
     visurdfextractor.h \
     classesvg.h \
-    analyseur.h
+    analyseur.h \
+    objet.h \
+    type.h

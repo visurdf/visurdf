@@ -1,4 +1,5 @@
 #include "type.h"
+using namespace std;
 
 Type::Type(QString nomType) : nomType(nomType)
 {
