@@ -7,19 +7,19 @@ class Type
 {
 public:
 
-    Type(QString nomType);
+    Type(std::string nomType);
     ~Type();
-    void setProprietes(std::list<QString>);
+    void setProprietes(std::list<std::string>);
     void setNbObjet(int);
     int getNbObjet();
-    std::list<QString> getProprietes();
-    QString getNom();
+    std::list<std::string> getProprietes();
+    std::string getNom();
 
 private :
 
-    QString nomType;
+    std::string nomType;
     int nbObjets;
-    std::list<QString> proprietesNonVides;
+    std::list<std::string> proprietesNonVides;
 
 };
 

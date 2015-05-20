@@ -11,7 +11,7 @@
 class Analyseur
 {
 public:
-    Analyseur(VisuRDFExtractor extractor);
+    Analyseur(VisuRDFExtractor *extractor);
     ~Analyseur();
     std::list<Objet> getTousLesObjets();
     std::list<Type> getTousLesTypes();

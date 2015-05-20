@@ -5,7 +5,7 @@
 
 using namespace std;
 
-Analyseur::Analyseur(VisuRDFExtractor extractor) {
+Analyseur::Analyseur(VisuRDFExtractor *extractor) {
 
     /*
     extractor :
@@ -20,48 +20,52 @@ Analyseur::Analyseur(VisuRDFExtractor extractor) {
     contient toutes les classes, associées aux objets de la classe
     */
 
-    // instancier un extractor
+    // recuperer la Map GrapheRDF
 
     GrapheRDF MapDesObjets; //= extractor.getMap();
     int id = 0;
 
+    // Pour chaque classe :
     for (GrapheRDF::iterator itGraphe = MapDesObjets.begin(); itGraphe != MapDesObjets.end(); ) {
 
         string classe = itGraphe->first;
+
+        // creation du Type classe
+        Type* nouveauType = new Type(classe);
+
         list < ObjetRDF > listeObjets = itGraphe->second;
         // contient tous les objets du type "classe"
 
-        for (list< ObjetRDF >::iterator itObjets = listeObjets.begin(); itObjets != listeObjets.end(); itObjets++) {
+        // initialisation des attributs du Type
+        int nombreObjetsClasse = 0;
+        list < string > proprietesNonVidesDuType; // initialiser liste ?
 
+        // Pour chaque objet de la classe :
+        for (list < ObjetRDF >::iterator itObjets = listeObjets.begin(); itObjets != listeObjets.end(); itObjets++) {
+
+            nombreObjetsClasse++;
             id ++;
-            ObjetRDF listeProprietes = *itObjets;
+            ObjetRDF listeProprietesObjet = *itObjets;
 
             // creation de l'objet
-            Objet* nouvelObjet = new Objet(id, classe, listeProprietes);
+            Objet* nouvelObjet = new Objet(id, classe, listeProprietesObjet);
 
             // ajout de l'objet a la liste
             tousLesObjets.push_back(*nouvelObjet);
+
+            // ajout de la propriete a la liste proprietesNonVides
+            // parcourir les proprietes, pour chacune :
+                // si la valeur n'est pas nulle
+                // et si elle n'est pas deja dans la liste
+                // l'ajouter a la liste
+
         }
 
+        nouveauType->setNbObjet(nombreObjetsClasse);
+        nouveauType->setProprietes(proprietesNonVidesDuType);
+        tousLesTypes.push_back(*nouveauType);
+
     }
-
-
-
-    // creer la liste de classes
-    // on récupère la map de l'extracteur
-    // pour chaque nouveau type rencontré, on crée un type
-    // pour chaque type, on remplit le vecteur des propriétés
-
-    // compter le nombre de propriétés par type
-    // pour chaque Type
-    // compter le nombre de proprietes
-    // setNombreProprietes dans le Type
-
-    // compter le nombre d'objets par type
-    // pour chaque Type
-    // compter le nombre d'objets
-    // setNombreObjets dans le Type
-
 }
 
 Analyseur::~Analyseur() {

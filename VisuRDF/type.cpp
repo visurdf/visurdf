@@ -1,7 +1,7 @@
 #include "type.h"
 using namespace std;
 
-Type::Type(QString nomType) : nomType(nomType)
+Type::Type(string nomType) : nomType(nomType)
 {
 
 }
@@ -11,7 +11,7 @@ Type::~Type()
 
 }
 
-void Type::setProprietes(list<QString> proprietes){
+void Type::setProprietes(list<string> proprietes){
     proprietesNonVides = proprietes;
 }
 
@@ -19,11 +19,11 @@ void Type::setNbObjet(int nb){
     nbObjets = nb;
 }
 
-QString Type::getNom(){
+string Type::getNom(){
     return nomType;
 }
 
-list<QString> Type::getProprietes(){
+list<string> Type::getProprietes(){
     return proprietesNonVides;
 }
 

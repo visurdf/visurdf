@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
     visuRDFExtractor.print_relations();
     C.drawSvg();
 
-    Analyseur* analyseur = new Analyseur(visuRDFExtractor);
+    Analyseur* analyseur = new Analyseur(&visuRDFExtractor);
 
     return 0;
 
