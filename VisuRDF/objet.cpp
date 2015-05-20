@@ -1,6 +1,7 @@
 #include "objet.h"
+#include "visurdfextractor.h"
 
-Objet::Objet(int id, QString nomType, QMap<QString,QString> proprietes) : id(id), nomType(nomType), proprietes(proprietes)
+Objet::Objet(int id, string nomType, ObjetRDF proprietes) : id(id), nomType(nomType), proprietes(proprietes)
 {
 
 }

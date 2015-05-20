@@ -1,29 +1,51 @@
 #include "analyseur.h"
+#include "visurdfextractor.h"
 #include <list>
+#include <map>
+
 using namespace std;
 
-analyseur::analyseur() {
+Analyseur::Analyseur(VisuRDFExtractor extractor) {
 
     /*
     extractor :
       - une map avec tous les objets : (classe, liste de objets de la classe(map de propriétés de l'objet))
       - liste des classes (string)
       - liste des propriétés d'une classe (classe en entrée, liste de string en sortie)
+
+    typedef map<string, list < string > > ObjetRDF; // a chaque propriete associe la liste de ses valeurs
+    contient toutes les propriétés d'un objet
+
+    typedef map<string,  list < ObjetRDF > > GrapheRDF; // a chaque classe associe la liste de ses instances
+    contient toutes les classes, associées aux objets de la classe
     */
 
     // instancier un extractor
 
-    typedef map<string, list> Map;
-    Map MapDesObjets = extractor.getMap();
+    GrapheRDF MapDesObjets; //= extractor.getMap();
+    int id = 0;
 
-    for (Map::iterator k = MapDesObjets.begin(); k != MapDesObjets.end(); ) {
+    for (GrapheRDF::iterator itGraphe = MapDesObjets.begin(); itGraphe != MapDesObjets.end(); ) {
+
+        string classe = itGraphe->first;
+        list < ObjetRDF > listeObjets = itGraphe->second;
+        // contient tous les objets du type "classe"
+
+        for (list< ObjetRDF >::iterator itObjets = listeObjets.begin(); itObjets != listeObjets.end(); itObjets++) {
+
+            id ++;
+            ObjetRDF listeProprietes = *itObjets;
+
+            // creation de l'objet
+            Objet* nouvelObjet = new Objet(id, classe, listeProprietes);
+
+            // ajout de l'objet a la liste
+            tousLesObjets.push_back(*nouvelObjet);
+        }
 
     }
 
-    // creer la liste d'objets
-    // on récupère la map de l'extracteur
-    // pour chaque objet de la map, creer un objet Objet
-    // l'ajouter au vecteur
+
 
     // creer la liste de classes
     // on récupère la map de l'extracteur
@@ -42,13 +64,13 @@ analyseur::analyseur() {
 
 }
 
-analyseur::~analyseur() {
+Analyseur::~Analyseur() {
 }
 
-list<Objet> analyseur::getTousLesObjets() {
+list<Objet> Analyseur::getTousLesObjets() {
     return tousLesObjets;
 }
 
-list<Type> analyseur::getTousLesTypes() {
+list<Type> Analyseur::getTousLesTypes() {
     return tousLesTypes;
 }

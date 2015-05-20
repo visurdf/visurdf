@@ -2,20 +2,21 @@
 #define OBJET_H
 #include <QString>
 #include <QMap>
+#include "visurdfextractor.h"
 
 class Objet
 {
 public:
 
-    Objet(int id, QString nomType, QMap<QString,QString> proprietes);
+    Objet(int id, std::string nomType, ObjetRDF proprietes);
     ~Objet();
     void setLargeur(int l);
 
 private :
 
     int id;
-    QString nomType;
-    QMap<QString, QString> proprietes;
+    std::string nomType;
+    ObjetRDF proprietes;
     int largeurMax;
 
 

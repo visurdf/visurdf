@@ -6,11 +6,13 @@
 #include <objet.h>
 #include <type.h>
 
-class analyseur
+#include "visurdfextractor.h"
+
+class Analyseur
 {
 public:
-    analyseur();
-    ~analyseur();
+    Analyseur(VisuRDFExtractor extractor);
+    ~Analyseur();
     std::list<Objet> getTousLesObjets();
     std::list<Type> getTousLesTypes();
 
