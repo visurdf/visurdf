@@ -3,22 +3,25 @@
 #include <QString>
 #include <list>
 
+using namespace std;
+
 class Type
 {
 public:
 
-    QString nomType;
-
-    int nbObjets;
-    list<QString> proprietesNonVides;
-
-    Type(QString nomType);
+    Type(std::string nomType);
     ~Type();
-    void setProprietes(list<QString>);
+    void setProprietes(std::list<std::string>);
     void setNbObjet(int);
     int getNbObjet();
-    list<QString> getProprietes();
-    QString getNom();
+    std::list<std::string> getProprietes();
+    std::string getNom();
+
+private :
+
+    std::string nomType;
+    int nbObjets;
+    std::list<std::string> proprietesNonVides;
 
 };
 
