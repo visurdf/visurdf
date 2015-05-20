@@ -9,8 +9,6 @@ QT       += svg
 
 CONFIG += link_pkgconfig
 
-
-
 PKGCONFIG +=  raptor2
 
 #CONFIG += link_pkgconfig
@@ -26,8 +24,10 @@ TEMPLATE = app
 
 SOURCES += main.cpp \
     visurdfextractor.cpp \
-    classesvg.cpp
+    classesvg.cpp \
+    analyseur.cpp
 
 HEADERS += \
     visurdfextractor.h \
-    classesvg.h
+    classesvg.h \
+    analyseur.h

@@ -18,8 +18,5 @@ int main(int argc, char *argv[])
     C.drawSvg();
 
     return 0;
+
 }
-
-
-
-

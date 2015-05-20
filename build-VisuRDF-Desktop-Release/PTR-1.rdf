@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- edited with XMLSpy v2014 rel. 2 sp1 (http://www.altova.com) by Jean-François Cabadi (ALSTOM POWER TURBO SYSTEM) -->
+<rdf:RDF xmlns:cims="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#" xmlns:m="http://www.cluster-connexion.org/SDS#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+	<m:Grandeur_discrète rdf:about="gd.PTR021PO_EO">
+		<m:Grandeur.période_acquisition>10</m:Grandeur.période_acquisition>
+		<m:Grandeur.période_historisation>60</m:Grandeur.période_historisation>
+		<m:Grandeur_discrète.maximum>1</m:Grandeur_discrète.maximum>
+		<m:Grandeur_discrète.minimum>0</m:Grandeur_discrète.minimum>
+		<m:Grandeur_discrète.libellés rdf:resource="li.ARRET"/>
+		<m:Grandeur_discrète.libellés rdf:resource="li.MARCHE"/>
+		<m:Grandeur_discrète.valeur_discrète rdf:resource="vd.PTR021PO_EO.ua"/>
+		<m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+		<m:Objet_identifié.définition>Etat enclenché</m:Objet_identifié.définition>
+		<m:Objet_identifié.icone/>
+		<m:Objet_identifié.repère_fonctionnel rdf:resource="rf.PTR021PO_EO"/>
+	</m:Grandeur_discrète>
+	<m:Libellé_valeur_discrète rdf:about="li.FERME">
+		<m:Libellé_valeur_discrète.valeur>0</m:Libellé_valeur_discrète.valeur>
+		<m:Libellé_valeur_discrète.message>FERME</m:Libellé_valeur_discrète.message>
+		<m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+		<m:Objet_identifié.définition/>
+		<m:Objet_identifié.icone/>
+	</m:Libellé_valeur_discrète>
+	<m:Libellé_valeur_discrète rdf:about="li.OUVERT">
+		<m:Libellé_valeur_discrète.valeur>1</m:Libellé_valeur_discrète.valeur>
+		<m:Libellé_valeur_discrète.message>OUVERT</m:Libellé_valeur_discrète.message>
+		<m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+		<m:Objet_identifié.définition/>
+		<m:Objet_identifié.icone/>
+	</m:Libellé_valeur_discrète>
+	<m:Libellé_valeur_discrète rdf:about="li.ARRET">
+		<m:Libellé_valeur_discrète.valeur>0</m:Libellé_valeur_discrète.valeur>
+		<m:Libellé_valeur_discrète.message>ARRET</m:Libellé_valeur_discrète.message>
+		<m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+		<m:Objet_identifié.définition/>
+		<m:Objet_identifié.icone/>
+	</m:Libellé_valeur_discrète>
+	<m:Libellé_valeur_discrète rdf:about="li.MARCHE">
+		<m:Libellé_valeur_discrète.valeur>1</m:Libellé_valeur_discrète.valeur>
+		<m:Libellé_valeur_discrète.message>MARCHE</m:Libellé_valeur_discrète.message>
+		<m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+		<m:Objet_identifié.définition/>
+		<m:Objet_identifié.icone/>
+	</m:Libellé_valeur_discrète>
+	<m:Libellé_valeur_discrète rdf:about="li.NORMAL">
+		<m:Libellé_valeur_discrète.valeur>0</m:Libellé_valeur_discrète.valeur>
+		<m:Libellé_valeur_discrète.message>NORMAL</m:Libellé_valeur_discrète.message>
+		<m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+		<m:Objet_identifié.définition/>
+		<m:Objet_identifié.icone/>
+	</m:Libellé_valeur_discrète>
+	<m:Libellé_valeur_discrète rdf:about="li.DEFAUT">
+		<m:Libellé_valeur_discrète.valeur>1</m:Libellé_valeur_discrète.valeur>
+		<m:Libellé_valeur_discrète.message>DEFAUT</m:Libellé_valeur_discrète.message>
+		<m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+		<m:Objet_identifié.définition/>
+		<m:Objet_identifié.icone/>
+	</m:Libellé_valeur_discrète>
+	<m:Nature_valeur rdf:about="nv.0">
+		<m:Nature_valeur.nature_de_la_valeur>0</m:Nature_valeur.nature_de_la_valeur>
+		<m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+		<m:Objet_identifié.définition>Mesure acquise</m:Objet_identifié.définition>
+		<m:Objet_identifié.icone/>
+	</m:Nature_valeur>
+	<m:Repère_fonctionnel rdf:about="rf.PTR007VB">
+		<m:Repère_fonctionnel.nom>PTR007VB</m:Repère_fonctionnel.nom>
+	</m:Repère_fonctionnel>
+	<m:Repère_fonctionnel rdf:about="rf.PTR021PO">
+		<m:Repère_fonctionnel.nom>PTR021PO</m:Repère_fonctionnel.nom>
+	</m:Repère_fonctionnel>
+	<m:Repère_fonctionnel rdf:about="rf.PTR021PO_EO">
+		<m:Repère_fonctionnel.nom>PTR021PO_EO</m:Repère_fonctionnel.nom>
+	</m:Repère_fonctionnel>
+	<m:Valeur_discrète rdf:about="vd.PTR021PO_EO.ua">
+		<m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+		<m:Objet_identifié.définition/>
+		<m:Objet_identifié.icone/>
+		<m:Valeur_liée_à_une_grandeur.contexte rdf:resource="nv.0"/>
+	</m:Valeur_discrète>
+	<m:Equipement rdf:about="eq.PTR007VB">
+		<m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+		<m:Objet_identifié.définition>Vanne d'isolement amont 021PO</m:Objet_identifié.définition>
+		<m:Objet_identifié.icone/>
+		<m:Objet_identifié.repère_fonctionnel rdf:resource="rf.PTR007VB"/>
+		<m:Equipement.port rdf:resource="po.PTR007VB.1"/>
+		<m:Equipement.port rdf:resource="po.PTR007VB.2"/>
+	</m:Equipement>
+	<m:Equipement rdf:about="eq.PTR021PO">
+		<m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+		<m:Objet_identifié.définition>Pompe refroidissement ligne 1</m:Objet_identifié.définition>
+		<m:Objet_identifié.icone/>
+		<m:Objet_identifié.repère_fonctionnel rdf:resource="rf.PTR021PO"/>
+		<m:Equipement.port rdf:resource="po.PTR021PO.1"/>
+		<m:Equipement.port rdf:resource="po.PTR021PO.2"/>
+		<m:Equipement.fonction_procédé rdf:resource="fp.PTR.REF001"/>
+		<m:Equipement.fonction_procédé rdf:resource="fp.PTR.REF002"/>
+	</m:Equipement>
+	<m:Port rdf:about="po.PTR007VB.1">
+		<m:Port.rôle>entrée</m:Port.rôle>
+		<m:Port.fluide>eau</m:Port.fluide>
+		<m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+		<m:Objet_identifié.définition/>
+		<m:Objet_identifié.icone/>
+	</m:Port>
+	<m:Port rdf:about="po.PTR007VB.2">
+		<m:Port.rôle>sortie</m:Port.rôle>
+		<m:Port.fluide>eau</m:Port.fluide>
+		<m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+		<m:Objet_identifié.définition/>
+		<m:Objet_identifié.icone/>
+	</m:Port>
+	<m:Port rdf:about="po.PTR021PO.1">
+		<m:Port.rôle>entrée</m:Port.rôle>
+		<m:Port.fluide>eau</m:Port.fluide>
+		<m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+		<m:Objet_identifié.définition/>
+		<m:Objet_identifié.icone/>
+	</m:Port>
+	<m:Port rdf:about="po.PTR021PO.2">
+		<m:Port.rôle>sortie</m:Port.rôle>
+		<m:Port.fluide>eau</m:Port.fluide>
+		<m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+		<m:Objet_identifié.définition/>
+		<m:Objet_identifié.icone/>
+	</m:Port>
+	<m:Jonction rdf:about="jo.199">
+		<m:Jonction.port rdf:resource="po.PTR007VB.2"/>
+		<m:Jonction.port rdf:resource="po.PTR021PO.1"/>
+	</m:Jonction>
+	<m:Fonction_procédé rdf:about="fp.PTR.REF001">
+		<m:Objet_identifié.catégorie_AP929>exigence_de_conception</m:Objet_identifié.catégorie_AP929>
+		<m:Objet_identifié.définition>Brassage refroidissement bâche PTR par 021PO et 031RF</m:Objet_identifié.définition>
+		<m:Objet_identifié.icone/>
+	</m:Fonction_procédé>
+	<m:Fonction_procédé rdf:about="fp.PTR.REF002">
+		<m:Objet_identifié.catégorie_AP929>exigence_de_conception</m:Objet_identifié.catégorie_AP929>
+		<m:Objet_identifié.définition>Brassage refroidissement bâche PTR par 021PO et 032RF</m:Objet_identifié.définition>
+		<m:Objet_identifié.icone/>
+	</m:Fonction_procédé>
+	<m:Fonction_procédé rdf:about="fp.PTR.REF003">
+		<m:Objet_identifié.catégorie_AP929>exigence_de_conception</m:Objet_identifié.catégorie_AP929>
+		<m:Objet_identifié.définition>Brassage refroidissement bâche PTR par 022PO et 031RF</m:Objet_identifié.définition>
+		<m:Objet_identifié.icone/>
+	</m:Fonction_procédé>
+</rdf:RDF>
