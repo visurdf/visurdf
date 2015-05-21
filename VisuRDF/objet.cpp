@@ -2,7 +2,7 @@
 #include "visurdfextractor.h"
 
 
-Objet::Objet(int id, string nomType, ObjetRDF proprietes) : id(id), nomType(nomType), proprietes(proprietes)
+Objet::Objet(int id, Type type, ObjetRDF proprietes) : id(id), type(type), proprietes(proprietes)
 {
 
 }
@@ -21,14 +21,17 @@ ObjetRDF Objet::getProprietes(){
     return proprietes;
 }
 
-string Objet::getNomType(){
-    return nomType;
+
+Type Objet::getType(){
+
+    return type;
 }
 
 // Méthode qui va calculer la longueur max de la concaténation "nom propriété', "valeur propriété"
 void Objet::setLargeur(){
 
     // On initialise largeur avec la longueur du string "nomType"
+    string nomType = type.getNom();
     int largeur = nomType.size();
 
     // On parcourt la map "proprietes" et on créé une liste de string en concaténant

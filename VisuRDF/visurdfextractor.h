@@ -114,5 +114,3 @@ public:
 };
 
 #endif // VISURDFEXTRACTOR_H
-
-

@@ -55,9 +55,9 @@ QName* VisuRDFExtractor::getSubject( raptor_statement* triple){
             string str( (const char*)triple->subject->value.blank.string);
 
             return new QName  (str);
-        }else{            
+        }else{
             string str( (const char*)raptor_uri_as_string(triple->subject->value.uri));
-            return new QName  (str);            
+            return new QName  (str);
         }
     }
     return NULL;
@@ -67,10 +67,10 @@ QName* VisuRDFExtractor::getObbject( raptor_statement* triple){
         string datatype;
         if(triple->object->type == RAPTOR_TERM_TYPE_LITERAL) {
             if(triple->object->value.literal.datatype) {
-                raptor_uri* dt_uri = triple->object->value.literal.datatype;                
+                raptor_uri* dt_uri = triple->object->value.literal.datatype;
                 datatype = string( (const char*)raptor_uri_as_string(dt_uri));
 
-            }            
+            }
 
             string str( (const char*)triple->object->value.literal.string);
 
@@ -180,7 +180,7 @@ void VisuRDFExtractor::handle_triple(void* user_data, raptor_statement* triple)
             //printf("object qname  : %s\n", object->toString().c_str());
 
         }else{// c est soit une propriete simple soit une resource
-            QName* object = getObbject(triple);           
+            QName* object = getObbject(triple);
             if(object->getBaseUri().compare(baseURI) == 0){// cest une association
 
                 list<string> listOfName = objetRDF["name"];
