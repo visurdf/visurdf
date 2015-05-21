@@ -1,7 +1,7 @@
 #include "visurdfextractor.h"
 #include <QApplication>
 #include "classesvg.h"
-
+#include "analyseur.h"
 
 
 int main(int argc, char *argv[])
@@ -17,6 +17,7 @@ int main(int argc, char *argv[])
     visuRDFExtractor.print_relations();
     C.drawSvg();
 
+<<<<<<< HEAD
     cout << "\n Classes:\n" << endl;
     set<string > listOfClass = visuRDFExtractor.getClasses();
 
@@ -32,5 +33,10 @@ int main(int argc, char *argv[])
 }
 
 
+=======
+    Analyseur* analyseur = new Analyseur(&visuRDFExtractor);
+>>>>>>> 4b6ce32780d26f42926b23b57375d5a1102f357e
 
+    return 0;
 
+}
