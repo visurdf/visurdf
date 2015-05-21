@@ -17,7 +17,6 @@ int main(int argc, char *argv[])
     visuRDFExtractor.print_relations();
     C.drawSvg();
 
-<<<<<<< HEAD
     cout << "\n Classes:\n" << endl;
     set<string > listOfClass = visuRDFExtractor.getClasses();
 
@@ -29,14 +28,10 @@ int main(int argc, char *argv[])
         //cout << endl<< endl;
     }
 
-    return 0;
-}
-
-
-=======
     Analyseur* analyseur = new Analyseur(&visuRDFExtractor);
->>>>>>> 4b6ce32780d26f42926b23b57375d5a1102f357e
 
     return 0;
-
 }
+
+
+

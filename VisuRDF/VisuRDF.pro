@@ -8,10 +8,7 @@ QT       += core
 QT       += svg
 
 CONFIG += link_pkgconfig
-<<<<<<< HEAD
-=======
 
->>>>>>> 4b6ce32780d26f42926b23b57375d5a1102f357e
 PKGCONFIG +=  raptor2
 
 
