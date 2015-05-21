@@ -1,5 +1,6 @@
 <!DOCTYPE QtCreatorProject>
 <<<<<<< HEAD
+<<<<<<< HEAD
 <qtcreator>
  <data>
   <variable>RunConfiguration0-BaseEnvironmentBase</variable>
@@ -46,6 +47,9 @@
   <value type="QString">Qt4ProjectManager.Qt4RunConfiguration</value>
 =======
 <!-- Written by QtCreator 3.4.0, 2015-05-20T14:43:01. -->
+=======
+<!-- Written by QtCreator 3.4.0, 2015-05-20T22:03:23. -->
+>>>>>>> ee164eefdb96b68e159f2ed4df967dc370f63b0f
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>

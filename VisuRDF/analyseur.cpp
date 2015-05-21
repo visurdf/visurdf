@@ -49,7 +49,7 @@ Analyseur::Analyseur(VisuRDFExtractor *extractor) {
             ObjetRDF listeProprietesObjet = *itObjets;
 
             // creation de l'objet
-            Objet* nouvelObjet = new Objet(id, classe, listeProprietesObjet);
+            Objet* nouvelObjet = new Objet(id, nouveauType, listeProprietesObjet);
             // ----> est-ce qu'on met un type au lieu du string pour la classe ?
 
             // ajout de l'objet a la liste
