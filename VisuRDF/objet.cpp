@@ -21,7 +21,9 @@ ObjetRDF Objet::getProprietes(){
     return proprietes;
 }
 
-Type Objet::getNomType(){
+
+Type Objet::getType(){
+
     return type;
 }
 

@@ -3,6 +3,8 @@
 #include <QString>
 #include <list>
 
+using namespace std;
+
 class Type
 {
 public:
