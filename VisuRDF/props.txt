@@ -1,0 +1,1104 @@
+Impression des objets du graphe
+Capteur : 
+		Capteur.port : dom.PTR021PO.S
+		Capteur.repère_fonctionnel : _106
+		Objet_identifié.catégorie_AP929 : configuration_physique
+		Objet_identifié.définition : 
+		Objet_identifié.icone : 
+		name : dom.PTR027MP
+		type : Capteur
+
+Equipement : 
+		Equipement.catégorie : TUYAU
+		Equipement.port : dom.PTR-A002E
+		Equipement.port : dom.PTR-A002S
+		Objet_identifié.catégorie_AP929 : configuration_physique
+		Objet_identifié.définition : 
+		Objet_identifié.icone : 
+		name : dom.PTR-A002
+		type : Equipement
+
+		Equipement.catégorie : TUYAU
+		Equipement.port : dom.PTR-A003E
+		Equipement.port : dom.PTR-A003S
+		Objet_identifié.catégorie_AP929 : configuration_physique
+		Objet_identifié.définition : 
+		Objet_identifié.icone : 
+		name : dom.PTR-A003
+		type : Equipement
+
+		Equipement.catégorie : TUYAU
+		Equipement.port : dom.PTR-A011E
+		Equipement.port : dom.PTR-A011S
+		Objet_identifié.catégorie_AP929 : configuration_physique
+		Objet_identifié.définition : 
+		Objet_identifié.icone : 
+		name : dom.PTR-A011
+		type : Equipement
+
+		Equipement.catégorie : TUYAU
+		Equipement.port : dom.PTR-A012E
+		Equipement.port : dom.PTR-A012S
+		Objet_identifié.catégorie_AP929 : configuration_physique
+		Objet_identifié.définition : 
+		Objet_identifié.icone : 
+		name : dom.PTR-A012
+		type : Equipement
+
+		Equipement.catégorie : TUYAU
+		Equipement.port : dom.PTR-A013E
+		Equipement.port : dom.PTR-A013S
+		Objet_identifié.catégorie_AP929 : configuration_physique
+		Objet_identifié.définition : 
+		Objet_identifié.icone : 
+		name : dom.PTR-A013
+		type : Equipement
+
+		Equipement.catégorie : TUYAU
+		Equipement.port : dom.PTR-A014E
+		Equipement.port : dom.PTR-A014S
+		Objet_identifié.catégorie_AP929 : configuration_physique
+		Objet_identifié.définition : 
+		Objet_identifié.icone : 
+		name : dom.PTR-A014
+		type : Equipement
+
+		Equipement.catégorie : TUYAU
+		Equipement.port : dom.PTR-A021E
+		Equipement.port : dom.PTR-A021S
+		Objet_identifié.catégorie_AP929 : configuration_physique
+		Objet_identifié.définition : 
+		Objet_identifié.icone : 
+		name : dom.PTR-A021
+		type : Equipement
+
+		Equipement.catégorie : TUYAU
+		Equipement.port : dom.PTR-A022E
+		Equipement.port : dom.PTR-A022S
+		Objet_identifié.catégorie_AP929 : configuration_physique
+		Objet_identifié.définition : 
+		Objet_identifié.icone : 
+		name : dom.PTR-A022
+		type : Equipement
+
+		Equipement.catégorie : TUYAU
+		Equipement.port : dom.PTR-A023E
+		Equipement.port : dom.PTR-A023S
+		Objet_identifié.catégorie_AP929 : configuration_physique
+		Objet_identifié.définition : 
+		Objet_identifié.icone : 
+		name : dom.PTR-A023
+		type : Equipement
+
+		Equipement.catégorie : TUYAU
+		Equipement.port : dom.PTR-A024E
+		Equipement.port : dom.PTR-A024S
+		Objet_identifié.catégorie_AP929 : configuration_physique
+		Objet_identifié.définition : 
+		Objet_identifié.icone : 
+		name : dom.PTR-A024
+		type : Equipement
+
+		Equipement.catégorie : TUYAU
+		Equipement.port : dom.PTR-A031E
+		Equipement.port : dom.PTR-A031S
+		Objet_identifié.catégorie_AP929 : configuration_physique
+		Objet_identifié.définition : 
+		Objet_identifié.icone : 
+		name : dom.PTR-A031
+		type : Equipement
+
+		Equipement.catégorie : TUYAU
+		Equipement.port : dom.PTR-A032E
+		Equipement.port : dom.PTR-A032S
+		Objet_identifié.catégorie_AP929 : configuration_physique
+		Objet_identifié.définition : 
+		Objet_identifié.icone : 
+		name : dom.PTR-A032
+		type : Equipement
+
+		Equipement.catégorie : JONCTION
+		Equipement.port : dom.PTR-JN002.E
+		Equipement.port : dom.PTR-JN002.S
+		Objet_identifié.catégorie_AP929 : configuration_physique
+		Objet_identifié.définition : 
+		Objet_identifié.icone : 
+		name : dom.PTR-JN002
+		type : Equipement
+
+		Equipement.catégorie : JONCTION
+		Equipement.port : dom.PTR-JN004.E
+		Equipement.port : dom.PTR-JN004.S
+		Objet_identifié.catégorie_AP929 : configuration_physique
+		Objet_identifié.définition : 
+		Objet_identifié.icone : 
+		name : dom.PTR-JN004
+		type : Equipement
+
+		Equipement.catégorie : VTM
+		Equipement.port : dom.PTR005VB.E
+		Equipement.port : dom.PTR005VB.S
+		Equipement.repère_fonctionnel : _104
+		Objet_identifié.catégorie_AP929 : configuration_physique
+		Objet_identifié.définition : 
+		Objet_identifié.icone : 
+		name : dom.PTR005VB
+		type : Equipement
+
+		Equipement.catégorie : VTM
+		Equipement.port : dom.PTR007VB.E
+		Equipement.port : dom.PTR007VB.S
+		Equipement.repère_fonctionnel : _105
+		Objet_identifié.catégorie_AP929 : configuration_physique
+		Objet_identifié.définition : 
+		Objet_identifié.icone : 
+		name : dom.PTR007VB
+		type : Equipement
+
+		Equipement.catégorie : VTM
+		Equipement.port : dom.PTR008VB.E
+		Equipement.port : dom.PTR008VB.S
+		Equipement.repère_fonctionnel : _103
+		Objet_identifié.catégorie_AP929 : configuration_physique
+		Objet_identifié.définition : 
+		Objet_identifié.icone : 
+		name : dom.PTR008VB
+		type : Equipement
+
+		Equipement.catégorie : VTM
+		Equipement.port : dom.PTR011VB.E
+		Equipement.port : dom.PTR011VB.S
+		Equipement.repère_fonctionnel : _99
+		Objet_identifié.catégorie_AP929 : configuration_physique
+		Objet_identifié.définition : 
+		Objet_identifié.icone : 
+		name : dom.PTR011VB
+		type : Equipement
+
+		Equipement.catégorie : VTM
+		Equipement.port : dom.PTR012VB.E
+		Equipement.port : dom.PTR012VB.S
+		Equipement.repère_fonctionnel : _101
+		Objet_identifié.catégorie_AP929 : configuration_physique
+		Objet_identifié.définition : 
+		Objet_identifié.icone : 
+		name : dom.PTR012VB
+		type : Equipement
+
+		Equipement.catégorie : POMPE
+		Equipement.port : dom.PTR021PO.E
+		Equipement.port : dom.PTR021PO.S
+		Equipement.repère_fonctionnel : _98
+		Objet_identifié.catégorie_AP929 : configuration_physique
+		Objet_identifié.définition : 
+		Objet_identifié.icone : 
+		name : dom.PTR021PO
+		type : Equipement
+
+		Equipement.catégorie : POMPE
+		Equipement.port : dom.PTR022PO.E
+		Equipement.port : dom.PTR022PO.S
+		Equipement.repère_fonctionnel : _102
+		Objet_identifié.catégorie_AP929 : configuration_physique
+		Objet_identifié.définition : 
+		Objet_identifié.icone : 
+		name : dom.PTR022PO
+		type : Equipement
+
+		Equipement.catégorie : VTM
+		Equipement.port : dom.PTR040VB.E
+		Equipement.port : dom.PTR040VB.S
+		Equipement.repère_fonctionnel : _100
+		Objet_identifié.catégorie_AP929 : configuration_physique
+		Objet_identifié.définition : 
+		Objet_identifié.icone : 
+		name : dom.PTR040VB
+		type : Equipement
+
+		Equipement.catégorie : JONCTION
+		Equipement.port : dom.RRA-JN003.E
+		Equipement.port : dom.RRA-JN003.S
+		Objet_identifié.catégorie_AP929 : configuration_physique
+		Objet_identifié.définition : 
+		Objet_identifié.icone : 
+		name : dom.RRA-JN003
+		type : Equipement
+
+Fonction_GEF : 
+		Objet_identifié.catégorie_AP929 : 0
+		Objet_identifié.définition : 
+		Objet_identifié.icone : 
+		name : dom.PTR021PO.GEF
+		type : Fonction_GEF
+
+		Fonction_GEF.équipement : dom.PTR022PO
+		Objet_identifié.catégorie_AP929 : 0
+		Objet_identifié.définition : 
+		Objet_identifié.icone : 
+		name : dom.PTR022PO.GEF
+		type : Fonction_GEF
+
+Fonction_procédé_principale : 
+		Fonction_procédé_principale.équipement : dom.PTR040VB
+		Objet_identifié.catégorie_AP929 : 0
+		Objet_identifié.définition : Appoint piscine BK par 022PO et 031RF
+		Objet_identifié.icone : 
+		name : dom.PTR.fP.APP013
+		type : Fonction_procédé_principale
+
+Jonction : 
+		Jonction.port : dom.PTR-A002E
+		Objet_identifié.catégorie_AP929 : configuration_physique
+		Objet_identifié.définition : 
+		Objet_identifié.icone : 
+		name : dom.PTR-1-A002
+		type : Jonction
+
+		Jonction.port : dom.PTR-A003E
+		Jonction.port : dom.PTR005VB.S
+		Objet_identifié.catégorie_AP929 : configuration_physique
+		Objet_identifié.définition : 
+		Objet_identifié.icone : 
+		name : dom.PTR-1-A003
+		type : Jonction
+
+		Jonction.port : dom.PTR-A011E
+		Jonction.port : dom.PTR-JN002.S
+		Objet_identifié.catégorie_AP929 : configuration_physique
+		Objet_identifié.définition : 
+		Objet_identifié.icone : 
+		name : dom.PTR-1-A011
+		type : Jonction
+
+		Jonction.port : dom.PTR-A012E
+		Jonction.port : dom.PTR007VB.S
+		Objet_identifié.catégorie_AP929 : configuration_physique
+		Objet_identifié.définition : 
+		Objet_identifié.icone : 
+		name : dom.PTR-1-A012
+		type : Jonction
+
+		Jonction.port : dom.PTR-A013E
+		Jonction.port : dom.PTR021PO.S
+		Objet_identifié.catégorie_AP929 : configuration_physique
+		Objet_identifié.définition : 
+		Objet_identifié.icone : 
+		name : dom.PTR-1-A013
+		type : Jonction
+
+		Jonction.port : dom.PTR-A014E
+		Jonction.port : dom.PTR011VB.S
+		Objet_identifié.catégorie_AP929 : configuration_physique
+		Objet_identifié.définition : 
+		Objet_identifié.icone : 
+		name : dom.PTR-1-A014
+		type : Jonction
+
+		Jonction.port : dom.PTR-A021E
+		Objet_identifié.catégorie_AP929 : configuration_physique
+		Objet_identifié.définition : 
+		Objet_identifié.icone : 
+		name : dom.PTR-1-A021
+		type : Jonction
+
+		Jonction.port : dom.PTR-A022E
+		Jonction.port : dom.PTR008VB.S
+		Objet_identifié.catégorie_AP929 : configuration_physique
+		Objet_identifié.définition : 
+		Objet_identifié.icone : 
+		name : dom.PTR-1-A022
+		type : Jonction
+
+		Jonction.port : dom.PTR-A023E
+		Jonction.port : dom.PTR022PO.S
+		Objet_identifié.catégorie_AP929 : configuration_physique
+		Objet_identifié.définition : 
+		Objet_identifié.icone : 
+		name : dom.PTR-1-A023
+		type : Jonction
+
+		Jonction.port : dom.PTR-A024E
+		Jonction.port : dom.PTR012VB.S
+		Objet_identifié.catégorie_AP929 : configuration_physique
+		Objet_identifié.définition : 
+		Objet_identifié.icone : 
+		name : dom.PTR-1-A024
+		type : Jonction
+
+		Jonction.port : dom.PTR-A031E
+		Objet_identifié.catégorie_AP929 : configuration_physique
+		Objet_identifié.définition : 
+		Objet_identifié.icone : 
+		name : dom.PTR-1-A031
+		type : Jonction
+
+		Jonction.port : dom.PTR-A032E
+		Jonction.port : dom.PTR040VB.S
+		Objet_identifié.catégorie_AP929 : configuration_physique
+		Objet_identifié.définition : 
+		Objet_identifié.icone : 
+		name : dom.PTR-1-A032
+		type : Jonction
+
+		Jonction.port : dom.PTR-A002S
+		Jonction.port : dom.PTR005VB.E
+		Objet_identifié.catégorie_AP929 : configuration_physique
+		Objet_identifié.définition : 
+		Objet_identifié.icone : 
+		name : dom.PTR-2-A002
+		type : Jonction
+
+		Jonction.port : dom.PTR-A003S
+		Jonction.port : dom.PTR-JN002.E
+		Objet_identifié.catégorie_AP929 : configuration_physique
+		Objet_identifié.définition : 
+		Objet_identifié.icone : 
+		name : dom.PTR-2-A003
+		type : Jonction
+
+		Jonction.port : dom.PTR-A011S
+		Jonction.port : dom.PTR007VB.E
+		Objet_identifié.catégorie_AP929 : configuration_physique
+		Objet_identifié.définition : 
+		Objet_identifié.icone : 
+		name : dom.PTR-2-A011
+		type : Jonction
+
+		Jonction.port : dom.PTR-A012S
+		Jonction.port : dom.PTR021PO.E
+		Objet_identifié.catégorie_AP929 : configuration_physique
+		Objet_identifié.définition : 
+		Objet_identifié.icone : 
+		name : dom.PTR-2-A012
+		type : Jonction
+
+		Jonction.port : dom.PTR-A013S
+		Jonction.port : dom.PTR011VB.E
+		Objet_identifié.catégorie_AP929 : configuration_physique
+		Objet_identifié.définition : 
+		Objet_identifié.icone : 
+		name : dom.PTR-2-A013
+		type : Jonction
+
+		Jonction.port : dom.PTR-A014S
+		Objet_identifié.catégorie_AP929 : configuration_physique
+		Objet_identifié.définition : 
+		Objet_identifié.icone : 
+		name : dom.PTR-2-A014
+		type : Jonction
+
+		Jonction.port : dom.PTR-A021S
+		Jonction.port : dom.PTR008VB.E
+		Objet_identifié.catégorie_AP929 : configuration_physique
+		Objet_identifié.définition : 
+		Objet_identifié.icone : 
+		name : dom.PTR-2-A021
+		type : Jonction
+
+		Jonction.port : dom.PTR-A022S
+		Jonction.port : dom.PTR022PO.E
+		Objet_identifié.catégorie_AP929 : configuration_physique
+		Objet_identifié.définition : 
+		Objet_identifié.icone : 
+		name : dom.PTR-2-A022
+		type : Jonction
+
+		Jonction.port : dom.PTR-A023S
+		Jonction.port : dom.PTR012VB.E
+		Objet_identifié.catégorie_AP929 : configuration_physique
+		Objet_identifié.définition : 
+		Objet_identifié.icone : 
+		name : dom.PTR-2-A023
+		type : Jonction
+
+		Jonction.port : dom.PTR-A024S
+		Jonction.port : dom.PTR-JN004.E
+		Objet_identifié.catégorie_AP929 : configuration_physique
+		Objet_identifié.définition : 
+		Objet_identifié.icone : 
+		name : dom.PTR-2-A024
+		type : Jonction
+
+		Jonction.port : dom.PTR-A031S
+		Jonction.port : dom.PTR040VB.E
+		Objet_identifié.catégorie_AP929 : configuration_physique
+		Objet_identifié.définition : 
+		Objet_identifié.icone : 
+		name : dom.PTR-2-A031
+		type : Jonction
+
+		Jonction.port : dom.PTR-A032S
+		Objet_identifié.catégorie_AP929 : configuration_physique
+		Objet_identifié.définition : 
+		Objet_identifié.icone : 
+		name : dom.PTR-2-A032
+		type : Jonction
+
+Port : 
+		Objet_identifié.catégorie_AP929 : configuration_physique
+		Objet_identifié.définition : 
+		Objet_identifié.icone : 
+		Port.fluide : 
+		Port.rôle : 
+		Port.sens : entr�e
+		Port.type_d_interface : 
+		name : dom.PTR-A002E
+		type : Port
+
+		Objet_identifié.catégorie_AP929 : configuration_physique
+		Objet_identifié.définition : 
+		Objet_identifié.icone : 
+		Port.fluide : 
+		Port.rôle : 
+		Port.sens : sortie
+		Port.type_d_interface : 
+		name : dom.PTR-A002S
+		type : Port
+
+		Objet_identifié.catégorie_AP929 : configuration_physique
+		Objet_identifié.définition : 
+		Objet_identifié.icone : 
+		Port.fluide : 
+		Port.rôle : 
+		Port.sens : entr�e
+		Port.type_d_interface : 
+		name : dom.PTR-A003E
+		type : Port
+
+		Objet_identifié.catégorie_AP929 : configuration_physique
+		Objet_identifié.définition : 
+		Objet_identifié.icone : 
+		Port.fluide : 
+		Port.rôle : 
+		Port.sens : sortie
+		Port.type_d_interface : 
+		name : dom.PTR-A003S
+		type : Port
+
+		Objet_identifié.catégorie_AP929 : configuration_physique
+		Objet_identifié.définition : 
+		Objet_identifié.icone : 
+		Port.fluide : 
+		Port.rôle : 
+		Port.sens : entr�e
+		Port.type_d_interface : 
+		name : dom.PTR-A011E
+		type : Port
+
+		Objet_identifié.catégorie_AP929 : configuration_physique
+		Objet_identifié.définition : 
+		Objet_identifié.icone : 
+		Port.fluide : 
+		Port.rôle : 
+		Port.sens : sortie
+		Port.type_d_interface : 
+		name : dom.PTR-A011S
+		type : Port
+
+		Objet_identifié.catégorie_AP929 : configuration_physique
+		Objet_identifié.définition : 
+		Objet_identifié.icone : 
+		Port.fluide : 
+		Port.rôle : 
+		Port.sens : entr�e
+		Port.type_d_interface : 
+		name : dom.PTR-A012E
+		type : Port
+
+		Objet_identifié.catégorie_AP929 : configuration_physique
+		Objet_identifié.définition : 
+		Objet_identifié.icone : 
+		Port.fluide : 
+		Port.rôle : 
+		Port.sens : sortie
+		Port.type_d_interface : 
+		name : dom.PTR-A012S
+		type : Port
+
+		Objet_identifié.catégorie_AP929 : configuration_physique
+		Objet_identifié.définition : 
+		Objet_identifié.icone : 
+		Port.fluide : 
+		Port.rôle : 
+		Port.sens : entr�e
+		Port.type_d_interface : 
+		name : dom.PTR-A013E
+		type : Port
+
+		Objet_identifié.catégorie_AP929 : configuration_physique
+		Objet_identifié.définition : 
+		Objet_identifié.icone : 
+		Port.fluide : 
+		Port.rôle : 
+		Port.sens : sortie
+		Port.type_d_interface : 
+		name : dom.PTR-A013S
+		type : Port
+
+		Objet_identifié.catégorie_AP929 : configuration_physique
+		Objet_identifié.définition : 
+		Objet_identifié.icone : 
+		Port.fluide : 
+		Port.rôle : 
+		Port.sens : entr�e
+		Port.type_d_interface : 
+		name : dom.PTR-A014E
+		type : Port
+
+		Objet_identifié.catégorie_AP929 : configuration_physique
+		Objet_identifié.définition : 
+		Objet_identifié.icone : 
+		Port.fluide : 
+		Port.rôle : 
+		Port.sens : sortie
+		Port.type_d_interface : 
+		name : dom.PTR-A014S
+		type : Port
+
+		Objet_identifié.catégorie_AP929 : configuration_physique
+		Objet_identifié.définition : 
+		Objet_identifié.icone : 
+		Port.fluide : 
+		Port.rôle : 
+		Port.sens : entr�e
+		Port.type_d_interface : 
+		name : dom.PTR-A021E
+		type : Port
+
+		Objet_identifié.catégorie_AP929 : configuration_physique
+		Objet_identifié.définition : 
+		Objet_identifié.icone : 
+		Port.fluide : 
+		Port.rôle : 
+		Port.sens : sortie
+		Port.type_d_interface : 
+		name : dom.PTR-A021S
+		type : Port
+
+		Objet_identifié.catégorie_AP929 : configuration_physique
+		Objet_identifié.définition : 
+		Objet_identifié.icone : 
+		Port.fluide : 
+		Port.rôle : 
+		Port.sens : entr�e
+		Port.type_d_interface : 
+		name : dom.PTR-A022E
+		type : Port
+
+		Objet_identifié.catégorie_AP929 : configuration_physique
+		Objet_identifié.définition : 
+		Objet_identifié.icone : 
+		Port.fluide : 
+		Port.rôle : 
+		Port.sens : sortie
+		Port.type_d_interface : 
+		name : dom.PTR-A022S
+		type : Port
+
+		Objet_identifié.catégorie_AP929 : configuration_physique
+		Objet_identifié.définition : 
+		Objet_identifié.icone : 
+		Port.fluide : 
+		Port.rôle : 
+		Port.sens : entr�e
+		Port.type_d_interface : 
+		name : dom.PTR-A023E
+		type : Port
+
+		Objet_identifié.catégorie_AP929 : configuration_physique
+		Objet_identifié.définition : 
+		Objet_identifié.icone : 
+		Port.fluide : 
+		Port.rôle : 
+		Port.sens : sortie
+		Port.type_d_interface : 
+		name : dom.PTR-A023S
+		type : Port
+
+		Objet_identifié.catégorie_AP929 : configuration_physique
+		Objet_identifié.définition : 
+		Objet_identifié.icone : 
+		Port.fluide : 
+		Port.rôle : 
+		Port.sens : entr�e
+		Port.type_d_interface : 
+		name : dom.PTR-A024E
+		type : Port
+
+		Objet_identifié.catégorie_AP929 : configuration_physique
+		Objet_identifié.définition : 
+		Objet_identifié.icone : 
+		Port.fluide : 
+		Port.rôle : 
+		Port.sens : sortie
+		Port.type_d_interface : 
+		name : dom.PTR-A024S
+		type : Port
+
+		Objet_identifié.catégorie_AP929 : configuration_physique
+		Objet_identifié.définition : 
+		Objet_identifié.icone : 
+		Port.fluide : 
+		Port.rôle : 
+		Port.sens : entr�e
+		Port.type_d_interface : 
+		name : dom.PTR-A031E
+		type : Port
+
+		Objet_identifié.catégorie_AP929 : configuration_physique
+		Objet_identifié.définition : 
+		Objet_identifié.icone : 
+		Port.fluide : 
+		Port.rôle : 
+		Port.sens : sortie
+		Port.type_d_interface : 
+		name : dom.PTR-A031S
+		type : Port
+
+		Objet_identifié.catégorie_AP929 : configuration_physique
+		Objet_identifié.définition : 
+		Objet_identifié.icone : 
+		Port.fluide : 
+		Port.rôle : 
+		Port.sens : entr�e
+		Port.type_d_interface : 
+		name : dom.PTR-A032E
+		type : Port
+
+		Objet_identifié.catégorie_AP929 : configuration_physique
+		Objet_identifié.définition : 
+		Objet_identifié.icone : 
+		Port.fluide : 
+		Port.rôle : 
+		Port.sens : sortie
+		Port.type_d_interface : 
+		name : dom.PTR-A032S
+		type : Port
+
+		Objet_identifié.catégorie_AP929 : configuration_physique
+		Objet_identifié.définition : 
+		Objet_identifié.icone : 
+		Port.fluide : 
+		Port.rôle : 
+		Port.sens : entr�e
+		Port.type_d_interface : 
+		name : dom.PTR-JN002.E
+		type : Port
+
+		Objet_identifié.catégorie_AP929 : configuration_physique
+		Objet_identifié.définition : 
+		Objet_identifié.icone : 
+		Port.fluide : 
+		Port.rôle : 
+		Port.sens : sortie
+		Port.type_d_interface : 
+		name : dom.PTR-JN002.S
+		type : Port
+
+		Objet_identifié.catégorie_AP929 : configuration_physique
+		Objet_identifié.définition : 
+		Objet_identifié.icone : 
+		Port.fluide : 
+		Port.rôle : 
+		Port.sens : entr�e
+		Port.type_d_interface : 
+		name : dom.PTR-JN004.E
+		type : Port
+
+		Objet_identifié.catégorie_AP929 : configuration_physique
+		Objet_identifié.définition : 
+		Objet_identifié.icone : 
+		Port.fluide : 
+		Port.rôle : 
+		Port.sens : sortie
+		Port.type_d_interface : 
+		name : dom.PTR-JN004.S
+		type : Port
+
+		Objet_identifié.catégorie_AP929 : configuration_physique
+		Objet_identifié.définition : 
+		Objet_identifié.icone : 
+		Port.fluide : 
+		Port.rôle : 
+		Port.sens : entr�e
+		Port.type_d_interface : 
+		name : dom.PTR005VB.E
+		type : Port
+
+		Objet_identifié.catégorie_AP929 : configuration_physique
+		Objet_identifié.définition : 
+		Objet_identifié.icone : 
+		Port.fluide : 
+		Port.rôle : 
+		Port.sens : sortie
+		Port.type_d_interface : 
+		name : dom.PTR005VB.S
+		type : Port
+
+		Objet_identifié.catégorie_AP929 : configuration_physique
+		Objet_identifié.définition : 
+		Objet_identifié.icone : 
+		Port.fluide : 
+		Port.rôle : 
+		Port.sens : entr�e
+		Port.type_d_interface : 
+		name : dom.PTR007VB.E
+		type : Port
+
+		Objet_identifié.catégorie_AP929 : configuration_physique
+		Objet_identifié.définition : 
+		Objet_identifié.icone : 
+		Port.fluide : 
+		Port.rôle : 
+		Port.sens : sortie
+		Port.type_d_interface : 
+		name : dom.PTR007VB.S
+		type : Port
+
+		Objet_identifié.catégorie_AP929 : configuration_physique
+		Objet_identifié.définition : 
+		Objet_identifié.icone : 
+		Port.fluide : 
+		Port.rôle : 
+		Port.sens : entr�e
+		Port.type_d_interface : 
+		name : dom.PTR008VB.E
+		type : Port
+
+		Objet_identifié.catégorie_AP929 : configuration_physique
+		Objet_identifié.définition : 
+		Objet_identifié.icone : 
+		Port.fluide : 
+		Port.rôle : 
+		Port.sens : sortie
+		Port.type_d_interface : 
+		name : dom.PTR008VB.S
+		type : Port
+
+		Objet_identifié.catégorie_AP929 : configuration_physique
+		Objet_identifié.définition : 
+		Objet_identifié.icone : 
+		Port.fluide : 
+		Port.rôle : 
+		Port.sens : entr�e
+		Port.type_d_interface : 
+		name : dom.PTR011VB.E
+		type : Port
+
+		Objet_identifié.catégorie_AP929 : configuration_physique
+		Objet_identifié.définition : 
+		Objet_identifié.icone : 
+		Port.fluide : 
+		Port.rôle : 
+		Port.sens : sortie
+		Port.type_d_interface : 
+		name : dom.PTR011VB.S
+		type : Port
+
+		Objet_identifié.catégorie_AP929 : configuration_physique
+		Objet_identifié.définition : 
+		Objet_identifié.icone : 
+		Port.fluide : 
+		Port.rôle : 
+		Port.sens : entr�e
+		Port.type_d_interface : 
+		name : dom.PTR012VB.E
+		type : Port
+
+		Objet_identifié.catégorie_AP929 : configuration_physique
+		Objet_identifié.définition : 
+		Objet_identifié.icone : 
+		Port.fluide : 
+		Port.rôle : 
+		Port.sens : sortie
+		Port.type_d_interface : 
+		name : dom.PTR012VB.S
+		type : Port
+
+		Objet_identifié.catégorie_AP929 : configuration_physique
+		Objet_identifié.définition : 
+		Objet_identifié.icone : 
+		Port.fluide : 
+		Port.rôle : 
+		Port.sens : entr�e
+		Port.type_d_interface : 
+		name : dom.PTR021PO.E
+		type : Port
+
+		Objet_identifié.catégorie_AP929 : configuration_physique
+		Objet_identifié.définition : 
+		Objet_identifié.icone : 
+		Port.fluide : 
+		Port.rôle : 
+		Port.sens : sortie
+		Port.type_d_interface : 
+		name : dom.PTR021PO.S
+		type : Port
+
+		Objet_identifié.catégorie_AP929 : configuration_physique
+		Objet_identifié.définition : 
+		Objet_identifié.icone : 
+		Port.fluide : 
+		Port.rôle : 
+		Port.sens : entr�e
+		Port.type_d_interface : 
+		name : dom.PTR022PO.E
+		type : Port
+
+		Objet_identifié.catégorie_AP929 : configuration_physique
+		Objet_identifié.définition : 
+		Objet_identifié.icone : 
+		Port.fluide : 
+		Port.rôle : 
+		Port.sens : sortie
+		Port.type_d_interface : 
+		name : dom.PTR022PO.S
+		type : Port
+
+		Objet_identifié.catégorie_AP929 : configuration_physique
+		Objet_identifié.définition : 
+		Objet_identifié.icone : 
+		Port.fluide : 
+		Port.rôle : 
+		Port.sens : entr�e
+		Port.type_d_interface : 
+		name : dom.PTR040VB.E
+		type : Port
+
+		Objet_identifié.catégorie_AP929 : configuration_physique
+		Objet_identifié.définition : 
+		Objet_identifié.icone : 
+		Port.fluide : 
+		Port.rôle : 
+		Port.sens : sortie
+		Port.type_d_interface : 
+		name : dom.PTR040VB.S
+		type : Port
+
+		Objet_identifié.catégorie_AP929 : configuration_physique
+		Objet_identifié.définition : 
+		Objet_identifié.icone : 
+		Port.fluide : 
+		Port.rôle : 
+		Port.sens : entr�e
+		Port.type_d_interface : 
+		name : dom.RRA-JN003.E
+		type : Port
+
+Repère_fonctionnel : 
+		Repère_fonctionnel.nom : PTR040VB
+		name : _100
+		type : Repère_fonctionnel
+
+		Repère_fonctionnel.nom : PTR012VB
+		name : _101
+		type : Repère_fonctionnel
+
+		Repère_fonctionnel.nom : PTR022PO
+		name : _102
+		type : Repère_fonctionnel
+
+		Repère_fonctionnel.nom : PTR008VB
+		name : _103
+		type : Repère_fonctionnel
+
+		Repère_fonctionnel.nom : PTR005VB
+		name : _104
+		type : Repère_fonctionnel
+
+		Repère_fonctionnel.nom : PTR007VB
+		name : _105
+		type : Repère_fonctionnel
+
+		Repère_fonctionnel.nom : PTR027MP
+		name : _106
+		type : Repère_fonctionnel
+
+		Repère_fonctionnel.nom : PTR021PO
+		name : _98
+		type : Repère_fonctionnel
+
+		Repère_fonctionnel.nom : PTR011VB
+		name : _99
+		type : Repère_fonctionnel
+
+Impression des relations du graphe
+dom.PTR-1-A002:
+		dom.PTR-A002E
+dom.PTR-1-A003:
+		dom.PTR-A003E
+		dom.PTR005VB.S
+dom.PTR-1-A011:
+		dom.PTR-A011E
+		dom.PTR-JN002.S
+dom.PTR-1-A012:
+		dom.PTR-A012E
+		dom.PTR007VB.S
+dom.PTR-1-A013:
+		dom.PTR-A013E
+		dom.PTR021PO.S
+dom.PTR-1-A014:
+		dom.PTR-A014E
+		dom.PTR011VB.S
+dom.PTR-1-A021:
+		dom.PTR-A021E
+dom.PTR-1-A022:
+		dom.PTR-A022E
+		dom.PTR008VB.S
+dom.PTR-1-A023:
+		dom.PTR-A023E
+		dom.PTR022PO.S
+dom.PTR-1-A024:
+		dom.PTR-A024E
+		dom.PTR012VB.S
+dom.PTR-1-A031:
+		dom.PTR-A031E
+dom.PTR-1-A032:
+		dom.PTR-A032E
+		dom.PTR040VB.S
+dom.PTR-2-A002:
+		dom.PTR-A002S
+		dom.PTR005VB.E
+dom.PTR-2-A003:
+		dom.PTR-A003S
+		dom.PTR-JN002.E
+dom.PTR-2-A011:
+		dom.PTR-A011S
+		dom.PTR007VB.E
+dom.PTR-2-A012:
+		dom.PTR-A012S
+		dom.PTR021PO.E
+dom.PTR-2-A013:
+		dom.PTR-A013S
+		dom.PTR011VB.E
+dom.PTR-2-A014:
+		dom.PTR-A014S
+dom.PTR-2-A021:
+		dom.PTR-A021S
+		dom.PTR008VB.E
+dom.PTR-2-A022:
+		dom.PTR-A022S
+		dom.PTR022PO.E
+dom.PTR-2-A023:
+		dom.PTR-A023S
+		dom.PTR012VB.E
+dom.PTR-2-A024:
+		dom.PTR-A024S
+		dom.PTR-JN004.E
+dom.PTR-2-A031:
+		dom.PTR-A031S
+		dom.PTR040VB.E
+dom.PTR-2-A032:
+		dom.PTR-A032S
+dom.PTR-A002:
+		dom.PTR-A002E
+		dom.PTR-A002S
+dom.PTR-A003:
+		dom.PTR-A003E
+		dom.PTR-A003S
+dom.PTR-A011:
+		dom.PTR-A011E
+		dom.PTR-A011S
+dom.PTR-A012:
+		dom.PTR-A012E
+		dom.PTR-A012S
+dom.PTR-A013:
+		dom.PTR-A013E
+		dom.PTR-A013S
+dom.PTR-A014:
+		dom.PTR-A014E
+		dom.PTR-A014S
+dom.PTR-A021:
+		dom.PTR-A021E
+		dom.PTR-A021S
+dom.PTR-A022:
+		dom.PTR-A022E
+		dom.PTR-A022S
+dom.PTR-A023:
+		dom.PTR-A023E
+		dom.PTR-A023S
+dom.PTR-A024:
+		dom.PTR-A024E
+		dom.PTR-A024S
+dom.PTR-A031:
+		dom.PTR-A031E
+		dom.PTR-A031S
+dom.PTR-A032:
+		dom.PTR-A032E
+		dom.PTR-A032S
+dom.PTR-JN002:
+		dom.PTR-JN002.E
+		dom.PTR-JN002.S
+dom.PTR-JN004:
+		dom.PTR-JN004.E
+		dom.PTR-JN004.S
+dom.PTR.fP.APP013:
+		dom.PTR040VB
+dom.PTR005VB:
+		dom.PTR005VB.E
+		dom.PTR005VB.S
+		_104
+dom.PTR007VB:
+		dom.PTR007VB.E
+		dom.PTR007VB.S
+		_105
+dom.PTR008VB:
+		dom.PTR008VB.E
+		dom.PTR008VB.S
+		_103
+dom.PTR011VB:
+		dom.PTR011VB.E
+		dom.PTR011VB.S
+		_99
+dom.PTR012VB:
+		dom.PTR012VB.E
+		dom.PTR012VB.S
+		_101
+dom.PTR021PO:
+		dom.PTR021PO.E
+		dom.PTR021PO.S
+		_98
+dom.PTR022PO:
+		dom.PTR022PO.E
+		dom.PTR022PO.S
+		_102
+dom.PTR022PO.GEF:
+		dom.PTR022PO
+dom.PTR027MP:
+		dom.PTR021PO.S
+		_106
+dom.PTR040VB:
+		dom.PTR040VB.E
+		dom.PTR040VB.S
+		_100
+dom.RRA-JN003:
+		dom.RRA-JN003.E
+		dom.RRA-JN003.S
+
+debut de la fonction
+Police d ecriture : Bitstream Charter
+Fin du dessin
+
+ Classes:
+
+Capteur
+Capteur.port	Capteur.repère_fonctionnel	Objet_identifié.catégorie_AP929	Objet_identifié.définition	Objet_identifié.icone	name	type	
+
+Equipement
+Equipement.catégorie	Equipement.port	Objet_identifié.catégorie_AP929	Objet_identifié.définition	Objet_identifié.icone	name	type	
+
+Fonction_GEF
+Objet_identifié.catégorie_AP929	Objet_identifié.définition	Objet_identifié.icone	name	type	
+
+Fonction_procédé_principale
+Fonction_procédé_principale.équipement	Objet_identifié.catégorie_AP929	Objet_identifié.définition	Objet_identifié.icone	name	type	
+
+Jonction
+Jonction.port	Objet_identifié.catégorie_AP929	Objet_identifié.définition	Objet_identifié.icone	name	type	
+
+Port
+Objet_identifié.catégorie_AP929	Objet_identifié.définition	Objet_identifié.icone	Port.fluide	Port.rôle	Port.sens	Port.type_d_interface	name	type	
+
+Repère_fonctionnel
+Repère_fonctionnel.nom	name	type	
+

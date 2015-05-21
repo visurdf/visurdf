@@ -17,6 +17,17 @@ int main(int argc, char *argv[])
     visuRDFExtractor.print_relations();
     C.drawSvg();
 
+    cout << "\n Classes:\n" << endl;
+    set<string > listOfClass = visuRDFExtractor.getClasses();
+
+    for (set<string >::const_iterator grapheiter = listOfClass.begin(); grapheiter != listOfClass.end(); grapheiter++)       {
+        //set<string > listOfProperties = visuRDFExtractor.getProperties(*grapheiter);
+        cout << *grapheiter << "\t"<< endl;
+        //for (set<string >::const_iterator props = listOfProperties.begin(); props != listOfProperties.end(); props++)
+          //  cout << *props << "\t";
+        //cout << endl<< endl;
+    }
+
     return 0;
 }
 

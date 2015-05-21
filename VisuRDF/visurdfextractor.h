@@ -11,6 +11,7 @@
 
 #include <map>
 #include <list>
+#include <set>
 
 
 using namespace std;
@@ -95,12 +96,21 @@ private:
     static ObjetRDF objetRDF;// objet RDF en cours d extraction
     static RelationRDF relationRDF;
 
+
+
 public:
 
     VisuRDFExtractor();
     void parse_rdf_triple(char * rdfFile);
     void print_map();
     void print_relations();
+
+    set< string > getClasses();
+
+    GrapheRDF getGrapheRDF(){ return grapheRDF;}
+    RelationRDF getRelationRDF(){ return relationRDF;}
+
+
 };
 
 #endif // VISURDFEXTRACTOR_H

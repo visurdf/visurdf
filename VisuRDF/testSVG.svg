@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="141.111mm" height="141.111mm"
+ viewBox="0 0 400 400"
+ xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  version="1.2" baseProfile="tiny">
+<title>SVG Generator Example Drawing</title>
+<desc>Dessin svg pour une dÃ©monstration</desc>
+<defs>
+</defs>
+<g fill="none" stroke="black" vector-effect="non-scaling-stroke" stroke-width="1" fill-rule="evenodd" stroke-linecap="square" stroke-linejoin="bevel" >
+
+<g fill="none" stroke="#ff0000" stroke-opacity="1" vector-effect="non-scaling-stroke" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Bitstream Charter" font-size="20" font-weight="400" font-style="normal" 
+>
+<path fill-rule="evenodd" d="M20,20 L120,20 L120,70 L20,70 L20,20"/>
+<text fill="#ff0000" fill-opacity="1" stroke="none" xml:space="preserve" x="40" y="40" font-family="Bitstream Charter" font-size="20" font-weight="400" font-style="normal" 
+ >Rectangle3</text>
+<path fill-rule="evenodd" d="M20,70 L120,70 L120,120 L20,120 L20,70"/>
+<text fill="#ff0000" fill-opacity="1" stroke="none" xml:space="preserve" x="40" y="90" font-family="Bitstream Charter" font-size="20" font-weight="400" font-style="normal" 
+ >Rectangle3</text>
+<path fill-rule="evenodd" d="M20,120 L120,120 L120,170 L20,170 L20,120"/>
+<text fill="#ff0000" fill-opacity="1" stroke="none" xml:space="preserve" x="40" y="140" font-family="Bitstream Charter" font-size="20" font-weight="400" font-style="normal" 
+ >Rectangle3</text>
+<path fill-rule="evenodd" d="M20,170 L120,170 L120,220 L20,220 L20,170"/>
+<text fill="#ff0000" fill-opacity="1" stroke="none" xml:space="preserve" x="40" y="190" font-family="Bitstream Charter" font-size="20" font-weight="400" font-style="normal" 
+ >Rectangle3</text>
+<path fill-rule="evenodd" d="M20,220 L120,220 L120,270 L20,270 L20,220"/>
+<text fill="#ff0000" fill-opacity="1" stroke="none" xml:space="preserve" x="40" y="240" font-family="Bitstream Charter" font-size="20" font-weight="400" font-style="normal" 
+ >Rectangle3</text>
+</g>
+</g>
+</svg>

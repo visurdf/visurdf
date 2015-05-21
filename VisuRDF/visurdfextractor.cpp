@@ -235,3 +235,36 @@ void VisuRDFExtractor::parse_rdf_triple(char *rdfFile)
 
     return ;
 }
+
+ set< string > VisuRDFExtractor::getClasses(){
+
+    set< string > listOfClasses = set< string >();
+
+    for (GrapheRDF::const_iterator grapheiter = grapheRDF.begin(); grapheiter != grapheRDF.end(); grapheiter++)
+
+        listOfClasses.insert(grapheiter->first);
+
+    return listOfClasses;
+ }
+ /*
+ set< string > VisuRDFExtractor::getProperties(string clazz){
+     list< ObjetRDF > listOfObjetRDF = grapheRDF[clazz];
+     // recuperation de la liste des proprietes y compris celles qui n'ont pas de valeurs significatives
+     ObjetRDF objetRDF  = *listOfObjetRDF.begin();
+     set< string > listOfProperties = set< string >();
+     for (ObjetRDF::const_iterator objetRDFiter = objetRDF.begin(); objetRDFiter != objetRDF.end(); objetRDFiter++)
+         listOfProperties.insert(objetRDFiter->first);
+
+     //filtrage des proprietes sans valeur significative
+     bool isEmpty = false;
+     for (ObjetRDF::const_iterator iter = _objetRDF.begin(); iter != _objetRDF.end(); iter++)
+     {
+
+         for (ObjetRDF::const_iterator objetRDFiter = objetRDF.begin(); objetRDFiter != objetRDF.end(); objetRDFiter++)
+             listOfProperties.insert(objetRDFiter->first);
+
+     }
+
+     return listOfProperties;
+ }
+*/
