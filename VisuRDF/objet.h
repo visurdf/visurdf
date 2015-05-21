@@ -6,24 +6,24 @@
 #include <iostream>
 #include <string>
 #include "visurdfextractor.h"
+#include "type.h"
 
 using namespace std;
 
-typedef map<string,string> proprieteMap;
 
 class Objet
 {
 public:
     int id;
-    string nomType;
+    Type type;
     ObjetRDF proprietes;
     int largeurMax;
 
-    Objet(int id, string nomType, ObjetRDF proprietes);
+    Objet(int id, Type type , ObjetRDF proprietes);
     ~Objet();
 
     void setLargeur();
-    string getNomType();
+    Type getType();
     ObjetRDF getProprietes();
     int getLargeur();
 
