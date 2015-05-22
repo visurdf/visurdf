@@ -29,11 +29,13 @@ public:
     Type* getTypeByName(string nameoftype);
 
 
-/*    //expose la liste des types avec propriete significative
-    set<Type> getAllTypes(bool withnotnullproperties);
 
+/*
     //retourne un type avec propriete significative en fonction de son nom
     Type* getTypeByName(string nameoftype, bool withnotnullproperties);
+
+    //expose la liste des types avec propriete significative
+    set<Type> getAllTypes(bool withnotnullproperties);
 
     //retourne le nombre d'objet d'un type
     int countObjectByType(string nameoftype);
