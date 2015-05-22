@@ -105,6 +105,7 @@ public:
     void print_map();
     void print_relations();
 
+<<<<<<< HEAD
     set< string > getClasses();
 
     GrapheRDF getGrapheRDF(){ return grapheRDF;}
@@ -113,4 +114,6 @@ public:
 
 };
 
+=======
+>>>>>>> marjo
 #endif // VISURDFEXTRACTOR_H
