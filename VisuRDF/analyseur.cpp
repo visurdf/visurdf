@@ -14,6 +14,10 @@ Analyseur::Analyseur(VisuRDFExtractor *extractor) {
       - liste des classes (string)
       - liste des propriétés d'une classe (classe en entrée, liste de string en sortie)
 */
+
+    GrapheRDF mapDesObjets; // = extractor.getMap();
+    int id = 0;
+
     // Pour chaque classe :
     for (GrapheRDF::iterator itGraphe = mapDesObjets.begin(); itGraphe != mapDesObjets.end(); ) {
 
@@ -38,7 +42,6 @@ Analyseur::Analyseur(VisuRDFExtractor *extractor) {
 
             // creation de l'objet
             Objet* nouvelObjet = new Objet(id, nouveauType, listeProprietesObjet);
-            // ----> est-ce qu'on met un type au lieu du string pour la classe ?
 
             // ajout de l'objet a la liste
             tousLesObjets.push_back(*nouvelObjet);
@@ -60,7 +63,6 @@ Analyseur::Analyseur(VisuRDFExtractor *extractor) {
         nouveauType->setNbObjet(nombreObjetsClasse);
         nouveauType->setProprietes(proprietesNonVidesDuType);
         tousLesTypes.push_back(*nouveauType);
-
     }
 
 }
