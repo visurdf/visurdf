@@ -1,7 +1,6 @@
 #ifndef OBJET_H
 #define OBJET_H
 #include <QString>
-
 #include <map>
 #include <list>
 #include <iostream>
@@ -15,24 +14,18 @@ using namespace std;
 class Objet
 {
 public:
+    int id;
+    Type * type;
+    ObjetRDF proprietes;
+    int largeurMax;
 
-
-
-    Objet(int id, Type type, ObjetRDF proprietes);
-
+    Objet(int id, Type *type , ObjetRDF proprietes);
     ~Objet();
 
     void setLargeur();
-    Type getType();
+    Type* getType();
     ObjetRDF getProprietes();
     int getLargeur();
-
-private :
-
-    int id;
-    Type type;
-    ObjetRDF proprietes;
-    int largeurMax;
 
 
 };

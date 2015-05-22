@@ -1,8 +1,8 @@
 #include "objet.h"
-#include "visurdfextractor.h"
 
 
-Objet::Objet(int id, Type type, ObjetRDF proprietes) : id(id), type(type), proprietes(proprietes)
+// redéfinir copie constructeur?????????????
+Objet::Objet(int id, Type *type, ObjetRDF proprietes) : id(id), type(type), proprietes(proprietes)
 {
 
 }
@@ -21,9 +21,7 @@ ObjetRDF Objet::getProprietes(){
     return proprietes;
 }
 
-
-Type Objet::getType(){
-
+Type *Objet::getType(){
     return type;
 }
 
@@ -31,7 +29,7 @@ Type Objet::getType(){
 void Objet::setLargeur(){
 
     // On initialise largeur avec la longueur du string "nomType"
-    string nomType = type.getNom();
+    string nomType = type->getNom();
     int largeur = nomType.size();
 
     // On parcourt la map "proprietes" et on créé une liste de string en concaténant

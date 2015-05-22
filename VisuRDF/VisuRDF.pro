@@ -28,11 +28,13 @@ SOURCES += main.cpp \
     classesvg.cpp \
     analyseur.cpp \
     objet.cpp \
-    type.cpp
+    type.cpp \
+    dessinateur.cpp
 
 HEADERS += \
     visurdfextractor.h \
     classesvg.h \
     analyseur.h \
     objet.h \
-    type.h
+    type.h \
+    dessinateur.h

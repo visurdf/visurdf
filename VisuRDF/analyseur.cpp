@@ -13,6 +13,7 @@ Analyseur::Analyseur(VisuRDFExtractor *extractor) {
       - une map avec tous les objets : (classe, liste de objets de la classe(map de propriétés de l'objet))
       - liste des classes (string)
       - liste des propriétés d'une classe (classe en entrée, liste de string en sortie)
+<<<<<<< HEAD
 
     typedef map<string, list < string > > ObjetRDF; // a chaque propriete associe la liste de ses valeurs
     contient toutes les propriétés d'un objet
@@ -26,6 +27,19 @@ Analyseur::Analyseur(VisuRDFExtractor *extractor) {
     GrapheRDF mapDesObjets; //= extractor.getMap();
     int id = 0;
 
+=======
+    typedef map<string, list < string > > ObjetRDF; // a chaque propriete associe la liste de ses valeurs
+    contient toutes les propriétés d'un objet
+    typedef map<string,  list < ObjetRDF > > GrapheRDF; // a chaque classe associe la liste de ses instances
+    contient toutes les classes, associées aux objets de la classe
+    */
+
+    // recuperer la Map GrapheRDF
+
+    GrapheRDF mapDesObjets; //= extractor.getMap();
+    int id = 0;
+
+>>>>>>> marjo
     // Pour chaque classe :
     for (GrapheRDF::iterator itGraphe = mapDesObjets.begin(); itGraphe != mapDesObjets.end(); ) {
 
@@ -74,6 +88,7 @@ Analyseur::Analyseur(VisuRDFExtractor *extractor) {
         tousLesTypes.push_back(*nouveauType);
 
     }
+<<<<<<< HEAD
 }
 
 Analyseur::~Analyseur() {
@@ -83,6 +98,17 @@ list<Objet> Analyseur::getTousLesObjets() {
     return tousLesObjets;
 }
 
+=======
+}
+
+Analyseur::~Analyseur() {
+}
+
+list<Objet> Analyseur::getTousLesObjets() {
+    return tousLesObjets;
+}
+
+>>>>>>> marjo
 list<Type> Analyseur::getTousLesTypes() {
     return tousLesTypes;
 }
