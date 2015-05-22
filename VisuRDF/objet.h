@@ -15,15 +15,15 @@ class Objet
 {
 public:
     int id;
-    Type type;
+    Type * type;
     ObjetRDF proprietes;
     int largeurMax;
 
-    Objet(int id, Type type , ObjetRDF proprietes);
+    Objet(int id, Type *type , ObjetRDF proprietes);
     ~Objet();
 
     void setLargeur();
-    Type getType();
+    Type* getType();
     ObjetRDF getProprietes();
     int getLargeur();
 
