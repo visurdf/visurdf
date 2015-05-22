@@ -1,6 +1,6 @@
 #include "dessinateur.h"
 
-Dessinateur::Dessinateur(Analyseur * analyseur)
+Dessinateur::Dessinateur(VisuRDFAnalyseur * analyseur)
 {
     listeObjets = analyseur->getTousLesObjets();
     listeTypes = analyseur->getTousLesTypes();

@@ -2,7 +2,7 @@
 #include "visurdfextractor.h"
 #include <QApplication>
 #include "classesvg.h"
-#include "analyseur.h"
+#include "visurdfanalyseur.h"
 
 
 int main(int argc, char *argv[])
@@ -29,7 +29,17 @@ int main(int argc, char *argv[])
         //cout << endl<< endl;
     }
 
-    Analyseur* analyseur = new Analyseur(&visuRDFExtractor);
+    VisuRDFAnalyseur* analyseur = new VisuRDFAnalyseur(&visuRDFExtractor);
+
+     set<Type* > allTypes = analyseur->getAllTypes();
+     cout << "\n Types:\n" << allTypes.size() << endl;
+     typedef set<Type* > ::const_iterator ListIterator;
+    for(ListIterator itr = allTypes.begin(); itr != allTypes.end(); itr++ )
+        cout << (*itr)->toString() << endl;
+
+    Type* unType = analyseur->getTypeByName(*listOfClass.begin());
+
+    cout << endl<< endl << unType->toString() << endl;
 
     return 0;
 }

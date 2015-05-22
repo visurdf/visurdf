@@ -2,13 +2,13 @@
 #define DESSINATEUR_H
 #include "objet.h"
 #include "type.h"
-#include "analyseur.h"
+#include "visurdfanalyseur.h"
 #include "string"
 
 class Dessinateur
 {
 public:
-    Dessinateur(Analyseur * analyseur);
+    Dessinateur(VisuRDFAnalyseur * analyseur);
     ~Dessinateur();
     int calculLargeurColonne(Type* type, string nomPropriete);
 
@@ -16,7 +16,7 @@ public:
 private :
     list<Objet> listeObjets;
     list<Type> listeTypes;
-    Analyseur * analyseur;
+    VisuRDFAnalyseur * analyseur;
 
 };
 
