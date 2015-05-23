@@ -11,7 +11,9 @@ public:
     Dessinateur(VisuRDFAnalyseur * analyseur);
     ~Dessinateur();
     int calculLargeurColonne(Type* type, string nomPropriete);
-
+    int calculLargeurTableau(Type* type);
+    int calculHauteurTableau(Type *type);
+    void dessinTableau(Type *type, int x, int y);
 
 private :
     list<Objet> listeObjets;

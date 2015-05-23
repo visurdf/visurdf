@@ -40,6 +40,41 @@ int Dessinateur::calculLargeurColonne(Type * type, string nomPropriete){
 
     }
 
+    /////////////////// A FAIRE
+    // A adapter en fonction de la largeur de la police
     return largeur;
+
+}
+
+int Dessinateur::calculLargeurTableau(Type *type){
+
+   int largeur = 0;
+   set<string> proprietes = type->getProprietes();
+
+   for(set<string>::iterator it = proprietes.begin(); it!= proprietes.end(); it++){
+
+        string nomPropriete = *it;
+        largeur = largeur + calculLargeurColonne(type, nomPropriete);
+
+    }
+
+   return largeur;
+}
+
+int Dessinateur::calculHauteurTableau(Type* type){
+    int nbObjets = type->getNbObjet();
+
+    /////////////////// A FAIRE
+    // A adapter en fonction de la hauteur de la police
+    int hauteur = nbObjets + 1;
+
+    return hauteur;
+
+}
+
+// Dessine un tableau et le place aux coordonnées x, y
+void Dessinateur::dessinTableau(Type *type, int x, int y){
+
+
 
 }
