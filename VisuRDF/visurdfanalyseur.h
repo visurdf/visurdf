@@ -21,18 +21,17 @@ public:
     std::list<Type> getTousLesTypes();
 
     //expose la liste des types
-    set<Type* > getAllTypes();
+    set<Type* > getAllTypes(bool withnotnullproperties);
     //retoune le nombre de type
     int countType();
 
     //retourne un type en fonction de son nom
-    Type* getTypeByName(string nameoftype);
+    Type* getTypeByName(string nameoftype,  bool withnotnullproperties);
 
 
 
 /*
-    //retourne un type avec propriete significative en fonction de son nom
-    Type* getTypeByName(string nameoftype, bool withnotnullproperties);
+
 
     //expose la liste des types avec propriete significative
     set<Type> getAllTypes(bool withnotnullproperties);

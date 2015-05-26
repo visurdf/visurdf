@@ -11,7 +11,7 @@ Type::~Type()
 
 }
 
-void Type::setProprietes(set<string> proprietes){
+void Type::setProprietes(list<string> proprietes){
     proprietesNonVides = proprietes;
 }
 
@@ -23,7 +23,7 @@ string Type::getNom(){
     return nomType;
 }
 
-set<string> Type::getProprietes(){
+list<string> Type::getProprietes(){
     return proprietesNonVides;
 }
 

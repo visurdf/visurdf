@@ -83,42 +83,47 @@ VisuRDFAnalyseur::VisuRDFAnalyseur(VisuRDFExtractor *extractor) {
         */
 
 
-set<Type* > VisuRDFAnalyseur::getAllTypes(){
+set<Type* > VisuRDFAnalyseur::getAllTypes(bool withnotnullproperties){
 
-    if(allTypes.size() == 0){
-        GrapheRDF grapheRDF = extractor->getGrapheRDF();
+    allTypes.clear();
+    GrapheRDF grapheRDF = extractor->getGrapheRDF();
 
-        for (GrapheRDF::const_iterator grapheiter = grapheRDF.begin(); grapheiter != grapheRDF.end(); grapheiter++){
+    for (GrapheRDF::const_iterator grapheiter = grapheRDF.begin(); grapheiter != grapheRDF.end(); grapheiter++){
 
-            Type* unType =  new Type(grapheiter->first);
+        Type* unType =  getTypeByName(grapheiter->first, withnotnullproperties);
 
-            list< ObjetRDF > listOfObjetRDF = grapheiter->second;
-            // nombre d objets
-            unType->setNbObjet(listOfObjetRDF.size());
-            // recuperation de la liste des proprietes y compris celles qui n'ont pas de valeurs significatives
-            ObjetRDF objetRDF  = *listOfObjetRDF.begin();
-            set< string > listOfProperties = set< string >();
-            for (ObjetRDF::const_iterator objetRDFiter = objetRDF.begin(); objetRDFiter != objetRDF.end(); objetRDFiter++){
-                if(objetRDFiter->first.compare("type") == 0)
-                    continue;
-                listOfProperties.insert(objetRDFiter->first);
-            }
+        //            list< ObjetRDF > listOfObjetRDF = grapheiter->second;
+        //            // nombre d objets
+        //            unType->setNbObjet(listOfObjetRDF.size());
+        //            // recuperation de la liste des proprietes y compris celles qui n'ont pas de valeurs significatives
+        //            ObjetRDF objetRDF  = *listOfObjetRDF.begin();
+        //            set< string > listOfProperties = set< string >();
+        //            for (ObjetRDF::const_iterator objetRDFiter = objetRDF.begin(); objetRDFiter != objetRDF.end(); objetRDFiter++){
+        //                if(objetRDFiter->first.compare("type") == 0)
+        //                    continue;
+        //                listOfProperties.insert(objetRDFiter->first);
+        //            }
 
-            unType->setProprietes(listOfProperties);
+        //            unType->setProprietes(listOfProperties);
 
-            allTypes.insert(unType);
 
-        }
-
+        allTypes.insert(unType);
 
     }
+
+
+
 
     return allTypes;
 }
 
-int VisuRDFAnalyseur::countType(){ return allTypes.size();}
+int VisuRDFAnalyseur::countType(){
+    if(allTypes.size() == 0)
+        getAllTypes(false);
+    return allTypes.size();
+}
 
-Type* VisuRDFAnalyseur::getTypeByName(string nameoftype){
+Type* VisuRDFAnalyseur::getTypeByName(string nameoftype, bool withnotnullproperties){
     Type* unType =  new Type(nameoftype);
 
     list< ObjetRDF > listOfObjetRDF = extractor->getGrapheRDF()[nameoftype];
@@ -126,15 +131,51 @@ Type* VisuRDFAnalyseur::getTypeByName(string nameoftype){
     unType->setNbObjet(listOfObjetRDF.size());
     // recuperation de la liste des proprietes y compris celles qui n'ont pas de valeurs significatives
     ObjetRDF objetRDF  = *listOfObjetRDF.begin();
-    set< string > listOfProperties = set< string >();
+    list< string > listOfProperties = list< string >();
     for (ObjetRDF::const_iterator objetRDFiter = objetRDF.begin(); objetRDFiter != objetRDF.end(); objetRDFiter++){
         if(objetRDFiter->first.compare("type") == 0)
             continue;
-        listOfProperties.insert(objetRDFiter->first);
+        listOfProperties.push_back(objetRDFiter->first);
     }
 
-    unType->setProprietes(listOfProperties);
+    list< string > listOfFilterProperties = list< string >();
+    if(withnotnullproperties){//filtrage des proprietes sans valeurs significatives
+        typedef list<string>::const_iterator ListIterator;
+        for (ListIterator list_iter = listOfProperties.begin(); list_iter != listOfProperties.end(); list_iter++)
+        {
+            string propriete = *list_iter;
+            bool isEmpty = false;
+            typedef list<ObjetRDF>::const_iterator ListObjetRDFIterator;
+            int n = 0;
+            for (ListObjetRDFIterator objiter = listOfObjetRDF.begin(); objiter != listOfObjetRDF.end(); objiter++)
+            {
 
+                ObjetRDF obj = *objiter;
+
+                list<string> listOfVal = obj[propriete];
+                n = listOfVal.size();
+                typedef list<string>::const_iterator ListIterator;
+                for (ListIterator list_iter = listOfVal.begin(); list_iter != listOfVal.end(); list_iter++){
+                    if((*list_iter).compare("") == 0){
+                        isEmpty = true;
+                        break;
+                    }
+
+                }
+                if(isEmpty)break;
+            }
+
+            if(!isEmpty){
+                for(int i =0; i < n; i++)
+                    listOfFilterProperties.push_back(propriete);
+            }
+
+        }
+    }
+    if(listOfFilterProperties.size() != 0)
+        unType->setProprietes(listOfFilterProperties);
+    else
+        unType->setProprietes(listOfProperties);
     return unType;
 }
 
