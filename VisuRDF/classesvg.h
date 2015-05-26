@@ -8,6 +8,7 @@
 #include <QWidget>
 #include <QPainter>
 
+
 class classesvg{
 
 

@@ -114,6 +114,7 @@ void VisuRDFExtractor::print_object(ObjetRDF _objetRDF){
         for (ListIterator list_iter = iter->second.begin(); list_iter != iter->second.end(); list_iter++)
             cout << "\t\t"<<  iter->first << " : " << *list_iter << endl;
 
+
     }
     cout <<  endl;
 

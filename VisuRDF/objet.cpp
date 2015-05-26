@@ -1,8 +1,8 @@
 #include "objet.h"
-#include "visurdfextractor.h"
 
 
-Objet::Objet(int id, Type type, ObjetRDF proprietes) : id(id), type(type), proprietes(proprietes)
+// redéfinir copie constructeur?????????????
+Objet::Objet(int id, Type *type, ObjetRDF proprietes) : id(id), type(type), proprietes(proprietes)
 {
 
 }
@@ -21,17 +21,18 @@ ObjetRDF Objet::getProprietes(){
     return proprietes;
 }
 
-
-Type Objet::getType(){
-
+Type *Objet::getType(){
     return type;
 }
+
+
+
 
 // Méthode qui va calculer la longueur max de la concaténation "nom propriété', "valeur propriété"
 void Objet::setLargeur(){
 
     // On initialise largeur avec la longueur du string "nomType"
-    string nomType = type.getNom();
+    string nomType = type->getNom();
     int largeur = nomType.size();
 
     // On parcourt la map "proprietes" et on créé une liste de string en concaténant
@@ -57,4 +58,21 @@ void Objet::setLargeur(){
     }
 
     largeurMax = largeur;
+}
+
+string Objet::toString(){
+
+    string tostring = "";
+    for (ObjetRDF::const_iterator iter = proprietes.begin(); iter != proprietes.end(); iter++)
+    {       
+        typedef list<string>::const_iterator ListIterator;
+
+        for (ListIterator list_iter = iter->second.begin(); list_iter != iter->second.end(); list_iter++)
+            tostring.append(iter->first).append(":").append(*list_iter).append("\n");
+            //cout << "\t\t"<<  iter->first << " : " << *list_iter << endl;
+
+    }
+    return tostring;
+
+
 }
