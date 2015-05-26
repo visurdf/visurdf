@@ -14,12 +14,20 @@ using namespace std;
 class Objet
 {
 public:
+<<<<<<< HEAD
+    int id;
+    Type * type;
+    ObjetRDF proprietes;
+    int largeurMax;
+
+=======
     /*int id;
     Type * type;
     ObjetRDF proprietes;
     int largeurMax;*/
 
    // Objet(int id, Type type, ObjetRDF proprietes);
+>>>>>>> origin/master
     Objet(int id, Type *type , ObjetRDF proprietes);
     ~Objet();
 
@@ -29,12 +37,15 @@ public:
     int getLargeur();
     string toString();
 
+<<<<<<< HEAD
+=======
 private :
 
     int id;
     Type *type;
     ObjetRDF proprietes;
     int largeurMax;
+>>>>>>> origin/master
 
 };
 

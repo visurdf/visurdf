@@ -18,6 +18,20 @@ SOURCES += main.cpp \
     classesvg.cpp \
     objet.cpp \
     type.cpp \
+<<<<<<< HEAD
+    dessinateur.cpp \
+    visurdfanalyseur.cpp \
+    generateur.cpp
+
+HEADERS += \
+    visurdfextractor.h \
+    classesvg.h \
+    objet.h \
+    type.h \
+    dessinateur.h \
+    visurdfanalyseur.h \
+    generateur.h
+=======
     generateur.cpp \
     visurdfextractor.cpp \
     visurdfanalyseur.cpp \
@@ -51,3 +65,4 @@ OTHER_FILES += visurdfextractor.o \
     props.txt \
     objet.o \
     Makefile
+>>>>>>> origin/master

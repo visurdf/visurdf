@@ -5,6 +5,7 @@
 #include <QSvgGenerator>
 #include "dessinateur.h"
 
+
 class Generateur
 {
 public:

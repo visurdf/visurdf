@@ -31,7 +31,10 @@ public:
     void dessinTableau(Type *type, int x, int y, QPainter &painter);
     void dessinModeTableau(QPainter& painter);
 
+<<<<<<< HEAD
+=======
 
+>>>>>>> origin/master
 private :
     list<Objet> listeObjets;
     set<Type*> listeTypes;

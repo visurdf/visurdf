@@ -28,7 +28,9 @@ public:
     //retourne un type en fonction de son nom
     Type* getTypeByName(string nameoftype,  bool withnotnullproperties);
 
+
     set<Objet*> getObjectByType(string nameoftype, bool withnotnullproperties);
+
 
 
 /*
@@ -47,7 +49,9 @@ private:
     VisuRDFExtractor *extractor;
     //la liste des types
     set<Type* > allTypes;
+
     static int id;
+
 
 
     std::list<Objet> tousLesObjets;
