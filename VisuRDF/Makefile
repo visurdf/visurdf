@@ -234,39 +234,11 @@ generateur.o: generateur.cpp generateur.h \
 		visurdfanalyseur.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o generateur.o generateur.cpp
 
-visurdfextractor.o: visurdfextractor.cpp visurdfextractor.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o visurdfextractor.o visurdfextractor.cpp
-
 visurdfanalyseur.o: visurdfanalyseur.cpp visurdfanalyseur.h \
 		objet.h \
 		visurdfextractor.h \
 		type.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o visurdfanalyseur.o visurdfanalyseur.cpp
-
-type.o: type.cpp type.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o type.o type.cpp
-
-objet.o: objet.cpp objet.h \
-		visurdfextractor.h \
-		type.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o objet.o objet.cpp
-
-main.o: main.cpp visurdfextractor.h \
-		classesvg.h \
-		visurdfanalyseur.h \
-		objet.h \
-		type.h \
-		dessinateur.h \
-		generateur.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o main.cpp
-
-generateur.o: generateur.cpp generateur.h \
-		dessinateur.h \
-		objet.h \
-		visurdfextractor.h \
-		type.h \
-		visurdfanalyseur.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o generateur.o generateur.cpp
 
 dessinateur.o: dessinateur.cpp dessinateur.h \
 		objet.h \
@@ -274,9 +246,6 @@ dessinateur.o: dessinateur.cpp dessinateur.h \
 		type.h \
 		visurdfanalyseur.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o dessinateur.o dessinateur.cpp
-
-classesvg.o: classesvg.cpp classesvg.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o classesvg.o classesvg.cpp
 
 ####### Install
 
