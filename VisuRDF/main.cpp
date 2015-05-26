@@ -4,6 +4,7 @@
 #include "classesvg.h"
 #include "visurdfanalyseur.h"
 #include "dessinateur.h"
+#include "generateur.h"
 
 
 int main(int argc, char *argv[])
@@ -32,7 +33,7 @@ int main(int argc, char *argv[])
 
     VisuRDFAnalyseur* analyseur = new VisuRDFAnalyseur(&visuRDFExtractor);
 
-    Dessinateur* dessinateur = new Dessinateur(analyseur);
+
      set<Type* > allTypes = analyseur->getAllTypes(false);
      cout << "\n Nbre Types : " << allTypes.size() << endl;
      typedef set<Type* > ::const_iterator ListIterator;
@@ -54,7 +55,11 @@ int main(int argc, char *argv[])
 
     cout << endl<< endl << unType->toString() << endl;
 
-    dessinateur->dessinTableau(unType, 20, 20);
+    Dessinateur* dessinateur = new Dessinateur(analyseur);
+    Generateur* generateur = new Generateur(dessinateur);
+  //  generateur->dessinTableau(unType, 20, 20);
+    generateur->dessin();
+   // dessinateur->dessinTableau(unType, 20, 20);
 
 
     return 0;

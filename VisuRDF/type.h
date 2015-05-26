@@ -12,9 +12,13 @@ public:
 
     Type(std::string nomType);
     ~Type();
+
+
     void setProprietes(std::list<std::string>);
     void setNbObjet(int);
     int getNbObjet();
+
+
     std::list<std::string> getProprietes();
     std::string getNom();
     string toString(){

@@ -29,7 +29,8 @@ SOURCES += main.cpp \
     objet.cpp \
     type.cpp \
     dessinateur.cpp \
-    visurdfanalyseur.cpp
+    visurdfanalyseur.cpp \
+    generateur.cpp
 
 HEADERS += \
     visurdfextractor.h \
@@ -37,4 +38,5 @@ HEADERS += \
     objet.h \
     type.h \
     dessinateur.h \
-    visurdfanalyseur.h
+    visurdfanalyseur.h \
+    generateur.h

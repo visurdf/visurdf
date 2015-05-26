@@ -3,10 +3,18 @@
 #include "objet.h"
 #include "type.h"
 #include "visurdfanalyseur.h"
+
 #include "string"
 #include <QPainter>
-#include <QSvgRenderer>
-#include <QSvgGenerator>
+#include <QRect>
+#include <stdio.h>
+#include <QFileDialog>
+#include <QString>
+#include <QTextBlock>
+#include <QPainterPath>
+#include <QPen>
+#include <iostream>
+#include <QFontDatabase>
 #include <QPaintEvent>
 #include <QWidget>
 
@@ -20,16 +28,13 @@ public:
     int calculLargeurColonne(Type* type, string nomPropriete);
     int calculLargeurTableau(Type* type);
     int calculHauteurTableau(Type *type);
-    void dessinTableau(Type *type, int x, int y);
+    void dessinTableau(Type *type, int x, int y, QPainter &painter);
+    void dessinModeTableau(QPainter& painter);
 
 private :
     list<Objet> listeObjets;
-    list<Type> listeTypes;
+    set<Type*> listeTypes;
     VisuRDFAnalyseur * analyseur;
-    QPainter painter1;
-    QSvgGenerator generator;
-    QPen pen;
-    QColor color;
 
 };
 
