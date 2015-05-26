@@ -3,6 +3,7 @@
 #include <QApplication>
 #include "classesvg.h"
 #include "visurdfanalyseur.h"
+#include "dessinateur.h"
 
 
 int main(int argc, char *argv[])
@@ -11,12 +12,12 @@ int main(int argc, char *argv[])
     QApplication A(argc,argv);
 
     VisuRDFExtractor visuRDFExtractor;
-    classesvg C;
+   // classesvg C;
 
     visuRDFExtractor.parse_rdf_triple(argv[1]);
     visuRDFExtractor.print_map();
     visuRDFExtractor.print_relations();
-    C.drawSvg();
+   // C.drawSvg();
 
     cout << "\n Classes:\n" << endl;
     set<string > listOfClass = visuRDFExtractor.getClasses();
@@ -31,6 +32,7 @@ int main(int argc, char *argv[])
 
     VisuRDFAnalyseur* analyseur = new VisuRDFAnalyseur(&visuRDFExtractor);
 
+    Dessinateur* dessinateur = new Dessinateur(analyseur);
      set<Type* > allTypes = analyseur->getAllTypes(false);
      cout << "\n Nbre Types : " << allTypes.size() << endl;
      typedef set<Type* > ::const_iterator ListIterator;
@@ -51,6 +53,9 @@ int main(int argc, char *argv[])
     unType = analyseur->getTypeByName(*listOfClass.begin(), true);
 
     cout << endl<< endl << unType->toString() << endl;
+
+    dessinateur->dessinTableau(unType, 20, 20);
+
 
     return 0;
 }

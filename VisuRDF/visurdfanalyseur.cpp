@@ -7,6 +7,7 @@ using namespace std;
 VisuRDFAnalyseur::VisuRDFAnalyseur(VisuRDFExtractor *extractor) {
 
     this->extractor = extractor;
+
 }
 /*
  *

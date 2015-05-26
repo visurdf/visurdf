@@ -27,6 +27,9 @@ private :
     list<Type> listeTypes;
     VisuRDFAnalyseur * analyseur;
     QPainter painter1;
+    QSvgGenerator generator;
+    QPen pen;
+    QColor color;
 
 };
 
