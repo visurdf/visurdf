@@ -6,7 +6,7 @@
 # Command: /usr/bin/qmake-qt4 -spec /usr/share/qt4/mkspecs/linux-g++ -unix CONFIG+=debug -o Makefile VisuRDF.pro
 #############################################################################
 
-####### Compiler, tools and options
+###### Compiler, tools and options
 
 CC            = gcc
 CXX           = g++
