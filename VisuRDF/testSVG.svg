@@ -6,28 +6,8 @@
 <desc>Dessin svg pour une dÃ©monstration</desc>
 <defs>
 </defs>
-<g fill="none" stroke="black" stroke-width="1" fill-rule="evenodd" stroke-linecap="square" stroke-linejoin="bevel" >
+<g fill="none" stroke="black" vector-effect="non-scaling-stroke" stroke-width="1" fill-rule="evenodd" stroke-linecap="square" stroke-linejoin="bevel" >
 
-<<<<<<< HEAD
-<g fill="none" stroke="#ff0000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Abyssinica SIL" font-size="20" font-weight="400" font-style="normal" 
->
-<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,20 L120,20 L120,70 L20,70 L20,20"/>
-<text fill="#ff0000" fill-opacity="1" stroke="none" xml:space="preserve" x="40" y="40" font-family="Abyssinica SIL" font-size="20" font-weight="400" font-style="normal" 
- >Rectangle3</text>
-<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,70 L120,70 L120,120 L20,120 L20,70"/>
-<text fill="#ff0000" fill-opacity="1" stroke="none" xml:space="preserve" x="40" y="90" font-family="Abyssinica SIL" font-size="20" font-weight="400" font-style="normal" 
- >Rectangle3</text>
-<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,120 L120,120 L120,170 L20,170 L20,120"/>
-<text fill="#ff0000" fill-opacity="1" stroke="none" xml:space="preserve" x="40" y="140" font-family="Abyssinica SIL" font-size="20" font-weight="400" font-style="normal" 
- >Rectangle3</text>
-<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,170 L120,170 L120,220 L20,220 L20,170"/>
-<text fill="#ff0000" fill-opacity="1" stroke="none" xml:space="preserve" x="40" y="190" font-family="Abyssinica SIL" font-size="20" font-weight="400" font-style="normal" 
- >Rectangle3</text>
-<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,220 L120,220 L120,270 L20,270 L20,220"/>
-<text fill="#ff0000" fill-opacity="1" stroke="none" xml:space="preserve" x="40" y="240" font-family="Abyssinica SIL" font-size="20" font-weight="400" font-style="normal" 
- >Rectangle3</text>
-=======
 <g fill="none" stroke="#000000" stroke-opacity="1" vector-effect="non-scaling-stroke" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
 font-family="Bitstream Charter" font-size="6" font-weight="400" font-style="normal" 
 >
@@ -100,7 +80,6 @@ font-family="Bitstream Charter" font-size="6" font-weight="400" font-style="norm
 <path fill-rule="evenodd" d="M218,249 L242,249 L242,269 L218,269 L218,249"/>
 <text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="222.5" y="261" font-family="Bitstream Charter" font-size="6" font-weight="400" font-style="normal" 
  >name</text>
->>>>>>> origin/master
 </g>
 </g>
 </svg>

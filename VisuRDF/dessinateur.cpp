@@ -77,12 +77,8 @@ void Dessinateur::dessinTableau(Type *type, int x, int y, QPainter &painter){
 
     //dessin des différents élements
 
-<<<<<<< HEAD
-    int hauteur = 12;
-=======
     int hauteur = 20;
 
->>>>>>> origin/master
 
     // On dessine la première ligne
     list<string> proprietes = type->getProprietes();
@@ -94,10 +90,6 @@ void Dessinateur::dessinTableau(Type *type, int x, int y, QPainter &painter){
         painter.drawRect(rect);
         painter.drawText(rect, Qt::AlignCenter , QString(nomPropriete.c_str()));
 
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/master
      // On parcourt les objets du type pour dessiner les cases avec les valeurs de la propriete
         for(list<Objet>::iterator it = listeObjets.begin(); it!= listeObjets.end(); it++){
 
@@ -139,13 +131,7 @@ void Dessinateur::dessinModeTableau(QPainter &painter){
          Type* type = *it;
 
          this->dessinTableau(type, x, y, painter);
-<<<<<<< HEAD
-         int hauteur = calculHauteurTableau(type);
-         cout << "hauteur = " << hauteur << endl;
-         y = y + (hauteur*12) + 20;
-=======
          y = y + this->calculHauteurTableau(type) + 20;
->>>>>>> origin/master
      }
 
 }

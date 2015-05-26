@@ -46,7 +46,6 @@ int main(int argc, char *argv[])
         for(ListIterator itr = allTypes.begin(); itr != allTypes.end(); itr++ )
             cout << (*itr)->toString() << endl;
 
-    Dessinateur* dessinateur = new Dessinateur(analyseur);
 
     Type* unType = analyseur->getTypeByName(*listOfClass.begin(), false);
 
@@ -56,16 +55,12 @@ int main(int argc, char *argv[])
 
     cout << endl<< endl << unType->toString() << endl;
 
-    cout << "hauteur : " << dessinateur->calculHauteurTableau(unType);
-
-
    set<Objet* > listOfObject = analyseur->getObjectByType(*listOfClass.begin(), true);
    typedef set<Objet* > ::const_iterator ObjectIterator;
   for(ObjectIterator itr = listOfObject.begin(); itr != listOfObject.end(); itr++ )
     cout << (*itr)->toString() << endl;
 
     Dessinateur* dessinateur = new Dessinateur(analyseur);
-
     Generateur* generateur = new Generateur(dessinateur);
   //  generateur->dessinTableau(unType, 20, 20);
     generateur->dessin();
