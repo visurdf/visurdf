@@ -1,7 +1,7 @@
 #ifndef TYPE_H
 #define TYPE_H
 #include <QString>
-#include <set>
+#include <list>
 
 
 using namespace std;
@@ -12,16 +12,16 @@ public:
 
     Type(std::string nomType);
     ~Type();
-    void setProprietes(std::set<std::string>);
+    void setProprietes(std::list<std::string>);
     void setNbObjet(int);
     int getNbObjet();
-    std::set<std::string> getProprietes();
+    std::list<std::string> getProprietes();
     std::string getNom();
     string toString(){
 
         string tostring = "{Type: ";
         string strprop = ", Props: [";
-        typedef set<string> ::const_iterator ListIterator;
+        typedef list<string> ::const_iterator ListIterator;
         int i =0;
         for(ListIterator itr = proprietesNonVides.begin(); itr != proprietesNonVides.end(); itr++ ){
             strprop.append(*itr);
@@ -41,7 +41,7 @@ private :
 
     string nomType;
     int nbObjets;
-    set<std::string> proprietesNonVides;
+    list<std::string> proprietesNonVides;
 
 };
 

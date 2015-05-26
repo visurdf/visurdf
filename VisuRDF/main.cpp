@@ -31,13 +31,24 @@ int main(int argc, char *argv[])
 
     VisuRDFAnalyseur* analyseur = new VisuRDFAnalyseur(&visuRDFExtractor);
 
-     set<Type* > allTypes = analyseur->getAllTypes();
-     cout << "\n Types:\n" << allTypes.size() << endl;
+     set<Type* > allTypes = analyseur->getAllTypes(false);
+     cout << "\n Nbre Types : " << allTypes.size() << endl;
      typedef set<Type* > ::const_iterator ListIterator;
     for(ListIterator itr = allTypes.begin(); itr != allTypes.end(); itr++ )
         cout << (*itr)->toString() << endl;
 
-    Type* unType = analyseur->getTypeByName(*listOfClass.begin());
+    allTypes = analyseur->getAllTypes(true);
+         cout << "\n Nbre Types avec proprietes significatives: " << allTypes.size() << endl;
+         typedef set<Type* > ::const_iterator ListIterator;
+        for(ListIterator itr = allTypes.begin(); itr != allTypes.end(); itr++ )
+            cout << (*itr)->toString() << endl;
+
+
+    Type* unType = analyseur->getTypeByName(*listOfClass.begin(), false);
+
+    cout << endl<< endl << unType->toString() << endl;
+
+    unType = analyseur->getTypeByName(*listOfClass.begin(), true);
 
     cout << endl<< endl << unType->toString() << endl;
 
