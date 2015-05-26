@@ -1,4 +1,15 @@
 #include "dessinateur.h"
+#include <QRect>
+#include <QPainter>
+#include <stdio.h>
+#include <QFileDialog>
+#include <QString>
+#include <QTextBlock>
+#include <QPainterPath>
+#include <QPen>
+#include <iostream>
+#include <QFontDatabase>
+
 
 Dessinateur::Dessinateur(VisuRDFAnalyseur * analyseur)
 {
@@ -48,17 +59,17 @@ int Dessinateur::calculLargeurColonne(Type * type, string nomPropriete){
 
 int Dessinateur::calculLargeurTableau(Type *type){
 
-   int largeur = 0;
-   set<string> proprietes = type->getProprietes();
+    int largeur = 0;
+    set<string> proprietes = type->getProprietes();
 
-   for(set<string>::iterator it = proprietes.begin(); it!= proprietes.end(); it++){
+    for(set<string>::iterator it = proprietes.begin(); it!= proprietes.end(); it++){
 
         string nomPropriete = *it;
         largeur = largeur + calculLargeurColonne(type, nomPropriete);
 
     }
 
-   return largeur;
+    return largeur;
 }
 
 int Dessinateur::calculHauteurTableau(Type* type){
@@ -75,6 +86,42 @@ int Dessinateur::calculHauteurTableau(Type* type){
 // Dessine un tableau et le place aux coordonnées x, y
 void Dessinateur::dessinTableau(Type *type, int x, int y){
 
+    int hauteur = 20;
 
+    // On dessine la première ligne
+    set<string> proprietes = type->getProprietes();
+    int xPropriete = x;
+    for(set<string>::iterator it = proprietes.begin(); it!= proprietes.end(); it++){
+        string nomPropriete = *it;
+        int largeurBoite = this->calculLargeurColonne(type, nomPropriete);
+        QRect rect(xPropriete,y,largeurBoite,hauteur);
+        painter1.drawRect(rect);
+        painter1.drawText(xPropriete, y , QString(nomPropriete.c_str()));
 
+     // On parcourt les objets du type pour dessiner les cases avec les valeurs de la propriete
+        for(list<Objet>::iterator it = listeObjets.begin(); it!= listeObjets.end(); it++){
+
+            // On fait varier le placement vertical
+            y = y + 10;
+            Objet objet = *it;
+
+            if(objet.getType() == type){
+                // On recupère la valeur de la propriété "nomPropriété"
+                ObjetRDF::iterator iter = objet.getProprietes().find(nomPropriete);
+                string valeur = "";
+                if(iter != objet.getProprietes().end()){
+                    list<string> valeurs = iter->second;
+
+                    list<string>::iterator it2 = valeurs.begin();
+                    valeur = *it2;
+                }
+                QRect rectValeur(xPropriete, y, largeurBoite, hauteur);
+                painter1.drawRect(rectValeur);
+                painter1.drawText(xPropriete, y, QString(valeur.c_str()));
+            }
+
+        }
+        xPropriete = xPropriete + largeurBoite;
+
+    }
 }

@@ -4,6 +4,13 @@
 #include "type.h"
 #include "visurdfanalyseur.h"
 #include "string"
+#include <QPainter>
+#include <QSvgRenderer>
+#include <QSvgGenerator>
+#include <QPaintEvent>
+#include <QWidget>
+
+
 
 class Dessinateur
 {
@@ -19,6 +26,7 @@ private :
     list<Objet> listeObjets;
     list<Type> listeTypes;
     VisuRDFAnalyseur * analyseur;
+    QPainter painter1;
 
 };
 
