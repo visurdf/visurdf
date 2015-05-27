@@ -19,35 +19,13 @@ SOURCES += main.cpp \
     objet.cpp \
     type.cpp \
     generateur.cpp \
-    visurdfextractor.cpp \
     visurdfanalyseur.cpp \
-    type.cpp \
-    objet.cpp \
-    main.cpp \
-    generateur.cpp \
-    dessinateur.cpp \
-    classesvg.cpp
+    dessinateur.cpp
 HEADERS += visurdfextractor.h \
     classesvg.h \
     objet.h \
     type.h \
     generateur.h \
-    visurdfextractor.h \
     visurdfanalyseur.h \
-    type.h \
-    objet.h \
-    generateur.h \
-    dessinateur.h \
-    classesvg.h
-OTHER_FILES += visurdfextractor.o \
-    visurdfanalyseur.o \
-    VisuRDF.pro.user.279e1fc.18 \
-    VisuRDF.pro.user.28c7db0.3.3-pre1 \
-    VisuRDF.pro.user.2.6pre1 \
-    VisuRDF.pro.user \
-    type.o \
-    testSVG.svg \
-    PTR-2.rdf \
-    props.txt \
-    objet.o \
-    Makefile
+    dessinateur.h
+OTHER_FILES += Makefile
