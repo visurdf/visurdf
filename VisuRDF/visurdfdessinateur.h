@@ -32,6 +32,7 @@ public:
     float calculLargeurBoite(VisuRDFObjet* objet);
     int calculHauteurBoite(VisuRDFObjet* objet);
     void dessinBoite(VisuRDFObjet* objet, int x, int y, QPainter &painter);
+    void dessinBoiteParType(VisuRDFType* type, int x, int y, QPainter &painter);
 
 
 private :

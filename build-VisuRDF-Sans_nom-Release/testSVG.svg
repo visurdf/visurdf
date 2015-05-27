@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="352.778mm" height="686.153mm"
- viewBox="0 0 1000 1945"
+<svg width="352.778mm" height="276.931mm"
+ viewBox="0 0 1000 785"
  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  version="1.2" baseProfile="tiny">
 <title>SVG Generator Example Drawing</title>
 <desc>Dessin svg pour une dÃ©monstration</desc>
@@ -11,7 +11,7 @@
 <g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
 font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
 >
-<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,20 L223,20 L223,70 L20,70 L20,20"/>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,20 L230,20 L230,70 L20,70 L20,20"/>
 <text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="20" y="25" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
  >Objet</text>
 <text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="35.7969" y="25" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
@@ -46,6 +46,24 @@ font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal"
  >dÃ©finition</text>
 <text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="104.594" y="35" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
  > : </text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="109.078" y="35" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >Vanne</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="127.078" y="35" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ > </text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="128.266" y="35" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >d</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="132.031" y="35" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >'</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="132.031" y="35" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >isolement</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="160.422" y="35" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ > </text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="161.609" y="35" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >amont</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="180.141" y="35" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ > </text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="181.328" y="35" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >021PO</text>
 <text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="20" y="45" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
  >Objet</text>
 <text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="35.7969" y="45" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
@@ -63,17 +81,94 @@ font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal"
 <text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="35.9531" y="55" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
  > : </text>
 <text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="40.4375" y="55" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
- >dom</text>
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="53.4688" y="55" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >eq</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="47.5312" y="55" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
  >.</text>
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="55.5781" y="55" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
- >PTR027MP</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="49.6406" y="55" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >PTR007VB</text>
 <text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="20" y="65" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
  >type</text>
 <text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="32.4531" y="65" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
  > : </text>
 <text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="36.9375" y="65" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
- >Capteur</text>
+ >Equipement</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,90 L230,90 L230,140 L20,140 L20,90"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="20" y="95" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >Objet</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="35.7969" y="95" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >_</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="39.1719" y="95" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >identifiÃ©</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="68.7969" y="95" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >.</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="70.9062" y="95" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >catÃ©gorie</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="103.688" y="95" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >_</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="107.062" y="95" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >AP929</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="125.844" y="95" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ > : </text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="130.328" y="95" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >configuration</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="169.219" y="95" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >_</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="172.594" y="95" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >physique</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="20" y="105" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >Objet</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="35.7969" y="105" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >_</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="39.1719" y="105" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >identifiÃ©</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="68.7969" y="105" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >.</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="70.9062" y="105" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >dÃ©finition</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="104.594" y="105" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ > : </text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="109.078" y="105" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >Pompe</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="128.75" y="105" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ > </text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="129.938" y="105" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >refroidissement</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="175.578" y="105" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ > </text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="176.766" y="105" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >ligne</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="191.016" y="105" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ > </text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="192.203" y="105" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >1</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="20" y="115" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >Objet</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="35.7969" y="115" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >_</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="39.1719" y="115" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >identifiÃ©</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="68.7969" y="115" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >.</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="70.9062" y="115" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >icone</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="86.4219" y="115" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ > : </text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="20" y="125" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >name</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="35.9531" y="125" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ > : </text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="40.4375" y="125" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >eq</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="47.5312" y="125" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >.</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="49.6406" y="125" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >PTR021PO</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="20" y="135" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >type</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="32.4531" y="135" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ > : </text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="36.9375" y="135" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >Equipement</text>
 </g>
 </g>
 </svg>

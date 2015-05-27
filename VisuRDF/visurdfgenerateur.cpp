@@ -98,3 +98,25 @@ void VisuRDFGenerateur::dessinBoite(VisuRDFObjet *objet, int x, int y){
     painter.end();
     std::cout<<"Fin du dessin"<<std::endl;
 }
+
+void VisuRDFGenerateur::dessinBoiteParType(VisuRDFType *type, int x, int y){
+
+    painter.begin(&generator);
+
+    //Famille de Police
+    QFontDatabase fontDataBase;
+    QString firstFont = fontDataBase.families().first();
+    QFont f(firstFont);
+
+    //Paramètres de la police
+    int fontSize = 6;
+    f.setPixelSize(fontSize);
+    painter.setPen(pen);
+    painter.setFont(f);
+
+    dessinateur->dessinBoiteParType(type, x, y, painter);
+
+    painter.end();
+    std::cout<<"Fin du dessin"<<std::endl;
+
+}

@@ -243,3 +243,31 @@ void VisuRDFDessinateur::dessinBoite(VisuRDFObjet *objet, int x, int y, QPainter
     }
 
 }
+
+void VisuRDFDessinateur::dessinBoiteParType(VisuRDFType *type, int x, int y, QPainter &painter){
+
+    int yBoite = y;
+
+
+    // On parcourt tous les objets du type
+
+    string nomType = type->getNom();
+    set<VisuRDFObjet*> listeObjets = analyseur->getObjetsParType(nomType, false);
+
+    // On parcourt tous les objets du type et on récupère le max de leur largeur
+    for(set<VisuRDFObjet*>::iterator it = listeObjets.begin(); it!= listeObjets.end(); it++) {
+
+        VisuRDFObjet* objet = *it;
+
+        dessinBoite(objet, x, yBoite, painter);
+
+        yBoite = yBoite + calculHauteurBoite(objet) + espacementVertical;
+
+
+    }
+
+
+
+
+
+}

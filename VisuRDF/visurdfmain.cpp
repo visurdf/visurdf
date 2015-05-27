@@ -61,11 +61,11 @@ int main(int argc, char *argv[])
         cout << (*itr)->toString() << endl;
         cout << "largeur boite : " <<dessinateur->calculLargeurBoite(*itr) << endl;
         cout << "hauteur boite : " << dessinateur->calculHauteurBoite(*itr) << endl;
-        generateur->dessinBoite((*itr), 20, 20);
+     //   generateur->dessinBoite((*itr), 20, 20);
 
     }
 
-
+    generateur->dessinBoiteParType(unType, 20, 20);
 
 
     //generateur->dessinTableau(unType, 20, 20);
