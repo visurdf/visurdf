@@ -10,8 +10,8 @@ VisuRDFGenerateur::VisuRDFGenerateur(VisuRDFDessinateur *dessinateur) {
 
     /*------------- Déclaration des paramètres du fichier SVG -------------------*/
     generator.setFileName("testSVG.svg");
-    generator.setSize(QSize(1000, hauteur));
-    generator.setViewBox(QRect(0, 0, 1000, hauteur));
+    generator.setSize(QSize(2000, hauteur));
+    generator.setViewBox(QRect(0, 0, 2000, hauteur));
     generator.setTitle("SVG Generator Example Drawing");
     generator.setDescription("Dessin svg pour une démonstration");
 }
@@ -119,4 +119,24 @@ void VisuRDFGenerateur::dessinBoiteParType(VisuRDFType *type, int x, int y){
     painter.end();
     std::cout<<"Fin du dessin"<<std::endl;
 
+}
+
+void VisuRDFGenerateur::dessinModeBoite(){
+    painter.begin(&generator);
+
+    //Famille de Police
+    QFontDatabase fontDataBase;
+    QString firstFont = fontDataBase.families().first();
+    QFont f(firstFont);
+
+    //Paramètres de la police
+    int fontSize = 6;
+    f.setPixelSize(fontSize);
+    painter.setPen(pen);
+    painter.setFont(f);
+
+    dessinateur->dessinModeBoite(painter);
+
+    painter.end();
+    std::cout<<"Fin du dessin"<<std::endl;
 }

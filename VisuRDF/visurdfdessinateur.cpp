@@ -217,6 +217,27 @@ int VisuRDFDessinateur::calculHauteurBoite(VisuRDFObjet *objet){
     return hauteur;
 }
 
+float VisuRDFDessinateur::calculLargeurType(VisuRDFType *type){
+    float largeur = 0;
+
+    string nomType = type->getNom();
+    set<VisuRDFObjet*> listeObjets = analyseur->getObjetsParType(nomType, true);
+
+    // On parcourt tous les objets du type et on récupère le max de leur largeur
+    for(set<VisuRDFObjet*>::iterator it = listeObjets.begin(); it!= listeObjets.end(); it++) {
+
+        VisuRDFObjet* objet = *it;
+
+        float largeurObjet = calculLargeurBoite(objet);
+        if (largeurObjet > largeur)
+            largeur = largeurObjet;
+
+    }
+
+    return largeur;
+}
+
+
 void VisuRDFDessinateur::dessinBoite(VisuRDFObjet *objet, int x, int y, QPainter &painter){
 
     ObjetRDF proprietes = objet->getProprietes();
@@ -252,7 +273,7 @@ void VisuRDFDessinateur::dessinBoiteParType(VisuRDFType *type, int x, int y, QPa
     // On parcourt tous les objets du type
 
     string nomType = type->getNom();
-    set<VisuRDFObjet*> listeObjets = analyseur->getObjetsParType(nomType, false);
+    set<VisuRDFObjet*> listeObjets = analyseur->getObjetsParType(nomType, true);
 
     // On parcourt tous les objets du type et on récupère le max de leur largeur
     for(set<VisuRDFObjet*>::iterator it = listeObjets.begin(); it!= listeObjets.end(); it++) {
@@ -263,11 +284,21 @@ void VisuRDFDessinateur::dessinBoiteParType(VisuRDFType *type, int x, int y, QPa
 
         yBoite = yBoite + calculHauteurBoite(objet) + espacementVertical;
 
-
     }
 
+}
 
+void VisuRDFDessinateur::dessinModeBoite(QPainter &painter){
 
+    int x = 20;
+    int y = 20;
 
+    for(set<VisuRDFType*>::iterator it = listeTypes.begin(); it!= listeTypes.end(); it++){
+        VisuRDFType* type = *it;
+
+        this->dessinBoiteParType(type, x, y, painter);
+        x = x + calculLargeurType(type) + 20;
+
+    }
 
 }
