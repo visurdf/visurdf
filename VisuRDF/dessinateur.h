@@ -25,8 +25,8 @@ class Dessinateur
 public:
     Dessinateur(VisuRDFAnalyseur * analyseur);
     ~Dessinateur();
-    int calculLargeurColonne(Type* type, string nomPropriete);
-    int calculLargeurTableau(Type* type);
+    float calculLargeurColonne(Type* type, string nomPropriete);
+    float calculLargeurTableau(Type* type);
     int calculHauteurTableau(Type *type);
     int calculHauteurDessin();
     void dessinTableau(Type *type, int x, int y, QPainter &painter);
@@ -37,6 +37,9 @@ private :
    // list<Objet> listeObjets;
     set<Type*> listeTypes;
     VisuRDFAnalyseur * analyseur;
+    int hauteurCase;
+    int espacementVertical;
+    float pourcentagePolice;
 
 };
 

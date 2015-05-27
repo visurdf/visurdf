@@ -5,7 +5,9 @@ Dessinateur::Dessinateur(VisuRDFAnalyseur * analyseur)
     this->analyseur = analyseur;
     //listeObjets = analyseur->getTousLesObjets();
     listeTypes = analyseur->getAllTypes(true);
-
+    hauteurCase = 15;
+    espacementVertical = 20;
+    pourcentagePolice = 4.75;
 }
 
 Dessinateur::~Dessinateur()
@@ -13,7 +15,7 @@ Dessinateur::~Dessinateur()
 
 }
 
-int Dessinateur::calculLargeurColonne(Type * type, string nomPropriete){
+float Dessinateur::calculLargeurColonne(Type * type, string nomPropriete){
 
     int largeur = nomPropriete.size();
 
@@ -46,15 +48,14 @@ int Dessinateur::calculLargeurColonne(Type * type, string nomPropriete){
 
     }
 
-    /////////////////// A FAIRE
     // A adapter en fonction de la largeur de la police
-    return (largeur*5);
+    return (largeur*pourcentagePolice);
 
 }
 
-int Dessinateur::calculLargeurTableau(Type *type){
+float Dessinateur::calculLargeurTableau(Type *type){
 
-    int largeur = 0;
+    float largeur = 0;
     list<string> proprietes = type->getProprietes();
 
     for(list<string>::iterator it = proprietes.begin(); it!= proprietes.end(); it++){
@@ -70,21 +71,19 @@ int Dessinateur::calculLargeurTableau(Type *type){
 int Dessinateur::calculHauteurTableau(Type* type){
     int nbObjets = type->getNbObjet();
 
-    /////////////////// A FAIRE
-    // A adapter en fonction de la hauteur de la police
-    int hauteur = nbObjets + 1;
+    int hauteur = nbObjets + 2;
 
-    return (hauteur*15);
+    return (hauteur*hauteurCase);
 
 }
 
 
 int Dessinateur::calculHauteurDessin(){
 
-    int hauteur = 20;
+    int hauteur = espacementVertical;
     for (set<Type*>::iterator it = listeTypes.begin(); it!= listeTypes.end(); it++){
         Type* unType = *it;
-        hauteur = hauteur + calculHauteurTableau(unType) + 20;
+        hauteur = hauteur + calculHauteurTableau(unType) + espacementVertical;
 
     }
 
@@ -94,12 +93,15 @@ int Dessinateur::calculHauteurDessin(){
 // Dessine un tableau et le place aux coordonnées x, y
 void Dessinateur::dessinTableau(Type *type, int x, int y, QPainter &painter){
 
-    //dessin des différents élements
-
-    int hauteur = 15;
-   // int yObjet = y;
     string nomType = type->getNom();
-    set<Objet*> listeObjets = analyseur->getObjectByType(nomType, false);
+
+    // Dessin du nom du type
+
+    QRect rectType(x, y, (nomType.size())*pourcentagePolice, hauteurCase);
+    painter.drawRect(rectType);
+    painter.drawText(rectType, Qt::AlignCenter, QString(nomType.c_str()));
+
+    y = y + hauteurCase;
 
     // On dessine la première ligne
     list<string> proprietes = type->getProprietes();
@@ -108,8 +110,8 @@ void Dessinateur::dessinTableau(Type *type, int x, int y, QPainter &painter){
 
         int yObjet = y;
         string nomPropriete = *it;
-        int largeurBoite = this->calculLargeurColonne(type, nomPropriete);
-        QRect rect(xPropriete,y,largeurBoite,hauteur);
+        float largeurBoite = this->calculLargeurColonne(type, nomPropriete);
+        QRect rect(xPropriete,y,largeurBoite,hauteurCase);
         painter.drawRect(rect);
         painter.drawText(rect, Qt::AlignCenter , QString(nomPropriete.c_str()));
 
@@ -120,7 +122,7 @@ void Dessinateur::dessinTableau(Type *type, int x, int y, QPainter &painter){
         for(set<Objet*>::iterator it = listeObjets.begin(); it!= listeObjets.end(); it++){
 
             // On fait varier le placement vertical
-            yObjet = yObjet + 15;
+            yObjet = yObjet + hauteurCase;
             Objet* objet = *it;
 
             ObjetRDF obj = objet->getProprietes();
@@ -136,7 +138,7 @@ void Dessinateur::dessinTableau(Type *type, int x, int y, QPainter &painter){
                     list<string>::iterator it2 = valeurs.begin();
                     valeur = *it2;
                 }
-                QRect rectValeur(xPropriete, yObjet, largeurBoite, hauteur);
+                QRect rectValeur(xPropriete, yObjet, largeurBoite, hauteurCase);
 
                 painter.drawRect(rectValeur);
                 painter.drawText(rectValeur, Qt::AlignCenter, QString(valeur.c_str()));
@@ -159,7 +161,7 @@ void Dessinateur::dessinTableau(Type *type, int x, int y, QPainter &painter){
             Type* type = *it;
 
             this->dessinTableau(type, x, y, painter);
-            y = y + this->calculHauteurTableau(type) + 20;
+            y = y + this->calculHauteurTableau(type) + espacementVertical ;
         }
 
     }
