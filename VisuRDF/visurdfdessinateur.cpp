@@ -212,19 +212,9 @@ int VisuRDFDessinateur::calculHauteurBoite(VisuRDFObjet *objet){
 
     int hauteur = 0;
     ObjetRDF proprietes = objet->getProprietes();
+    hauteur = (proprietes.size())*pourcentagePoliceHauteur;
 
-    for(ObjetRDF::iterator it = proprietes.begin(); it!= proprietes.end(); it++){
-        string nomProp = (*it).first;
-        list<string> valeurs = proprietes[nomProp];
-        list<string>::iterator it2 = valeurs.begin();
-        string valeur = *it2;
-        if (valeur != ""){
-            hauteur = hauteur + 1;
-        }
-
-    }
-
-    return (hauteur*pourcentagePoliceHauteur);
+    return hauteur;
 }
 
 float VisuRDFDessinateur::calculLargeurType(VisuRDFType *type){
@@ -264,15 +254,12 @@ void VisuRDFDessinateur::dessinBoite(VisuRDFObjet *objet, int x, int y, QPainter
         list<string> valeurs = proprietes[nomProp];
         list<string>::iterator it2 = valeurs.begin();
         string valeur = *it2;
-
-        if (valeur != ""){
         string nomEtValeur = nomProp + " : " + valeur;
 
 
         painter.drawText(x, yTexte, QString(nomEtValeur.c_str()));
         yTexte = yTexte + pourcentagePoliceHauteur;
        // painter.drawText(rect, Qt::AlignCenter , QString(nomEtValeur.c_str()));
-        }
 
     }
 
