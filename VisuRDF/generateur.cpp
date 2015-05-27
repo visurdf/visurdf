@@ -47,7 +47,7 @@ void Generateur::dessin(){
 
 }
 
-/*
+
 void Generateur::dessinTableau(Type *type, int x, int y){
     painter.begin(&generator);
 
@@ -65,4 +65,4 @@ void Generateur::dessinTableau(Type *type, int x, int y){
     dessinateur->dessinTableau(type, x, y, painter);
     painter.end();
     std::cout<<"Fin du dessin"<<std::endl;
-}*/
+}

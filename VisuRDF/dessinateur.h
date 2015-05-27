@@ -33,7 +33,7 @@ public:
 
 
 private :
-    list<Objet> listeObjets;
+   // list<Objet> listeObjets;
     set<Type*> listeTypes;
     VisuRDFAnalyseur * analyseur;
 

@@ -60,6 +60,10 @@ void Objet::setLargeur(){
     largeurMax = largeur;
 }
 
+int Objet::getId(){
+    return id;
+}
+
 string Objet::toString(){
 
     string tostring = "";

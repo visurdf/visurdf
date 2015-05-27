@@ -62,10 +62,10 @@ int main(int argc, char *argv[])
 
     Dessinateur* dessinateur = new Dessinateur(analyseur);
     Generateur* generateur = new Generateur(dessinateur);
-  //  generateur->dessinTableau(unType, 20, 20);
-    generateur->dessin();
+    //generateur->dessinTableau(unType, 20, 20);
+   generateur->dessin();
    // dessinateur->dessinTableau(unType, 20, 20);
-
+    cout << "largeur tableau : " << dessinateur->calculLargeurColonne(unType, "Equipement.port") << endl;
 
     return 0;
 }

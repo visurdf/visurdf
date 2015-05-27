@@ -17,32 +17,38 @@ int Dessinateur::calculLargeurColonne(Type * type, string nomPropriete){
 
     int largeur = nomPropriete.size();
 
-    // On cherche tous les objets du type
-    for(list<Objet>::iterator it = listeObjets.begin(); it!= listeObjets.end(); it++){
+    string nomType = type->getNom();
+    set<Objet*> listeObjets = analyseur->getObjectByType(nomType, false);
 
-        Objet objet = *it;
 
-        if(objet.getType() == type){
+    // On parcourt tous les objets du type
+    for(set<Objet*>::iterator it = listeObjets.begin(); it!= listeObjets.end(); it++){
 
-            ObjetRDF::iterator iter = objet.getProprietes().find(nomPropriete);
-            if(iter != objet.getProprietes().end()){
-                list<string> valeurs = iter->second;
+        Objet* objet = *it;
 
-                list<string>::iterator it2 = valeurs.begin();
-                string valeur = *it2;
 
-                int largeurValeur = valeur.size();
-                if (largeurValeur > largeur)
-                    largeur = largeurValeur;
 
-            }
+        ObjetRDF obj = objet->getProprietes();
+
+        if(obj.size() != 0){
+
+
+
+            list<string> valeurs = obj[nomPropriete];
+
+            list<string>::iterator it2 = valeurs.begin();
+            string valeur = *it2;
+
+            int largeurValeur = valeur.size();
+            if (largeurValeur > largeur)
+                largeur = largeurValeur;
         }
 
     }
 
     /////////////////// A FAIRE
     // A adapter en fonction de la largeur de la police
-    return (largeur*6);
+    return (largeur*5);
 
 }
 
@@ -68,7 +74,7 @@ int Dessinateur::calculHauteurTableau(Type* type){
     // A adapter en fonction de la hauteur de la police
     int hauteur = nbObjets + 1;
 
-    return hauteur;
+    return (hauteur*15);
 
 }
 
@@ -77,62 +83,72 @@ void Dessinateur::dessinTableau(Type *type, int x, int y, QPainter &painter){
 
     //dessin des différents élements
 
-    int hauteur = 20;
-
+    int hauteur = 15;
+   // int yObjet = y;
+    string nomType = type->getNom();
+    set<Objet*> listeObjets = analyseur->getObjectByType(nomType, false);
 
     // On dessine la première ligne
     list<string> proprietes = type->getProprietes();
     int xPropriete = x;
     for(list<string>::iterator it = proprietes.begin(); it!= proprietes.end(); it++){
+
+        int yObjet = y;
         string nomPropriete = *it;
         int largeurBoite = this->calculLargeurColonne(type, nomPropriete);
         QRect rect(xPropriete,y,largeurBoite,hauteur);
         painter.drawRect(rect);
         painter.drawText(rect, Qt::AlignCenter , QString(nomPropriete.c_str()));
 
-     // On parcourt les objets du type pour dessiner les cases avec les valeurs de la propriete
-        for(list<Objet>::iterator it = listeObjets.begin(); it!= listeObjets.end(); it++){
+        string nomType = type->getNom();
+        set<Objet*> listeObjets = analyseur->getObjectByType(nomType, false);
+
+        // On parcourt les objets du type pour dessiner les cases avec les valeurs de la propriete
+        for(set<Objet*>::iterator it = listeObjets.begin(); it!= listeObjets.end(); it++){
 
             // On fait varier le placement vertical
-            y = y + 10;
-            Objet objet = *it;
+            yObjet = yObjet + 15;
+            Objet* objet = *it;
 
-            if(objet.getType() == type){
-                // On recupère la valeur de la propriété "nomPropriété"
-                ObjetRDF::iterator iter = objet.getProprietes().find(nomPropriete);
+            ObjetRDF obj = objet->getProprietes();
+
+            if(obj.size() != 0){
+
                 string valeur = "";
-                if(iter != objet.getProprietes().end()){
-                    list<string> valeurs = iter->second;
+                // On recupère la valeur de la propriété "nomPropriété"
+                ObjetRDF obj = objet->getProprietes();
+                if(obj.size() != 0){
+                    list<string> valeurs = obj[nomPropriete];
 
                     list<string>::iterator it2 = valeurs.begin();
                     valeur = *it2;
                 }
-                QRect rectValeur(xPropriete, y, largeurBoite, hauteur);
+                QRect rectValeur(xPropriete, yObjet, largeurBoite, hauteur);
 
                 painter.drawRect(rectValeur);
                 painter.drawText(rectValeur, Qt::AlignCenter, QString(valeur.c_str()));
 
             }
 
+
         }
         xPropriete = xPropriete + largeurBoite;
 
     }
-
 }
 
 
-void Dessinateur::dessinModeTableau(QPainter &painter){
+    void Dessinateur::dessinModeTableau(QPainter &painter){
 
-    int x = 20;
-    int y = 20;
+        int x = 20;
+        int y = 20;
 
-     for(set<Type*>::iterator it = listeTypes.begin(); it!= listeTypes.end(); it++){
-         Type* type = *it;
+        for(set<Type*>::iterator it = listeTypes.begin(); it!= listeTypes.end(); it++){
+            Type* type = *it;
 
-         this->dessinTableau(type, x, y, painter);
-         y = y + this->calculHauteurTableau(type) + 20;
-     }
+            this->dessinTableau(type, x, y, painter);
+            y = y + this->calculHauteurTableau(type) + 20;
+        }
 
-}
+    }
 

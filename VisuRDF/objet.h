@@ -28,6 +28,7 @@ public:
     ObjetRDF getProprietes();
     int getLargeur();
     string toString();
+    int getId();
 
 private :
 
