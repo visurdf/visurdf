@@ -4,13 +4,14 @@ Generateur::Generateur(Dessinateur *dessinateur)
 {
     this->dessinateur = dessinateur;
 
+    int hauteur = dessinateur->calculHauteurDessin();
     color = Qt::black;
     pen.setColor(color);
 
     /*------------- Déclaration des paramètres du fichier SVG -------------------*/
     generator.setFileName("testSVG.svg");
-    generator.setSize(QSize(1000, 1000));
-    generator.setViewBox(QRect(0, 0, 1000, 1000));
+    generator.setSize(QSize(1000, hauteur));
+    generator.setViewBox(QRect(0, 0, 1000, hauteur));
     generator.setTitle("SVG Generator Example Drawing");
     generator.setDescription("Dessin svg pour une démonstration");
 }

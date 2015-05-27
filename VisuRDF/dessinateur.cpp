@@ -78,6 +78,19 @@ int Dessinateur::calculHauteurTableau(Type* type){
 
 }
 
+
+int Dessinateur::calculHauteurDessin(){
+
+    int hauteur = 20;
+    for (set<Type*>::iterator it = listeTypes.begin(); it!= listeTypes.end(); it++){
+        Type* unType = *it;
+        hauteur = hauteur + calculHauteurTableau(unType) + 20;
+
+    }
+
+    return hauteur;
+}
+
 // Dessine un tableau et le place aux coordonnées x, y
 void Dessinateur::dessinTableau(Type *type, int x, int y, QPainter &painter){
 

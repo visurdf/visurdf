@@ -28,6 +28,7 @@ public:
     int calculLargeurColonne(Type* type, string nomPropriete);
     int calculLargeurTableau(Type* type);
     int calculHauteurTableau(Type *type);
+    int calculHauteurDessin();
     void dessinTableau(Type *type, int x, int y, QPainter &painter);
     void dessinModeTableau(QPainter& painter);
 
