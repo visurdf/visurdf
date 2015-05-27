@@ -1,10 +1,10 @@
 
-#include "visurdfextractor.h"
+#include "visurdfextracteur.h"
 #include <QApplication>
-#include "classesvg.h"
+#include "visurdfclassesvg.h"
 #include "visurdfanalyseur.h"
-#include "dessinateur.h"
-#include "generateur.h"
+#include "visurdfdessinateur.h"
+#include "visurdfgenerateur.h"
 
 
 int main(int argc, char *argv[])
@@ -12,16 +12,16 @@ int main(int argc, char *argv[])
 
     QApplication A(argc,argv);
 
-    VisuRDFExtractor visuRDFExtractor;
+    VisuRDFExtracteur visuRDFExtracteur;
    // classesvg C;
 
-    visuRDFExtractor.parse_rdf_triple(argv[1]);
-    visuRDFExtractor.print_map();
-    visuRDFExtractor.print_relations();
+    visuRDFExtracteur.parserTripletRdf(argv[1]);
+    visuRDFExtracteur.afficherMap();
+    visuRDFExtracteur.afficherRelations();
    // C.drawSvg();
 
     cout << "\n Classes:\n" << endl;
-    set<string > listOfClass = visuRDFExtractor.getClasses();
+    set<string > listOfClass = visuRDFExtracteur.getClasses();
 
     for (set<string >::const_iterator grapheiter = listOfClass.begin(); grapheiter != listOfClass.end(); grapheiter++)       {
         //set<string > listOfProperties = visuRDFExtractor.getProperties(*grapheiter);
@@ -31,37 +31,37 @@ int main(int argc, char *argv[])
         //cout << endl<< endl;
     }
 
-    VisuRDFAnalyseur* analyseur = new VisuRDFAnalyseur(&visuRDFExtractor);
+    VisuRDFAnalyseur* analyseur = new VisuRDFAnalyseur(&visuRDFExtracteur);
 
 
-     set<Type* > allTypes = analyseur->getAllTypes(false);
+     set<VisuRDFType*> allTypes = analyseur->getTousLesTypes(false);
      cout << "\n Nbre Types : " << allTypes.size() << endl;
-     typedef set<Type* > ::const_iterator ListIterator;
+     typedef set<VisuRDFType* > ::const_iterator ListIterator;
     for(ListIterator itr = allTypes.begin(); itr != allTypes.end(); itr++ )
         cout << (*itr)->toString() << endl;
 
-    allTypes = analyseur->getAllTypes(true);
+    allTypes = analyseur->getTousLesTypes(true);
          cout << "\n Nbre Types avec proprietes significatives: " << allTypes.size() << endl;
-         typedef set<Type* > ::const_iterator ListIterator;
+         typedef set<VisuRDFType* > ::const_iterator ListIterator;
         for(ListIterator itr = allTypes.begin(); itr != allTypes.end(); itr++ )
             cout << (*itr)->toString() << endl;
 
 
-    Type* unType = analyseur->getTypeByName(*listOfClass.begin(), false);
+    VisuRDFType* unType = analyseur->getTypeParNom(*listOfClass.begin(), false);
 
     cout << endl<< endl << unType->toString() << endl;
 
-    unType = analyseur->getTypeByName(*listOfClass.begin(), true);
+    unType = analyseur->getTypeParNom(*listOfClass.begin(), true);
 
     cout << endl<< endl << unType->toString() << endl;
 
-   set<Objet* > listOfObject = analyseur->getObjectByType(*listOfClass.begin(), true);
-   typedef set<Objet* > ::const_iterator ObjectIterator;
+   set<VisuRDFObjet*>listOfObject = analyseur->getObjetsParType(*listOfClass.begin(), true);
+   typedef set<VisuRDFObjet* > ::const_iterator ObjectIterator;
   for(ObjectIterator itr = listOfObject.begin(); itr != listOfObject.end(); itr++ )
     cout << (*itr)->toString() << endl;
 
-    Dessinateur* dessinateur = new Dessinateur(analyseur);
-    Generateur* generateur = new Generateur(dessinateur);
+    VisuRDFDessinateur* dessinateur = new VisuRDFDessinateur(analyseur);
+    VisuRDFGenerateur* generateur = new VisuRDFGenerateur(dessinateur);
     //generateur->dessinTableau(unType, 20, 20);
     generateur->dessin();
    // dessinateur->dessinTableau(unType, 20, 20);

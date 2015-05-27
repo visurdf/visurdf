@@ -1,29 +1,29 @@
 #include "visurdfanalyseur.h"
-#include "visurdfextractor.h"
+#include "visurdfextracteur.h"
 
 
 using namespace std;
 
-VisuRDFAnalyseur::VisuRDFAnalyseur(VisuRDFExtractor *extracteur) {
+VisuRDFAnalyseur::VisuRDFAnalyseur(VisuRDFExtracteur *extracteur) {
     this->extracteur = extracteur;
 }
 
 
 /**
- * @brief VisuRDFAnalyseur::getAllTypes
+ * @brief VisuRDFAnalyseur::getTousLesTypes
  *
  * @param sansProprietesNulles : avec ou sans les propriétés nulles
  * @return set<Type*>, l'ensemble de tous les types
  */
 
-set<Type*> VisuRDFAnalyseur::getAllTypes(bool sansProprietesNulles) {
+set<VisuRDFType*> VisuRDFAnalyseur::getTousLesTypes(bool sansProprietesNulles) {
 
     tousLesTypes.clear();
     GrapheRDF grapheRDF = extracteur->getGrapheRDF();
 
     for (GrapheRDF::const_iterator grapheIter = grapheRDF.begin(); grapheIter != grapheRDF.end(); grapheIter++){
 
-        Type* unType =  getTypeByName(grapheIter->first, sansProprietesNulles);
+        VisuRDFType* unType =  getTypeParNom(grapheIter->first, sansProprietesNulles);
 
         tousLesTypes.insert(unType);
     }
@@ -32,27 +32,27 @@ set<Type*> VisuRDFAnalyseur::getAllTypes(bool sansProprietesNulles) {
 
 
 /**
- * @brief VisuRDFAnalyseur::countType
+ * @brief VisuRDFAnalyseur::compterTypes
  * @return le nombre de types
  */
 
-int VisuRDFAnalyseur::countType() {
+int VisuRDFAnalyseur::compterTypes() {
     if(tousLesTypes.size() == 0)
-        getAllTypes(false);
+        getTousLesTypes(false);
     return tousLesTypes.size();
 }
 
 
 /**
- * @brief VisuRDFAnalyseur::getTypeByName
+ * @brief VisuRDFAnalyseur::getTypeParNom
  * @param nomDuType
  * @param sansProprietesNulles : avec ou sans les propriétés nulles
  * @return un pointeur vers le type recherché
  */
 
-Type* VisuRDFAnalyseur::getTypeByName(string nomDuType, bool sansProprietesNulles) {
+VisuRDFType* VisuRDFAnalyseur::getTypeParNom(string nomDuType, bool sansProprietesNulles) {
 
-    Type* unType =  new Type(nomDuType);
+    VisuRDFType* unType =  new VisuRDFType(nomDuType);
 
     list<ObjetRDF> listeObjetsRDF = extracteur->getGrapheRDF()[nomDuType];
     // nombre d objets
@@ -120,23 +120,23 @@ int VisuRDFAnalyseur::id = 1;
 
 
 /**
- * @brief VisuRDFAnalyseur::getObjectByType
+ * @brief VisuRDFAnalyseur::getObjetsParType
  * @param nomDuType
  * @param sansProprietesNulles
  * @return set<Objet*> l'ensemble des objets du type recherché
  */
 
-set<Objet* > VisuRDFAnalyseur::getObjectByType(string nomDuType, bool sansProprietesNulles) {
+set<VisuRDFObjet*> VisuRDFAnalyseur::getObjetsParType(string nomDuType, bool sansProprietesNulles) {
 
-    set<Objet* >  listeObjets = set<Objet* >();
-    Type* unType =  getTypeByName(nomDuType, sansProprietesNulles);
+    set<VisuRDFObjet*>  listeObjets = set<VisuRDFObjet*>();
+    VisuRDFType* unType =  getTypeParNom(nomDuType, sansProprietesNulles);
 
     list<ObjetRDF> listeObjetsRDF = extracteur->getGrapheRDF()[nomDuType];
     typedef list<ObjetRDF>::const_iterator ListObjetRDFIterator;
 
     for (ListObjetRDFIterator objIter = listeObjetsRDF.begin(); objIter != listeObjetsRDF.end(); objIter++)
     {
-        listeObjets.insert(new Objet(id++, unType, *objIter));
+        listeObjets.insert(new VisuRDFObjet(id++, unType, *objIter));
     }
 
     return listeObjets;

@@ -1,5 +1,5 @@
-#ifndef CLASSESVG_H
-#define CLASSESVG_H
+#ifndef VISURDFCLASSESVG_H
+#define VISURDFCLASSESVG_H
 
 #include <QSvgRenderer>
 #include <QSvgGenerator>
@@ -9,17 +9,15 @@
 #include <QPainter>
 
 
-class classesvg{
-
-
+class visuRDFClasseSvg
+{
 public:
-    classesvg();
-    ~classesvg();
+    visuRDFClasseSvg();
+    ~visuRDFClasseSvg();
 
     void drawSvg();
     void drawRect(int nbr);
     void changeColor(QColor _color);
-
 
 private:
 
@@ -33,9 +31,7 @@ private:
     int largeur;
     int hauteur;
 
-
 public slots:
-
 };
 
-#endif // CLASSESVG_H
+#endif // VISURDFCLASSESVG_H

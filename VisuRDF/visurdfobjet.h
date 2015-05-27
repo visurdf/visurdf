@@ -1,17 +1,17 @@
-#ifndef OBJET_H
-#define OBJET_H
+#ifndef VISURDFOBJET_H
+#define VISURDFOBJET_H
 #include <QString>
 #include <map>
 #include <list>
 #include <iostream>
 #include <string>
-#include "visurdfextractor.h"
-#include "type.h"
+#include "visurdfextracteur.h"
+#include "visurdftype.h"
 
 using namespace std;
 
 
-class Objet
+class VisuRDFObjet
 {
 public:
     /*int id;
@@ -20,11 +20,11 @@ public:
     int largeurMax;*/
 
    // Objet(int id, Type type, ObjetRDF proprietes);
-    Objet(int id, Type *type , ObjetRDF proprietes);
-    ~Objet();
+    VisuRDFObjet(int id, VisuRDFType *type , ObjetRDF proprietes);
+    ~VisuRDFObjet();
 
     void setLargeur();
-    Type* getType();
+    VisuRDFType* getType();
     ObjetRDF getProprietes();
     int getLargeur();
     string toString();
@@ -33,11 +33,11 @@ public:
 private :
 
     int id;
-    Type *type;
+    VisuRDFType *type;
     ObjetRDF proprietes;
     int largeurMax;
 
 };
 
 
-#endif // OBJET_H
+#endif // VISURDFOBJET_H

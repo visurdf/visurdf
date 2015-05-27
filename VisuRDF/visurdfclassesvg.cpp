@@ -1,4 +1,4 @@
-#include "classesvg.h"
+#include "visurdfclassesvg.h"
 #include <QRect>
 #include <QPainter>
 #include <stdio.h>
@@ -10,9 +10,8 @@
 #include <iostream>
 #include <QFontDatabase>
 
+visuRDFClasseSvg::visuRDFClasseSvg() {
 
-classesvg::classesvg()
-{
     color = Qt::red;
     pen.setColor(color);
 
@@ -23,8 +22,6 @@ classesvg::classesvg()
     generator.setTitle("SVG Generator Example Drawing");
     generator.setDescription("Dessin svg pour une démonstration");
 
-
-
     /*Parametre du rectangle*/
 
     Firstleft   = 20;
@@ -33,12 +30,16 @@ classesvg::classesvg()
     hauteur     = 50;
 }
 
-classesvg::~classesvg()
-{
+visuRDFClasseSvg::~visuRDFClasseSvg() {
 
 }
 
-void classesvg::drawSvg(){
+
+/**
+ * @brief visuRDFClasseSvg::drawSvg
+ */
+
+void visuRDFClasseSvg::drawSvg() {
 
     std::cout<<  "debut de la fonction"<<std::endl;
 
@@ -64,21 +65,32 @@ void classesvg::drawSvg(){
 
     //dessin des différents élements
 
-//fin du painter
+    //fin du painter
     painter1.end();
     std::cout<<"Fin du dessin"<<std::endl;
 
 }
 
-void classesvg::changeColor(QColor _color){
+
+/**
+ * @brief visuRDFClasseSvg::changeColor
+ * @param _color
+ */
+
+void visuRDFClasseSvg::changeColor(QColor _color) {
+
     color = _color;
     pen.setColor(color);
     painter1.setPen(pen);
-
 }
 
 
-void classesvg::drawRect(int nbr){
+/**
+ * @brief visuRDFClasseSvg::drawRect
+ * @param nbr
+ */
+
+void visuRDFClasseSvg::drawRect(int nbr) {
 
     for (int i = 0; i < nbr; i++){
         QRect rect(Firstleft,FirstTop,largeur,hauteur);

@@ -13,19 +13,21 @@ TARGET = VisuRDF
 CONFIG += console
 CONFIG -= app_bundle
 TEMPLATE = app
-SOURCES += main.cpp \
-    visurdfextractor.cpp \
-    classesvg.cpp \
-    objet.cpp \
-    type.cpp \
-    generateur.cpp \
+SOURCES += \
     visurdfanalyseur.cpp \
-    dessinateur.cpp
-HEADERS += visurdfextractor.h \
-    classesvg.h \
-    objet.h \
-    type.h \
-    generateur.h \
+    visurdfextracteur.cpp \
+    visurdfclassesvg.cpp \
+    visurdftype.cpp \
+    visurdfobjet.cpp \
+    visurdfmain.cpp \
+    visurdfgenerateur.cpp \
+    visurdfdessinateur.cpp
+HEADERS += \
     visurdfanalyseur.h \
-    dessinateur.h
+    visurdfextracteur.h \
+    visurdftype.h \
+    visurdfobjet.h \
+    visurdfgenerateur.h \
+    visurdfdessinateur.h \
+    visurdfclassesvg.h
 OTHER_FILES += Makefile

@@ -1,16 +1,16 @@
-#ifndef TYPE_H
-#define TYPE_H
+#ifndef VISURDFTYPE_H
+#define VISURDFTYPE_H
 #include <QString>
 #include <list>
 
 using namespace std;
 
-class Type
+class VisuRDFType
 {
 public:
 
-    Type(std::string nomType);
-    ~Type();
+    VisuRDFType(std::string nomType);
+    ~VisuRDFType();
     void setProprietes(std::list<std::string>);
     void setNbObjet(int);
     int getNbObjet();
@@ -44,4 +44,4 @@ private :
 
 };
 
-#endif // TYPE_H
+#endif // VISURDFTYPE_H

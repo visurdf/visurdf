@@ -1,7 +1,7 @@
-#include "generateur.h"
+#include "visurdfgenerateur.h"
 
-Generateur::Generateur(Dessinateur *dessinateur)
-{
+VisuRDFGenerateur::VisuRDFGenerateur(VisuRDFDessinateur *dessinateur) {
+
     this->dessinateur = dessinateur;
 
     int hauteur = dessinateur->calculHauteurDessin();
@@ -16,15 +16,18 @@ Generateur::Generateur(Dessinateur *dessinateur)
     generator.setDescription("Dessin svg pour une démonstration");
 }
 
-Generateur::~Generateur()
-
-{
+VisuRDFGenerateur::~VisuRDFGenerateur() {
 
 }
 
-void Generateur::dessin(){
 
+/**
+ * @brief VisuRDFGenerateur::dessin
+ * Crée l'image
+ *
+ */
 
+void VisuRDFGenerateur::dessin() {
 
     painter.begin(&generator);
 
@@ -44,12 +47,20 @@ void Generateur::dessin(){
 
     painter.end();
     std::cout<<"Fin du dessin"<<std::endl;
-
-
 }
 
 
-void Generateur::dessinTableau(Type *type, int x, int y){
+/**
+ * @brief VisuRDFGenerateur::dessinTableau
+ * Dessine sur l'image un tableau pour une classe
+ *
+ * @param type
+ * @param x
+ * @param y
+ */
+
+void VisuRDFGenerateur::dessinTableau(VisuRDFType *type, int x, int y) {
+
     painter.begin(&generator);
 
     //Famille de Police
