@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<<<<<<< HEAD
-<!-- Written by QtCreator 3.4.0, 2015-05-26T11:31:14. -->
-=======
-<!-- Written by QtCreator 3.3.0, 2015-05-24T23:33:35. -->
->>>>>>> 8fece09bc5d0008fb096f4940ac641b651da0bd2
+<!-- Written by QtCreator 3.3.0, 2015-05-27T00:19:19. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -47,7 +43,7 @@
    <value type="bool" key="EditorConfiguration.SpacesForTabs">true</value>
    <value type="int" key="EditorConfiguration.TabKeyBehavior">0</value>
    <value type="int" key="EditorConfiguration.TabSize">8</value>
-   <value type="bool" key="EditorConfiguration.UseGlobal">true</value>
+   <value type="bool" key="EditorConfiguration.UseGlobal">false</value>
    <value type="int" key="EditorConfiguration.Utf8BomBehavior">1</value>
    <value type="bool" key="EditorConfiguration.addFinalNewLine">true</value>
    <value type="bool" key="EditorConfiguration.cleanIndentation">true</value>

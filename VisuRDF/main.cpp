@@ -46,7 +46,7 @@ int main(int argc, char *argv[])
         for(ListIterator itr = allTypes.begin(); itr != allTypes.end(); itr++ )
             cout << (*itr)->toString() << endl;
 
-
+    Dessinateur* dessinateur = new Dessinateur(analyseur);
     Type* unType = analyseur->getTypeByName(*listOfClass.begin(), false);
 
     cout << endl<< endl << unType->toString() << endl;
@@ -54,8 +54,8 @@ int main(int argc, char *argv[])
     unType = analyseur->getTypeByName(*listOfClass.begin(), true);
 
     cout << endl<< endl << unType->toString() << endl;
+    cout << "hauteur : " << dessinateur->calculHauteurTableau(unType);
 
-    Dessinateur* dessinateur = new Dessinateur(analyseur);
     Generateur* generateur = new Generateur(dessinateur);
   //  generateur->dessinTableau(unType, 20, 20);
     generateur->dessin();
