@@ -51,12 +51,19 @@ int main(int argc, char *argv[])
     unType = analyseur->getTypeParNom(*listeDesClasses.begin(), true);
     cout << endl<< endl << unType->toString() << endl;
 
+     VisuRDFDessinateur* dessinateur = new VisuRDFDessinateur(analyseur);
+
     set<VisuRDFObjet*>listeDesObjets = analyseur->getObjetsParType(*listeDesClasses.begin(), true);
     typedef set<VisuRDFObjet* > ::const_iterator ObjectIterator;
-    for(ObjectIterator itr = listeDesObjets.begin(); itr != listeDesObjets.end(); itr++ )
-        cout << (*itr)->toString() << endl;
+    for(ObjectIterator itr = listeDesObjets.begin(); itr != listeDesObjets.end(); itr++ ){
 
-    VisuRDFDessinateur* dessinateur = new VisuRDFDessinateur(analyseur);
+        cout << (*itr)->toString() << endl;
+        cout << "largeur boite : " <<dessinateur->calculLargeurBoite(*itr) << endl;
+        cout << "hauteur boite : " << dessinateur->calculHauteurBoite(*itr) << endl;
+
+    }
+
+
     VisuRDFGenerateur* generateur = new VisuRDFGenerateur(dessinateur);
     //generateur->dessinTableau(unType, 20, 20);
     generateur->dessin();

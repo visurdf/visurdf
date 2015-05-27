@@ -3,11 +3,11 @@
 VisuRDFDessinateur::VisuRDFDessinateur(VisuRDFAnalyseur * analyseur) {
 
     this->analyseur = analyseur;
-    //listeObjets = analyseur->getTousLesObjets();
     listeTypes = analyseur->getTousLesTypes(true);
     hauteurCase = 15;
     espacementVertical = 20;
     pourcentagePolice = 4.75;
+    pourcentagePoliceHauteur = 15;
 }
 
 
@@ -26,21 +26,17 @@ VisuRDFDessinateur::~VisuRDFDessinateur() {
 float VisuRDFDessinateur::calculLargeurColonne(VisuRDFType * type, string nomPropriete) {
 
     int largeur = nomPropriete.size();
-
     string nomType = type->getNom();
     set<VisuRDFObjet*> listeObjets = analyseur->getObjetsParType(nomType, false);
 
-    // On parcourt tous les objets du type
+    // On parcourt tous les objets du type et on récupère le max de leur largeur
     for(set<VisuRDFObjet*>::iterator it = listeObjets.begin(); it!= listeObjets.end(); it++) {
 
         VisuRDFObjet* objet = *it;
-
         ObjetRDF obj = objet->getProprietes();
-
         if(obj.size() != 0) {
 
             list<string> valeurs = obj[nomPropriete];
-
             list<string>::iterator it2 = valeurs.begin();
             string valeur = *it2;
 
@@ -50,7 +46,7 @@ float VisuRDFDessinateur::calculLargeurColonne(VisuRDFType * type, string nomPro
         }
     }
 
-    // A adapter en fonction de la largeur de la police
+    // On retourne la largeur en nombre de pixel multiplié par un facteur en fonction de la police
     return (largeur*pourcentagePolice);
 }
 
@@ -66,6 +62,7 @@ float VisuRDFDessinateur::calculLargeurTableau(VisuRDFType *type) {
     float largeur = 0;
     list<string> proprietes = type->getProprietes();
 
+    // On additionne les largeurs de chaque colonne
     for(list<string>::iterator it = proprietes.begin(); it!= proprietes.end(); it++) {
         string nomPropriete = *it;
         largeur = largeur + calculLargeurColonne(type, nomPropriete);
@@ -83,9 +80,11 @@ float VisuRDFDessinateur::calculLargeurTableau(VisuRDFType *type) {
 
 int VisuRDFDessinateur::calculHauteurTableau(VisuRDFType* type) {
 
+    // La hauteur est égale au nombre d'objets du type + 2 (1 ligne pour le nom des propriétés et 1 pour le nom du type)
     int nbObjets = type->getNbObjet();
     int hauteur = nbObjets + 2;
 
+    // On multiplie par la hauteur des cases
     return (hauteur*hauteurCase);
 }
 
@@ -117,16 +116,14 @@ int VisuRDFDessinateur::calculHauteurDessin() {
 
 void VisuRDFDessinateur::dessinTableau(VisuRDFType *type, int x, int y, QPainter &painter) {
 
-    string nomType = type->getNom();
-
     // Dessin du nom du type
+    string nomType = type->getNom();
     QRect rectType(x, y, (nomType.size())*pourcentagePolice, hauteurCase);
     painter.drawRect(rectType);
     painter.drawText(rectType, Qt::AlignCenter, QString(nomType.c_str()));
 
+    // Dessin de la première ligne
     y = y + hauteurCase;
-
-    // On dessine la première ligne
     list<string> proprietes = type->getProprietes();
     int xPropriete = x;
     for(list<string>::iterator it = proprietes.begin(); it!= proprietes.end(); it++) {
@@ -141,7 +138,7 @@ void VisuRDFDessinateur::dessinTableau(VisuRDFType *type, int x, int y, QPainter
         string nomType = type->getNom();
         set<VisuRDFObjet*> listeObjets = analyseur->getObjetsParType(nomType, false);
 
-        // On parcourt les objets du type pour dessiner les cases avec les valeurs de la propriete
+        // Dessin des lignes représentant les objets
         for(set<VisuRDFObjet*>::iterator it = listeObjets.begin(); it!= listeObjets.end(); it++) {
 
             // On fait varier le placement vertical
@@ -157,7 +154,6 @@ void VisuRDFDessinateur::dessinTableau(VisuRDFType *type, int x, int y, QPainter
                 ObjetRDF obj = objet->getProprietes();
                 if(obj.size() != 0){
                     list<string> valeurs = obj[nomPropriete];
-
                     list<string>::iterator it2 = valeurs.begin();
                     valeur = *it2;
                 }
@@ -190,3 +186,33 @@ void VisuRDFDessinateur::dessinModeTableau(QPainter &painter){
     }
 }
 
+float VisuRDFDessinateur::calculLargeurBoite(VisuRDFObjet *objet){
+
+    int largeurBoite = 0;
+
+    ObjetRDF proprietes = objet->getProprietes();
+    for(ObjetRDF::iterator it = proprietes.begin(); it!= proprietes.end(); it++){
+        string nomProp = (*it).first;
+        list<string> valeurs = proprietes[nomProp];
+        list<string>::iterator it2 = valeurs.begin();
+        string valeur = *it2;
+        string nomEtValeur = nomProp + " : " + valeur;
+
+        int largeur = nomEtValeur.size();
+        if (largeur > largeurBoite){
+            largeurBoite = largeur;
+        }
+
+    }
+
+    return (largeurBoite*pourcentagePolice);
+}
+
+int VisuRDFDessinateur::calculHauteurBoite(VisuRDFObjet *objet){
+
+    int hauteur = 0;
+    ObjetRDF proprietes = objet->getProprietes();
+    hauteur = (proprietes.size())*pourcentagePoliceHauteur;
+
+    return hauteur;
+}
