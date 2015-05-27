@@ -189,9 +189,13 @@ void VisuRDFExtractor::handle_triple(void* user_data, raptor_statement* triple)
 
 
             }
+            else{
+
             list<string> listOfprop = objetRDF[predicate->getName()];
             listOfprop.push_back( object->getName());
             objetRDF[predicate->getName()] = listOfprop;
+
+            }
         }
     }
 

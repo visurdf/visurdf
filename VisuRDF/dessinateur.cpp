@@ -130,7 +130,6 @@ void Dessinateur::dessinTableau(Type *type, int x, int y, QPainter &painter){
 
             }
 
-
         }
         xPropriete = xPropriete + largeurBoite;
 
