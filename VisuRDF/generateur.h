@@ -5,8 +5,11 @@
 #include <QSvgGenerator>
 #include "dessinateur.h"
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> origin/master
 class Generateur
 {
 public:

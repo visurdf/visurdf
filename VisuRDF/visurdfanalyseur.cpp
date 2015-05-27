@@ -93,6 +93,7 @@ set<Type* > VisuRDFAnalyseur::getAllTypes(bool withnotnullproperties){
 
         Type* unType =  getTypeByName(grapheiter->first, withnotnullproperties);
 
+<<<<<<< HEAD
         //            list< ObjetRDF > listOfObjetRDF = grapheiter->second;
         //            // nombre d objets
         //            unType->setNbObjet(listOfObjetRDF.size());
@@ -106,6 +107,8 @@ set<Type* > VisuRDFAnalyseur::getAllTypes(bool withnotnullproperties){
         //            }
 
         //            unType->setProprietes(listOfProperties);
+=======
+>>>>>>> origin/master
 
 
         allTypes.insert(unType);
@@ -180,6 +183,28 @@ Type* VisuRDFAnalyseur::getTypeByName(string nameoftype, bool withnotnullpropert
     return unType;
 }
 
+<<<<<<< HEAD
+=======
+int VisuRDFAnalyseur::id = 1;
+
+set<Objet* > VisuRDFAnalyseur::getObjectByType(string nameoftype, bool withnotnullproperties){
+
+    set<Objet* >  listOfObject = set<Objet* >();
+    Type* unType =  getTypeByName(nameoftype, withnotnullproperties);
+
+    list<ObjetRDF> listOfObjetRDF = extractor->getGrapheRDF()[nameoftype];
+    typedef list<ObjetRDF>::const_iterator ListObjetRDFIterator;
+    for (ListObjetRDFIterator objiter = listOfObjetRDF.begin(); objiter != listOfObjetRDF.end(); objiter++)
+    {
+
+        listOfObject .insert(new Objet(id++, unType, *objiter));
+    }
+
+    return listOfObject;
+
+}
+
+>>>>>>> origin/master
 
 VisuRDFAnalyseur::~VisuRDFAnalyseur() {
 }

@@ -9,13 +9,22 @@ Generateur::Generateur(Dessinateur *dessinateur)
 
     /*------------- Déclaration des paramètres du fichier SVG -------------------*/
     generator.setFileName("testSVG.svg");
+<<<<<<< HEAD
     generator.setSize(QSize(2000, 2000));
     generator.setViewBox(QRect(0, 0, 2000, 2000));
+=======
+    generator.setSize(QSize(1000, 1000));
+    generator.setViewBox(QRect(0, 0, 1000, 1000));
+>>>>>>> origin/master
     generator.setTitle("SVG Generator Example Drawing");
     generator.setDescription("Dessin svg pour une démonstration");
 }
 
 Generateur::~Generateur()
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/master
 {
 
 }
