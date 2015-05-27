@@ -14,44 +14,32 @@ using namespace std;
 
 class VisuRDFAnalyseur
 {
-public:
-    VisuRDFAnalyseur(VisuRDFExtractor *extractor);
-    ~VisuRDFAnalyseur();
-    std::list<Objet> getTousLesObjets();
-    std::list<Type> getTousLesTypes();
 
-    //expose la liste des types
-    set<Type* > getAllTypes(bool withnotnullproperties);
-    //retoune le nombre de type
+public:
+    VisuRDFAnalyseur(VisuRDFExtractor *extracteur);
+    ~VisuRDFAnalyseur();
+
+    //retourne l'ensemble des types
+    set<Type* > getAllTypes(bool sansProprietesNulles);
+
+    //retoune le nombre de types
     int countType();
 
     //retourne un type en fonction de son nom
-    Type* getTypeByName(string nameoftype,  bool withnotnullproperties);
+    Type* getTypeByName(string nomDuType,  bool sansProprietesNulles);
 
-    set<Objet*> getObjectByType(string nameoftype, bool withnotnullproperties);
+    //retourne la liste des objets correspondant au nom de type
+    set<Objet*> getObjectByType(string nomDuType, bool sansProprietesNulles);
 
-
-/*
-
-
-    //expose la liste des types avec propriete significative
-    set<Type> getAllTypes(bool withnotnullproperties);
-
-    //retourne le nombre d'objet d'un type
-    int countObjectByType(string nameoftype);
-    //retourne l'ensemble des objets d un type
-    set<Objet> getObjectByType(string nameoftype);
-*/
 private:
     //une reference sur l extracteur
-    VisuRDFExtractor *extractor;
+    VisuRDFExtractor *extracteur;
+
     //la liste des types
-    set<Type* > allTypes;
+    set<Type*> tousLesTypes;
+
+    //identifiant des objets
     static int id;
-
-
-    std::list<Objet> tousLesObjets;
-    std::list<Type> tousLesTypes;
 };
 
 #endif // ANALYSEUR_H

@@ -4,197 +4,145 @@
 
 using namespace std;
 
-VisuRDFAnalyseur::VisuRDFAnalyseur(VisuRDFExtractor *extractor) {
-
-    this->extractor = extractor;
-
+VisuRDFAnalyseur::VisuRDFAnalyseur(VisuRDFExtractor *extracteur) {
+    this->extracteur = extracteur;
 }
-/*
+
+
+/**
+ * @brief VisuRDFAnalyseur::getAllTypes
  *
- *   revu a cause d une boucle infinie
- *
- *
-VisuRDFAnalyseur::VisuRDFAnalyseur(VisuRDFExtractor *extractor) {
+ * @param sansProprietesNulles : avec ou sans les propriétés nulles
+ * @return set<Type*>, l'ensemble de tous les types
+ */
 
-    /*
-    extractor :
-      - une map avec tous les objets : (classe, liste de objets de la classe(map de propriétés de l'objet))
-      - liste des classes (string)
-      - liste des propriétés d'une classe (classe en entrée, liste de string en sortie)
+set<Type*> VisuRDFAnalyseur::getAllTypes(bool sansProprietesNulles) {
 
+    tousLesTypes.clear();
+    GrapheRDF grapheRDF = extracteur->getGrapheRDF();
 
-    GrapheRDF mapDesObjets = extractor->getGrapheRDF();
-    int id = 0;
-    // Pour chaque classe :
-    for (GrapheRDF::iterator itGraphe = mapDesObjets.begin(); itGraphe != mapDesObjets.end(); ) {
+    for (GrapheRDF::const_iterator grapheIter = grapheRDF.begin(); grapheIter != grapheRDF.end(); grapheIter++){
 
-        cout << "toto" <<endl;
+        Type* unType =  getTypeByName(grapheIter->first, sansProprietesNulles);
 
-        string classe = itGraphe->first;
-
-        // creation du Type classe
-        Type* nouveauType = new Type(classe);
-
-        list < ObjetRDF > listeObjets = itGraphe->second;
-        // contient tous les objets du type "nouveauType"
-
-        // initialisation des attributs du Type
-        int nombreObjetsClasse = 0;
-        list < string > proprietesNonVidesDuType; // initialiser liste ?
-
-        // Pour chaque objet du type :
-        for (list < ObjetRDF >::iterator itObjets = listeObjets.begin(); itObjets != listeObjets.end(); itObjets++) {
-            cout << "toto1" <<endl;
-
-            nombreObjetsClasse++;
-            id ++;
-            ObjetRDF listeProprietesObjet = *itObjets;
-
-            // creation de l'objet
-            Objet* nouvelObjet = new Objet(id, nouveauType, listeProprietesObjet);
-            // ----> est-ce qu'on met un type au lieu du string pour la classe ?
-
-            // ajout de l'objet a la liste
-            tousLesObjets.push_back(*nouvelObjet);
-
-            // ajout des proprietes a la liste proprietesNonVidesDuType
-            for (ObjetRDF::iterator itProprietesObjet = listeProprietesObjet.begin(); itProprietesObjet != listeProprietesObjet.end(); itProprietesObjet++) {
-                cout << "toto2" <<endl;
-
-                string propriete = itProprietesObjet->first;
-                list < string > listeValeurs = itProprietesObjet->second;
-
-                if (!listeValeurs.empty()) { // liste non vide
-                    if (find(proprietesNonVidesDuType.begin(), proprietesNonVidesDuType.end(), propriete) == proprietesNonVidesDuType.end()){
-                        //La liste ne contient pas la propriete, donc on l'ajoute
-                        proprietesNonVidesDuType.push_back(propriete);
-                    }
-                }
-            }
-        }
-
-        nouveauType->setNbObjet(nombreObjetsClasse);
-        nouveauType->setProprietes(proprietesNonVidesDuType);
-        tousLesTypes.push_back(*nouveauType);
-
+        tousLesTypes.insert(unType);
     }
-
+    return tousLesTypes;
 }
 
-        */
 
+/**
+ * @brief VisuRDFAnalyseur::countType
+ * @return le nombre de types
+ */
 
-set<Type* > VisuRDFAnalyseur::getAllTypes(bool withnotnullproperties){
-
-    allTypes.clear();
-    GrapheRDF grapheRDF = extractor->getGrapheRDF();
-
-    for (GrapheRDF::const_iterator grapheiter = grapheRDF.begin(); grapheiter != grapheRDF.end(); grapheiter++){
-
-        Type* unType =  getTypeByName(grapheiter->first, withnotnullproperties);
-
-
-
-        allTypes.insert(unType);
-
-    }
-
-
-
-
-    return allTypes;
-}
-
-int VisuRDFAnalyseur::countType(){
-    if(allTypes.size() == 0)
+int VisuRDFAnalyseur::countType() {
+    if(tousLesTypes.size() == 0)
         getAllTypes(false);
-    return allTypes.size();
+    return tousLesTypes.size();
 }
 
-Type* VisuRDFAnalyseur::getTypeByName(string nameoftype, bool withnotnullproperties){
-    Type* unType =  new Type(nameoftype);
 
-    list< ObjetRDF > listOfObjetRDF = extractor->getGrapheRDF()[nameoftype];
+/**
+ * @brief VisuRDFAnalyseur::getTypeByName
+ * @param nomDuType
+ * @param sansProprietesNulles : avec ou sans les propriétés nulles
+ * @return un pointeur vers le type recherché
+ */
+
+Type* VisuRDFAnalyseur::getTypeByName(string nomDuType, bool sansProprietesNulles) {
+
+    Type* unType =  new Type(nomDuType);
+
+    list<ObjetRDF> listeObjetsRDF = extracteur->getGrapheRDF()[nomDuType];
     // nombre d objets
-    unType->setNbObjet(listOfObjetRDF.size());
+    unType->setNbObjet(listeObjetsRDF.size());
+
     // recuperation de la liste des proprietes y compris celles qui n'ont pas de valeurs significatives
-    ObjetRDF objetRDF  = *listOfObjetRDF.begin();
-    list< string > listOfProperties = list< string >();
+    ObjetRDF objetRDF  = *listeObjetsRDF.begin();
+    list<string> ListeProprietes = list<string>();
+
     for (ObjetRDF::const_iterator objetRDFiter = objetRDF.begin(); objetRDFiter != objetRDF.end(); objetRDFiter++){
         if(objetRDFiter->first.compare("type") == 0)
             continue;
-        listOfProperties.push_back(objetRDFiter->first);
+        ListeProprietes.push_back(objetRDFiter->first);
     }
 
-    list< string > listOfFilterProperties = list< string >();
-    if(withnotnullproperties){//filtrage des proprietes sans valeurs significatives
+    list<string> ListeProprietesFiltrees = list<string>();
+    //filtrage des proprietes sans valeurs significatives
+    if(sansProprietesNulles){
         typedef list<string>::const_iterator ListIterator;
-        for (ListIterator list_iter = listOfProperties.begin(); list_iter != listOfProperties.end(); list_iter++)
+        for (ListIterator listIter = ListeProprietes.begin(); listIter != ListeProprietes.end(); listIter++)
         {
-            string propriete = *list_iter;
+            string propriete = *listIter;
             bool isEmpty = false;
             typedef list<ObjetRDF>::const_iterator ListObjetRDFIterator;
             int n = 0;
-            for (ListObjetRDFIterator objiter = listOfObjetRDF.begin(); objiter != listOfObjetRDF.end(); objiter++)
+            for (ListObjetRDFIterator objIter = listeObjetsRDF.begin(); objIter != listeObjetsRDF.end(); objIter++)
             {
 
-                ObjetRDF obj = *objiter;
+                ObjetRDF obj = *objIter;
 
-                list<string> listOfVal = obj[propriete];
-                n = listOfVal.size();
+                list<string> listeValeurs = obj[propriete];
+                n = listeValeurs.size();
                 typedef list<string>::const_iterator ListIterator;
-                for (ListIterator list_iter = listOfVal.begin(); list_iter != listOfVal.end(); list_iter++){
-                    if((*list_iter).compare("") == 0){
+                for (ListIterator listIter = listeValeurs.begin(); listIter != listeValeurs.end(); listIter++){
+                    if((*listIter).compare("") == 0){
                         isEmpty = true;
                         break;
                     }
-
                 }
                 if(isEmpty)break;
             }
 
             if(!isEmpty){
                 for(int i =0; i < n; i++)
-                    listOfFilterProperties.push_back(propriete);
+                    ListeProprietesFiltrees.push_back(propriete);
             }
-
         }
     }
-    if(listOfFilterProperties.size() != 0)
-        unType->setProprietes(listOfFilterProperties);
+
+    if(ListeProprietesFiltrees.size() != 0)
+        unType->setProprietes(ListeProprietesFiltrees);
     else
-        unType->setProprietes(listOfProperties);
+        unType->setProprietes(ListeProprietes);
+
     return unType;
 }
 
+
+/**
+ * @brief VisuRDFAnalyseur::id
+ * Variable statique permettant de créer un identifiant pour chaque nouvel objet
+ */
+
 int VisuRDFAnalyseur::id = 1;
 
-set<Objet* > VisuRDFAnalyseur::getObjectByType(string nameoftype, bool withnotnullproperties){
 
-    set<Objet* >  listOfObject = set<Objet* >();
-    Type* unType =  getTypeByName(nameoftype, withnotnullproperties);
+/**
+ * @brief VisuRDFAnalyseur::getObjectByType
+ * @param nomDuType
+ * @param sansProprietesNulles
+ * @return set<Objet*> l'ensemble des objets du type recherché
+ */
 
-    list<ObjetRDF> listOfObjetRDF = extractor->getGrapheRDF()[nameoftype];
+set<Objet* > VisuRDFAnalyseur::getObjectByType(string nomDuType, bool sansProprietesNulles) {
+
+    set<Objet* >  listeObjets = set<Objet* >();
+    Type* unType =  getTypeByName(nomDuType, sansProprietesNulles);
+
+    list<ObjetRDF> listeObjetsRDF = extracteur->getGrapheRDF()[nomDuType];
     typedef list<ObjetRDF>::const_iterator ListObjetRDFIterator;
-    for (ListObjetRDFIterator objiter = listOfObjetRDF.begin(); objiter != listOfObjetRDF.end(); objiter++)
-    {
 
-        listOfObject .insert(new Objet(id++, unType, *objiter));
+    for (ListObjetRDFIterator objIter = listeObjetsRDF.begin(); objIter != listeObjetsRDF.end(); objIter++)
+    {
+        listeObjets.insert(new Objet(id++, unType, *objIter));
     }
 
-    return listOfObject;
-
+    return listeObjets;
 }
 
 
 VisuRDFAnalyseur::~VisuRDFAnalyseur() {
-}
 
-list<Objet> VisuRDFAnalyseur::getTousLesObjets() {
-    return tousLesObjets;
-}
-
-
-list<Type> VisuRDFAnalyseur::getTousLesTypes() {
-    return tousLesTypes;
 }

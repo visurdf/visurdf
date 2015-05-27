@@ -3,7 +3,7 @@
 Dessinateur::Dessinateur(VisuRDFAnalyseur * analyseur)
 {
     this->analyseur = analyseur;
-    listeObjets = analyseur->getTousLesObjets();
+    //listeObjets = analyseur->getTousLesObjets();
     listeTypes = analyseur->getAllTypes(true);
 
 }

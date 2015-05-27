@@ -4,16 +4,14 @@ GrapheRDF VisuRDFExtractor::grapheRDF ;
 
 string VisuRDFExtractor::baseURI = "";
 
-ObjetRDF VisuRDFExtractor::objetRDF;// objet RDF en cours d extraction
+// objet RDF en cours d extraction
+ObjetRDF VisuRDFExtractor::objetRDF;
 
 RelationRDF VisuRDFExtractor::relationRDF;
 
 VisuRDFExtractor::VisuRDFExtractor()
 {
 }
-
-
-
 
 /* rdfprint.c: print triples from parsing RDF/XML */
 
@@ -62,7 +60,7 @@ QName* VisuRDFExtractor::getSubject( raptor_statement* triple){
     }
     return NULL;
 }
-QName* VisuRDFExtractor::getObbject( raptor_statement* triple){
+QName* VisuRDFExtractor::getObjet( raptor_statement* triple){
     if(triple->object) {
         string datatype;
         if(triple->object->type == RAPTOR_TERM_TYPE_LITERAL) {
@@ -111,8 +109,8 @@ void VisuRDFExtractor::print_object(ObjetRDF _objetRDF){
     for (ObjetRDF::const_iterator iter = _objetRDF.begin(); iter != _objetRDF.end(); iter++)
     {
         typedef list<string>::const_iterator ListIterator;
-        for (ListIterator list_iter = iter->second.begin(); list_iter != iter->second.end(); list_iter++)
-            cout << "\t\t"<<  iter->first << " : " << *list_iter << endl;
+        for (ListIterator listIter = iter->second.begin(); listIter != iter->second.end(); listIter++)
+            cout << "\t\t"<<  iter->first << " : " << *listIter << endl;
 
 
     }
@@ -123,11 +121,11 @@ void VisuRDFExtractor::print_object(ObjetRDF _objetRDF){
 
 void VisuRDFExtractor::print_map(){
     cout << "Impression des objets du graphe" <<endl;
-    for (GrapheRDF::const_iterator grapheiter = grapheRDF.begin(); grapheiter != grapheRDF.end(); grapheiter++)
+    for (GrapheRDF::const_iterator grapheIter = grapheRDF.begin(); grapheIter != grapheRDF.end(); grapheIter++)
     {
-        cout << grapheiter->first << " : " <<endl;
+        cout << grapheIter->first << " : " <<endl;
         typedef list<ObjetRDF>::const_iterator ListObjetRDFIterator;
-        list < ObjetRDF > listOfRDFObject = grapheiter->second;
+        list < ObjetRDF > listOfRDFObject = grapheIter->second;
         for (ListObjetRDFIterator iter = listOfRDFObject.begin(); iter != listOfRDFObject.end(); iter++)
         {
             print_object(*iter);
@@ -144,8 +142,8 @@ void VisuRDFExtractor::print_map(){
      {
          cout << iter->first << ":" <<endl;
          typedef list<string>::const_iterator ListIterator;
-         for (ListIterator list_iter = iter->second.begin(); list_iter != iter->second.end(); list_iter++)
-             cout << "\t\t"<< *list_iter << endl;
+         for (ListIterator listIter = iter->second.begin(); listIter != iter->second.end(); listIter++)
+             cout << "\t\t"<< *listIter << endl;
 
      }
      cout <<  endl;
@@ -174,14 +172,14 @@ void VisuRDFExtractor::handle_triple(void* user_data, raptor_statement* triple)
 
 
             //printf("subject qname  : %s\n", subject->toString().c_str());
-            QName* object = getObbject(triple);
+            QName* object = getObjet(triple);
             list<string> listOfprop1;
             listOfprop1.push_back(object->getName());
             objetRDF["type"] = listOfprop1;
             //printf("object qname  : %s\n", object->toString().c_str());
 
-        }else{// c est soit une propriete simple soit une resource
-            QName* object = getObbject(triple);
+        }else{// c est soit une propriete simple soit une ressource
+            QName* object = getObjet(triple);
             if(object->getBaseUri().compare(baseURI) == 0){// cest une association
 
                 list<string> listOfName = objetRDF["name"];
@@ -239,14 +237,15 @@ void VisuRDFExtractor::parse_rdf_triple(char *rdfFile)
 
  set< string > VisuRDFExtractor::getClasses(){
 
-    set< string > listOfClasses = set< string >();
+    set< string > listeDesClasses = set< string >();
 
-    for (GrapheRDF::const_iterator grapheiter = grapheRDF.begin(); grapheiter != grapheRDF.end(); grapheiter++)
+    for (GrapheRDF::const_iterator grapheIter = grapheRDF.begin(); grapheIter != grapheRDF.end(); grapheIter++)
 
-        listOfClasses.insert(grapheiter->first);
+        listeDesClasses.insert(grapheIter->first);
 
-    return listOfClasses;
+    return listeDesClasses;
  }
+
  /*
  set< string > VisuRDFExtractor::getProperties(string clazz){
      list< ObjetRDF > listOfObjetRDF = grapheRDF[clazz];

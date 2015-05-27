@@ -71,9 +71,6 @@ public:
 };
 
 
-
-
-
 class VisuRDFExtractor
 {
 private:
@@ -83,7 +80,7 @@ private:
     static void printVector(string str);
     static void handle_triple(void* user_data, raptor_statement* triple) ;
     static  QName*  getSubject( raptor_statement* triple);
-    static  QName*  getObbject( raptor_statement* triple);
+    static  QName*  getObjet( raptor_statement* triple);
     static  QName* getPredicate( raptor_statement* triple);
 
     void print_object(ObjetRDF _objetRDF);
