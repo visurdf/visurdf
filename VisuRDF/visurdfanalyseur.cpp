@@ -93,7 +93,7 @@ set<Type* > VisuRDFAnalyseur::getAllTypes(bool withnotnullproperties){
 
         Type* unType =  getTypeByName(grapheiter->first, withnotnullproperties);
 
-<<<<<<< HEAD
+
         //            list< ObjetRDF > listOfObjetRDF = grapheiter->second;
         //            // nombre d objets
         //            unType->setNbObjet(listOfObjetRDF.size());
@@ -107,8 +107,7 @@ set<Type* > VisuRDFAnalyseur::getAllTypes(bool withnotnullproperties){
         //            }
 
         //            unType->setProprietes(listOfProperties);
-=======
->>>>>>> origin/master
+
 
 
         allTypes.insert(unType);
@@ -183,8 +182,7 @@ Type* VisuRDFAnalyseur::getTypeByName(string nameoftype, bool withnotnullpropert
     return unType;
 }
 
-<<<<<<< HEAD
-=======
+
 int VisuRDFAnalyseur::id = 1;
 
 set<Objet* > VisuRDFAnalyseur::getObjectByType(string nameoftype, bool withnotnullproperties){
@@ -204,7 +202,7 @@ set<Objet* > VisuRDFAnalyseur::getObjectByType(string nameoftype, bool withnotnu
 
 }
 
->>>>>>> origin/master
+
 
 VisuRDFAnalyseur::~VisuRDFAnalyseur() {
 }
