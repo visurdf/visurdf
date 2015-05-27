@@ -12,6 +12,7 @@ public:
     ~VisuRDFGenerateur();
     void dessin();
     void dessinTableau(VisuRDFType* type, int x, int y);
+    void dessinBoite(VisuRDFObjet* objet, int x, int y);
 
 private :
     VisuRDFDessinateur* dessinateur;
