@@ -29,9 +29,9 @@ VisuRDFGenerateur::~VisuRDFGenerateur() {
 
 void VisuRDFGenerateur::dessin() {
 
+    // Début du painter
     painter.begin(&generator);
 
-    /*------------ Déclaration d'une police utilisable en SVG -------------------*/
     //Famille de Police
     QFontDatabase fontDataBase;
     QString firstFont = fontDataBase.families().first();
@@ -45,6 +45,7 @@ void VisuRDFGenerateur::dessin() {
 
     dessinateur->dessinModeTableau(painter);
 
+    // Fin du painter
     painter.end();
     std::cout<<"Fin du dessin"<<std::endl;
 }
@@ -60,6 +61,8 @@ void VisuRDFGenerateur::dessin() {
  */
 
 void VisuRDFGenerateur::dessinTableau(VisuRDFType *type, int x, int y) {
+
+    // Utile pour les tests intermédiaires (à supprimer par la suite?)
 
     painter.begin(&generator);
 

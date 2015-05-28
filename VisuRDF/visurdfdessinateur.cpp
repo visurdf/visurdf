@@ -3,7 +3,6 @@
 VisuRDFDessinateur::VisuRDFDessinateur(VisuRDFAnalyseur * analyseur) {
 
     this->analyseur = analyseur;
-    //listeObjets = analyseur->getTousLesObjets();
     listeTypes = analyseur->getTousLesTypes(true);
     hauteurCase = 15;
     espacementVertical = 20;
@@ -20,17 +19,17 @@ VisuRDFDessinateur::~VisuRDFDessinateur() {
  * @brief Dessinateur::calculLargeurColonne
  * @param type
  * @param nomPropriete
- * @return largeur de la colonne
+ * @return largeur de la colonne correspondant à la propriété
  */
 
 float VisuRDFDessinateur::calculLargeurColonne(VisuRDFType * type, string nomPropriete) {
 
     int largeur = nomPropriete.size();
 
+    // On parcourt tous les objets du type et on récupère le maximum de la largeur des strings
     string nomType = type->getNom();
     set<VisuRDFObjet*> listeObjets = analyseur->getObjetsParType(nomType, false);
 
-    // On parcourt tous les objets du type
     for(set<VisuRDFObjet*>::iterator it = listeObjets.begin(); it!= listeObjets.end(); it++) {
 
         VisuRDFObjet* objet = *it;
@@ -50,7 +49,7 @@ float VisuRDFDessinateur::calculLargeurColonne(VisuRDFType * type, string nomPro
         }
     }
 
-    // A adapter en fonction de la largeur de la police
+    // On adapte en fonction de la largeur de la police
     return (largeur*pourcentagePolice);
 }
 
@@ -64,8 +63,9 @@ float VisuRDFDessinateur::calculLargeurColonne(VisuRDFType * type, string nomPro
 float VisuRDFDessinateur::calculLargeurTableau(VisuRDFType *type) {
 
     float largeur = 0;
-    list<string> proprietes = type->getProprietes();
 
+    // on calcule la somme des largeurs des colonnes correspondant aux propriétés du type
+    list<string> proprietes = type->getProprietes();
     for(list<string>::iterator it = proprietes.begin(); it!= proprietes.end(); it++) {
         string nomPropriete = *it;
         largeur = largeur + calculLargeurColonne(type, nomPropriete);
@@ -83,6 +83,7 @@ float VisuRDFDessinateur::calculLargeurTableau(VisuRDFType *type) {
 
 int VisuRDFDessinateur::calculHauteurTableau(VisuRDFType* type) {
 
+    // la hauteur du tableau est égale à la somme des objets + 2 (une ligne pour les noms des propriétés et une pour le type)
     int nbObjets = type->getNbObjet();
     int hauteur = nbObjets + 2;
 
@@ -97,6 +98,7 @@ int VisuRDFDessinateur::calculHauteurTableau(VisuRDFType* type) {
 
 int VisuRDFDessinateur::calculHauteurDessin() {
 
+    // Dans ce cas on met tous les tableaux les uns sous les autres
     int hauteur = espacementVertical;
     for (set<VisuRDFType*>::iterator it = listeTypes.begin(); it!= listeTypes.end(); it++){
         VisuRDFType* unType = *it;
@@ -117,16 +119,16 @@ int VisuRDFDessinateur::calculHauteurDessin() {
 
 void VisuRDFDessinateur::dessinTableau(VisuRDFType *type, int x, int y, QPainter &painter) {
 
-    string nomType = type->getNom();
 
     // Dessin du nom du type
+    string nomType = type->getNom();
     QRect rectType(x, y, (nomType.size())*pourcentagePolice, hauteurCase);
     painter.drawRect(rectType);
     painter.drawText(rectType, Qt::AlignCenter, QString(nomType.c_str()));
 
     y = y + hauteurCase;
 
-    // On dessine la première ligne
+    // Dessin de la première ligne
     list<string> proprietes = type->getProprietes();
     int xPropriete = x;
     for(list<string>::iterator it = proprietes.begin(); it!= proprietes.end(); it++) {
@@ -141,10 +143,10 @@ void VisuRDFDessinateur::dessinTableau(VisuRDFType *type, int x, int y, QPainter
         string nomType = type->getNom();
         set<VisuRDFObjet*> listeObjets = analyseur->getObjetsParType(nomType, false);
 
-        // On parcourt les objets du type pour dessiner les cases avec les valeurs de la propriete
+        // Dessin des lignes suivantes
         for(set<VisuRDFObjet*>::iterator it = listeObjets.begin(); it!= listeObjets.end(); it++) {
 
-            // On fait varier le placement vertical
+            // On fait varier le placement vertical (on passe à un autre objet)
             yObjet = yObjet + hauteurCase;
             VisuRDFObjet* objet = *it;
 
@@ -167,6 +169,7 @@ void VisuRDFDessinateur::dessinTableau(VisuRDFType *type, int x, int y, QPainter
                 painter.drawText(rectValeur, Qt::AlignCenter, QString(valeur.c_str()));
             }
         }
+        // On fait varier le placement horizontal (on passe à une autre propriété)
         xPropriete = xPropriete + largeurBoite;
     }
 }
@@ -179,6 +182,7 @@ void VisuRDFDessinateur::dessinTableau(VisuRDFType *type, int x, int y, QPainter
 
 void VisuRDFDessinateur::dessinModeTableau(QPainter &painter){
 
+    // Dans ce cas on met tous les tableaux les uns sous les autres    /
     int x = 20;
     int y = 20;
 
