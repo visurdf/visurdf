@@ -16,7 +16,6 @@ TEMPLATE = app
 SOURCES += \
     visurdfanalyseur.cpp \
     visurdfextracteur.cpp \
-    visurdfclassesvg.cpp \
     visurdftype.cpp \
     visurdfobjet.cpp \
     visurdfmain.cpp \
@@ -28,6 +27,5 @@ HEADERS += \
     visurdftype.h \
     visurdfobjet.h \
     visurdfgenerateur.h \
-    visurdfdessinateur.h \
-    visurdfclassesvg.h
+    visurdfdessinateur.h
 OTHER_FILES += Makefile

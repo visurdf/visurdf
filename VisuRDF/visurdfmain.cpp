@@ -1,7 +1,6 @@
 
 #include "visurdfextracteur.h"
 #include <QApplication>
-#include "visurdfclassesvg.h"
 #include "visurdfanalyseur.h"
 #include "visurdfdessinateur.h"
 #include "visurdfgenerateur.h"
@@ -13,12 +12,12 @@ int main(int argc, char *argv[])
     QApplication A(argc,argv);
 
     VisuRDFExtracteur visuRDFExtracteur;
-    // classesvg C;
+
 
     visuRDFExtracteur.parserTripletRdf(argv[1]);
     visuRDFExtracteur.afficherMap();
     visuRDFExtracteur.afficherRelations();
-    // C.drawSvg();
+
 
     cout << "\n Classes:\n" << endl;
     set<string > listeDesClasses = visuRDFExtracteur.getClasses();

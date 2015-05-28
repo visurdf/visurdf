@@ -44,16 +44,14 @@ OBJECTS_DIR   = ./
 ####### Files
 
 SOURCES       = main.cpp \
-		visurdfextractor.cpp \
-		classesvg.cpp \
+                visurdfextractor.cpp \
 		objet.cpp \
 		type.cpp \
 		generateur.cpp \
 		visurdfanalyseur.cpp \
 		dessinateur.cpp 
 OBJECTS       = main.o \
-		visurdfextractor.o \
-		classesvg.o \
+                visurdfextractor.o \
 		objet.o \
 		type.o \
 		generateur.o \
@@ -163,7 +161,7 @@ qmake:  FORCE
 
 dist: 
 	@$(CHK_DIR_EXISTS) .tmp/VisuRDF1.0.0 || $(MKDIR) .tmp/VisuRDF1.0.0 
-	$(COPY_FILE) --parents $(SOURCES) $(DIST) .tmp/VisuRDF1.0.0/ && $(COPY_FILE) --parents visurdfextractor.h classesvg.h objet.h type.h generateur.h visurdfextractor.h visurdfanalyseur.h type.h objet.h generateur.h dessinateur.h classesvg.h .tmp/VisuRDF1.0.0/ && $(COPY_FILE) --parents main.cpp visurdfextractor.cpp classesvg.cpp objet.cpp type.cpp generateur.cpp visurdfextractor.cpp visurdfanalyseur.cpp type.cpp objet.cpp main.cpp generateur.cpp dessinateur.cpp classesvg.cpp .tmp/VisuRDF1.0.0/ && (cd `dirname .tmp/VisuRDF1.0.0` && $(TAR) VisuRDF1.0.0.tar VisuRDF1.0.0 && $(COMPRESS) VisuRDF1.0.0.tar) && $(MOVE) `dirname .tmp/VisuRDF1.0.0`/VisuRDF1.0.0.tar.gz . && $(DEL_FILE) -r .tmp/VisuRDF1.0.0
+        $(COPY_FILE) --parents $(SOURCES) $(DIST) .tmp/VisuRDF1.0.0/ && $(COPY_FILE) --parents visurdfextractor.h objet.h type.h generateur.h visurdfextractor.h visurdfanalyseur.h type.h objet.h generateur.h dessinateur.h .tmp/VisuRDF1.0.0/ && $(COPY_FILE) --parents main.cpp visurdfextractor.cpp objet.cpp type.cpp generateur.cpp visurdfextractor.cpp visurdfanalyseur.cpp type.cpp objet.cpp main.cpp generateur.cpp dessinateur.cpp .tmp/VisuRDF1.0.0/ && (cd `dirname .tmp/VisuRDF1.0.0` && $(TAR) VisuRDF1.0.0.tar VisuRDF1.0.0 && $(COMPRESS) VisuRDF1.0.0.tar) && $(MOVE) `dirname .tmp/VisuRDF1.0.0`/VisuRDF1.0.0.tar.gz . && $(DEL_FILE) -r .tmp/VisuRDF1.0.0
 
 
 clean:compiler_clean 
@@ -204,7 +202,6 @@ compiler_clean:
 ####### Compile
 
 main.o: main.cpp visurdfextractor.h \
-		classesvg.h \
 		visurdfanalyseur.h \
 		objet.h \
 		type.h \
@@ -215,8 +212,6 @@ main.o: main.cpp visurdfextractor.h \
 visurdfextractor.o: visurdfextractor.cpp visurdfextractor.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o visurdfextractor.o visurdfextractor.cpp
 
-classesvg.o: classesvg.cpp classesvg.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o classesvg.o classesvg.cpp
 
 objet.o: objet.cpp objet.h \
 		visurdfextractor.h \
