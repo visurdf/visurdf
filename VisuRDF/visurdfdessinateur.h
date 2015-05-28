@@ -3,6 +3,7 @@
 #include "visurdfobjet.h"
 #include "visurdftype.h"
 #include "visurdfanalyseur.h"
+#include "visurdfboite.h"
 #include "string"
 #include <QPainter>
 #include <QRect>
@@ -17,6 +18,8 @@
 #include <QPaintEvent>
 #include <QWidget>
 
+
+typedef map< int, VisuRDFBoite* > boiteObjet;
 
 class VisuRDFDessinateur
 {
@@ -45,6 +48,9 @@ private :
     int espacementVertical;
     float pourcentagePolice;
     int pourcentagePoliceHauteur;
+
+    boiteObjet* mapBoiteObjet;
+
 };
 
 

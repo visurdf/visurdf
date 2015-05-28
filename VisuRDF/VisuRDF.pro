@@ -21,7 +21,8 @@ SOURCES += \
     visurdfobjet.cpp \
     visurdfmain.cpp \
     visurdfgenerateur.cpp \
-    visurdfdessinateur.cpp
+    visurdfdessinateur.cpp \
+    visurdfboite.cpp
 HEADERS += \
     visurdfanalyseur.h \
     visurdfextracteur.h \
@@ -29,5 +30,6 @@ HEADERS += \
     visurdfobjet.h \
     visurdfgenerateur.h \
     visurdfdessinateur.h \
-    visurdfclassesvg.h
+    visurdfclassesvg.h \
+    visurdfboite.h
 OTHER_FILES += Makefile

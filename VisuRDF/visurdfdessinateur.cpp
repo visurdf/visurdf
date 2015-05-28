@@ -145,6 +145,11 @@ void VisuRDFDessinateur::dessinTableau(VisuRDFType *type, int x, int y, QPainter
             yObjet = yObjet + hauteurCase;
             VisuRDFObjet* objet = *it;
 
+            // On remplit la map(id, boite)
+            int id = objet->getId();
+            VisuRDFBoite* boite = new VisuRDFBoite(x, yObjet, calculLargeurTableau(type), hauteurCase);
+            mapBoiteObjet->insert(std::make_pair(id, boite));
+
             ObjetRDF obj = objet->getProprietes();
 
             if(obj.size() != 0) {
@@ -258,6 +263,12 @@ void VisuRDFDessinateur::dessinBoite(VisuRDFObjet *objet, int x, int y, QPainter
 
     QRect rect(x,y,largeur,hauteur);
     painter.drawRect(rect);
+
+    // On remplit la map(id, boite)
+    int id = objet->getId();
+    VisuRDFBoite* boite = new VisuRDFBoite(x, y, largeur, hauteur);
+    mapBoiteObjet->insert(std::make_pair(id, boite));
+
 
     for(ObjetRDF::iterator it = proprietes.begin(); it!= proprietes.end(); it++){
         string nomProp = (*it).first;
