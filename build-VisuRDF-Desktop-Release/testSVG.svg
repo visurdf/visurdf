@@ -1,0 +1,925 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="352.778mm" height="686.153mm"
+ viewBox="0 0 1000 1945"
+ xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  version="1.2" baseProfile="tiny">
+<title>SVG Generator Example Drawing</title>
+<desc>Dessin svg pour une dÃ©monstration</desc>
+<defs>
+</defs>
+<g fill="none" stroke="black" stroke-width="1" fill-rule="evenodd" stroke-linecap="square" stroke-linejoin="bevel" >
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,20 L67,20 L67,35 L20,35 L20,20"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="29.625" y="29.2344" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >Equipement</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,35 L119,35 L119,50 L20,50 L20,35"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="41.5781" y="44.2344" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >Equipement.catÃ©gorie</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,50 L119,50 L119,65 L20,65 L20,50"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="64.6406" y="59.2344" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >VTM</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,65 L119,65 L119,80 L20,80 L20,65"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="61.5312" y="74.2344" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >POMPE</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,80 L119,80 L119,95 L20,95 L20,80"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="58.5312" y="89.2344" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >JONCTION</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,95 L119,95 L119,110 L20,110 L20,95"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="64.6406" y="104.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >VTM</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,110 L119,110 L119,125 L20,125 L20,110"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="62.1719" y="119.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >TUYAU</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,125 L119,125 L119,140 L20,140 L20,125"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="62.1719" y="134.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >TUYAU</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,140 L119,140 L119,155 L20,155 L20,140"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="62.1719" y="149.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >TUYAU</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,155 L119,155 L119,170 L20,170 L20,155"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="62.1719" y="164.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >TUYAU</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,170 L119,170 L119,185 L20,185 L20,170"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="62.1719" y="179.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >TUYAU</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,185 L119,185 L119,200 L20,200 L20,185"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="62.1719" y="194.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >TUYAU</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,200 L119,200 L119,215 L20,215 L20,200"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="62.1719" y="209.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >TUYAU</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,215 L119,215 L119,230 L20,230 L20,215"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="62.1719" y="224.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >TUYAU</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,230 L119,230 L119,245 L20,245 L20,230"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="58.5312" y="239.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >JONCTION</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,245 L119,245 L119,260 L20,260 L20,245"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="64.6406" y="254.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >VTM</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,260 L119,260 L119,275 L20,275 L20,260"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="62.1719" y="269.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >TUYAU</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,275 L119,275 L119,290 L20,290 L20,275"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="62.1719" y="284.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >TUYAU</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,290 L119,290 L119,305 L20,305 L20,290"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="64.6406" y="299.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >VTM</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,305 L119,305 L119,320 L20,320 L20,305"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="58.5312" y="314.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >JONCTION</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,320 L119,320 L119,335 L20,335 L20,320"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="64.6406" y="329.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >VTM</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,335 L119,335 L119,350 L20,350 L20,335"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="61.5312" y="344.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >POMPE</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,350 L119,350 L119,365 L20,365 L20,350"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="62.1719" y="359.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >TUYAU</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,365 L119,365 L119,380 L20,380 L20,365"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="64.6406" y="374.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >VTM</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,380 L119,380 L119,395 L20,395 L20,380"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="62.1719" y="389.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >TUYAU</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M119,35 L275,35 L275,50 L119,50 L119,35"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="153.5" y="44.2344" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >Objet_identifiÃ©.catÃ©gorie_AP929</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M119,50 L275,50 L275,65 L119,65 L119,50"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="169.359" y="59.2344" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >configuration_physique</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M119,65 L275,65 L275,80 L119,80 L119,65"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="169.359" y="74.2344" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >configuration_physique</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M119,80 L275,80 L275,95 L119,95 L119,80"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="169.359" y="89.2344" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >configuration_physique</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M119,95 L275,95 L275,110 L119,110 L119,95"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="169.359" y="104.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >configuration_physique</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M119,110 L275,110 L275,125 L119,125 L119,110"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="169.359" y="119.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >configuration_physique</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M119,125 L275,125 L275,140 L119,140 L119,125"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="169.359" y="134.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >configuration_physique</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M119,140 L275,140 L275,155 L119,155 L119,140"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="169.359" y="149.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >configuration_physique</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M119,155 L275,155 L275,170 L119,170 L119,155"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="169.359" y="164.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >configuration_physique</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M119,170 L275,170 L275,185 L119,185 L119,170"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="169.359" y="179.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >configuration_physique</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M119,185 L275,185 L275,200 L119,200 L119,185"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="169.359" y="194.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >configuration_physique</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M119,200 L275,200 L275,215 L119,215 L119,200"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="169.359" y="209.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >configuration_physique</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M119,215 L275,215 L275,230 L119,230 L119,215"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="169.359" y="224.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >configuration_physique</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M119,230 L275,230 L275,245 L119,245 L119,230"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="169.359" y="239.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >configuration_physique</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M119,245 L275,245 L275,260 L119,260 L119,245"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="169.359" y="254.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >configuration_physique</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M119,260 L275,260 L275,275 L119,275 L119,260"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="169.359" y="269.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >configuration_physique</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M119,275 L275,275 L275,290 L119,290 L119,275"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="169.359" y="284.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >configuration_physique</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M119,290 L275,290 L275,305 L119,305 L119,290"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="169.359" y="299.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >configuration_physique</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M119,305 L275,305 L275,320 L119,320 L119,305"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="169.359" y="314.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >configuration_physique</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M119,320 L275,320 L275,335 L119,335 L119,320"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="169.359" y="329.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >configuration_physique</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M119,335 L275,335 L275,350 L119,350 L119,335"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="169.359" y="344.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >configuration_physique</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M119,350 L275,350 L275,365 L119,365 L119,350"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="169.359" y="359.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >configuration_physique</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M119,365 L275,365 L275,380 L119,380 L119,365"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="169.359" y="374.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >configuration_physique</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M119,380 L275,380 L275,395 L119,395 L119,380"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="169.359" y="389.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >configuration_physique</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M275,35 L336,35 L336,50 L275,50 L275,35"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="299.203" y="44.2344" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >name</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M275,50 L336,50 L336,65 L275,65 L275,50"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="287.875" y="59.2344" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >dom.PTR-A002</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M275,65 L336,65 L336,80 L275,80 L275,65"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="287.875" y="74.2344" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >dom.PTR-A003</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M275,80 L336,80 L336,95 L275,95 L275,80"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="287.875" y="89.2344" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >dom.PTR-A011</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M275,95 L336,95 L336,110 L275,110 L275,95"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="287.875" y="104.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >dom.PTR-A012</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M275,110 L336,110 L336,125 L275,125 L275,110"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="287.875" y="119.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >dom.PTR-A013</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M275,125 L336,125 L336,140 L275,140 L275,125"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="287.875" y="134.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >dom.PTR-A014</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M275,140 L336,140 L336,155 L275,155 L275,140"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="287.875" y="149.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >dom.PTR-A021</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M275,155 L336,155 L336,170 L275,170 L275,155"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="287.875" y="164.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >dom.PTR-A022</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M275,170 L336,170 L336,185 L275,185 L275,170"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="287.484" y="179.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >dom.PTR005VB</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M275,185 L336,185 L336,200 L275,200 L275,185"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="287.484" y="194.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >dom.PTR007VB</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M275,200 L336,200 L336,215 L275,215 L275,200"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="286.891" y="209.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >dom.PTR-JN002</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M275,215 L336,215 L336,230 L275,230 L275,215"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="286.891" y="224.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >dom.PTR-JN004</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M275,230 L336,230 L336,245 L275,245 L275,230"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="287.484" y="239.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >dom.PTR008VB</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M275,245 L336,245 L336,260 L275,260 L275,245"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="287.875" y="254.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >dom.PTR-A023</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M275,260 L336,260 L336,275 L275,275 L275,260"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="287.484" y="269.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >dom.PTR011VB</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M275,275 L336,275 L336,290 L275,290 L275,275"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="287.484" y="284.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >dom.PTR012VB</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M275,290 L336,290 L336,305 L275,305 L275,290"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="287.406" y="299.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >dom.PTR021PO</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M275,305 L336,305 L336,320 L275,320 L275,305"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="287.406" y="314.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >dom.PTR022PO</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M275,320 L336,320 L336,335 L275,335 L275,320"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="287.484" y="329.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >dom.PTR040VB</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M275,335 L336,335 L336,350 L275,350 L275,335"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="286.75" y="344.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >dom.RRA-JN003</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M275,350 L336,350 L336,365 L275,365 L275,350"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="287.875" y="359.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >dom.PTR-A024</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M275,365 L336,365 L336,380 L275,380 L275,365"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="287.875" y="374.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >dom.PTR-A031</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M275,380 L336,380 L336,395 L275,395 L275,380"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="287.875" y="389.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >dom.PTR-A032</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,415 L77,415 L77,430 L20,430 L20,415"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="32.6562" y="424.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >Fonction_GEF</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,430 L176,430 L176,445 L20,445 L20,430"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="54.5" y="439.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >Objet_identifiÃ©.catÃ©gorie_AP929</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,445 L176,445 L176,460 L20,460 L20,445"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="96.4688" y="454.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >0</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,460 L176,460 L176,475 L20,475 L20,460"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="96.4688" y="469.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >0</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M176,430 L252,430 L252,445 L176,445 L176,430"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="207.703" y="439.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >name</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M176,445 L252,445 L252,460 L176,460 L176,445"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="190.969" y="454.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >dom.PTR021PO.GEF</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M176,460 L252,460 L252,475 L176,475 L176,460"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="190.969" y="469.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >dom.PTR022PO.GEF</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,495 L157,495 L157,510 L20,510 L20,495"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="49.6875" y="504.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >Fonction_procÃ©dÃ©_principale</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,510 L176,510 L176,525 L20,525 L20,510"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="54.5" y="519.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >Objet_identifiÃ©.catÃ©gorie_AP929</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,525 L176,525 L176,540 L20,540 L20,525"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="96.4688" y="534.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >0</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M176,510 L351,510 L351,525 L176,525 L176,510"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="228.75" y="519.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >Objet_identifiÃ©.dÃ©finition</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M176,525 L351,525 L351,540 L176,540 L176,525"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="217.281" y="534.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >Appoint piscine BK par 022PO et 031RF</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M351,510 L431,510 L431,525 L351,525 L351,510"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="384.703" y="519.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >name</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M351,525 L431,525 L431,540 L351,540 L351,525"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="368.016" y="534.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >dom.PTR.fP.APP013</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,560 L53,560 L53,575 L20,575 L20,560"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="27.6562" y="569.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >Capteur</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,575 L176,575 L176,590 L20,590 L20,575"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="54.5" y="584.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >Objet_identifiÃ©.catÃ©gorie_AP929</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,590 L176,590 L176,605 L20,605 L20,590"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="70.3594" y="599.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >configuration_physique</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M176,575 L233,575 L233,590 L176,590 L176,575"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="198.203" y="584.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >name</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M176,590 L233,590 L233,605 L176,605 L176,590"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="186.172" y="599.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >dom.PTR027MP</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,625 L58,625 L58,640 L20,640 L20,625"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="29.5156" y="634.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >Jonction</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,640 L176,640 L176,655 L20,655 L20,640"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="54.5" y="649.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >Objet_identifiÃ©.catÃ©gorie_AP929</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,655 L176,655 L176,670 L20,670 L20,655"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="70.3594" y="664.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >configuration_physique</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,670 L176,670 L176,685 L20,685 L20,670"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="70.3594" y="679.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >configuration_physique</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,685 L176,685 L176,700 L20,700 L20,685"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="70.3594" y="694.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >configuration_physique</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,700 L176,700 L176,715 L20,715 L20,700"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="70.3594" y="709.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >configuration_physique</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,715 L176,715 L176,730 L20,730 L20,715"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="70.3594" y="724.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >configuration_physique</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,730 L176,730 L176,745 L20,745 L20,730"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="70.3594" y="739.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >configuration_physique</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,745 L176,745 L176,760 L20,760 L20,745"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="70.3594" y="754.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >configuration_physique</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,760 L176,760 L176,775 L20,775 L20,760"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="70.3594" y="769.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >configuration_physique</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,775 L176,775 L176,790 L20,790 L20,775"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="70.3594" y="784.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >configuration_physique</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,790 L176,790 L176,805 L20,805 L20,790"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="70.3594" y="799.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >configuration_physique</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,805 L176,805 L176,820 L20,820 L20,805"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="70.3594" y="814.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >configuration_physique</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,820 L176,820 L176,835 L20,835 L20,820"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="70.3594" y="829.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >configuration_physique</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,835 L176,835 L176,850 L20,850 L20,835"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="70.3594" y="844.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >configuration_physique</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,850 L176,850 L176,865 L20,865 L20,850"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="70.3594" y="859.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >configuration_physique</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,865 L176,865 L176,880 L20,880 L20,865"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="70.3594" y="874.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >configuration_physique</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,880 L176,880 L176,895 L20,895 L20,880"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="70.3594" y="889.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >configuration_physique</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,895 L176,895 L176,910 L20,910 L20,895"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="70.3594" y="904.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >configuration_physique</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,910 L176,910 L176,925 L20,925 L20,910"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="70.3594" y="919.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >configuration_physique</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,925 L176,925 L176,940 L20,940 L20,925"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="70.3594" y="934.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >configuration_physique</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,940 L176,940 L176,955 L20,955 L20,940"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="70.3594" y="949.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >configuration_physique</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,955 L176,955 L176,970 L20,970 L20,955"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="70.3594" y="964.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >configuration_physique</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,970 L176,970 L176,985 L20,985 L20,970"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="70.3594" y="979.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >configuration_physique</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,985 L176,985 L176,1000 L20,1000 L20,985"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="70.3594" y="994.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >configuration_physique</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,1000 L176,1000 L176,1015 L20,1015 L20,1000"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="70.3594" y="1009.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >configuration_physique</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M176,640 L242,640 L242,655 L176,655 L176,640"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="202.703" y="649.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >name</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M176,655 L242,655 L242,670 L176,670 L176,655"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="188.734" y="664.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >dom.PTR-1-A021</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M176,670 L242,670 L242,685 L176,685 L176,670"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="188.734" y="679.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >dom.PTR-2-A022</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M176,685 L242,685 L242,700 L176,700 L176,685"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="188.734" y="694.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >dom.PTR-2-A023</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M176,700 L242,700 L242,715 L176,715 L176,700"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="188.734" y="709.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >dom.PTR-2-A024</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M176,715 L242,715 L242,730 L176,730 L176,715"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="188.734" y="724.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >dom.PTR-2-A031</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M176,730 L242,730 L242,745 L176,745 L176,730"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="188.734" y="739.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >dom.PTR-2-A032</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M176,745 L242,745 L242,760 L176,760 L176,745"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="188.734" y="754.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >dom.PTR-2-A012</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M176,760 L242,760 L242,775 L176,775 L176,760"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="188.734" y="769.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >dom.PTR-2-A013</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M176,775 L242,775 L242,790 L176,790 L176,775"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="188.734" y="784.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >dom.PTR-2-A014</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M176,790 L242,790 L242,805 L176,805 L176,790"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="188.734" y="799.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >dom.PTR-2-A021</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M176,805 L242,805 L242,820 L176,820 L176,805"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="188.734" y="814.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >dom.PTR-1-A011</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M176,820 L242,820 L242,835 L176,835 L176,820"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="188.734" y="829.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >dom.PTR-2-A002</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M176,835 L242,835 L242,850 L176,850 L176,835"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="188.734" y="844.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >dom.PTR-2-A003</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M176,850 L242,850 L242,865 L176,865 L176,850"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="188.734" y="859.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >dom.PTR-2-A011</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M176,865 L242,865 L242,880 L176,880 L176,865"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="188.734" y="874.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >dom.PTR-1-A002</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M176,880 L242,880 L242,895 L176,895 L176,880"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="188.734" y="889.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >dom.PTR-1-A012</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M176,895 L242,895 L242,910 L176,910 L176,895"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="188.734" y="904.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >dom.PTR-1-A013</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M176,910 L242,910 L242,925 L176,925 L176,910"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="188.734" y="919.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >dom.PTR-1-A014</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M176,925 L242,925 L242,940 L176,940 L176,925"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="188.734" y="934.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >dom.PTR-1-A024</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M176,940 L242,940 L242,955 L176,955 L176,940"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="188.734" y="949.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >dom.PTR-1-A003</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M176,955 L242,955 L242,970 L176,970 L176,955"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="188.734" y="964.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >dom.PTR-1-A022</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M176,970 L242,970 L242,985 L176,985 L176,970"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="188.734" y="979.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >dom.PTR-1-A023</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M176,985 L242,985 L242,1000 L176,1000 L176,985"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="188.734" y="994.234" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >dom.PTR-1-A031</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M176,1000 L242,1000 L242,1015 L176,1015 L176,1000"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="188.734" y="1009.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >dom.PTR-1-A032</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,1035 L39,1035 L39,1050 L20,1050 L20,1035"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="24.5781" y="1044.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >Port</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,1050 L176,1050 L176,1065 L20,1065 L20,1050"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="54.5" y="1059.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >Objet_identifiÃ©.catÃ©gorie_AP929</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,1065 L176,1065 L176,1080 L20,1080 L20,1065"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="70.3594" y="1074.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >configuration_physique</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,1080 L176,1080 L176,1095 L20,1095 L20,1080"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="70.3594" y="1089.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >configuration_physique</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,1095 L176,1095 L176,1110 L20,1110 L20,1095"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="70.3594" y="1104.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >configuration_physique</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,1110 L176,1110 L176,1125 L20,1125 L20,1110"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="70.3594" y="1119.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >configuration_physique</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,1125 L176,1125 L176,1140 L20,1140 L20,1125"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="70.3594" y="1134.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >configuration_physique</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,1140 L176,1140 L176,1155 L20,1155 L20,1140"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="70.3594" y="1149.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >configuration_physique</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,1155 L176,1155 L176,1170 L20,1170 L20,1155"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="70.3594" y="1164.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >configuration_physique</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,1170 L176,1170 L176,1185 L20,1185 L20,1170"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="70.3594" y="1179.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >configuration_physique</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,1185 L176,1185 L176,1200 L20,1200 L20,1185"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="70.3594" y="1194.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >configuration_physique</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,1200 L176,1200 L176,1215 L20,1215 L20,1200"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="70.3594" y="1209.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >configuration_physique</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,1215 L176,1215 L176,1230 L20,1230 L20,1215"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="70.3594" y="1224.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >configuration_physique</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,1230 L176,1230 L176,1245 L20,1245 L20,1230"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="70.3594" y="1239.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >configuration_physique</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,1245 L176,1245 L176,1260 L20,1260 L20,1245"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="70.3594" y="1254.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >configuration_physique</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,1260 L176,1260 L176,1275 L20,1275 L20,1260"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="70.3594" y="1269.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >configuration_physique</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,1275 L176,1275 L176,1290 L20,1290 L20,1275"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="70.3594" y="1284.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >configuration_physique</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,1290 L176,1290 L176,1305 L20,1305 L20,1290"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="70.3594" y="1299.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >configuration_physique</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,1305 L176,1305 L176,1320 L20,1320 L20,1305"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="70.3594" y="1314.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >configuration_physique</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,1320 L176,1320 L176,1335 L20,1335 L20,1320"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="70.3594" y="1329.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >configuration_physique</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,1335 L176,1335 L176,1350 L20,1350 L20,1335"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="70.3594" y="1344.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >configuration_physique</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,1350 L176,1350 L176,1365 L20,1365 L20,1350"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="70.3594" y="1359.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >configuration_physique</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,1365 L176,1365 L176,1380 L20,1380 L20,1365"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="70.3594" y="1374.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >configuration_physique</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,1380 L176,1380 L176,1395 L20,1395 L20,1380"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="70.3594" y="1389.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >configuration_physique</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,1395 L176,1395 L176,1410 L20,1410 L20,1395"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="70.3594" y="1404.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >configuration_physique</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,1410 L176,1410 L176,1425 L20,1425 L20,1410"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="70.3594" y="1419.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >configuration_physique</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,1425 L176,1425 L176,1440 L20,1440 L20,1425"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="70.3594" y="1434.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >configuration_physique</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,1440 L176,1440 L176,1455 L20,1455 L20,1440"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="70.3594" y="1449.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >configuration_physique</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,1455 L176,1455 L176,1470 L20,1470 L20,1455"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="70.3594" y="1464.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >configuration_physique</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,1470 L176,1470 L176,1485 L20,1485 L20,1470"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="70.3594" y="1479.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >configuration_physique</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,1485 L176,1485 L176,1500 L20,1500 L20,1485"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="70.3594" y="1494.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >configuration_physique</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,1500 L176,1500 L176,1515 L20,1515 L20,1500"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="70.3594" y="1509.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >configuration_physique</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,1515 L176,1515 L176,1530 L20,1530 L20,1515"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="70.3594" y="1524.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >configuration_physique</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,1530 L176,1530 L176,1545 L20,1545 L20,1530"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="70.3594" y="1539.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >configuration_physique</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,1545 L176,1545 L176,1560 L20,1560 L20,1545"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="70.3594" y="1554.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >configuration_physique</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,1560 L176,1560 L176,1575 L20,1575 L20,1560"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="70.3594" y="1569.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >configuration_physique</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,1575 L176,1575 L176,1590 L20,1590 L20,1575"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="70.3594" y="1584.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >configuration_physique</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,1590 L176,1590 L176,1605 L20,1605 L20,1590"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="70.3594" y="1599.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >configuration_physique</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,1605 L176,1605 L176,1620 L20,1620 L20,1605"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="70.3594" y="1614.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >configuration_physique</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,1620 L176,1620 L176,1635 L20,1635 L20,1620"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="70.3594" y="1629.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >configuration_physique</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,1635 L176,1635 L176,1650 L20,1650 L20,1635"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="70.3594" y="1644.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >configuration_physique</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,1650 L176,1650 L176,1665 L20,1665 L20,1650"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="70.3594" y="1659.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >configuration_physique</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,1665 L176,1665 L176,1680 L20,1680 L20,1665"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="70.3594" y="1674.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >configuration_physique</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,1680 L176,1680 L176,1695 L20,1695 L20,1680"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="70.3594" y="1689.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >configuration_physique</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,1695 L176,1695 L176,1710 L20,1710 L20,1695"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="70.3594" y="1704.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >configuration_physique</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,1710 L176,1710 L176,1725 L20,1725 L20,1710"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="70.3594" y="1719.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >configuration_physique</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,1725 L176,1725 L176,1740 L20,1740 L20,1725"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="70.3594" y="1734.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >configuration_physique</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M176,1050 L218,1050 L218,1065 L176,1065 L176,1050"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="185.938" y="1059.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >Port.sens</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M176,1065 L218,1065 L218,1080 L176,1080 L176,1065"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="186.219" y="1074.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >entrï¿½e</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M176,1080 L218,1080 L218,1095 L176,1095 L176,1080"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="186.219" y="1089.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >entrï¿½e</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M176,1095 L218,1095 L218,1110 L176,1110 L176,1095"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="186.219" y="1104.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >entrï¿½e</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M176,1110 L218,1110 L218,1125 L176,1125 L176,1110"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="190.062" y="1119.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >sortie</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M176,1125 L218,1125 L218,1140 L176,1140 L176,1125"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="186.219" y="1134.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >entrï¿½e</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M176,1140 L218,1140 L218,1155 L176,1155 L176,1140"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="190.062" y="1149.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >sortie</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M176,1155 L218,1155 L218,1170 L176,1170 L176,1155"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="186.219" y="1164.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >entrï¿½e</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M176,1170 L218,1170 L218,1185 L176,1185 L176,1170"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="190.062" y="1179.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >sortie</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M176,1185 L218,1185 L218,1200 L176,1200 L176,1185"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="190.062" y="1194.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >sortie</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M176,1200 L218,1200 L218,1215 L176,1215 L176,1200"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="190.062" y="1209.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >sortie</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M176,1215 L218,1215 L218,1230 L176,1230 L176,1215"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="186.219" y="1224.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >entrï¿½e</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M176,1230 L218,1230 L218,1245 L176,1245 L176,1230"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="190.062" y="1239.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >sortie</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M176,1245 L218,1245 L218,1260 L176,1260 L176,1245"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="186.219" y="1254.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >entrï¿½e</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M176,1260 L218,1260 L218,1275 L176,1275 L176,1260"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="186.219" y="1269.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >entrï¿½e</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M176,1275 L218,1275 L218,1290 L176,1290 L176,1275"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="186.219" y="1284.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >entrï¿½e</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M176,1290 L218,1290 L218,1305 L176,1305 L176,1290"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="190.062" y="1299.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >sortie</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M176,1305 L218,1305 L218,1320 L176,1320 L176,1305"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="186.219" y="1314.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >entrï¿½e</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M176,1320 L218,1320 L218,1335 L176,1335 L176,1320"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="190.062" y="1329.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >sortie</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M176,1335 L218,1335 L218,1350 L176,1350 L176,1335"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="186.219" y="1344.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >entrï¿½e</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M176,1350 L218,1350 L218,1365 L176,1365 L176,1350"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="190.062" y="1359.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >sortie</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M176,1365 L218,1365 L218,1380 L176,1380 L176,1365"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="186.219" y="1374.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >entrï¿½e</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M176,1380 L218,1380 L218,1395 L176,1395 L176,1380"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="190.062" y="1389.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >sortie</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M176,1395 L218,1395 L218,1410 L176,1410 L176,1395"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="186.219" y="1404.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >entrï¿½e</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M176,1410 L218,1410 L218,1425 L176,1425 L176,1410"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="190.062" y="1419.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >sortie</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M176,1425 L218,1425 L218,1440 L176,1440 L176,1425"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="190.062" y="1434.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >sortie</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M176,1440 L218,1440 L218,1455 L176,1455 L176,1440"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="186.219" y="1449.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >entrï¿½e</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M176,1455 L218,1455 L218,1470 L176,1470 L176,1455"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="186.219" y="1464.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >entrï¿½e</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M176,1470 L218,1470 L218,1485 L176,1485 L176,1470"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="186.219" y="1479.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >entrï¿½e</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M176,1485 L218,1485 L218,1500 L176,1500 L176,1485"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="190.062" y="1494.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >sortie</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M176,1500 L218,1500 L218,1515 L176,1515 L176,1500"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="186.219" y="1509.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >entrï¿½e</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M176,1515 L218,1515 L218,1530 L176,1530 L176,1515"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="190.062" y="1524.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >sortie</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M176,1530 L218,1530 L218,1545 L176,1545 L176,1530"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="186.219" y="1539.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >entrï¿½e</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M176,1545 L218,1545 L218,1560 L176,1560 L176,1545"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="190.062" y="1554.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >sortie</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M176,1560 L218,1560 L218,1575 L176,1575 L176,1560"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="186.219" y="1569.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >entrï¿½e</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M176,1575 L218,1575 L218,1590 L176,1590 L176,1575"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="190.062" y="1584.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >sortie</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M176,1590 L218,1590 L218,1605 L176,1605 L176,1590"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="186.219" y="1599.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >entrï¿½e</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M176,1605 L218,1605 L218,1620 L176,1620 L176,1605"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="190.062" y="1614.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >sortie</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M176,1620 L218,1620 L218,1635 L176,1635 L176,1620"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="186.219" y="1629.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >entrï¿½e</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M176,1635 L218,1635 L218,1650 L176,1650 L176,1635"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="190.062" y="1644.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >sortie</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M176,1650 L218,1650 L218,1665 L176,1665 L176,1650"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="190.062" y="1659.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >sortie</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M176,1665 L218,1665 L218,1680 L176,1680 L176,1665"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="186.219" y="1674.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >entrï¿½e</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M176,1680 L218,1680 L218,1695 L176,1695 L176,1680"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="190.062" y="1689.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >sortie</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M176,1695 L218,1695 L218,1710 L176,1710 L176,1695"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="190.062" y="1704.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >sortie</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M176,1710 L218,1710 L218,1725 L176,1725 L176,1710"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="186.219" y="1719.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >entrï¿½e</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M176,1725 L218,1725 L218,1740 L176,1740 L176,1725"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="190.062" y="1734.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >sortie</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M218,1050 L289,1050 L289,1065 L218,1065 L218,1050"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="247.203" y="1059.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >name</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M218,1065 L289,1065 L289,1080 L218,1080 L218,1065"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="233.328" y="1074.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >dom.PTR022PO.S</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M218,1080 L289,1080 L289,1095 L218,1095 L218,1080"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="233.297" y="1089.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >dom.PTR022PO.E</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M218,1095 L289,1095 L289,1110 L218,1110 L218,1095"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="232.641" y="1104.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >dom.PTR-JN002.S</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M218,1110 L289,1110 L289,1125 L218,1125 L218,1110"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="233.234" y="1119.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >dom.PTR008VB.E</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M218,1125 L289,1125 L289,1140 L218,1140 L218,1125"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="233.266" y="1134.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >dom.PTR008VB.S</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M218,1140 L289,1140 L289,1155 L218,1155 L218,1140"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="234.5" y="1149.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >dom.PTR-A022S</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M218,1155 L289,1155 L289,1170 L218,1170 L218,1155"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="232.609" y="1164.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >dom.PTR-JN002.E</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M218,1170 L289,1170 L289,1185 L218,1185 L218,1170"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="234.469" y="1179.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >dom.PTR-A023E</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M218,1185 L289,1185 L289,1200 L218,1200 L218,1185"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="234.5" y="1194.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >dom.PTR-A013S</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M218,1200 L289,1200 L289,1215 L218,1215 L218,1200"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="234.469" y="1209.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >dom.PTR-A024E</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M218,1215 L289,1215 L289,1230 L218,1230 L218,1215"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="234.5" y="1224.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >dom.PTR-A024S</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M218,1230 L289,1230 L289,1245 L218,1245 L218,1230"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="234.469" y="1239.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >dom.PTR-A031E</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M218,1245 L289,1245 L289,1260 L218,1260 L218,1245"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="234.5" y="1254.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >dom.PTR-A031S</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M218,1260 L289,1260 L289,1275 L218,1275 L218,1260"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="234.5" y="1269.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >dom.PTR-A011S</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M218,1275 L289,1275 L289,1290 L218,1290 L218,1275"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="234.469" y="1284.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >dom.PTR-A012E</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M218,1290 L289,1290 L289,1305 L218,1305 L218,1290"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="234.5" y="1299.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >dom.PTR-A002S</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M218,1305 L289,1305 L289,1320 L218,1320 L218,1305"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="234.469" y="1314.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >dom.PTR-A003E</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M218,1320 L289,1320 L289,1335 L218,1335 L218,1320"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="232.609" y="1329.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >dom.PTR-JN004.E</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M218,1335 L289,1335 L289,1350 L218,1350 L218,1335"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="234.469" y="1344.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >dom.PTR-A014E</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M218,1350 L289,1350 L289,1365 L218,1365 L218,1350"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="234.5" y="1359.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >dom.PTR-A014S</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M218,1365 L289,1365 L289,1380 L218,1380 L218,1365"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="234.469" y="1374.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >dom.PTR-A021E</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M218,1380 L289,1380 L289,1395 L218,1395 L218,1380"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="234.5" y="1389.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >dom.PTR-A021S</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M218,1395 L289,1395 L289,1410 L218,1410 L218,1395"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="234.469" y="1404.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >dom.PTR-A022E</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M218,1410 L289,1410 L289,1425 L218,1425 L218,1410"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="234.5" y="1419.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >dom.PTR-A023S</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M218,1425 L289,1425 L289,1440 L218,1440 L218,1425"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="234.469" y="1434.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >dom.PTR-A013E</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M218,1440 L289,1440 L289,1455 L218,1455 L218,1440"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="234.5" y="1449.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >dom.PTR-A012S</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M218,1455 L289,1455 L289,1470 L218,1470 L218,1455"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="234.5" y="1464.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >dom.PTR-A003S</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M218,1470 L289,1470 L289,1485 L218,1485 L218,1470"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="234.469" y="1479.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >dom.PTR-A011E</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M218,1485 L289,1485 L289,1500 L218,1500 L218,1485"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="234.469" y="1494.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >dom.PTR-A002E</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M218,1500 L289,1500 L289,1515 L218,1515 L218,1500"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="234.469" y="1509.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >dom.PTR-A032E</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M218,1515 L289,1515 L289,1530 L218,1530 L218,1515"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="234.5" y="1524.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >dom.PTR-A032S</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M218,1530 L289,1530 L289,1545 L218,1545 L218,1530"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="232.641" y="1539.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >dom.PTR-JN004.S</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M218,1545 L289,1545 L289,1560 L218,1560 L218,1545"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="233.266" y="1554.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >dom.PTR011VB.S</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M218,1560 L289,1560 L289,1575 L218,1575 L218,1560"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="233.234" y="1569.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >dom.PTR005VB.E</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M218,1575 L289,1575 L289,1590 L218,1590 L218,1575"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="233.266" y="1584.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >dom.PTR005VB.S</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M218,1590 L289,1590 L289,1605 L218,1605 L218,1590"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="233.234" y="1599.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >dom.PTR007VB.E</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M218,1605 L289,1605 L289,1620 L218,1620 L218,1605"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="233.266" y="1614.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >dom.PTR007VB.S</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M218,1620 L289,1620 L289,1635 L218,1635 L218,1620"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="233.234" y="1629.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >dom.PTR011VB.E</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M218,1635 L289,1635 L289,1650 L218,1650 L218,1635"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="233.234" y="1644.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >dom.PTR012VB.E</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M218,1650 L289,1650 L289,1665 L218,1665 L218,1650"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="233.234" y="1659.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >dom.PTR040VB.E</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M218,1665 L289,1665 L289,1680 L218,1680 L218,1665"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="233.266" y="1674.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >dom.PTR012VB.S</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M218,1680 L289,1680 L289,1695 L218,1695 L218,1680"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="233.297" y="1689.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >dom.PTR021PO.E</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M218,1695 L289,1695 L289,1710 L218,1710 L218,1695"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="233.328" y="1704.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >dom.PTR021PO.S</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M218,1710 L289,1710 L289,1725 L218,1725 L218,1710"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="233.266" y="1719.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >dom.PTR040VB.S</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M218,1725 L289,1725 L289,1740 L218,1740 L218,1725"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="232.484" y="1734.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >dom.RRA-JN003.E</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,1760 L110,1760 L110,1775 L20,1775 L20,1760"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="40.9531" y="1769.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >RepÃ¨re_fonctionnel</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,1775 L129,1775 L129,1790 L20,1790 L20,1775"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="44.5625" y="1784.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >RepÃ¨re_fonctionnel.nom</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,1790 L129,1790 L129,1805 L20,1805 L20,1790"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="62.4062" y="1799.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >PTR007VB</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,1805 L129,1805 L129,1820 L20,1820 L20,1805"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="62.0938" y="1814.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >PTR027MP</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,1820 L129,1820 L129,1835 L20,1835 L20,1820"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="62.3438" y="1829.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >PTR021PO</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,1835 L129,1835 L129,1850 L20,1850 L20,1835"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="62.4062" y="1844.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >PTR012VB</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,1850 L129,1850 L129,1865 L20,1865 L20,1850"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="62.3438" y="1859.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >PTR022PO</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,1865 L129,1865 L129,1880 L20,1880 L20,1865"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="62.4062" y="1874.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >PTR011VB</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,1880 L129,1880 L129,1895 L20,1895 L20,1880"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="62.4062" y="1889.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >PTR005VB</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,1895 L129,1895 L129,1910 L20,1910 L20,1895"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="62.4062" y="1904.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >PTR040VB</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,1910 L129,1910 L129,1925 L20,1925 L20,1910"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="62.4062" y="1919.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >PTR008VB</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M129,1775 L148,1775 L148,1790 L129,1790 L129,1775"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="132.203" y="1784.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >name</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M129,1790 L148,1790 L148,1805 L129,1805 L129,1790"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="132.266" y="1799.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >_105</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M129,1805 L148,1805 L148,1820 L129,1820 L129,1805"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="132.266" y="1814.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >_106</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M129,1820 L148,1820 L148,1835 L129,1835 L129,1820"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="133.797" y="1829.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >_98</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M129,1835 L148,1835 L148,1850 L129,1850 L129,1835"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="132.266" y="1844.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >_104</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M129,1850 L148,1850 L148,1865 L129,1865 L129,1850"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="132.266" y="1859.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >_102</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M129,1865 L148,1865 L148,1880 L129,1880 L129,1865"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="132.266" y="1874.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >_103</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M129,1880 L148,1880 L148,1895 L129,1895 L129,1880"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="132.266" y="1889.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >_100</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M129,1895 L148,1895 L148,1910 L129,1910 L129,1895"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="133.797" y="1904.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >_99</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M129,1910 L148,1910 L148,1925 L129,1925 L129,1910"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="132.266" y="1919.23" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="400" font-style="normal" 
+ >_101</text>
+</g>
+</g>
+</svg>

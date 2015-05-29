@@ -9,6 +9,10 @@ VisuRDFAnalyseur::VisuRDFAnalyseur(VisuRDFExtracteur *extracteur) {
 }
 
 
+VisuRDFAnalyseur::~VisuRDFAnalyseur() {
+}
+
+
 /**
  * @brief VisuRDFAnalyseur::getTousLesTypes
  *
@@ -136,13 +140,36 @@ set<VisuRDFObjet*> VisuRDFAnalyseur::getObjetsParType(string nomDuType, bool san
 
     for (ListObjetRDFIterator objIter = listeObjetsRDF.begin(); objIter != listeObjetsRDF.end(); objIter++)
     {
-        listeObjets.insert(new VisuRDFObjet(id++, unType, *objIter));
+        VisuRDFObjet* nouvelObjet = new VisuRDFObjet(id++, unType, *objIter);
+        listeObjets.insert(nouvelObjet);
+        tousLesObjets[nouvelObjet->getNom()] = nouvelObjet;
     }
 
     return listeObjets;
 }
 
 
-VisuRDFAnalyseur::~VisuRDFAnalyseur() {
+map<int, int> VisuRDFAnalyseur::getRelations() {
+    // recuperer la map des relations
+    // typedef map< string,  list <string> > RelationRDF; // a chaque objet associe ses relations
 
+    RelationRDF relationsExtracteur = extracteur->getRelationRDF();
+    map<int, int> mapRelations;
+
+    for (RelationRDF::const_iterator relationIter = relationsExtracteur.begin(); relationIter != relationsExtracteur.end(); relationIter++) {
+
+        map<string, VisuRDFObjet*>::iterator objet = tousLesObjets.find(relationIter->first);
+        objet->getNom();
+
+// pour chaque élément, on parcourt la liste de relations
+        //for (list<string>::const_iterator listIter = relationIter->second().begin(); listIter != relationIter->second().end(); listIter++) {
+            // transformer .first() et .second en objets
+            // recuperer les id (ou les objets ?)
+            // insérer (id, id) dans mapRelations
+
+        //}
+        //mapRelations[relationIter.first()] = list<Objets>;
+    }
 }
+
+

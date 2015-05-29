@@ -4,7 +4,6 @@
 // redéfinir copie constructeur?????????????
 VisuRDFObjet::VisuRDFObjet(int id, VisuRDFType *type, ObjetRDF proprietes) : id(id), type(type), proprietes(proprietes)
 {
-
 }
 
 
@@ -23,6 +22,13 @@ ObjetRDF VisuRDFObjet::getProprietes(){
 
 VisuRDFType *VisuRDFObjet::getType(){
     return type;
+}
+
+string VisuRDFObjet::getNom() {
+    ObjetRDF::iterator it = proprietes.find("name");
+    list<string> listNom = it->second;
+    string nom = listNom.front();
+    return nom;
 }
 
 

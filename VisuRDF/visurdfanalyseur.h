@@ -22,11 +22,13 @@ public:
     int compterTypes();
     VisuRDFType* getTypeParNom(string nomDuType,  bool sansProprietesNulles);
     set<VisuRDFObjet*> getObjetsParType(string nomDuType, bool sansProprietesNulles);
+    map<int, int> getRelations();
 
 private:
     VisuRDFExtracteur *extracteur;
     set<VisuRDFType*> tousLesTypes;
     static int id;
+    map<string, VisuRDFObjet*> tousLesObjets;
 };
 
 #endif // VISURDFANALYSEUR_H

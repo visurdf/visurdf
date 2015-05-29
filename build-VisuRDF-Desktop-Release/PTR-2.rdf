@@ -1,0 +1,828 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:cims="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#"
+   xmlns:m="http://www.cluster-connexion.org/SDS#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <m:Repère_fonctionnel rdf:about="_100">
+    <m:Repère_fonctionnel.nom>PTR040VB</m:Repère_fonctionnel.nom>
+  </m:Repère_fonctionnel>
+  <m:Repère_fonctionnel rdf:about="_101">
+    <m:Repère_fonctionnel.nom>PTR012VB</m:Repère_fonctionnel.nom>
+  </m:Repère_fonctionnel>
+  <m:Repère_fonctionnel rdf:about="_102">
+    <m:Repère_fonctionnel.nom>PTR022PO</m:Repère_fonctionnel.nom>
+  </m:Repère_fonctionnel>
+  <m:Repère_fonctionnel rdf:about="_103">
+    <m:Repère_fonctionnel.nom>PTR008VB</m:Repère_fonctionnel.nom>
+  </m:Repère_fonctionnel>
+  <m:Repère_fonctionnel rdf:about="_104">
+    <m:Repère_fonctionnel.nom>PTR005VB</m:Repère_fonctionnel.nom>
+  </m:Repère_fonctionnel>
+  <m:Repère_fonctionnel rdf:about="_105">
+    <m:Repère_fonctionnel.nom>PTR007VB</m:Repère_fonctionnel.nom>
+  </m:Repère_fonctionnel>
+  <m:Repère_fonctionnel rdf:about="_106">
+    <m:Repère_fonctionnel.nom>PTR027MP</m:Repère_fonctionnel.nom>
+  </m:Repère_fonctionnel>
+  <m:Repère_fonctionnel rdf:about="_98">
+    <m:Repère_fonctionnel.nom>PTR021PO</m:Repère_fonctionnel.nom>
+  </m:Repère_fonctionnel>
+  <m:Repère_fonctionnel rdf:about="_99">
+    <m:Repère_fonctionnel.nom>PTR011VB</m:Repère_fonctionnel.nom>
+  </m:Repère_fonctionnel>
+  <m:Jonction rdf:about="dom.PTR-1-A002">
+    <m:Jonction.port rdf:resource="dom.PTR-A002E"/>
+    <m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+    <m:Objet_identifié.définition></m:Objet_identifié.définition>
+    <m:Objet_identifié.icone></m:Objet_identifié.icone>
+  </m:Jonction>
+  <m:Jonction rdf:about="dom.PTR-1-A003">
+    <m:Jonction.port rdf:resource="dom.PTR-A003E"/>
+    <m:Jonction.port rdf:resource="dom.PTR005VB.S"/>
+    <m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+    <m:Objet_identifié.définition></m:Objet_identifié.définition>
+    <m:Objet_identifié.icone></m:Objet_identifié.icone>
+  </m:Jonction>
+  <m:Jonction rdf:about="dom.PTR-1-A011">
+    <m:Jonction.port rdf:resource="dom.PTR-A011E"/>
+    <m:Jonction.port rdf:resource="dom.PTR-JN002.S"/>
+    <m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+    <m:Objet_identifié.définition></m:Objet_identifié.définition>
+    <m:Objet_identifié.icone></m:Objet_identifié.icone>
+  </m:Jonction>
+  <m:Jonction rdf:about="dom.PTR-1-A012">
+    <m:Jonction.port rdf:resource="dom.PTR-A012E"/>
+    <m:Jonction.port rdf:resource="dom.PTR007VB.S"/>
+    <m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+    <m:Objet_identifié.définition></m:Objet_identifié.définition>
+    <m:Objet_identifié.icone></m:Objet_identifié.icone>
+  </m:Jonction>
+  <m:Jonction rdf:about="dom.PTR-1-A013">
+    <m:Jonction.port rdf:resource="dom.PTR-A013E"/>
+    <m:Jonction.port rdf:resource="dom.PTR021PO.S"/>
+    <m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+    <m:Objet_identifié.définition></m:Objet_identifié.définition>
+    <m:Objet_identifié.icone></m:Objet_identifié.icone>
+  </m:Jonction>
+  <m:Jonction rdf:about="dom.PTR-1-A014">
+    <m:Jonction.port rdf:resource="dom.PTR-A014E"/>
+    <m:Jonction.port rdf:resource="dom.PTR011VB.S"/>
+    <m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+    <m:Objet_identifié.définition></m:Objet_identifié.définition>
+    <m:Objet_identifié.icone></m:Objet_identifié.icone>
+  </m:Jonction>
+  <m:Jonction rdf:about="dom.PTR-1-A021">
+    <m:Jonction.port rdf:resource="dom.PTR-A021E"/>
+    <m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+    <m:Objet_identifié.définition></m:Objet_identifié.définition>
+    <m:Objet_identifié.icone></m:Objet_identifié.icone>
+  </m:Jonction>
+  <m:Jonction rdf:about="dom.PTR-1-A022">
+    <m:Jonction.port rdf:resource="dom.PTR-A022E"/>
+    <m:Jonction.port rdf:resource="dom.PTR008VB.S"/>
+    <m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+    <m:Objet_identifié.définition></m:Objet_identifié.définition>
+    <m:Objet_identifié.icone></m:Objet_identifié.icone>
+  </m:Jonction>
+  <m:Jonction rdf:about="dom.PTR-1-A023">
+    <m:Jonction.port rdf:resource="dom.PTR-A023E"/>
+    <m:Jonction.port rdf:resource="dom.PTR022PO.S"/>
+    <m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+    <m:Objet_identifié.définition></m:Objet_identifié.définition>
+    <m:Objet_identifié.icone></m:Objet_identifié.icone>
+  </m:Jonction>
+  <m:Jonction rdf:about="dom.PTR-1-A024">
+    <m:Jonction.port rdf:resource="dom.PTR-A024E"/>
+    <m:Jonction.port rdf:resource="dom.PTR012VB.S"/>
+    <m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+    <m:Objet_identifié.définition></m:Objet_identifié.définition>
+    <m:Objet_identifié.icone></m:Objet_identifié.icone>
+  </m:Jonction>
+  <m:Jonction rdf:about="dom.PTR-1-A031">
+    <m:Jonction.port rdf:resource="dom.PTR-A031E"/>
+    <m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+    <m:Objet_identifié.définition></m:Objet_identifié.définition>
+    <m:Objet_identifié.icone></m:Objet_identifié.icone>
+  </m:Jonction>
+  <m:Jonction rdf:about="dom.PTR-1-A032">
+    <m:Jonction.port rdf:resource="dom.PTR-A032E"/>
+    <m:Jonction.port rdf:resource="dom.PTR040VB.S"/>
+    <m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+    <m:Objet_identifié.définition></m:Objet_identifié.définition>
+    <m:Objet_identifié.icone></m:Objet_identifié.icone>
+  </m:Jonction>
+  <m:Jonction rdf:about="dom.PTR-2-A002">
+    <m:Jonction.port rdf:resource="dom.PTR-A002S"/>
+    <m:Jonction.port rdf:resource="dom.PTR005VB.E"/>
+    <m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+    <m:Objet_identifié.définition></m:Objet_identifié.définition>
+    <m:Objet_identifié.icone></m:Objet_identifié.icone>
+  </m:Jonction>
+  <m:Jonction rdf:about="dom.PTR-2-A003">
+    <m:Jonction.port rdf:resource="dom.PTR-A003S"/>
+    <m:Jonction.port rdf:resource="dom.PTR-JN002.E"/>
+    <m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+    <m:Objet_identifié.définition></m:Objet_identifié.définition>
+    <m:Objet_identifié.icone></m:Objet_identifié.icone>
+  </m:Jonction>
+  <m:Jonction rdf:about="dom.PTR-2-A011">
+    <m:Jonction.port rdf:resource="dom.PTR-A011S"/>
+    <m:Jonction.port rdf:resource="dom.PTR007VB.E"/>
+    <m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+    <m:Objet_identifié.définition></m:Objet_identifié.définition>
+    <m:Objet_identifié.icone></m:Objet_identifié.icone>
+  </m:Jonction>
+  <m:Jonction rdf:about="dom.PTR-2-A012">
+    <m:Jonction.port rdf:resource="dom.PTR-A012S"/>
+    <m:Jonction.port rdf:resource="dom.PTR021PO.E"/>
+    <m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+    <m:Objet_identifié.définition></m:Objet_identifié.définition>
+    <m:Objet_identifié.icone></m:Objet_identifié.icone>
+  </m:Jonction>
+  <m:Jonction rdf:about="dom.PTR-2-A013">
+    <m:Jonction.port rdf:resource="dom.PTR-A013S"/>
+    <m:Jonction.port rdf:resource="dom.PTR011VB.E"/>
+    <m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+    <m:Objet_identifié.définition></m:Objet_identifié.définition>
+    <m:Objet_identifié.icone></m:Objet_identifié.icone>
+  </m:Jonction>
+  <m:Jonction rdf:about="dom.PTR-2-A014">
+    <m:Jonction.port rdf:resource="dom.PTR-A014S"/>
+    <m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+    <m:Objet_identifié.définition></m:Objet_identifié.définition>
+    <m:Objet_identifié.icone></m:Objet_identifié.icone>
+  </m:Jonction>
+  <m:Jonction rdf:about="dom.PTR-2-A021">
+    <m:Jonction.port rdf:resource="dom.PTR-A021S"/>
+    <m:Jonction.port rdf:resource="dom.PTR008VB.E"/>
+    <m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+    <m:Objet_identifié.définition></m:Objet_identifié.définition>
+    <m:Objet_identifié.icone></m:Objet_identifié.icone>
+  </m:Jonction>
+  <m:Jonction rdf:about="dom.PTR-2-A022">
+    <m:Jonction.port rdf:resource="dom.PTR-A022S"/>
+    <m:Jonction.port rdf:resource="dom.PTR022PO.E"/>
+    <m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+    <m:Objet_identifié.définition></m:Objet_identifié.définition>
+    <m:Objet_identifié.icone></m:Objet_identifié.icone>
+  </m:Jonction>
+  <m:Jonction rdf:about="dom.PTR-2-A023">
+    <m:Jonction.port rdf:resource="dom.PTR-A023S"/>
+    <m:Jonction.port rdf:resource="dom.PTR012VB.E"/>
+    <m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+    <m:Objet_identifié.définition></m:Objet_identifié.définition>
+    <m:Objet_identifié.icone></m:Objet_identifié.icone>
+  </m:Jonction>
+  <m:Jonction rdf:about="dom.PTR-2-A024">
+    <m:Jonction.port rdf:resource="dom.PTR-A024S"/>
+    <m:Jonction.port rdf:resource="dom.PTR-JN004.E"/>
+    <m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+    <m:Objet_identifié.définition></m:Objet_identifié.définition>
+    <m:Objet_identifié.icone></m:Objet_identifié.icone>
+  </m:Jonction>
+  <m:Jonction rdf:about="dom.PTR-2-A031">
+    <m:Jonction.port rdf:resource="dom.PTR-A031S"/>
+    <m:Jonction.port rdf:resource="dom.PTR040VB.E"/>
+    <m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+    <m:Objet_identifié.définition></m:Objet_identifié.définition>
+    <m:Objet_identifié.icone></m:Objet_identifié.icone>
+  </m:Jonction>
+  <m:Jonction rdf:about="dom.PTR-2-A032">
+    <m:Jonction.port rdf:resource="dom.PTR-A032S"/>
+    <m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+    <m:Objet_identifié.définition></m:Objet_identifié.définition>
+    <m:Objet_identifié.icone></m:Objet_identifié.icone>
+  </m:Jonction>
+  <m:Equipement rdf:about="dom.PTR-A002">
+    <m:Equipement.catégorie>TUYAU</m:Equipement.catégorie>
+    <m:Equipement.port rdf:resource="dom.PTR-A002E"/>
+    <m:Equipement.port rdf:resource="dom.PTR-A002S"/>
+    <m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+    <m:Objet_identifié.définition></m:Objet_identifié.définition>
+    <m:Objet_identifié.icone></m:Objet_identifié.icone>
+  </m:Equipement>
+  <m:Port rdf:about="dom.PTR-A002E">
+    <m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+    <m:Objet_identifié.définition></m:Objet_identifié.définition>
+    <m:Objet_identifié.icone></m:Objet_identifié.icone>
+    <m:Port.fluide></m:Port.fluide>
+    <m:Port.rôle></m:Port.rôle>
+    <m:Port.sens>entr�e</m:Port.sens>
+    <m:Port.type_d_interface></m:Port.type_d_interface>
+  </m:Port>
+  <m:Port rdf:about="dom.PTR-A002S">
+    <m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+    <m:Objet_identifié.définition></m:Objet_identifié.définition>
+    <m:Objet_identifié.icone></m:Objet_identifié.icone>
+    <m:Port.fluide></m:Port.fluide>
+    <m:Port.rôle></m:Port.rôle>
+    <m:Port.sens>sortie</m:Port.sens>
+    <m:Port.type_d_interface></m:Port.type_d_interface>
+  </m:Port>
+  <m:Equipement rdf:about="dom.PTR-A003">
+    <m:Equipement.catégorie>TUYAU</m:Equipement.catégorie>
+    <m:Equipement.port rdf:resource="dom.PTR-A003E"/>
+    <m:Equipement.port rdf:resource="dom.PTR-A003S"/>
+    <m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+    <m:Objet_identifié.définition></m:Objet_identifié.définition>
+    <m:Objet_identifié.icone></m:Objet_identifié.icone>
+  </m:Equipement>
+  <m:Port rdf:about="dom.PTR-A003E">
+    <m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+    <m:Objet_identifié.définition></m:Objet_identifié.définition>
+    <m:Objet_identifié.icone></m:Objet_identifié.icone>
+    <m:Port.fluide></m:Port.fluide>
+    <m:Port.rôle></m:Port.rôle>
+    <m:Port.sens>entr�e</m:Port.sens>
+    <m:Port.type_d_interface></m:Port.type_d_interface>
+  </m:Port>
+  <m:Port rdf:about="dom.PTR-A003S">
+    <m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+    <m:Objet_identifié.définition></m:Objet_identifié.définition>
+    <m:Objet_identifié.icone></m:Objet_identifié.icone>
+    <m:Port.fluide></m:Port.fluide>
+    <m:Port.rôle></m:Port.rôle>
+    <m:Port.sens>sortie</m:Port.sens>
+    <m:Port.type_d_interface></m:Port.type_d_interface>
+  </m:Port>
+  <m:Equipement rdf:about="dom.PTR-A011">
+    <m:Equipement.catégorie>TUYAU</m:Equipement.catégorie>
+    <m:Equipement.port rdf:resource="dom.PTR-A011E"/>
+    <m:Equipement.port rdf:resource="dom.PTR-A011S"/>
+    <m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+    <m:Objet_identifié.définition></m:Objet_identifié.définition>
+    <m:Objet_identifié.icone></m:Objet_identifié.icone>
+  </m:Equipement>
+  <m:Port rdf:about="dom.PTR-A011E">
+    <m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+    <m:Objet_identifié.définition></m:Objet_identifié.définition>
+    <m:Objet_identifié.icone></m:Objet_identifié.icone>
+    <m:Port.fluide></m:Port.fluide>
+    <m:Port.rôle></m:Port.rôle>
+    <m:Port.sens>entr�e</m:Port.sens>
+    <m:Port.type_d_interface></m:Port.type_d_interface>
+  </m:Port>
+  <m:Port rdf:about="dom.PTR-A011S">
+    <m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+    <m:Objet_identifié.définition></m:Objet_identifié.définition>
+    <m:Objet_identifié.icone></m:Objet_identifié.icone>
+    <m:Port.fluide></m:Port.fluide>
+    <m:Port.rôle></m:Port.rôle>
+    <m:Port.sens>sortie</m:Port.sens>
+    <m:Port.type_d_interface></m:Port.type_d_interface>
+  </m:Port>
+  <m:Equipement rdf:about="dom.PTR-A012">
+    <m:Equipement.catégorie>TUYAU</m:Equipement.catégorie>
+    <m:Equipement.port rdf:resource="dom.PTR-A012E"/>
+    <m:Equipement.port rdf:resource="dom.PTR-A012S"/>
+    <m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+    <m:Objet_identifié.définition></m:Objet_identifié.définition>
+    <m:Objet_identifié.icone></m:Objet_identifié.icone>
+  </m:Equipement>
+  <m:Port rdf:about="dom.PTR-A012E">
+    <m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+    <m:Objet_identifié.définition></m:Objet_identifié.définition>
+    <m:Objet_identifié.icone></m:Objet_identifié.icone>
+    <m:Port.fluide></m:Port.fluide>
+    <m:Port.rôle></m:Port.rôle>
+    <m:Port.sens>entr�e</m:Port.sens>
+    <m:Port.type_d_interface></m:Port.type_d_interface>
+  </m:Port>
+  <m:Port rdf:about="dom.PTR-A012S">
+    <m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+    <m:Objet_identifié.définition></m:Objet_identifié.définition>
+    <m:Objet_identifié.icone></m:Objet_identifié.icone>
+    <m:Port.fluide></m:Port.fluide>
+    <m:Port.rôle></m:Port.rôle>
+    <m:Port.sens>sortie</m:Port.sens>
+    <m:Port.type_d_interface></m:Port.type_d_interface>
+  </m:Port>
+  <m:Equipement rdf:about="dom.PTR-A013">
+    <m:Equipement.catégorie>TUYAU</m:Equipement.catégorie>
+    <m:Equipement.port rdf:resource="dom.PTR-A013E"/>
+    <m:Equipement.port rdf:resource="dom.PTR-A013S"/>
+    <m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+    <m:Objet_identifié.définition></m:Objet_identifié.définition>
+    <m:Objet_identifié.icone></m:Objet_identifié.icone>
+  </m:Equipement>
+  <m:Port rdf:about="dom.PTR-A013E">
+    <m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+    <m:Objet_identifié.définition></m:Objet_identifié.définition>
+    <m:Objet_identifié.icone></m:Objet_identifié.icone>
+    <m:Port.fluide></m:Port.fluide>
+    <m:Port.rôle></m:Port.rôle>
+    <m:Port.sens>entr�e</m:Port.sens>
+    <m:Port.type_d_interface></m:Port.type_d_interface>
+  </m:Port>
+  <m:Port rdf:about="dom.PTR-A013S">
+    <m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+    <m:Objet_identifié.définition></m:Objet_identifié.définition>
+    <m:Objet_identifié.icone></m:Objet_identifié.icone>
+    <m:Port.fluide></m:Port.fluide>
+    <m:Port.rôle></m:Port.rôle>
+    <m:Port.sens>sortie</m:Port.sens>
+    <m:Port.type_d_interface></m:Port.type_d_interface>
+  </m:Port>
+  <m:Equipement rdf:about="dom.PTR-A014">
+    <m:Equipement.catégorie>TUYAU</m:Equipement.catégorie>
+    <m:Equipement.port rdf:resource="dom.PTR-A014E"/>
+    <m:Equipement.port rdf:resource="dom.PTR-A014S"/>
+    <m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+    <m:Objet_identifié.définition></m:Objet_identifié.définition>
+    <m:Objet_identifié.icone></m:Objet_identifié.icone>
+  </m:Equipement>
+  <m:Port rdf:about="dom.PTR-A014E">
+    <m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+    <m:Objet_identifié.définition></m:Objet_identifié.définition>
+    <m:Objet_identifié.icone></m:Objet_identifié.icone>
+    <m:Port.fluide></m:Port.fluide>
+    <m:Port.rôle></m:Port.rôle>
+    <m:Port.sens>entr�e</m:Port.sens>
+    <m:Port.type_d_interface></m:Port.type_d_interface>
+  </m:Port>
+  <m:Port rdf:about="dom.PTR-A014S">
+    <m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+    <m:Objet_identifié.définition></m:Objet_identifié.définition>
+    <m:Objet_identifié.icone></m:Objet_identifié.icone>
+    <m:Port.fluide></m:Port.fluide>
+    <m:Port.rôle></m:Port.rôle>
+    <m:Port.sens>sortie</m:Port.sens>
+    <m:Port.type_d_interface></m:Port.type_d_interface>
+  </m:Port>
+  <m:Equipement rdf:about="dom.PTR-A021">
+    <m:Equipement.catégorie>TUYAU</m:Equipement.catégorie>
+    <m:Equipement.port rdf:resource="dom.PTR-A021E"/>
+    <m:Equipement.port rdf:resource="dom.PTR-A021S"/>
+    <m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+    <m:Objet_identifié.définition></m:Objet_identifié.définition>
+    <m:Objet_identifié.icone></m:Objet_identifié.icone>
+  </m:Equipement>
+  <m:Port rdf:about="dom.PTR-A021E">
+    <m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+    <m:Objet_identifié.définition></m:Objet_identifié.définition>
+    <m:Objet_identifié.icone></m:Objet_identifié.icone>
+    <m:Port.fluide></m:Port.fluide>
+    <m:Port.rôle></m:Port.rôle>
+    <m:Port.sens>entr�e</m:Port.sens>
+    <m:Port.type_d_interface></m:Port.type_d_interface>
+  </m:Port>
+  <m:Port rdf:about="dom.PTR-A021S">
+    <m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+    <m:Objet_identifié.définition></m:Objet_identifié.définition>
+    <m:Objet_identifié.icone></m:Objet_identifié.icone>
+    <m:Port.fluide></m:Port.fluide>
+    <m:Port.rôle></m:Port.rôle>
+    <m:Port.sens>sortie</m:Port.sens>
+    <m:Port.type_d_interface></m:Port.type_d_interface>
+  </m:Port>
+  <m:Equipement rdf:about="dom.PTR-A022">
+    <m:Equipement.catégorie>TUYAU</m:Equipement.catégorie>
+    <m:Equipement.port rdf:resource="dom.PTR-A022E"/>
+    <m:Equipement.port rdf:resource="dom.PTR-A022S"/>
+    <m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+    <m:Objet_identifié.définition></m:Objet_identifié.définition>
+    <m:Objet_identifié.icone></m:Objet_identifié.icone>
+  </m:Equipement>
+  <m:Port rdf:about="dom.PTR-A022E">
+    <m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+    <m:Objet_identifié.définition></m:Objet_identifié.définition>
+    <m:Objet_identifié.icone></m:Objet_identifié.icone>
+    <m:Port.fluide></m:Port.fluide>
+    <m:Port.rôle></m:Port.rôle>
+    <m:Port.sens>entr�e</m:Port.sens>
+    <m:Port.type_d_interface></m:Port.type_d_interface>
+  </m:Port>
+  <m:Port rdf:about="dom.PTR-A022S">
+    <m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+    <m:Objet_identifié.définition></m:Objet_identifié.définition>
+    <m:Objet_identifié.icone></m:Objet_identifié.icone>
+    <m:Port.fluide></m:Port.fluide>
+    <m:Port.rôle></m:Port.rôle>
+    <m:Port.sens>sortie</m:Port.sens>
+    <m:Port.type_d_interface></m:Port.type_d_interface>
+  </m:Port>
+  <m:Equipement rdf:about="dom.PTR-A023">
+    <m:Equipement.catégorie>TUYAU</m:Equipement.catégorie>
+    <m:Equipement.port rdf:resource="dom.PTR-A023E"/>
+    <m:Equipement.port rdf:resource="dom.PTR-A023S"/>
+    <m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+    <m:Objet_identifié.définition></m:Objet_identifié.définition>
+    <m:Objet_identifié.icone></m:Objet_identifié.icone>
+  </m:Equipement>
+  <m:Port rdf:about="dom.PTR-A023E">
+    <m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+    <m:Objet_identifié.définition></m:Objet_identifié.définition>
+    <m:Objet_identifié.icone></m:Objet_identifié.icone>
+    <m:Port.fluide></m:Port.fluide>
+    <m:Port.rôle></m:Port.rôle>
+    <m:Port.sens>entr�e</m:Port.sens>
+    <m:Port.type_d_interface></m:Port.type_d_interface>
+  </m:Port>
+  <m:Port rdf:about="dom.PTR-A023S">
+    <m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+    <m:Objet_identifié.définition></m:Objet_identifié.définition>
+    <m:Objet_identifié.icone></m:Objet_identifié.icone>
+    <m:Port.fluide></m:Port.fluide>
+    <m:Port.rôle></m:Port.rôle>
+    <m:Port.sens>sortie</m:Port.sens>
+    <m:Port.type_d_interface></m:Port.type_d_interface>
+  </m:Port>
+  <m:Equipement rdf:about="dom.PTR-A024">
+    <m:Equipement.catégorie>TUYAU</m:Equipement.catégorie>
+    <m:Equipement.port rdf:resource="dom.PTR-A024E"/>
+    <m:Equipement.port rdf:resource="dom.PTR-A024S"/>
+    <m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+    <m:Objet_identifié.définition></m:Objet_identifié.définition>
+    <m:Objet_identifié.icone></m:Objet_identifié.icone>
+  </m:Equipement>
+  <m:Port rdf:about="dom.PTR-A024E">
+    <m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+    <m:Objet_identifié.définition></m:Objet_identifié.définition>
+    <m:Objet_identifié.icone></m:Objet_identifié.icone>
+    <m:Port.fluide></m:Port.fluide>
+    <m:Port.rôle></m:Port.rôle>
+    <m:Port.sens>entr�e</m:Port.sens>
+    <m:Port.type_d_interface></m:Port.type_d_interface>
+  </m:Port>
+  <m:Port rdf:about="dom.PTR-A024S">
+    <m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+    <m:Objet_identifié.définition></m:Objet_identifié.définition>
+    <m:Objet_identifié.icone></m:Objet_identifié.icone>
+    <m:Port.fluide></m:Port.fluide>
+    <m:Port.rôle></m:Port.rôle>
+    <m:Port.sens>sortie</m:Port.sens>
+    <m:Port.type_d_interface></m:Port.type_d_interface>
+  </m:Port>
+  <m:Equipement rdf:about="dom.PTR-A031">
+    <m:Equipement.catégorie>TUYAU</m:Equipement.catégorie>
+    <m:Equipement.port rdf:resource="dom.PTR-A031E"/>
+    <m:Equipement.port rdf:resource="dom.PTR-A031S"/>
+    <m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+    <m:Objet_identifié.définition></m:Objet_identifié.définition>
+    <m:Objet_identifié.icone></m:Objet_identifié.icone>
+  </m:Equipement>
+  <m:Port rdf:about="dom.PTR-A031E">
+    <m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+    <m:Objet_identifié.définition></m:Objet_identifié.définition>
+    <m:Objet_identifié.icone></m:Objet_identifié.icone>
+    <m:Port.fluide></m:Port.fluide>
+    <m:Port.rôle></m:Port.rôle>
+    <m:Port.sens>entr�e</m:Port.sens>
+    <m:Port.type_d_interface></m:Port.type_d_interface>
+  </m:Port>
+  <m:Port rdf:about="dom.PTR-A031S">
+    <m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+    <m:Objet_identifié.définition></m:Objet_identifié.définition>
+    <m:Objet_identifié.icone></m:Objet_identifié.icone>
+    <m:Port.fluide></m:Port.fluide>
+    <m:Port.rôle></m:Port.rôle>
+    <m:Port.sens>sortie</m:Port.sens>
+    <m:Port.type_d_interface></m:Port.type_d_interface>
+  </m:Port>
+  <m:Equipement rdf:about="dom.PTR-A032">
+    <m:Equipement.catégorie>TUYAU</m:Equipement.catégorie>
+    <m:Equipement.port rdf:resource="dom.PTR-A032E"/>
+    <m:Equipement.port rdf:resource="dom.PTR-A032S"/>
+    <m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+    <m:Objet_identifié.définition></m:Objet_identifié.définition>
+    <m:Objet_identifié.icone></m:Objet_identifié.icone>
+  </m:Equipement>
+  <m:Port rdf:about="dom.PTR-A032E">
+    <m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+    <m:Objet_identifié.définition></m:Objet_identifié.définition>
+    <m:Objet_identifié.icone></m:Objet_identifié.icone>
+    <m:Port.fluide></m:Port.fluide>
+    <m:Port.rôle></m:Port.rôle>
+    <m:Port.sens>entr�e</m:Port.sens>
+    <m:Port.type_d_interface></m:Port.type_d_interface>
+  </m:Port>
+  <m:Port rdf:about="dom.PTR-A032S">
+    <m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+    <m:Objet_identifié.définition></m:Objet_identifié.définition>
+    <m:Objet_identifié.icone></m:Objet_identifié.icone>
+    <m:Port.fluide></m:Port.fluide>
+    <m:Port.rôle></m:Port.rôle>
+    <m:Port.sens>sortie</m:Port.sens>
+    <m:Port.type_d_interface></m:Port.type_d_interface>
+  </m:Port>
+  <m:Equipement rdf:about="dom.PTR-JN002">
+    <m:Equipement.catégorie>JONCTION</m:Equipement.catégorie>
+    <m:Equipement.port rdf:resource="dom.PTR-JN002.E"/>
+    <m:Equipement.port rdf:resource="dom.PTR-JN002.S"/>
+    <m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+    <m:Objet_identifié.définition></m:Objet_identifié.définition>
+    <m:Objet_identifié.icone></m:Objet_identifié.icone>
+  </m:Equipement>
+  <m:Port rdf:about="dom.PTR-JN002.E">
+    <m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+    <m:Objet_identifié.définition></m:Objet_identifié.définition>
+    <m:Objet_identifié.icone></m:Objet_identifié.icone>
+    <m:Port.fluide></m:Port.fluide>
+    <m:Port.rôle></m:Port.rôle>
+    <m:Port.sens>entr�e</m:Port.sens>
+    <m:Port.type_d_interface></m:Port.type_d_interface>
+  </m:Port>
+  <m:Port rdf:about="dom.PTR-JN002.S">
+    <m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+    <m:Objet_identifié.définition></m:Objet_identifié.définition>
+    <m:Objet_identifié.icone></m:Objet_identifié.icone>
+    <m:Port.fluide></m:Port.fluide>
+    <m:Port.rôle></m:Port.rôle>
+    <m:Port.sens>sortie</m:Port.sens>
+    <m:Port.type_d_interface></m:Port.type_d_interface>
+  </m:Port>
+  <m:Equipement rdf:about="dom.PTR-JN004">
+    <m:Equipement.catégorie>JONCTION</m:Equipement.catégorie>
+    <m:Equipement.port rdf:resource="dom.PTR-JN004.E"/>
+    <m:Equipement.port rdf:resource="dom.PTR-JN004.S"/>
+    <m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+    <m:Objet_identifié.définition></m:Objet_identifié.définition>
+    <m:Objet_identifié.icone></m:Objet_identifié.icone>
+  </m:Equipement>
+  <m:Port rdf:about="dom.PTR-JN004.E">
+    <m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+    <m:Objet_identifié.définition></m:Objet_identifié.définition>
+    <m:Objet_identifié.icone></m:Objet_identifié.icone>
+    <m:Port.fluide></m:Port.fluide>
+    <m:Port.rôle></m:Port.rôle>
+    <m:Port.sens>entr�e</m:Port.sens>
+    <m:Port.type_d_interface></m:Port.type_d_interface>
+  </m:Port>
+  <m:Port rdf:about="dom.PTR-JN004.S">
+    <m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+    <m:Objet_identifié.définition></m:Objet_identifié.définition>
+    <m:Objet_identifié.icone></m:Objet_identifié.icone>
+    <m:Port.fluide></m:Port.fluide>
+    <m:Port.rôle></m:Port.rôle>
+    <m:Port.sens>sortie</m:Port.sens>
+    <m:Port.type_d_interface></m:Port.type_d_interface>
+  </m:Port>
+  <m:Fonction_procédé_principale rdf:about="dom.PTR.fP.APP013">
+    <m:Fonction_procédé_principale.équipement rdf:resource="dom.PTR040VB"/>
+    <m:Objet_identifié.catégorie_AP929>0</m:Objet_identifié.catégorie_AP929>
+    <m:Objet_identifié.définition>Appoint piscine BK par 022PO et 031RF</m:Objet_identifié.définition>
+    <m:Objet_identifié.icone></m:Objet_identifié.icone>
+  </m:Fonction_procédé_principale>
+  <m:Equipement rdf:about="dom.PTR005VB">
+    <m:Equipement.catégorie>VTM</m:Equipement.catégorie>
+    <m:Equipement.port rdf:resource="dom.PTR005VB.E"/>
+    <m:Equipement.port rdf:resource="dom.PTR005VB.S"/>
+    <m:Equipement.repère_fonctionnel rdf:resource="_104"/>
+    <m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+    <m:Objet_identifié.définition></m:Objet_identifié.définition>
+    <m:Objet_identifié.icone></m:Objet_identifié.icone>
+  </m:Equipement>
+  <m:Port rdf:about="dom.PTR005VB.E">
+    <m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+    <m:Objet_identifié.définition></m:Objet_identifié.définition>
+    <m:Objet_identifié.icone></m:Objet_identifié.icone>
+    <m:Port.fluide></m:Port.fluide>
+    <m:Port.rôle></m:Port.rôle>
+    <m:Port.sens>entr�e</m:Port.sens>
+    <m:Port.type_d_interface></m:Port.type_d_interface>
+  </m:Port>
+  <m:Port rdf:about="dom.PTR005VB.S">
+    <m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+    <m:Objet_identifié.définition></m:Objet_identifié.définition>
+    <m:Objet_identifié.icone></m:Objet_identifié.icone>
+    <m:Port.fluide></m:Port.fluide>
+    <m:Port.rôle></m:Port.rôle>
+    <m:Port.sens>sortie</m:Port.sens>
+    <m:Port.type_d_interface></m:Port.type_d_interface>
+  </m:Port>
+  <m:Equipement rdf:about="dom.PTR007VB">
+    <m:Equipement.catégorie>VTM</m:Equipement.catégorie>
+    <m:Equipement.port rdf:resource="dom.PTR007VB.E"/>
+    <m:Equipement.port rdf:resource="dom.PTR007VB.S"/>
+    <m:Equipement.repère_fonctionnel rdf:resource="_105"/>
+    <m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+    <m:Objet_identifié.définition></m:Objet_identifié.définition>
+    <m:Objet_identifié.icone></m:Objet_identifié.icone>
+  </m:Equipement>
+  <m:Port rdf:about="dom.PTR007VB.E">
+    <m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+    <m:Objet_identifié.définition></m:Objet_identifié.définition>
+    <m:Objet_identifié.icone></m:Objet_identifié.icone>
+    <m:Port.fluide></m:Port.fluide>
+    <m:Port.rôle></m:Port.rôle>
+    <m:Port.sens>entr�e</m:Port.sens>
+    <m:Port.type_d_interface></m:Port.type_d_interface>
+  </m:Port>
+  <m:Port rdf:about="dom.PTR007VB.S">
+    <m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+    <m:Objet_identifié.définition></m:Objet_identifié.définition>
+    <m:Objet_identifié.icone></m:Objet_identifié.icone>
+    <m:Port.fluide></m:Port.fluide>
+    <m:Port.rôle></m:Port.rôle>
+    <m:Port.sens>sortie</m:Port.sens>
+    <m:Port.type_d_interface></m:Port.type_d_interface>
+  </m:Port>
+  <m:Equipement rdf:about="dom.PTR008VB">
+    <m:Equipement.catégorie>VTM</m:Equipement.catégorie>
+    <m:Equipement.port rdf:resource="dom.PTR008VB.E"/>
+    <m:Equipement.port rdf:resource="dom.PTR008VB.S"/>
+    <m:Equipement.repère_fonctionnel rdf:resource="_103"/>
+    <m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+    <m:Objet_identifié.définition></m:Objet_identifié.définition>
+    <m:Objet_identifié.icone></m:Objet_identifié.icone>
+  </m:Equipement>
+  <m:Port rdf:about="dom.PTR008VB.E">
+    <m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+    <m:Objet_identifié.définition></m:Objet_identifié.définition>
+    <m:Objet_identifié.icone></m:Objet_identifié.icone>
+    <m:Port.fluide></m:Port.fluide>
+    <m:Port.rôle></m:Port.rôle>
+    <m:Port.sens>entr�e</m:Port.sens>
+    <m:Port.type_d_interface></m:Port.type_d_interface>
+  </m:Port>
+  <m:Port rdf:about="dom.PTR008VB.S">
+    <m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+    <m:Objet_identifié.définition></m:Objet_identifié.définition>
+    <m:Objet_identifié.icone></m:Objet_identifié.icone>
+    <m:Port.fluide></m:Port.fluide>
+    <m:Port.rôle></m:Port.rôle>
+    <m:Port.sens>sortie</m:Port.sens>
+    <m:Port.type_d_interface></m:Port.type_d_interface>
+  </m:Port>
+  <m:Equipement rdf:about="dom.PTR011VB">
+    <m:Equipement.catégorie>VTM</m:Equipement.catégorie>
+    <m:Equipement.port rdf:resource="dom.PTR011VB.E"/>
+    <m:Equipement.port rdf:resource="dom.PTR011VB.S"/>
+    <m:Equipement.repère_fonctionnel rdf:resource="_99"/>
+    <m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+    <m:Objet_identifié.définition></m:Objet_identifié.définition>
+    <m:Objet_identifié.icone></m:Objet_identifié.icone>
+  </m:Equipement>
+  <m:Port rdf:about="dom.PTR011VB.E">
+    <m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+    <m:Objet_identifié.définition></m:Objet_identifié.définition>
+    <m:Objet_identifié.icone></m:Objet_identifié.icone>
+    <m:Port.fluide></m:Port.fluide>
+    <m:Port.rôle></m:Port.rôle>
+    <m:Port.sens>entr�e</m:Port.sens>
+    <m:Port.type_d_interface></m:Port.type_d_interface>
+  </m:Port>
+  <m:Port rdf:about="dom.PTR011VB.S">
+    <m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+    <m:Objet_identifié.définition></m:Objet_identifié.définition>
+    <m:Objet_identifié.icone></m:Objet_identifié.icone>
+    <m:Port.fluide></m:Port.fluide>
+    <m:Port.rôle></m:Port.rôle>
+    <m:Port.sens>sortie</m:Port.sens>
+    <m:Port.type_d_interface></m:Port.type_d_interface>
+  </m:Port>
+  <m:Equipement rdf:about="dom.PTR012VB">
+    <m:Equipement.catégorie>VTM</m:Equipement.catégorie>
+    <m:Equipement.port rdf:resource="dom.PTR012VB.E"/>
+    <m:Equipement.port rdf:resource="dom.PTR012VB.S"/>
+    <m:Equipement.repère_fonctionnel rdf:resource="_101"/>
+    <m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+    <m:Objet_identifié.définition></m:Objet_identifié.définition>
+    <m:Objet_identifié.icone></m:Objet_identifié.icone>
+  </m:Equipement>
+  <m:Port rdf:about="dom.PTR012VB.E">
+    <m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+    <m:Objet_identifié.définition></m:Objet_identifié.définition>
+    <m:Objet_identifié.icone></m:Objet_identifié.icone>
+    <m:Port.fluide></m:Port.fluide>
+    <m:Port.rôle></m:Port.rôle>
+    <m:Port.sens>entr�e</m:Port.sens>
+    <m:Port.type_d_interface></m:Port.type_d_interface>
+  </m:Port>
+  <m:Port rdf:about="dom.PTR012VB.S">
+    <m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+    <m:Objet_identifié.définition></m:Objet_identifié.définition>
+    <m:Objet_identifié.icone></m:Objet_identifié.icone>
+    <m:Port.fluide></m:Port.fluide>
+    <m:Port.rôle></m:Port.rôle>
+    <m:Port.sens>sortie</m:Port.sens>
+    <m:Port.type_d_interface></m:Port.type_d_interface>
+  </m:Port>
+  <m:Equipement rdf:about="dom.PTR021PO">
+    <m:Equipement.catégorie>POMPE</m:Equipement.catégorie>
+    <m:Equipement.port rdf:resource="dom.PTR021PO.E"/>
+    <m:Equipement.port rdf:resource="dom.PTR021PO.S"/>
+    <m:Equipement.repère_fonctionnel rdf:resource="_98"/>
+    <m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+    <m:Objet_identifié.définition></m:Objet_identifié.définition>
+    <m:Objet_identifié.icone></m:Objet_identifié.icone>
+  </m:Equipement>
+  <m:Port rdf:about="dom.PTR021PO.E">
+    <m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+    <m:Objet_identifié.définition></m:Objet_identifié.définition>
+    <m:Objet_identifié.icone></m:Objet_identifié.icone>
+    <m:Port.fluide></m:Port.fluide>
+    <m:Port.rôle></m:Port.rôle>
+    <m:Port.sens>entr�e</m:Port.sens>
+    <m:Port.type_d_interface></m:Port.type_d_interface>
+  </m:Port>
+  <m:Fonction_GEF rdf:about="dom.PTR021PO.GEF">
+    <m:Objet_identifié.catégorie_AP929>0</m:Objet_identifié.catégorie_AP929>
+    <m:Objet_identifié.définition></m:Objet_identifié.définition>
+    <m:Objet_identifié.icone></m:Objet_identifié.icone>
+  </m:Fonction_GEF>
+  <m:Port rdf:about="dom.PTR021PO.S">
+    <m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+    <m:Objet_identifié.définition></m:Objet_identifié.définition>
+    <m:Objet_identifié.icone></m:Objet_identifié.icone>
+    <m:Port.fluide></m:Port.fluide>
+    <m:Port.rôle></m:Port.rôle>
+    <m:Port.sens>sortie</m:Port.sens>
+    <m:Port.type_d_interface></m:Port.type_d_interface>
+  </m:Port>
+  <m:Equipement rdf:about="dom.PTR022PO">
+    <m:Equipement.catégorie>POMPE</m:Equipement.catégorie>
+    <m:Equipement.port rdf:resource="dom.PTR022PO.E"/>
+    <m:Equipement.port rdf:resource="dom.PTR022PO.S"/>
+    <m:Equipement.repère_fonctionnel rdf:resource="_102"/>
+    <m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+    <m:Objet_identifié.définition></m:Objet_identifié.définition>
+    <m:Objet_identifié.icone></m:Objet_identifié.icone>
+  </m:Equipement>
+  <m:Port rdf:about="dom.PTR022PO.E">
+    <m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+    <m:Objet_identifié.définition></m:Objet_identifié.définition>
+    <m:Objet_identifié.icone></m:Objet_identifié.icone>
+    <m:Port.fluide></m:Port.fluide>
+    <m:Port.rôle></m:Port.rôle>
+    <m:Port.sens>entr�e</m:Port.sens>
+    <m:Port.type_d_interface></m:Port.type_d_interface>
+  </m:Port>
+  <m:Fonction_GEF rdf:about="dom.PTR022PO.GEF">
+    <m:Fonction_GEF.équipement rdf:resource="dom.PTR022PO"/>
+    <m:Objet_identifié.catégorie_AP929>0</m:Objet_identifié.catégorie_AP929>
+    <m:Objet_identifié.définition></m:Objet_identifié.définition>
+    <m:Objet_identifié.icone></m:Objet_identifié.icone>
+  </m:Fonction_GEF>
+  <m:Port rdf:about="dom.PTR022PO.S">
+    <m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+    <m:Objet_identifié.définition></m:Objet_identifié.définition>
+    <m:Objet_identifié.icone></m:Objet_identifié.icone>
+    <m:Port.fluide></m:Port.fluide>
+    <m:Port.rôle></m:Port.rôle>
+    <m:Port.sens>sortie</m:Port.sens>
+    <m:Port.type_d_interface></m:Port.type_d_interface>
+  </m:Port>
+  <m:Capteur rdf:about="dom.PTR027MP">
+    <m:Capteur.port rdf:resource="dom.PTR021PO.S"/>
+    <m:Capteur.repère_fonctionnel rdf:resource="_106"/>
+    <m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+    <m:Objet_identifié.définition></m:Objet_identifié.définition>
+    <m:Objet_identifié.icone></m:Objet_identifié.icone>
+  </m:Capteur>
+  <m:Equipement rdf:about="dom.PTR040VB">
+    <m:Equipement.catégorie>VTM</m:Equipement.catégorie>
+    <m:Equipement.port rdf:resource="dom.PTR040VB.E"/>
+    <m:Equipement.port rdf:resource="dom.PTR040VB.S"/>
+    <m:Equipement.repère_fonctionnel rdf:resource="_100"/>
+    <m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+    <m:Objet_identifié.définition></m:Objet_identifié.définition>
+    <m:Objet_identifié.icone></m:Objet_identifié.icone>
+  </m:Equipement>
+  <m:Port rdf:about="dom.PTR040VB.E">
+    <m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+    <m:Objet_identifié.définition></m:Objet_identifié.définition>
+    <m:Objet_identifié.icone></m:Objet_identifié.icone>
+    <m:Port.fluide></m:Port.fluide>
+    <m:Port.rôle></m:Port.rôle>
+    <m:Port.sens>entr�e</m:Port.sens>
+    <m:Port.type_d_interface></m:Port.type_d_interface>
+  </m:Port>
+  <m:Port rdf:about="dom.PTR040VB.S">
+    <m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+    <m:Objet_identifié.définition></m:Objet_identifié.définition>
+    <m:Objet_identifié.icone></m:Objet_identifié.icone>
+    <m:Port.fluide></m:Port.fluide>
+    <m:Port.rôle></m:Port.rôle>
+    <m:Port.sens>sortie</m:Port.sens>
+    <m:Port.type_d_interface></m:Port.type_d_interface>
+  </m:Port>
+  <m:Equipement rdf:about="dom.RRA-JN003">
+    <m:Equipement.catégorie>JONCTION</m:Equipement.catégorie>
+    <m:Equipement.port rdf:resource="dom.RRA-JN003.E"/>
+    <m:Equipement.port rdf:resource="dom.RRA-JN003.S"/>
+    <m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+    <m:Objet_identifié.définition></m:Objet_identifié.définition>
+    <m:Objet_identifié.icone></m:Objet_identifié.icone>
+  </m:Equipement>
+  <m:Port rdf:about="dom.RRA-JN003.E">
+    <m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+    <m:Objet_identifié.définition></m:Objet_identifié.définition>
+    <m:Objet_identifié.icone></m:Objet_identifié.icone>
+    <m:Port.fluide></m:Port.fluide>
+    <m:Port.rôle></m:Port.rôle>
+    <m:Port.sens>entr�e</m:Port.sens>
+    <m:Port.type_d_interface></m:Port.type_d_interface>
+  </m:Port>
+  <m:Port rdf:about="dom.RRA-JN003.S">
+    <m:Objet_identifié.catégorie_AP929>configuration_physique</m:Objet_identifié.catégorie_AP929>
+    <m:Objet_identifié.définition></m:Objet_identifié.définition>
+    <m:Objet_identifié.icone></m:Objet_identifié.icone>
+    <m:Port.fluide></m:Port.fluide>
+    <m:Port.rôle></m:Port.rôle>
+    <m:Port.sens>sortie</m:Port.sens>
+    <m:Port.type_d_interface></m:Port.type_d_interface>
+  </m:Port>
+</rdf:RDF>

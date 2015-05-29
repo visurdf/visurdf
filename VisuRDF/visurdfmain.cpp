@@ -1,7 +1,6 @@
 
 #include "visurdfextracteur.h"
 #include <QApplication>
-#include "visurdfclassesvg.h"
 #include "visurdfanalyseur.h"
 #include "visurdfdessinateur.h"
 #include "visurdfgenerateur.h"
@@ -65,6 +64,3 @@ int main(int argc, char *argv[])
 
     return 0;
 }
-
-
-

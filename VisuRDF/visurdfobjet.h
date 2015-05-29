@@ -10,7 +10,6 @@
 
 using namespace std;
 
-
 class VisuRDFObjet
 {
 public:
@@ -29,6 +28,7 @@ public:
     int getLargeur();
     string toString();
     int getId();
+    string getNom();
 
 private :
 
