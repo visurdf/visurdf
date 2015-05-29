@@ -149,27 +149,30 @@ set<VisuRDFObjet*> VisuRDFAnalyseur::getObjetsParType(string nomDuType, bool san
 }
 
 
-map<int, int> VisuRDFAnalyseur::getRelations() {
+map<VisuRDFObjet*, list<VisuRDFObjet*> > VisuRDFAnalyseur::getRelations() {
     // recuperer la map des relations
     // typedef map< string,  list <string> > RelationRDF; // a chaque objet associe ses relations
 
     RelationRDF relationsExtracteur = extracteur->getRelationRDF();
-    map<int, int> mapRelations;
+    map<VisuRDFObjet*, list<VisuRDFObjet*> > mapRelations;
 
-    for (RelationRDF::const_iterator relationIter = relationsExtracteur.begin(); relationIter != relationsExtracteur.end(); relationIter++) {
+    for (RelationRDF::iterator relationIter = relationsExtracteur.begin(); relationIter != relationsExtracteur.end(); relationIter++) {
 
-        map<string, VisuRDFObjet*>::iterator objet = tousLesObjets.find(relationIter->first);
-        objet->getNom();
+        map<string, VisuRDFObjet*>::iterator objetCherche = tousLesObjets.find(relationIter->first);
 
-// pour chaque élément, on parcourt la liste de relations
-        //for (list<string>::const_iterator listIter = relationIter->second().begin(); listIter != relationIter->second().end(); listIter++) {
-            // transformer .first() et .second en objets
-            // recuperer les id (ou les objets ?)
-            // insérer (id, id) dans mapRelations
+        VisuRDFObjet* objet = objetCherche->second;
+        list <VisuRDFObjet*> objetsAssocies;
+        // pour chaque élément, on parcourt la liste de relations
+        for (list<string>::iterator listIter = relationIter->second.begin(); listIter != relationIter->second.end(); listIter++) {
 
-        //}
-        //mapRelations[relationIter.first()] = list<Objets>;
+            map<string, VisuRDFObjet*>::iterator objetCherche = tousLesObjets.find(*listIter);
+            objetsAssocies.push_back(objetCherche->second);
+        }
+
+        mapRelations[objet] = objetsAssocies;
     }
+
+    return mapRelations;
 }
 
 

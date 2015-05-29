@@ -22,7 +22,7 @@ public:
     int compterTypes();
     VisuRDFType* getTypeParNom(string nomDuType,  bool sansProprietesNulles);
     set<VisuRDFObjet*> getObjetsParType(string nomDuType, bool sansProprietesNulles);
-    map<int, int> getRelations();
+    map<VisuRDFObjet *, list<VisuRDFObjet *> > getRelations();
 
 private:
     VisuRDFExtracteur *extracteur;
