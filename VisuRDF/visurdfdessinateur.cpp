@@ -270,7 +270,7 @@ float VisuRDFDessinateur::calculLargeurBoite(VisuRDFObjet *objet, float &largeur
     return (largeurNom+largeurValeur);
 }
 
-int VisuRDFDessinateur::calculHauteurBoite(VisuRDFObjet *objet){
+float VisuRDFDessinateur::calculHauteurBoite(VisuRDFObjet *objet){
 
     int hauteur = 0;
     ObjetRDF proprietes = objet->getProprietes();
@@ -311,7 +311,7 @@ float VisuRDFDessinateur::calculLargeurType(VisuRDFType *type){
 }
 
 
-void VisuRDFDessinateur::dessinBoite(VisuRDFObjet *objet, int x, int y, QPainter &painter){
+void VisuRDFDessinateur::dessinBoite(VisuRDFObjet *objet, float x, float y, QPainter &painter){
 
     float largeurNom;
     float largeurValeur;
@@ -319,7 +319,7 @@ void VisuRDFDessinateur::dessinBoite(VisuRDFObjet *objet, int x, int y, QPainter
     float largeur = calculLargeurBoite(objet,largeurNom, largeurValeur);
     float hauteur = calculHauteurBoite(objet);
 
-    int yTexte = y + pourcentagePoliceHauteur/2;
+    float yTexte = y + pourcentagePoliceHauteur/2;
     painter.setPen(pen1);
     QRect rect(x,y,largeur,hauteur);
     painter.drawRect(rect);
@@ -327,9 +327,11 @@ void VisuRDFDessinateur::dessinBoite(VisuRDFObjet *objet, int x, int y, QPainter
     QRect rectType(x,y,largeur,pourcentagePoliceHauteur);
     painter.drawRect(rectType);
     // On remplit la map(id, boite)
-    // int id = objet->getId();
-    // VisuRDFBoite* boite = new VisuRDFBoite(x, y, largeur, hauteur);
-    // mapBoiteObjet->insert(std::make_pair(id, boite));
+
+     VisuRDFBoite* boite = new VisuRDFBoite(x, y, largeur, hauteur);
+     mapBoiteObjet.insert(std::make_pair(objet->getNom(), boite));
+     cout << "objet : " << objet->getNom() << endl;
+
 
 
     list<string> listeNom;
@@ -384,9 +386,9 @@ void VisuRDFDessinateur::dessinBoite(VisuRDFObjet *objet, int x, int y, QPainter
 
 }
 
-void VisuRDFDessinateur::dessinBoiteParType(VisuRDFType *type, int x, int y, QPainter &painter){
+void VisuRDFDessinateur::dessinBoiteParType(VisuRDFType *type, float x, float y, QPainter &painter){
 
-    int yBoite = y;
+    float yBoite = y;
 
 
     // On parcourt tous les objets du type
@@ -409,8 +411,8 @@ void VisuRDFDessinateur::dessinBoiteParType(VisuRDFType *type, int x, int y, QPa
 
 void VisuRDFDessinateur::dessinModeBoite(QPainter &painter){
 
-    int x = 20;
-    int y = 20;
+    float x = 20;
+    float y = 20;
 
     for(set<VisuRDFType*>::iterator it = listeTypes.begin(); it!= listeTypes.end(); it++){
         VisuRDFType* type = *it;
@@ -419,5 +421,89 @@ void VisuRDFDessinateur::dessinModeBoite(QPainter &painter){
         x = x + calculLargeurType(type) + 20;
 
     }
+
+
+    map<VisuRDFObjet*, list<VisuRDFObjet*> > mapRelations = analyseur->getRelations();
+    for(map<VisuRDFObjet*, list<VisuRDFObjet*> >::iterator iter = mapRelations.begin(); iter!= mapRelations.end(); iter++){
+        VisuRDFObjet* objet1 = (*iter).first;
+        list<VisuRDFObjet*> objets = mapRelations[objet1];
+        list<VisuRDFObjet*>::iterator it2 = objets.begin();
+        VisuRDFObjet* objet2 = *it2;
+
+        cout << "objet 1 : " << objet1->getNom() << endl;
+        cout << "objet 2 : " << objet2->getNom() << endl;
+        dessinLiaison(objet1,objet2, painter);
+
+
+    }
+
+
+/*
+    set<VisuRDFObjet*> listeObjets1 = analyseur->getObjetsParType("Port", true);
+    set<VisuRDFObjet*>::iterator it2 = listeObjets1.begin();
+    VisuRDFObjet* objet1 = *it2;
+
+
+    set<VisuRDFObjet*> listeObjets2 = analyseur->getObjetsParType("Equipement", true);
+    set<VisuRDFObjet*>::iterator it3 = listeObjets2.begin();
+    VisuRDFObjet* objet2 = *it3;
+*/
+
+
+
+
+
+}
+
+void VisuRDFDessinateur::dessinLiaison(VisuRDFObjet *objet1, VisuRDFObjet *objet2, QPainter &painter){
+
+    string name1 = objet1->getNom();
+    string name2 = objet2->getNom();
+    VisuRDFBoite* boite1 = mapBoiteObjet[name1];
+    VisuRDFBoite* boite2 = mapBoiteObjet[name2];
+cout << "x1 : " << boite1->getX() << endl;
+    float x1 = boite1->getX();
+    cout << "x1 : " << endl;
+    float x2 = boite2->getX();
+    float y1 = boite1->getY();
+    float y2 = boite2->getY();
+    float largeur1 = boite1->getLargeur();
+    float largeur2 = boite2->getLargeur();
+    float hauteur1 = boite1->getHauteur();
+    float hauteur2 = boite2->getHauteur();
+
+
+
+
+    // Si l'objet 2 est à droite de l'objet 1
+    if(x2>(x1+largeur1)){
+
+        QLine line(x1+largeur1,y1+hauteur1/2, x2, y2+hauteur2/2);
+        painter.drawLine(line);
+
+    }
+
+    // Si l'objet 2 est à gauche de l'objet 1
+    else if((x2+largeur2)<x1){
+        QLine line(x2+largeur2,y2+hauteur2/2, x1, y1+hauteur1/2);
+        painter.drawLine(line);
+    }
+
+    // Si ils sont sur la même verticale
+    else{
+        // Si l'objet 2 est sous l'objet 1
+        if(y2>y1){
+            QLine line(x1+largeur1/2, y1+hauteur1, x2 + largeur2/2, y2);
+            painter.drawLine(line);
+        }
+
+        // si l'objet 2 est au dessus de l'objet 1
+        else{
+             QLine line(x1+largeur1/2, y1, x2 + largeur2/2, y2+hauteur2);
+             painter.drawLine(line);
+        }
+
+    }
+
 
 }

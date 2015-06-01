@@ -20,22 +20,23 @@ public:
     int largeurMax;*/
 
    // Objet(int id, Type type, ObjetRDF proprietes);
-    VisuRDFObjet(int id, VisuRDFType *type , ObjetRDF proprietes);
+    VisuRDFObjet(VisuRDFType *type , ObjetRDF proprietes);
     ~VisuRDFObjet();
 
     void setLargeur();
     VisuRDFType* getType();
     ObjetRDF getProprietes();
-    int getLargeur();
+   // int getLargeur();
+    string getNom();
     string toString();
-    int getId();
+
 
 private :
 
-    int id;
+
     VisuRDFType *type;
     ObjetRDF proprietes;
-    int largeurMax;
+  //  int largeurMax;
 
 };
 

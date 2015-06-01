@@ -7,6 +7,11 @@ class VisuRDFBoite
 public:
     VisuRDFBoite(float x, float y, float largeur, float hauteur);
     ~VisuRDFBoite();
+    float getX();
+    float getY();
+    float getLargeur();
+    float getHauteur();
+
 
 private:
     float x;

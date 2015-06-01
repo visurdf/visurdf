@@ -10,3 +10,19 @@ VisuRDFBoite::~VisuRDFBoite()
 
 }
 
+float VisuRDFBoite::getX(){
+    return x;
+}
+
+float VisuRDFBoite::getY(){
+    return y;
+}
+
+float VisuRDFBoite::getLargeur(){
+    return largeur;
+}
+
+float VisuRDFBoite::getHauteur(){
+    return hauteur;
+}
+

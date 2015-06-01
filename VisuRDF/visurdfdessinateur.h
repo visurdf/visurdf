@@ -19,7 +19,7 @@
 #include <QWidget>
 
 
-typedef map< int, VisuRDFBoite* > boiteObjet;
+typedef map< string, VisuRDFBoite* > boiteObjet;
 
 class VisuRDFDessinateur
 {
@@ -33,12 +33,13 @@ public:
     void dessinTableau(VisuRDFType* type, int x, int y, QPainter &painter);
     void dessinModeTableau(QPainter& painter);
     float calculLargeurBoite(VisuRDFObjet* objet, float &largeurNom, float &largeurValeur);
-    int calculHauteurBoite(VisuRDFObjet* objet);
+    float calculHauteurBoite(VisuRDFObjet* objet);
     float calculLargeurType(VisuRDFType* type);
-    void dessinBoite(VisuRDFObjet* objet, int x, int y, QPainter &painter);
-    void dessinBoiteParType(VisuRDFType* type, int x, int y, QPainter &painter);
+    void dessinBoite(VisuRDFObjet* objet, float x, float y, QPainter &painter);
+    void dessinBoiteParType(VisuRDFType* type, float x, float y, QPainter &painter);
     void dessinModeBoite(QPainter& painter);
 
+    void dessinLiaison(VisuRDFObjet* objet1, VisuRDFObjet* objet2, QPainter&painter);
 
 private :
    // list<Objet> listeObjets;
@@ -55,7 +56,7 @@ private :
     QPen pen3;
     QBrush brush;
 
-    boiteObjet* mapBoiteObjet;
+    boiteObjet mapBoiteObjet;
 
 };
 

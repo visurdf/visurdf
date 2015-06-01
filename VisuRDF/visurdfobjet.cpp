@@ -1,8 +1,8 @@
 #include "visurdfobjet.h"
 
 
-// redéfinir copie constructeur?????????????
-VisuRDFObjet::VisuRDFObjet(int id, VisuRDFType *type, ObjetRDF proprietes) : id(id), type(type), proprietes(proprietes)
+
+VisuRDFObjet::VisuRDFObjet( VisuRDFType *type, ObjetRDF proprietes) :  type(type), proprietes(proprietes)
 {
 
 }
@@ -13,9 +13,16 @@ VisuRDFObjet::~VisuRDFObjet()
 
 }
 
-int VisuRDFObjet::getLargeur(){
-    return largeurMax;
+string VisuRDFObjet::getNom() {
+    ObjetRDF::iterator it = proprietes.find("name");
+    list<string> listNom = it->second;
+    string nom = listNom.front();
+    return nom;
 }
+
+/*int VisuRDFObjet::getLargeur(){
+    return largeurMax;
+}`*/
 
 ObjetRDF VisuRDFObjet::getProprietes(){
     return proprietes;
@@ -27,7 +34,7 @@ VisuRDFType *VisuRDFObjet::getType(){
 
 
 
-
+/*
 // Méthode qui va calculer la longueur max de la concaténation "nom propriété', "valeur propriété"
 void VisuRDFObjet::setLargeur(){
 
@@ -58,11 +65,8 @@ void VisuRDFObjet::setLargeur(){
     }
 
     largeurMax = largeur;
-}
+}*/
 
-int VisuRDFObjet::getId(){
-    return id;
-}
 
 string VisuRDFObjet::toString(){
 
