@@ -32,7 +32,7 @@ public:
     int calculHauteurDessin();
     void dessinTableau(VisuRDFType* type, int x, int y, QPainter &painter);
     void dessinModeTableau(QPainter& painter);
-    float calculLargeurBoite(VisuRDFObjet* objet);
+    float calculLargeurBoite(VisuRDFObjet* objet, float &largeurNom, float &largeurValeur);
     int calculHauteurBoite(VisuRDFObjet* objet);
     float calculLargeurType(VisuRDFType* type);
     void dessinBoite(VisuRDFObjet* objet, int x, int y, QPainter &painter);
@@ -48,6 +48,12 @@ private :
     int espacementVertical;
     float pourcentagePolice;
     int pourcentagePoliceHauteur;
+
+    QFont f;
+    QPen pen1;
+    QPen pen2;
+    QPen pen3;
+    QBrush brush;
 
     boiteObjet* mapBoiteObjet;
 

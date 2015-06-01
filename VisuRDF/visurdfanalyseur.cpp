@@ -65,7 +65,7 @@ VisuRDFType* VisuRDFAnalyseur::getTypeParNom(string nomDuType, bool sansPropriet
     for (ObjetRDF::const_iterator objetRDFiter = objetRDF.begin(); objetRDFiter != objetRDF.end(); objetRDFiter++){
         if(objetRDFiter->first.compare("type") == 0)
             continue;
-        ListeProprietes.push_back(objetRDFiter->first);
+        ListeProprietes.push_front(objetRDFiter->first);
     }
 
     list<string> ListeProprietesFiltrees = list<string>();

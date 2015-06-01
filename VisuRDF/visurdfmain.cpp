@@ -59,8 +59,8 @@ int main(int argc, char *argv[])
     for(ObjectIterator itr = listeDesObjets.begin(); itr != listeDesObjets.end(); itr++ ){
 
         cout << (*itr)->toString() << endl;
-        cout << "largeur boite : " <<dessinateur->calculLargeurBoite(*itr) << endl;
-        cout << "hauteur boite : " << dessinateur->calculHauteurBoite(*itr) << endl;
+      //  cout << "largeur boite : " <<dessinateur->calculLargeurBoite(*itr) << endl;
+      //  cout << "hauteur boite : " << dessinateur->calculHauteurBoite(*itr) << endl;
      //   generateur->dessinBoite((*itr), 20, 20);
 
     }

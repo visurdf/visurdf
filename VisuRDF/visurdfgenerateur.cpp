@@ -33,15 +33,18 @@ void VisuRDFGenerateur::dessin() {
 
     /*------------ Déclaration d'une police utilisable en SVG -------------------*/
     //Famille de Police
-    QFontDatabase fontDataBase;
-    QString firstFont = fontDataBase.families().first();
-    QFont f(firstFont);
+ //   QFontDatabase fontDataBase;
+  //  QString firstFont = fontDataBase.families().first();
+   // QFont f(firstFont);
+   //  QFont f = firstFont;
+   // f.setBold(true);
+
 
     //Paramètres de la police
-    int fontSize = 6;
-    f.setPixelSize(fontSize);
-    painter.setPen(pen);
-    painter.setFont(f);
+   // int fontSize = 6;
+   // f.setPixelSize(fontSize);
+   // painter.setPen(pen);
+   // painter.setFont(f);
 
     dessinateur->dessinModeTableau(painter);
 
@@ -125,15 +128,15 @@ void VisuRDFGenerateur::dessinModeBoite(){
     painter.begin(&generator);
 
     //Famille de Police
-    QFontDatabase fontDataBase;
-    QString firstFont = fontDataBase.families().first();
-    QFont f(firstFont);
+   // QFontDatabase fontDataBase;
+   // QString firstFont = fontDataBase.families().first();
+   // QFont f(firstFont);
 
     //Paramètres de la police
-    int fontSize = 6;
-    f.setPixelSize(fontSize);
-    painter.setPen(pen);
-    painter.setFont(f);
+  //  int fontSize = 6;
+   // f.setPixelSize(fontSize);
+   // painter.setPen(pen);
+   // painter.setFont(f);
 
     dessinateur->dessinModeBoite(painter);
 
