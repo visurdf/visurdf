@@ -174,8 +174,8 @@ void VisuRDFDessinateur::dessinTableau(VisuRDFType *type, int x, int y, QPainter
 
             // On remplit la map(id, boite)
             //   int id = objet->getId();
-              VisuRDFBoite* boite = new VisuRDFBoite(x, yObjet, calculLargeurTableau(type), hauteurCase);
-              mapBoiteObjet.insert(std::make_pair(objet->getNom(), boite));
+            VisuRDFBoite* boite = new VisuRDFBoite(x, yObjet, calculLargeurTableau(type), hauteurCase);
+            mapBoiteObjet.insert(std::make_pair(objet->getNom(), boite));
 
             ObjetRDF obj = objet->getProprietes();
 
@@ -222,20 +222,6 @@ void VisuRDFDessinateur::dessinModeTableau(QPainter &painter){
     }
 
 
-
-    map<VisuRDFObjet*, list<VisuRDFObjet*> > mapRelations = analyseur->getRelations();
-    for(map<VisuRDFObjet*, list<VisuRDFObjet*> >::iterator iter = mapRelations.begin(); iter!= mapRelations.end(); iter++){
-        VisuRDFObjet* objet1 = (*iter).first;
-        list<VisuRDFObjet*> objets = mapRelations[objet1];
-        list<VisuRDFObjet*>::iterator it2 = objets.begin();
-        VisuRDFObjet* objet2 = *it2;
-
-        cout << "objet 1 : " << objet1->getNom() << endl;
-        cout << "objet 2 : " << objet2->getNom() << endl;
-        dessinLiaison(objet1,objet2, painter);
-
-
-    }
 }
 
 /*float VisuRDFDessinateur::calculLargeurBoite(VisuRDFObjet *objet){
@@ -343,11 +329,10 @@ void VisuRDFDessinateur::dessinBoite(VisuRDFObjet *objet, float x, float y, QPai
 
     QRect rectType(x,y,largeur,pourcentagePoliceHauteur);
     painter.drawRect(rectType);
-    // On remplit la map(id, boite)
-
-     VisuRDFBoite* boite = new VisuRDFBoite(x, y, largeur, hauteur);
-     mapBoiteObjet.insert(std::make_pair(objet->getNom(), boite));
-     cout << "objet : " << objet->getNom() << endl;
+    // On remplit la map(objet, boite)
+    VisuRDFBoite* boite = new VisuRDFBoite(x, y, largeur, hauteur);
+    mapBoiteObjet.insert(std::make_pair(objet->getNom(), boite));
+    cout << "objet : " << objet->getNom() << endl;
 
 
 
@@ -357,7 +342,6 @@ void VisuRDFDessinateur::dessinBoite(VisuRDFObjet *objet, float x, float y, QPai
         listeNom.push_front(nomProp);
 
     }
-    //string nomEtValeur = nomProp + " : " + valeur;
 
 
     for(list<string>::iterator iter = listeNom.begin(); iter!=listeNom.end(); iter++){
@@ -374,24 +358,22 @@ void VisuRDFDessinateur::dessinBoite(VisuRDFObjet *objet, float x, float y, QPai
                 f.setBold(true);
                 painter.setFont(f);
                 painter.drawText(x, yTexte, QString(typeAffiche.c_str()));
-                 yTexte = yTexte + pourcentagePoliceHauteur;
+                yTexte = yTexte + pourcentagePoliceHauteur;
             }
 
             else{
-            string nomAffiche = nom + " : ";
+                string nomAffiche = nom + " : ";
 
-            painter.setPen(pen1);
-            f.setBold(true);
-            painter.setFont(f);
-            painter.drawText(x, yTexte, QString(nomAffiche.c_str()));
+                painter.setPen(pen1);
+                f.setBold(true);
+                painter.setFont(f);
+                painter.drawText(x, yTexte, QString(nomAffiche.c_str()));
 
-            painter.setPen(pen3);
-            f.setBold(true);
-            painter.setFont(f);
-            painter.drawText(x+largeurNom, yTexte, QString(valeur.c_str()));
-                    //string nomEtValeur = nom + " : " + valeur;
-                    //painter.drawText(x, yTexte, QString(nomEtValeur.c_str()));
-            yTexte = yTexte + pourcentagePoliceHauteur;
+                painter.setPen(pen3);
+                f.setBold(true);
+                painter.setFont(f);
+                painter.drawText(x+largeurNom, yTexte, QString(valeur.c_str()));
+                yTexte = yTexte + pourcentagePoliceHauteur;
             }
         }
 
@@ -440,36 +422,6 @@ void VisuRDFDessinateur::dessinModeBoite(QPainter &painter){
     }
 
 
-    map<VisuRDFObjet*, list<VisuRDFObjet*> > mapRelations = analyseur->getRelations();
-    for(map<VisuRDFObjet*, list<VisuRDFObjet*> >::iterator iter = mapRelations.begin(); iter!= mapRelations.end(); iter++){
-        VisuRDFObjet* objet1 = (*iter).first;
-        list<VisuRDFObjet*> objets = mapRelations[objet1];
-        list<VisuRDFObjet*>::iterator it2 = objets.begin();
-        VisuRDFObjet* objet2 = *it2;
-
-        cout << "objet 1 : " << objet1->getNom() << endl;
-        cout << "objet 2 : " << objet2->getNom() << endl;
-        dessinLiaison(objet1,objet2, painter);
-
-
-    }
-
-
-/*
-    set<VisuRDFObjet*> listeObjets1 = analyseur->getObjetsParType("Port", true);
-    set<VisuRDFObjet*>::iterator it2 = listeObjets1.begin();
-    VisuRDFObjet* objet1 = *it2;
-
-
-    set<VisuRDFObjet*> listeObjets2 = analyseur->getObjetsParType("Equipement", true);
-    set<VisuRDFObjet*>::iterator it3 = listeObjets2.begin();
-    VisuRDFObjet* objet2 = *it3;
-*/
-
-
-
-
-
 }
 
 void VisuRDFDessinateur::dessinLiaison(VisuRDFObjet *objet1, VisuRDFObjet *objet2, QPainter &painter){
@@ -478,9 +430,7 @@ void VisuRDFDessinateur::dessinLiaison(VisuRDFObjet *objet1, VisuRDFObjet *objet
     string name2 = objet2->getNom();
     VisuRDFBoite* boite1 = mapBoiteObjet[name1];
     VisuRDFBoite* boite2 = mapBoiteObjet[name2];
-cout << "x1 : " << boite1->getX() << endl;
     float x1 = boite1->getX();
-    cout << "x1 : " << endl;
     float x2 = boite2->getX();
     float y1 = boite1->getY();
     float y2 = boite2->getY();
@@ -489,15 +439,11 @@ cout << "x1 : " << boite1->getX() << endl;
     float hauteur1 = boite1->getHauteur();
     float hauteur2 = boite2->getHauteur();
 
-
-
-
     // Si l'objet 2 est à droite de l'objet 1
     if(x2>(x1+largeur1)){
 
         QLine line(x1+largeur1,y1+hauteur1/2, x2, y2+hauteur2/2);
         painter.drawLine(line);
-
     }
 
     // Si l'objet 2 est à gauche de l'objet 1
@@ -516,11 +462,28 @@ cout << "x1 : " << boite1->getX() << endl;
 
         // si l'objet 2 est au dessus de l'objet 1
         else{
-             QLine line(x1+largeur1/2, y1, x2 + largeur2/2, y2+hauteur2);
-             painter.drawLine(line);
+            QLine line(x1+largeur1/2, y1, x2 + largeur2/2, y2+hauteur2);
+            painter.drawLine(line);
         }
 
     }
 
 
+}
+
+void VisuRDFDessinateur::dessinToutesLiaisons(QPainter &painter){
+
+    map<VisuRDFObjet*, list<VisuRDFObjet*> > mapRelations = analyseur->getRelations();
+    for(map<VisuRDFObjet*, list<VisuRDFObjet*> >::iterator iter = mapRelations.begin(); iter!= mapRelations.end(); iter++){
+        VisuRDFObjet* objet1 = (*iter).first;
+        list<VisuRDFObjet*> objets = mapRelations[objet1];
+        for(list<VisuRDFObjet*>::iterator it2 = objets.begin(); it2!= objets.end(); it2++){
+            VisuRDFObjet* objet2 = *it2;
+            cout << "objet 1 : " << objet1->getNom() << endl;
+            cout << "objet 2 : " << objet2->getNom() << endl;
+            dessinLiaison(objet1,objet2, painter);
+        }
+
+
+    }
 }

@@ -66,7 +66,7 @@ int main(int argc, char *argv[])
     }
 
     //generateur->dessinBoiteParType(unType, 20, 20);
-    generateur->dessin();
+    generateur->dessinModeBoite();
     //generateur->dessinTableau(unType, 20, 20);
     //generateur->dessin();
     // dessinateur->dessinTableau(unType, 20, 20);
