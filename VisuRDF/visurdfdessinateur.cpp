@@ -174,8 +174,8 @@ void VisuRDFDessinateur::dessinTableau(VisuRDFType *type, int x, int y, QPainter
 
             // On remplit la map(id, boite)
             //   int id = objet->getId();
-            //  VisuRDFBoite* boite = new VisuRDFBoite(x, yObjet, calculLargeurTableau(type), hauteurCase);
-            //  mapBoiteObjet->insert(std::make_pair(id, boite));
+              VisuRDFBoite* boite = new VisuRDFBoite(x, yObjet, calculLargeurTableau(type), hauteurCase);
+              mapBoiteObjet.insert(std::make_pair(objet->getNom(), boite));
 
             ObjetRDF obj = objet->getProprietes();
 
@@ -217,7 +217,24 @@ void VisuRDFDessinateur::dessinModeTableau(QPainter &painter){
         VisuRDFType* type = *it;
 
         this->dessinTableau(type, x, y, painter);
+        x = x + 50;
         y = y + this->calculHauteurTableau(type) + espacementVertical ;
+    }
+
+
+
+    map<VisuRDFObjet*, list<VisuRDFObjet*> > mapRelations = analyseur->getRelations();
+    for(map<VisuRDFObjet*, list<VisuRDFObjet*> >::iterator iter = mapRelations.begin(); iter!= mapRelations.end(); iter++){
+        VisuRDFObjet* objet1 = (*iter).first;
+        list<VisuRDFObjet*> objets = mapRelations[objet1];
+        list<VisuRDFObjet*>::iterator it2 = objets.begin();
+        VisuRDFObjet* objet2 = *it2;
+
+        cout << "objet 1 : " << objet1->getNom() << endl;
+        cout << "objet 2 : " << objet2->getNom() << endl;
+        dessinLiaison(objet1,objet2, painter);
+
+
     }
 }
 
