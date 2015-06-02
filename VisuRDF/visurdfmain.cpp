@@ -71,7 +71,19 @@ int main(int argc, char *argv[])
     }
 
     //generateur->dessinBoiteParType(unType, 20, 20);
-    generateur->dessinModeBoite();
+
+
+    if(argv[2] == NULL){
+        generateur->dessinModeBoite();
+    }
+
+    else{
+        generateur->dessin();
+    }
+
+
+
+
     //generateur->dessinTableau(unType, 20, 20);
     //generateur->dessin();
     // dessinateur->dessinTableau(unType, 20, 20);
