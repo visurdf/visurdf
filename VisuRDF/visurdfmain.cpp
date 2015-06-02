@@ -5,6 +5,7 @@
 #include "visurdfanalyseur.h"
 #include "visurdfdessinateur.h"
 #include "visurdfgenerateur.h"
+#include <QTextCodec>
 
 
 int main(int argc, char *argv[])

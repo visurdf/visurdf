@@ -6,7 +6,7 @@ VisuRDFDessinateur::VisuRDFDessinateur(VisuRDFAnalyseur * analyseur) {
     listeTypes = analyseur->getTousLesTypes(true);
     hauteurCase = 15;
     espacementVertical = 20;
-    pourcentagePolice = 3.5;
+    pourcentagePolice = 3.2;
     pourcentagePoliceHauteur = 10;
 
     QColor color = Qt::black;
@@ -16,7 +16,16 @@ VisuRDFDessinateur::VisuRDFDessinateur(VisuRDFAnalyseur * analyseur) {
     pen3.setColor(Qt::gray);
 
     QFontDatabase fontDataBase;
-    QString firstFont = fontDataBase.families().first();
+   // QString firstFont = fontDataBase.families().first();
+
+
+   /* map<int,QString> mapPolice;
+    for (QString::iterator it = fontDataBase.families().begin(); it!= fontDataBase.families().end(); it++){
+        QString police = *it;
+     //   mapPolice[]
+    }*/
+
+     QString firstFont = fontDataBase.families().first();
     f = firstFont;
     int fontSize = 6;
     f.setPixelSize(fontSize);
@@ -366,8 +375,8 @@ void VisuRDFDessinateur::dessinBoite(VisuRDFObjet *objet, int x, int y, QPainter
             painter.setFont(f);
             painter.drawText(x, yTexte, QString(nomAffiche.c_str()));
 
-            painter.setPen(pen3);
-            f.setBold(true);
+           // painter.setPen(pen3);
+            f.setBold(false);
             painter.setFont(f);
             painter.drawText(x+largeurNom, yTexte, QString(valeur.c_str()));
                     //string nomEtValeur = nom + " : " + valeur;
