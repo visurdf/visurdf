@@ -1,0 +1,1323 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="705.556mm" height="276.931mm"
+ viewBox="0 0 2000 785"
+ xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  version="1.2" baseProfile="tiny">
+<title>SVG Generator Example Drawing</title>
+<desc>Dessin svg pour une démonstration</desc>
+<defs>
+</defs>
+<g fill="none" stroke="black" stroke-width="1" fill-rule="evenodd" stroke-linecap="square" stroke-linejoin="bevel" >
+
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,20 L223,20 L223,50 L20,50 L20,20"/>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,20 L223,20 L223,30 L20,30 L20,20"/>
+<g fill="none" stroke="#ff0000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#ff0000" fill-opacity="1" stroke="none" xml:space="preserve" x="20" y="25" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >type : Valeur_discrète</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="20" y="35" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >name : </text>
+</g>
+
+<g fill="none" stroke="#a0a0a4" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#a0a0a4" fill-opacity="1" stroke="none" xml:space="preserve" x="146" y="35" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >vd.PTR021PO_EO.ua</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="20" y="45" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >Objet_identifié.catégorie_AP929 : </text>
+</g>
+
+<g fill="none" stroke="#a0a0a4" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#a0a0a4" fill-opacity="1" stroke="none" xml:space="preserve" x="146" y="45" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >configuration_physique</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M243,20 L446,20 L446,70 L243,70 L243,20"/>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M243,20 L446,20 L446,30 L243,30 L243,20"/>
+</g>
+
+<g fill="none" stroke="#ff0000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#ff0000" fill-opacity="1" stroke="none" xml:space="preserve" x="243" y="25" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >type : Port</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="243" y="35" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >name : </text>
+</g>
+
+<g fill="none" stroke="#a0a0a4" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#a0a0a4" fill-opacity="1" stroke="none" xml:space="preserve" x="369" y="35" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >po.PTR007VB.2</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="243" y="45" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >Port.rôle : </text>
+</g>
+
+<g fill="none" stroke="#a0a0a4" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#a0a0a4" fill-opacity="1" stroke="none" xml:space="preserve" x="369" y="45" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >sortie</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="243" y="55" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >Port.fluide : </text>
+</g>
+
+<g fill="none" stroke="#a0a0a4" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#a0a0a4" fill-opacity="1" stroke="none" xml:space="preserve" x="369" y="55" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >eau</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="243" y="65" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >Objet_identifié.catégorie_AP929 : </text>
+</g>
+
+<g fill="none" stroke="#a0a0a4" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#a0a0a4" fill-opacity="1" stroke="none" xml:space="preserve" x="369" y="65" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >configuration_physique</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M243,90 L446,90 L446,140 L243,140 L243,90"/>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M243,90 L446,90 L446,100 L243,100 L243,90"/>
+</g>
+
+<g fill="none" stroke="#ff0000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#ff0000" fill-opacity="1" stroke="none" xml:space="preserve" x="243" y="95" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >type : Port</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="243" y="105" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >name : </text>
+</g>
+
+<g fill="none" stroke="#a0a0a4" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#a0a0a4" fill-opacity="1" stroke="none" xml:space="preserve" x="369" y="105" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >po.PTR021PO.2</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="243" y="115" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >Port.rôle : </text>
+</g>
+
+<g fill="none" stroke="#a0a0a4" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#a0a0a4" fill-opacity="1" stroke="none" xml:space="preserve" x="369" y="115" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >sortie</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="243" y="125" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >Port.fluide : </text>
+</g>
+
+<g fill="none" stroke="#a0a0a4" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#a0a0a4" fill-opacity="1" stroke="none" xml:space="preserve" x="369" y="125" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >eau</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="243" y="135" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >Objet_identifié.catégorie_AP929 : </text>
+</g>
+
+<g fill="none" stroke="#a0a0a4" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#a0a0a4" fill-opacity="1" stroke="none" xml:space="preserve" x="369" y="135" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >configuration_physique</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M243,160 L446,160 L446,210 L243,210 L243,160"/>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M243,160 L446,160 L446,170 L243,170 L243,160"/>
+</g>
+
+<g fill="none" stroke="#ff0000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#ff0000" fill-opacity="1" stroke="none" xml:space="preserve" x="243" y="165" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >type : Port</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="243" y="175" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >name : </text>
+</g>
+
+<g fill="none" stroke="#a0a0a4" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#a0a0a4" fill-opacity="1" stroke="none" xml:space="preserve" x="369" y="175" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >po.PTR021PO.1</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="243" y="185" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >Port.rôle : </text>
+</g>
+
+<g fill="none" stroke="#a0a0a4" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#a0a0a4" fill-opacity="1" stroke="none" xml:space="preserve" x="369" y="185" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >entrée</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="243" y="195" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >Port.fluide : </text>
+</g>
+
+<g fill="none" stroke="#a0a0a4" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#a0a0a4" fill-opacity="1" stroke="none" xml:space="preserve" x="369" y="195" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >eau</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="243" y="205" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >Objet_identifié.catégorie_AP929 : </text>
+</g>
+
+<g fill="none" stroke="#a0a0a4" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#a0a0a4" fill-opacity="1" stroke="none" xml:space="preserve" x="369" y="205" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >configuration_physique</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M243,230 L446,230 L446,280 L243,280 L243,230"/>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M243,230 L446,230 L446,240 L243,240 L243,230"/>
+</g>
+
+<g fill="none" stroke="#ff0000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#ff0000" fill-opacity="1" stroke="none" xml:space="preserve" x="243" y="235" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >type : Port</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="243" y="245" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >name : </text>
+</g>
+
+<g fill="none" stroke="#a0a0a4" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#a0a0a4" fill-opacity="1" stroke="none" xml:space="preserve" x="369" y="245" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >po.PTR007VB.1</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="243" y="255" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >Port.rôle : </text>
+</g>
+
+<g fill="none" stroke="#a0a0a4" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#a0a0a4" fill-opacity="1" stroke="none" xml:space="preserve" x="369" y="255" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >entrée</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="243" y="265" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >Port.fluide : </text>
+</g>
+
+<g fill="none" stroke="#a0a0a4" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#a0a0a4" fill-opacity="1" stroke="none" xml:space="preserve" x="369" y="265" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >eau</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="243" y="275" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >Objet_identifié.catégorie_AP929 : </text>
+</g>
+
+<g fill="none" stroke="#a0a0a4" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#a0a0a4" fill-opacity="1" stroke="none" xml:space="preserve" x="369" y="275" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >configuration_physique</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M466,20 L679,20 L679,70 L466,70 L466,20"/>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M466,20 L679,20 L679,30 L466,30 L466,20"/>
+</g>
+
+<g fill="none" stroke="#ff0000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#ff0000" fill-opacity="1" stroke="none" xml:space="preserve" x="466" y="25" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >type : Libellé_valeur_discrète</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="466" y="35" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >name : </text>
+</g>
+
+<g fill="none" stroke="#a0a0a4" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#a0a0a4" fill-opacity="1" stroke="none" xml:space="preserve" x="592" y="35" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >li.OUVERT</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="466" y="45" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >Objet_identifié.catégorie_AP929 : </text>
+</g>
+
+<g fill="none" stroke="#a0a0a4" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#a0a0a4" fill-opacity="1" stroke="none" xml:space="preserve" x="592" y="45" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >configuration_physique</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="466" y="55" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >Libellé_valeur_discrète.valeur : </text>
+</g>
+
+<g fill="none" stroke="#a0a0a4" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#a0a0a4" fill-opacity="1" stroke="none" xml:space="preserve" x="592" y="55" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >1</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="466" y="65" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >Libellé_valeur_discrète.message : </text>
+</g>
+
+<g fill="none" stroke="#a0a0a4" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#a0a0a4" fill-opacity="1" stroke="none" xml:space="preserve" x="592" y="65" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >OUVERT</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M466,90 L679,90 L679,140 L466,140 L466,90"/>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M466,90 L679,90 L679,100 L466,100 L466,90"/>
+</g>
+
+<g fill="none" stroke="#ff0000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#ff0000" fill-opacity="1" stroke="none" xml:space="preserve" x="466" y="95" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >type : Libellé_valeur_discrète</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="466" y="105" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >name : </text>
+</g>
+
+<g fill="none" stroke="#a0a0a4" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#a0a0a4" fill-opacity="1" stroke="none" xml:space="preserve" x="592" y="105" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >li.ARRET</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="466" y="115" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >Objet_identifié.catégorie_AP929 : </text>
+</g>
+
+<g fill="none" stroke="#a0a0a4" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#a0a0a4" fill-opacity="1" stroke="none" xml:space="preserve" x="592" y="115" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >configuration_physique</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="466" y="125" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >Libellé_valeur_discrète.valeur : </text>
+</g>
+
+<g fill="none" stroke="#a0a0a4" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#a0a0a4" fill-opacity="1" stroke="none" xml:space="preserve" x="592" y="125" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >0</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="466" y="135" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >Libellé_valeur_discrète.message : </text>
+</g>
+
+<g fill="none" stroke="#a0a0a4" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#a0a0a4" fill-opacity="1" stroke="none" xml:space="preserve" x="592" y="135" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >ARRET</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M466,160 L679,160 L679,210 L466,210 L466,160"/>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M466,160 L679,160 L679,170 L466,170 L466,160"/>
+</g>
+
+<g fill="none" stroke="#ff0000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#ff0000" fill-opacity="1" stroke="none" xml:space="preserve" x="466" y="165" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >type : Libellé_valeur_discrète</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="466" y="175" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >name : </text>
+</g>
+
+<g fill="none" stroke="#a0a0a4" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#a0a0a4" fill-opacity="1" stroke="none" xml:space="preserve" x="592" y="175" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >li.FERME</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="466" y="185" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >Objet_identifié.catégorie_AP929 : </text>
+</g>
+
+<g fill="none" stroke="#a0a0a4" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#a0a0a4" fill-opacity="1" stroke="none" xml:space="preserve" x="592" y="185" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >configuration_physique</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="466" y="195" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >Libellé_valeur_discrète.valeur : </text>
+</g>
+
+<g fill="none" stroke="#a0a0a4" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#a0a0a4" fill-opacity="1" stroke="none" xml:space="preserve" x="592" y="195" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >0</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="466" y="205" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >Libellé_valeur_discrète.message : </text>
+</g>
+
+<g fill="none" stroke="#a0a0a4" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#a0a0a4" fill-opacity="1" stroke="none" xml:space="preserve" x="592" y="205" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >FERME</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M466,230 L679,230 L679,280 L466,280 L466,230"/>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M466,230 L679,230 L679,240 L466,240 L466,230"/>
+</g>
+
+<g fill="none" stroke="#ff0000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#ff0000" fill-opacity="1" stroke="none" xml:space="preserve" x="466" y="235" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >type : Libellé_valeur_discrète</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="466" y="245" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >name : </text>
+</g>
+
+<g fill="none" stroke="#a0a0a4" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#a0a0a4" fill-opacity="1" stroke="none" xml:space="preserve" x="592" y="245" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >li.NORMAL</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="466" y="255" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >Objet_identifié.catégorie_AP929 : </text>
+</g>
+
+<g fill="none" stroke="#a0a0a4" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#a0a0a4" fill-opacity="1" stroke="none" xml:space="preserve" x="592" y="255" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >configuration_physique</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="466" y="265" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >Libellé_valeur_discrète.valeur : </text>
+</g>
+
+<g fill="none" stroke="#a0a0a4" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#a0a0a4" fill-opacity="1" stroke="none" xml:space="preserve" x="592" y="265" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >0</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="466" y="275" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >Libellé_valeur_discrète.message : </text>
+</g>
+
+<g fill="none" stroke="#a0a0a4" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#a0a0a4" fill-opacity="1" stroke="none" xml:space="preserve" x="592" y="275" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >NORMAL</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M466,300 L679,300 L679,350 L466,350 L466,300"/>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M466,300 L679,300 L679,310 L466,310 L466,300"/>
+</g>
+
+<g fill="none" stroke="#ff0000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#ff0000" fill-opacity="1" stroke="none" xml:space="preserve" x="466" y="305" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >type : Libellé_valeur_discrète</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="466" y="315" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >name : </text>
+</g>
+
+<g fill="none" stroke="#a0a0a4" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#a0a0a4" fill-opacity="1" stroke="none" xml:space="preserve" x="592" y="315" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >li.MARCHE</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="466" y="325" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >Objet_identifié.catégorie_AP929 : </text>
+</g>
+
+<g fill="none" stroke="#a0a0a4" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#a0a0a4" fill-opacity="1" stroke="none" xml:space="preserve" x="592" y="325" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >configuration_physique</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="466" y="335" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >Libellé_valeur_discrète.valeur : </text>
+</g>
+
+<g fill="none" stroke="#a0a0a4" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#a0a0a4" fill-opacity="1" stroke="none" xml:space="preserve" x="592" y="335" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >1</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="466" y="345" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >Libellé_valeur_discrète.message : </text>
+</g>
+
+<g fill="none" stroke="#a0a0a4" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#a0a0a4" fill-opacity="1" stroke="none" xml:space="preserve" x="592" y="345" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >MARCHE</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M466,370 L679,370 L679,420 L466,420 L466,370"/>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M466,370 L679,370 L679,380 L466,380 L466,370"/>
+</g>
+
+<g fill="none" stroke="#ff0000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#ff0000" fill-opacity="1" stroke="none" xml:space="preserve" x="466" y="375" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >type : Libellé_valeur_discrète</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="466" y="385" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >name : </text>
+</g>
+
+<g fill="none" stroke="#a0a0a4" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#a0a0a4" fill-opacity="1" stroke="none" xml:space="preserve" x="592" y="385" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >li.DEFAUT</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="466" y="395" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >Objet_identifié.catégorie_AP929 : </text>
+</g>
+
+<g fill="none" stroke="#a0a0a4" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#a0a0a4" fill-opacity="1" stroke="none" xml:space="preserve" x="592" y="395" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >configuration_physique</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="466" y="405" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >Libellé_valeur_discrète.valeur : </text>
+</g>
+
+<g fill="none" stroke="#a0a0a4" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#a0a0a4" fill-opacity="1" stroke="none" xml:space="preserve" x="592" y="405" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >1</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="466" y="415" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >Libellé_valeur_discrète.message : </text>
+</g>
+
+<g fill="none" stroke="#a0a0a4" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#a0a0a4" fill-opacity="1" stroke="none" xml:space="preserve" x="592" y="415" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >DEFAUT</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M699,20 L902,20 L902,100 L699,100 L699,20"/>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M699,20 L902,20 L902,30 L699,30 L699,20"/>
+</g>
+
+<g fill="none" stroke="#ff0000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#ff0000" fill-opacity="1" stroke="none" xml:space="preserve" x="699" y="25" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >type : Grandeur_discrète</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="699" y="35" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >name : </text>
+</g>
+
+<g fill="none" stroke="#a0a0a4" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#a0a0a4" fill-opacity="1" stroke="none" xml:space="preserve" x="825" y="35" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >gd.PTR021PO_EO</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="699" y="45" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >Objet_identifié.définition : </text>
+</g>
+
+<g fill="none" stroke="#a0a0a4" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#a0a0a4" fill-opacity="1" stroke="none" xml:space="preserve" x="825" y="45" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >Etat enclenché</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="699" y="55" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >Objet_identifié.catégorie_AP929 : </text>
+</g>
+
+<g fill="none" stroke="#a0a0a4" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#a0a0a4" fill-opacity="1" stroke="none" xml:space="preserve" x="825" y="55" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >configuration_physique</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="699" y="65" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >Grandeur_discrète.minimum : </text>
+</g>
+
+<g fill="none" stroke="#a0a0a4" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#a0a0a4" fill-opacity="1" stroke="none" xml:space="preserve" x="825" y="65" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >0</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="699" y="75" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >Grandeur_discrète.maximum : </text>
+</g>
+
+<g fill="none" stroke="#a0a0a4" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#a0a0a4" fill-opacity="1" stroke="none" xml:space="preserve" x="825" y="75" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >1</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="699" y="85" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >Grandeur.période_historisation : </text>
+</g>
+
+<g fill="none" stroke="#a0a0a4" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#a0a0a4" fill-opacity="1" stroke="none" xml:space="preserve" x="825" y="85" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >60</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="699" y="95" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >Grandeur.période_acquisition : </text>
+</g>
+
+<g fill="none" stroke="#a0a0a4" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#a0a0a4" fill-opacity="1" stroke="none" xml:space="preserve" x="825" y="95" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >10</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M922,20 L974,20 L974,40 L922,40 L922,20"/>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M922,20 L974,20 L974,30 L922,30 L922,20"/>
+</g>
+
+<g fill="none" stroke="#ff0000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#ff0000" fill-opacity="1" stroke="none" xml:space="preserve" x="922" y="25" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >type : Jonction</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="922" y="35" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >name : </text>
+</g>
+
+<g fill="none" stroke="#a0a0a4" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#a0a0a4" fill-opacity="1" stroke="none" xml:space="preserve" x="947" y="35" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >jo.199</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M995,20 L1222,20 L1222,60 L995,60 L995,20"/>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M995,20 L1222,20 L1222,30 L995,30 L995,20"/>
+</g>
+
+<g fill="none" stroke="#ff0000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#ff0000" fill-opacity="1" stroke="none" xml:space="preserve" x="995" y="25" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >type : Equipement</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="995" y="35" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >name : </text>
+</g>
+
+<g fill="none" stroke="#a0a0a4" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#a0a0a4" fill-opacity="1" stroke="none" xml:space="preserve" x="1121" y="35" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >eq.PTR007VB</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="995" y="45" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >Objet_identifié.définition : </text>
+</g>
+
+<g fill="none" stroke="#a0a0a4" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#a0a0a4" fill-opacity="1" stroke="none" xml:space="preserve" x="1121" y="45" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >Vanne d'isolement amont 021PO</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="995" y="55" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >Objet_identifié.catégorie_AP929 : </text>
+</g>
+
+<g fill="none" stroke="#a0a0a4" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#a0a0a4" fill-opacity="1" stroke="none" xml:space="preserve" x="1121" y="55" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >configuration_physique</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M995,80 L1222,80 L1222,120 L995,120 L995,80"/>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M995,80 L1222,80 L1222,90 L995,90 L995,80"/>
+</g>
+
+<g fill="none" stroke="#ff0000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#ff0000" fill-opacity="1" stroke="none" xml:space="preserve" x="995" y="85" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >type : Equipement</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="995" y="95" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >name : </text>
+</g>
+
+<g fill="none" stroke="#a0a0a4" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#a0a0a4" fill-opacity="1" stroke="none" xml:space="preserve" x="1121" y="95" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >eq.PTR021PO</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="995" y="105" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >Objet_identifié.définition : </text>
+</g>
+
+<g fill="none" stroke="#a0a0a4" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#a0a0a4" fill-opacity="1" stroke="none" xml:space="preserve" x="1121" y="105" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >Pompe refroidissement ligne 1</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="995" y="115" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >Objet_identifié.catégorie_AP929 : </text>
+</g>
+
+<g fill="none" stroke="#a0a0a4" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#a0a0a4" fill-opacity="1" stroke="none" xml:space="preserve" x="1121" y="115" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >configuration_physique</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M1242,20 L1445,20 L1445,70 L1242,70 L1242,20"/>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M1242,20 L1445,20 L1445,30 L1242,30 L1242,20"/>
+</g>
+
+<g fill="none" stroke="#ff0000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#ff0000" fill-opacity="1" stroke="none" xml:space="preserve" x="1242" y="25" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >type : Nature_valeur</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="1242" y="35" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >name : </text>
+</g>
+
+<g fill="none" stroke="#a0a0a4" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#a0a0a4" fill-opacity="1" stroke="none" xml:space="preserve" x="1368" y="35" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >nv.0</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="1242" y="45" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >Objet_identifié.définition : </text>
+</g>
+
+<g fill="none" stroke="#a0a0a4" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#a0a0a4" fill-opacity="1" stroke="none" xml:space="preserve" x="1368" y="45" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >Mesure acquise</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="1242" y="55" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >Objet_identifié.catégorie_AP929 : </text>
+</g>
+
+<g fill="none" stroke="#a0a0a4" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#a0a0a4" fill-opacity="1" stroke="none" xml:space="preserve" x="1368" y="55" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >configuration_physique</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="1242" y="65" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >Nature_valeur.nature_de_la_valeur : </text>
+</g>
+
+<g fill="none" stroke="#a0a0a4" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#a0a0a4" fill-opacity="1" stroke="none" xml:space="preserve" x="1368" y="65" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >0</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M1465,20 L1622,20 L1622,50 L1465,50 L1465,20"/>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M1465,20 L1622,20 L1622,30 L1465,30 L1465,20"/>
+</g>
+
+<g fill="none" stroke="#ff0000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#ff0000" fill-opacity="1" stroke="none" xml:space="preserve" x="1465" y="25" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >type : Repère_fonctionnel</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="1465" y="35" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >name : </text>
+</g>
+
+<g fill="none" stroke="#a0a0a4" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#a0a0a4" fill-opacity="1" stroke="none" xml:space="preserve" x="1556" y="35" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >rf.PTR021PO</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="1465" y="45" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >Repère_fonctionnel.nom : </text>
+</g>
+
+<g fill="none" stroke="#a0a0a4" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#a0a0a4" fill-opacity="1" stroke="none" xml:space="preserve" x="1556" y="45" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >PTR021PO</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M1465,70 L1622,70 L1622,100 L1465,100 L1465,70"/>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M1465,70 L1622,70 L1622,80 L1465,80 L1465,70"/>
+</g>
+
+<g fill="none" stroke="#ff0000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#ff0000" fill-opacity="1" stroke="none" xml:space="preserve" x="1465" y="75" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >type : Repère_fonctionnel</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="1465" y="85" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >name : </text>
+</g>
+
+<g fill="none" stroke="#a0a0a4" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#a0a0a4" fill-opacity="1" stroke="none" xml:space="preserve" x="1556" y="85" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >rf.PTR007VB</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="1465" y="95" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >Repère_fonctionnel.nom : </text>
+</g>
+
+<g fill="none" stroke="#a0a0a4" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#a0a0a4" fill-opacity="1" stroke="none" xml:space="preserve" x="1556" y="95" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >PTR007VB</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M1465,120 L1622,120 L1622,150 L1465,150 L1465,120"/>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M1465,120 L1622,120 L1622,130 L1465,130 L1465,120"/>
+</g>
+
+<g fill="none" stroke="#ff0000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#ff0000" fill-opacity="1" stroke="none" xml:space="preserve" x="1465" y="125" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >type : Repère_fonctionnel</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="1465" y="135" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >name : </text>
+</g>
+
+<g fill="none" stroke="#a0a0a4" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#a0a0a4" fill-opacity="1" stroke="none" xml:space="preserve" x="1556" y="135" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >rf.PTR021PO_EO</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="1465" y="145" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >Repère_fonctionnel.nom : </text>
+</g>
+
+<g fill="none" stroke="#a0a0a4" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#a0a0a4" fill-opacity="1" stroke="none" xml:space="preserve" x="1556" y="145" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >PTR021PO_EO</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M1643,20 L1958,20 L1958,60 L1643,60 L1643,20"/>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M1643,20 L1958,20 L1958,30 L1643,30 L1643,20"/>
+</g>
+
+<g fill="none" stroke="#ff0000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#ff0000" fill-opacity="1" stroke="none" xml:space="preserve" x="1643" y="25" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >type : Fonction_procédé</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="1643" y="35" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >name : </text>
+</g>
+
+<g fill="none" stroke="#a0a0a4" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#a0a0a4" fill-opacity="1" stroke="none" xml:space="preserve" x="1769" y="35" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >fp.PTR.REF001</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="1643" y="45" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >Objet_identifié.définition : </text>
+</g>
+
+<g fill="none" stroke="#a0a0a4" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#a0a0a4" fill-opacity="1" stroke="none" xml:space="preserve" x="1769" y="45" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >Brassage refroidissement bâche PTR par 021PO et 031RF</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="1643" y="55" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >Objet_identifié.catégorie_AP929 : </text>
+</g>
+
+<g fill="none" stroke="#a0a0a4" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#a0a0a4" fill-opacity="1" stroke="none" xml:space="preserve" x="1769" y="55" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >exigence_de_conception</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M1643,80 L1958,80 L1958,120 L1643,120 L1643,80"/>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M1643,80 L1958,80 L1958,90 L1643,90 L1643,80"/>
+</g>
+
+<g fill="none" stroke="#ff0000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#ff0000" fill-opacity="1" stroke="none" xml:space="preserve" x="1643" y="85" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >type : Fonction_procédé</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="1643" y="95" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >name : </text>
+</g>
+
+<g fill="none" stroke="#a0a0a4" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#a0a0a4" fill-opacity="1" stroke="none" xml:space="preserve" x="1769" y="95" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >fp.PTR.REF002</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="1643" y="105" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >Objet_identifié.définition : </text>
+</g>
+
+<g fill="none" stroke="#a0a0a4" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#a0a0a4" fill-opacity="1" stroke="none" xml:space="preserve" x="1769" y="105" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >Brassage refroidissement bâche PTR par 021PO et 032RF</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="1643" y="115" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >Objet_identifié.catégorie_AP929 : </text>
+</g>
+
+<g fill="none" stroke="#a0a0a4" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#a0a0a4" fill-opacity="1" stroke="none" xml:space="preserve" x="1769" y="115" font-family="Abadi MT Condensed Extra Bold" font-size="6" font-weight="700" font-style="normal" 
+ >exigence_de_conception</text>
+<polyline fill="none" vector-effect="non-scaling-stroke" points="1222,40 1465,85 " />
+<polyline fill="none" vector-effect="non-scaling-stroke" points="446,255 995,40 " />
+<polyline fill="none" vector-effect="non-scaling-stroke" points="446,45 995,40 " />
+<polyline fill="none" vector-effect="non-scaling-stroke" points="679,115 699,60 " />
+<polyline fill="none" vector-effect="non-scaling-stroke" points="679,325 699,60 " />
+<polyline fill="none" vector-effect="non-scaling-stroke" points="223,35 699,60 " />
+<polyline fill="none" vector-effect="non-scaling-stroke" points="902,60 1465,135 " />
+<polyline fill="none" vector-effect="non-scaling-stroke" points="1222,100 1465,35 " />
+<polyline fill="none" vector-effect="non-scaling-stroke" points="446,185 995,100 " />
+<polyline fill="none" vector-effect="non-scaling-stroke" points="446,115 995,100 " />
+<polyline fill="none" vector-effect="non-scaling-stroke" points="1222,100 1643,40 " />
+<polyline fill="none" vector-effect="non-scaling-stroke" points="1222,100 1643,100 " />
+<polyline fill="none" vector-effect="non-scaling-stroke" points="446,45 922,30 " />
+<polyline fill="none" vector-effect="non-scaling-stroke" points="446,185 922,30 " />
+<polyline fill="none" vector-effect="non-scaling-stroke" points="223,35 1242,45 " />
+</g>
+</g>
+</svg>
