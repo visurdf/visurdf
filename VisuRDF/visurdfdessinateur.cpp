@@ -176,7 +176,7 @@ void VisuRDFDessinateur::dessinTableau(VisuRDFType *type, int x, int y, QPainter
             //   int id = objet->getId();
             VisuRDFBoite* boite = new VisuRDFBoite(x, yObjet, calculLargeurTableau(type), hauteurCase);
             mapBoiteObjet.insert(std::make_pair(objet->getNom(), boite));
-
+            cout << "objet : " << objet->getNom() << endl;
             ObjetRDF obj = objet->getProprietes();
 
             if(obj.size() != 0) {
@@ -486,4 +486,5 @@ void VisuRDFDessinateur::dessinToutesLiaisons(QPainter &painter){
 
 
     }
+    cout << "fin "<< endl;
 }

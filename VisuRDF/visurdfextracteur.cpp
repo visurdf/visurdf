@@ -273,6 +273,12 @@ void VisuRDFExtracteur::parserTripletRdf(char *fichierRdf) {
 
     raptor_parser_parse_file(parserRdf, uri, uriDeBase1);
 
+    list<string> listeDesTypes = objetRDF["type"];
+    list <ObjetRDF> listeDesInstances = grapheRDF[listeDesTypes.front()];
+    listeDesInstances.push_back( objetRDF);
+    grapheRDF[listeDesTypes.front()] = listeDesInstances;
+    objetRDF.clear();
+
     raptor_free_parser(parserRdf);
 
     raptor_free_uri(uriDeBase1);

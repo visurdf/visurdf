@@ -54,7 +54,7 @@ int main(int argc, char *argv[])
      VisuRDFDessinateur* dessinateur = new VisuRDFDessinateur(analyseur);
      VisuRDFGenerateur* generateur = new VisuRDFGenerateur(dessinateur);
 
-    set<VisuRDFObjet*>listeDesObjets = analyseur->getObjetsParType(*listeDesClasses.begin(), true);
+  /*  set<VisuRDFObjet*>listeDesObjets = analyseur->getObjetsParType(*listeDesClasses.begin(), true);
     typedef set<VisuRDFObjet* > ::const_iterator ObjectIterator;
     for(ObjectIterator itr = listeDesObjets.begin(); itr != listeDesObjets.end(); itr++ ){
 
@@ -63,10 +63,10 @@ int main(int argc, char *argv[])
       //  cout << "hauteur boite : " << dessinateur->calculHauteurBoite(*itr) << endl;
      //   generateur->dessinBoite((*itr), 20, 20);
 
-    }
+    }*/
 
     //generateur->dessinBoiteParType(unType, 20, 20);
-    generateur->dessinModeBoite();
+    generateur->dessin();
     //generateur->dessinTableau(unType, 20, 20);
     //generateur->dessin();
     // dessinateur->dessinTableau(unType, 20, 20);

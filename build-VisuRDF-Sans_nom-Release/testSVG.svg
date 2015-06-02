@@ -1,0 +1,657 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="705.556mm" height="130.528mm"
+ viewBox="0 0 2000 370"
+ xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  version="1.2" baseProfile="tiny">
+<title>SVG Generator Example Drawing</title>
+<desc>Dessin svg pour une dÃ©monstration</desc>
+<defs>
+</defs>
+<g fill="none" stroke="black" stroke-width="1" fill-rule="evenodd" stroke-linecap="square" stroke-linejoin="bevel" >
+
+<g fill="none" stroke="#ff0000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Al Bayan" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#ff0000" fill-opacity="1" stroke="none" xml:space="preserve" x="20" y="27" font-family="Al Bayan" font-size="6" font-weight="700" font-style="normal" 
+ >Equipement</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,35 L72,35 L72,50 L20,50 L20,35"/>
+</g>
+
+<g fill="#a0a0a4" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,0,0)"
+font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,35 L72,35 L72,50 L20,50 L20,35"/>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="38.0156" y="43.9375" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >name</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,50 L72,50 L72,65 L20,65 L20,50"/>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="18.7344" y="58.9375" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >dom</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="31.7656" y="58.9375" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >.</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="33.875" y="58.9375" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >eq</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="40.9688" y="58.9375" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >.</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="43.0781" y="58.9375" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >PTR021PO</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,65 L72,65 L72,80 L20,80 L20,65"/>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="18.7344" y="73.9375" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >dom</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="31.7656" y="73.9375" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >.</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="33.875" y="73.9375" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >eq</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="40.9688" y="73.9375" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >.</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="43.0781" y="73.9375" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >PTR022PO</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M72,35 L145,35 L145,50 L72,50 L72,35"/>
+</g>
+
+<g fill="#a0a0a4" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,0,0)"
+font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M72,35 L145,35 L145,50 L72,50 L72,35"/>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="73.8281" y="43.9375" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >Equipement</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="108.266" y="43.9375" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >.</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="110.375" y="43.9375" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >catÃ©gorie</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M72,50 L145,50 L145,65 L72,65 L72,50"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="98.6562" y="58.9375" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >Pompe</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M72,65 L145,65 L145,80 L72,80 L72,65"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="98.6562" y="73.9375" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >Pompe</text>
+</g>
+
+<g fill="none" stroke="#ff0000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Al Bayan" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#ff0000" fill-opacity="1" stroke="none" xml:space="preserve" x="70" y="107" font-family="Al Bayan" font-size="6" font-weight="700" font-style="normal" 
+ >Contexte</text>
+<text fill="#ff0000" fill-opacity="1" stroke="none" xml:space="preserve" x="97.4375" y="107" font-family="Al Bayan" font-size="6" font-weight="700" font-style="normal" 
+ >_</text>
+<text fill="#ff0000" fill-opacity="1" stroke="none" xml:space="preserve" x="101.203" y="107" font-family="Al Bayan" font-size="6" font-weight="700" font-style="normal" 
+ >de</text>
+<text fill="#ff0000" fill-opacity="1" stroke="none" xml:space="preserve" x="108.688" y="107" font-family="Al Bayan" font-size="6" font-weight="700" font-style="normal" 
+ >_</text>
+<text fill="#ff0000" fill-opacity="1" stroke="none" xml:space="preserve" x="112.453" y="107" font-family="Al Bayan" font-size="6" font-weight="700" font-style="normal" 
+ >service</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M70,115 L136,115 L136,130 L70,130 L70,115"/>
+</g>
+
+<g fill="#a0a0a4" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,0,0)"
+font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M70,115 L136,115 L136,130 L70,130 L70,115"/>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="95.0156" y="123.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >name</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M70,130 L136,130 L136,145 L70,145 L70,130"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="71.625" y="138.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >ctx</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="80.5938" y="138.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >.</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="82.7031" y="138.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >cs</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="88.8125" y="138.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >.</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="90.9219" y="138.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >DiagPTR021PO</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M70,145 L136,145 L136,160 L70,160 L70,145"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="71.625" y="153.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >ctx</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="80.5938" y="153.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >.</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="82.7031" y="153.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >cs</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="88.8125" y="153.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >.</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="90.9219" y="153.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >DiagPTR022PO</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M136,115 L283,115 L283,130 L136,130 L136,115"/>
+</g>
+
+<g fill="#a0a0a4" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,0,0)"
+font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M136,115 L283,115 L283,130 L136,130 L136,115"/>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="167.203" y="123.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >Objet</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="183" y="123.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >_</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="186.375" y="123.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >identifiÃ©</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="216" y="123.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >.</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="218.109" y="123.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >dÃ©finition</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M136,130 L283,130 L283,145 L136,145 L136,130"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="178.438" y="138.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >Diagnostic</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="209.172" y="138.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ > </text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="210.359" y="138.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >PTR022PO</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M136,145 L283,145 L283,160 L136,160 L136,145"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="147.531" y="153.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >Mise</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="160.797" y="153.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ > </text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="161.984" y="153.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >Ã</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="166.109" y="153.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >  </text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="168.484" y="153.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >disposition</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="200.609" y="153.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ > </text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="201.797" y="153.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >de</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="208.891" y="153.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ > </text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="210.078" y="153.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >diagnostic</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="240.094" y="153.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ > </text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="241.281" y="153.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >PTR021PO</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M283,115 L398,115 L398,130 L283,130 L283,115"/>
+</g>
+
+<g fill="#a0a0a4" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,0,0)"
+font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M283,115 L398,115 L398,130 L283,130 L283,115"/>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="287.578" y="123.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >Objet</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="303.375" y="123.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >_</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="306.75" y="123.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >identifiÃ©</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="336.375" y="123.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >.</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="338.484" y="123.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >catÃ©gorie</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="371.266" y="123.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >_</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="374.641" y="123.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >AP929</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M283,130 L398,130 L398,145 L283,145 L283,130"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="304.641" y="138.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >exigence</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="330.547" y="138.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >_</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="333.922" y="138.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >de</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="341.016" y="138.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >_</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="344.391" y="138.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >conception</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M283,145 L398,145 L398,160 L283,160 L283,145"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="304.641" y="153.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >exigence</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="330.547" y="153.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >_</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="333.922" y="153.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >de</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="341.016" y="153.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >_</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="344.391" y="153.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >conception</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M398,115 L492,115 L492,130 L398,130 L398,115"/>
+</g>
+
+<g fill="#a0a0a4" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,0,0)"
+font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M398,115 L492,115 L492,130 L398,130 L398,115"/>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="404.219" y="123.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >Contexte</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="430.547" y="123.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >_</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="433.922" y="123.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >de</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="441.016" y="123.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >_</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="444.391" y="123.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >service</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="464.438" y="123.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >.</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="466.547" y="123.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >terrain</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M398,130 L492,130 L492,145 L398,145 L398,130"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="439.125" y="138.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >true</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M398,145 L492,145 L492,160 L398,160 L398,145"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="439.125" y="153.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >true</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M492,115 L586,115 L586,130 L492,130 L492,115"/>
+</g>
+
+<g fill="#a0a0a4" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,0,0)"
+font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M492,115 L586,115 L586,130 L492,130 L492,115"/>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="495.531" y="123.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >Contexte</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="521.859" y="123.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >_</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="525.234" y="123.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >de</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="532.328" y="123.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >_</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="535.703" y="123.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >service</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="555.75" y="123.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >.</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="557.859" y="123.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >mÃ©tier</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M492,130 L586,130 L586,145 L492,145 L492,130"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="529.406" y="138.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >chimie</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M492,145 L586,145 L586,160 L492,160 L492,145"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="529.406" y="153.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >chimie</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M586,115 L733,115 L733,130 L586,130 L586,115"/>
+</g>
+
+<g fill="#a0a0a4" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,0,0)"
+font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M586,115 L733,115 L733,130 L586,130 L586,115"/>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="590.266" y="123.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >Contexte</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="616.594" y="123.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >_</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="619.969" y="123.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >de</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="627.062" y="123.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >_</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="630.438" y="123.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >service</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="650.484" y="123.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >.</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="652.594" y="123.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >mode</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="668.953" y="123.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >_</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="672.328" y="123.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >de</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="679.422" y="123.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >_</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="682.797" y="123.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >fonctionnement</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M586,130 L733,130 L733,145 L586,145 L586,130"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="653.297" y="138.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >RCD</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M586,145 L733,145 L733,160 L586,160 L586,145"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="653.297" y="153.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >RCD</text>
+</g>
+
+<g fill="none" stroke="#ff0000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Al Bayan" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#ff0000" fill-opacity="1" stroke="none" xml:space="preserve" x="120" y="187" font-family="Al Bayan" font-size="6" font-weight="700" font-style="normal" 
+ >SystÃ¨me</text>
+<text fill="#ff0000" fill-opacity="1" stroke="none" xml:space="preserve" x="150.281" y="187" font-family="Al Bayan" font-size="6" font-weight="700" font-style="normal" 
+ >_</text>
+<text fill="#ff0000" fill-opacity="1" stroke="none" xml:space="preserve" x="154.047" y="187" font-family="Al Bayan" font-size="6" font-weight="700" font-style="normal" 
+ >Ã©lÃ©mentaire</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M120,195 L155,195 L155,210 L120,210 L120,195"/>
+</g>
+
+<g fill="#a0a0a4" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,0,0)"
+font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M120,195 L155,195 L155,210 L120,210 L120,195"/>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="129.516" y="203.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >name</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M120,210 L155,210 L155,225 L120,225 L120,210"/>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="119.766" y="218.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >dom</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="132.797" y="218.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >.</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="134.906" y="218.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >se</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="141.281" y="218.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >.</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="143.391" y="218.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >RCV</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M120,225 L155,225 L155,240 L120,240 L120,225"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="120.516" y="233.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >dom</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="133.547" y="233.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >.</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="135.656" y="233.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >se</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="142.031" y="233.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >.</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="144.141" y="233.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >TEP</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M120,240 L155,240 L155,255 L120,255 L120,240"/>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="119.844" y="248.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >dom</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="132.875" y="248.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >.</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="134.984" y="248.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >se</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="141.359" y="248.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >.</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="143.469" y="248.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >RRA</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M120,255 L155,255 L155,270 L120,270 L120,255"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="120.109" y="263.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >dom</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="133.141" y="263.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >.</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="135.25" y="263.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >se</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="141.625" y="263.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >.</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="143.734" y="263.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >REA</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M120,270 L155,270 L155,285 L120,285 L120,270"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="120.25" y="278.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >dom</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="133.281" y="278.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >.</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="135.391" y="278.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >se</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="141.766" y="278.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >.</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="143.875" y="278.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >PTR</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M155,195 L319,195 L319,210 L155,210 L155,195"/>
+</g>
+
+<g fill="#a0a0a4" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,0,0)"
+font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M155,195 L319,195 L319,210 L155,210 L155,195"/>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="194.703" y="203.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >Objet</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="210.5" y="203.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >_</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="213.875" y="203.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >identifiÃ©</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="243.5" y="203.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >.</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="245.609" y="203.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >dÃ©finition</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M155,210 L319,210 L319,225 L155,225 L155,210"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="166.953" y="218.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >Refroidissement</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="213.922" y="218.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ > </text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="215.109" y="218.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >et</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="220.672" y="218.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ > </text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="221.859" y="218.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >conditionnement</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="271.094" y="218.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ > </text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="272.281" y="218.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >des</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="282.422" y="218.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ > </text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="283.609" y="218.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >piscines</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M155,225 L319,225 L319,240 L155,240 L155,225"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="182.422" y="233.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >ContrÃ´le</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="211.5" y="233.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ > </text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="212.688" y="233.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >chimique</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="239.344" y="233.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ > </text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="240.531" y="233.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >et</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="246.094" y="233.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ > </text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="247.281" y="233.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >volumÃ©trique</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M155,240 L319,240 L319,255 L155,255 L155,240"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="198.219" y="248.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >Appoint</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="221.234" y="248.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ > </text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="222.422" y="248.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >d</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="226.188" y="248.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >'</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="226.188" y="248.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >eau</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="236.547" y="248.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ > </text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="237.734" y="248.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >au</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="244.766" y="248.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ > </text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="245.953" y="248.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >rÃ©acteur</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M155,255 L319,255 L319,270 L155,270 L155,255"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="187.938" y="263.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >Traitement</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="219.656" y="263.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ > </text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="220.844" y="263.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >des</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="230.984" y="263.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ > </text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="232.172" y="263.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >effluents</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="257.438" y="263.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ > </text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="258.625" y="263.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >primaires</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M155,270 L319,270 L319,285 L155,285 L155,270"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="180.266" y="278.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >Refroidissement</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="227.234" y="278.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ > </text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="228.422" y="278.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >du</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="235.906" y="278.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ > </text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="237.094" y="278.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >rÃ©acteur</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="266.906" y="278.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ > </text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="268.094" y="278.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >Ã</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="272.219" y="278.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >  </text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="274.594" y="278.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >l</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="276.328" y="278.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >'</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="276.328" y="278.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >arrÃªt</text>
+</g>
+
+<g fill="none" stroke="#ff0000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Al Bayan" font-size="6" font-weight="700" font-style="normal" 
+>
+<text fill="#ff0000" fill-opacity="1" stroke="none" xml:space="preserve" x="170" y="312" font-family="Al Bayan" font-size="6" font-weight="700" font-style="normal" 
+ >Tranche</text>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M170,320 L208,320 L208,335 L170,335 L170,320"/>
+</g>
+
+<g fill="#a0a0a4" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,0,0)"
+font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M170,320 L208,320 L208,335 L170,335 L170,320"/>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="181.016" y="328.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >name</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M170,335 L208,335 L208,350 L170,350 L170,335"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="170.312" y="343.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >dom</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="183.344" y="343.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >.</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="185.453" y="343.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >tr</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="190.141" y="343.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >.</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="192.25" y="343.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >LEGO</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M208,320 L306,320 L306,335 L208,335 L208,320"/>
+</g>
+
+<g fill="#a0a0a4" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,0,0)"
+font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M208,320 L306,320 L306,335 L208,335 L208,320"/>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="214.703" y="328.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >Objet</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="230.5" y="328.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >_</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="233.875" y="328.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >identifiÃ©</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="263.5" y="328.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >.</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="265.609" y="328.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >dÃ©finition</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M208,335 L306,335 L306,350 L208,350 L208,335"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="211.766" y="343.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >Centrale</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="236.016" y="343.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ > </text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="237.203" y="343.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >simulÃ©e</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="265.609" y="343.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ > </text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="266.797" y="343.938" font-family="Al Bayan" font-size="6" font-weight="400" font-style="normal" 
+ >CONNEXION</text>
+<polyline fill="none" vector-effect="non-scaling-stroke" points="402,130 83,65 " />
+<polyline fill="none" vector-effect="non-scaling-stroke" points="402,145 219,270 " />
+<polyline fill="none" vector-effect="non-scaling-stroke" points="402,145 238,335 " />
+<polyline fill="none" vector-effect="non-scaling-stroke" points="402,145 83,80 " />
+<polyline fill="none" vector-effect="non-scaling-stroke" points="402,160 219,270 " />
+<polyline fill="none" vector-effect="non-scaling-stroke" points="402,160 238,335 " />
+</g>
+</g>
+</svg>
