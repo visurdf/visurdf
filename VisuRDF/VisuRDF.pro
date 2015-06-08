@@ -3,6 +3,7 @@
 # -------------------------------------------------
 QT += core
 QT += svg
+QT += xml
 CONFIG += link_pkgconfig
 PKGCONFIG += raptor2
 
