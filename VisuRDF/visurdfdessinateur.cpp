@@ -3,32 +3,41 @@
 VisuRDFDessinateur::VisuRDFDessinateur(VisuRDFAnalyseur * analyseur) {
 
     this->analyseur = analyseur;
-    listeTypes = analyseur->getTousLesTypes(true);
-    hauteurCase = 15;
-    espacementVertical = 20;
-    pourcentagePolice = 3.5;
-    pourcentagePoliceHauteur = 10;
 
+    parametreur = new VisuRDFParametreur();
+    parametreur->lectureParametres();
+
+    listeTypes = analyseur->getTousLesTypes(true);
+
+    //Couleur du tableau
     QColor color; // = Qt::black;
     color.setRgb(14,50,200);
     pen3.setColor(color);
 
+    //Couleur de la police
     QColor color2 = Qt::red;
     pen2.setColor(color2);
+
+    //Couleur des liaisons
     pen1.setColor(Qt::black);
 
-    QFontDatabase fontDataBase;
-
-    QString firstFont = fontDataBase.families().first();
-    //cout << "taille mapPolice : " << mapPolice.size() << endl;
-    f = firstFont;
-    int fontSize = 6;
+    //Déclaration de la police
+    f = parametreur->getParamPolice();
+    int fontSize = parametreur->getFontSize();
     f.setPixelSize(fontSize);
+
+    //calcul des parametres d'affichage des boites en fonction de la taille de la police
+    hauteurCase = 15/6*fontSize;
+    espacementVertical = 20/6*fontSize;
+    pourcentagePolice = 3.5/6*fontSize;
+    pourcentagePoliceHauteur = 10/6*fontSize;
+
 
 }
 
 
 VisuRDFDessinateur::~VisuRDFDessinateur() {
+    delete parametreur;
 
 }
 

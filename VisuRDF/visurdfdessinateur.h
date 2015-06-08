@@ -4,6 +4,7 @@
 #include "visurdftype.h"
 #include "visurdfanalyseur.h"
 #include "visurdfboite.h"
+#include "visurdfparametreur.h"
 #include "string"
 #include <QPainter>
 #include <QRect>
@@ -46,6 +47,7 @@ private :
    // list<Objet> listeObjets;
     set<VisuRDFType*> listeTypes;
     VisuRDFAnalyseur* analyseur;
+    VisuRDFParametreur* parametreur;
     int hauteurCase;
     int espacementVertical;
     float pourcentagePolice;

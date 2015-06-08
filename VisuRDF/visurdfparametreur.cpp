@@ -25,6 +25,7 @@ VisuRDFParametreur::VisuRDFParametreur() : QWidget(){
     QString firstFont = fontDataBase.families().first();
     police.setFamily(firstFont);
     mode = "tableau";
+    fontSize = 6;
 
 }
 
@@ -69,6 +70,10 @@ int VisuRDFParametreur::getParamColoration(){
     return coloration;
 }
 
+int VisuRDFParametreur::getFontSize(){
+    return fontSize;
+}
+
 string VisuRDFParametreur::getParamMode(){
     return mode;
 }
@@ -94,7 +99,6 @@ void VisuRDFParametreur::lectureParametres(){
         QMessageBox::warning(this,"Erreur à l'ouverture du document XML","Le document XML n'a pas pu être attribué à l'objet QDomDocument.");
         return;
     }
-
 
     QDomElement dom_element = dom->documentElement();
     QDomElement enfant = dom_element.firstChild().toElement();
@@ -133,6 +137,24 @@ void VisuRDFParametreur::lectureParametres(){
                 cout << "la valeur de l'interligne sera : "<< interligne<< endl;
 
             }
+
+        }
+        else if (enfant.tagName()=="taillePolice"){
+            if (enfant.attribute("value",0)> 0){
+                fontSize = atoi(enfant.attribute("value",0).toStdString().c_str());
+                cout << "la taille de la police sera : "<< fontSize<< endl;
+
+            }
+
+
+        }
+        else if (enfant.tagName()=="police"){
+            if (enfant.attribute("value",0)!= 0){
+                police.setFamily( enfant.attribute("value",0));
+                cout << "le type de police sera : "<< police.family().toStdString()<< endl;
+
+            }
+
 
         }
         else cout << "le tag : '"<<enfant.tagName().toStdString()

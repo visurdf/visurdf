@@ -1,0 +1,18 @@
+<!--
+Aide pour le paramètrage du fichier : 
+	couleurs acceptées: red, blue, black
+	modes: tableau ou boite
+	coloration : 0 -> pas de coloration, autre valeur : coloration
+	polices acceptées: ...
+	
+-->
+
+<parametres>
+	<couleur value="red"/>
+	<mode value="boite"/>
+	<coloration value = "1"/>
+	<essai value="éé"/>
+	<police value="Arial"/>
+	<taillePolice value="6"/>
+</parametres>
+	
