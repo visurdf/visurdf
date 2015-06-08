@@ -9,14 +9,18 @@ VisuRDFDessinateur::VisuRDFDessinateur(VisuRDFAnalyseur * analyseur) {
     pourcentagePolice = 3.5;
     pourcentagePoliceHauteur = 10;
 
-    QColor color = Qt::black;
-    pen1.setColor(color);
+    QColor color; // = Qt::black;
+    color.setRgb(14,50,200);
+    pen3.setColor(color);
+
     QColor color2 = Qt::red;
     pen2.setColor(color2);
-    pen3.setColor(Qt::gray);
+    pen1.setColor(Qt::black);
 
     QFontDatabase fontDataBase;
+
     QString firstFont = fontDataBase.families().first();
+    //cout << "taille mapPolice : " << mapPolice.size() << endl;
     f = firstFont;
     int fontSize = 6;
     f.setPixelSize(fontSize);
@@ -217,7 +221,7 @@ void VisuRDFDessinateur::dessinModeTableau(QPainter &painter){
         VisuRDFType* type = *it;
 
         this->dessinTableau(type, x, y, painter);
-        x = x + 50;
+        //x = x + 50;
         y = y + this->calculHauteurTableau(type) + espacementVertical ;
     }
 
@@ -325,10 +329,12 @@ void VisuRDFDessinateur::dessinBoite(VisuRDFObjet *objet, float x, float y, QPai
     float yTexte = y + pourcentagePoliceHauteur/2;
     painter.setPen(pen1);
     QRect rect(x,y,largeur,hauteur);
-    painter.drawRect(rect);
+    painter.drawRoundedRect(rect,3,3);
 
-    QRect rectType(x,y,largeur,pourcentagePoliceHauteur);
-    painter.drawRect(rectType);
+    QLine lineType(x,y+pourcentagePoliceHauteur,x+largeur,y+pourcentagePoliceHauteur);
+    painter.drawLine(lineType);
+   // QRect rectType(x,y,largeur,pourcentagePoliceHauteur);
+    //painter.drawRect(rectType);
     // On remplit la map(objet, boite)
     VisuRDFBoite* boite = new VisuRDFBoite(x, y, largeur, hauteur);
     mapBoiteObjet.insert(std::make_pair(objet->getNom(), boite));
@@ -369,8 +375,8 @@ void VisuRDFDessinateur::dessinBoite(VisuRDFObjet *objet, float x, float y, QPai
                 painter.setFont(f);
                 painter.drawText(x, yTexte, QString(nomAffiche.c_str()));
 
-                painter.setPen(pen3);
-                f.setBold(true);
+               // painter.setPen(pen1);
+                f.setBold(false);
                 painter.setFont(f);
                 painter.drawText(x+largeurNom, yTexte, QString(valeur.c_str()));
                 yTexte = yTexte + pourcentagePoliceHauteur;
@@ -473,14 +479,16 @@ void VisuRDFDessinateur::dessinLiaison(VisuRDFObjet *objet1, VisuRDFObjet *objet
 
 void VisuRDFDessinateur::dessinToutesLiaisons(QPainter &painter){
 
+    painter.setPen(pen3);
+
     map<VisuRDFObjet*, list<VisuRDFObjet*> > mapRelations = analyseur->getRelations();
     for(map<VisuRDFObjet*, list<VisuRDFObjet*> >::iterator iter = mapRelations.begin(); iter!= mapRelations.end(); iter++){
         VisuRDFObjet* objet1 = (*iter).first;
         list<VisuRDFObjet*> objets = mapRelations[objet1];
         for(list<VisuRDFObjet*>::iterator it2 = objets.begin(); it2!= objets.end(); it2++){
             VisuRDFObjet* objet2 = *it2;
-            cout << "objet 1 : " << objet1->getNom() << endl;
-            cout << "objet 2 : " << objet2->getNom() << endl;
+          //  cout << "objet 1 : " << objet1->getNom() << endl;
+           // cout << "objet 2 : " << objet2->getNom() << endl;
             dessinLiaison(objet1,objet2, painter);
         }
 

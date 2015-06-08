@@ -47,7 +47,7 @@ void VisuRDFGenerateur::dessin() {
    // painter.setFont(f);
 
     dessinateur->dessinModeTableau(painter);
-    dessinateur->dessinToutesLiaisons(painter);
+    //dessinateur->dessinToutesLiaisons(painter);
 
     painter.end();
     std::cout<<"Fin du dessin"<<std::endl;
@@ -142,7 +142,7 @@ void VisuRDFGenerateur::dessinModeBoite(){
 
     dessinateur->dessinModeBoite(painter);
 
-    dessinateur->dessinToutesLiaisons(painter);
+  //  dessinateur->dessinToutesLiaisons(painter);
 
     painter.end();
     std::cout<<"Fin du dessin"<<std::endl;

@@ -58,6 +58,7 @@ private :
     QBrush brush;
 
     boiteObjet mapBoiteObjet;
+    map<int,QString> mapPolice;
 
 };
 
