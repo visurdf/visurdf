@@ -5,6 +5,7 @@
 #include "visurdfanalyseur.h"
 #include "visurdfdessinateur.h"
 #include "visurdfgenerateur.h"
+#include "visurdfparametreur.h"
 #include <QTextCodec>
 
 
@@ -58,6 +59,7 @@ int main(int argc, char *argv[])
 
      VisuRDFDessinateur* dessinateur = new VisuRDFDessinateur(analyseur);
      VisuRDFGenerateur* generateur = new VisuRDFGenerateur(dessinateur);
+     VisuRDFParametreur *parametreur = new VisuRDFParametreur();
 
   /*  set<VisuRDFObjet*>listeDesObjets = analyseur->getObjetsParType(*listeDesClasses.begin(), true);
     typedef set<VisuRDFObjet* > ::const_iterator ObjectIterator;
@@ -72,6 +74,8 @@ int main(int argc, char *argv[])
 
     //generateur->dessinBoiteParType(unType, 20, 20);
     generateur->dessin();
+    parametreur->lectureParametres();
+
     //generateur->dessinTableau(unType, 20, 20);
     //generateur->dessin();
     // dessinateur->dessinTableau(unType, 20, 20);
