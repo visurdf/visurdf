@@ -18,11 +18,42 @@ VisuRDFParametreur::VisuRDFParametreur() : QWidget(){
 
     couleur = Qt::black;
 
+    //Police par défaut
     QFontDatabase fontDataBase;
     QString firstFont = fontDataBase.families().first();
     police.setFamily(firstFont);
     mode = "tableau";
     fontSize = 6;
+
+    //Couleur par défaut
+    QColor color; // = Qt::black;
+    color.setRgb(14,50,200);
+
+    penPolice.setColor(Qt::red);
+    penContour.setColor(color);
+    penLiaison.setColor(Qt::black);
+
+    //Couleur de fond par défaut
+    listPinceau = new list<QBrush*>();
+    listeCouleur = new list<QColor*>();
+    listeCouleur->push_back(new QColor(128,191,255));
+    listeCouleur->push_back(new QColor(191,128,255));
+    listeCouleur->push_back(new QColor(191,255,128));
+    listeCouleur->push_back(new QColor(255,255,128));
+    listeCouleur->push_back(new QColor(255,128,128));
+    listeCouleur->push_back(new QColor(0,115,230));
+    listeCouleur->push_back(new QColor(255,128,191));
+    listeCouleur->push_back(new QColor(128,255,128));
+    listeCouleur->push_back(new QColor(255,179,102));
+    listeCouleur->push_back(new QColor(186,186,186));
+
+
+    for (list<QColor*>::iterator it = listeCouleur->begin(); it != listeCouleur->end();it++){
+
+        QColor* couleur = *it;
+        QBrush pinceau = *couleur;
+        listPinceau->push_back(new QBrush(pinceau));
+    }
 
 }
 
@@ -45,9 +76,18 @@ QColor VisuRDFParametreur::getParamCouleur(){
  * retourne la valeur des pen du fichier de parametrage
  * @return QPen pen
  */
-QPen VisuRDFParametreur::getParamPen(){
-    return pen;
+QPen VisuRDFParametreur::getPenPolice(){
+    return penPolice;
 }
+
+QPen VisuRDFParametreur::getPenLiaison(){
+    return penLiaison;
+}
+
+QPen VisuRDFParametreur::getPenContour(){
+    return penContour;
+}
+
 
 /**
  * @brief VisuRDFParametrage::getParamPolice
@@ -73,6 +113,10 @@ int VisuRDFParametreur::getFontSize(){
 
 string VisuRDFParametreur::getParamMode(){
     return mode;
+}
+
+list<QBrush*> VisuRDFParametreur::getListePinceau(){
+    return listPinceau;
 }
 
 

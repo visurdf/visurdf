@@ -29,16 +29,23 @@ public:
 
     void lectureParametres();
     QColor getParamCouleur();
-    QPen getParamPen();
+    QPen getPenPolice();
+    QPen getPenContour();
+    QPen getPenLiaison();
     QFont getParamPolice();
     int getParamInterligne();
     int getParamColoration();
     int getFontSize();
     string getParamMode();
+    list<QBrush*> getListePinceau();
 
 private:
     QColor couleur;
-    QPen pen;
+    QPen penPolice;
+    QPen penContour;
+    QPen penLiaison;
+    list<QBrush*> *listPinceau;
+    list<QColor*> *listeCouleur;
 
     QFont police;
     int fontSize;
