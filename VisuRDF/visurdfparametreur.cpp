@@ -1,10 +1,7 @@
 #include "visurdfparametreur.h"
 
 
-
 #include <string>
-
-
 #include <QtXml>
 #include <QMessageBox>
 

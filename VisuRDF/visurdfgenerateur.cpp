@@ -1,8 +1,9 @@
 #include "visurdfgenerateur.h"
 
-VisuRDFGenerateur::VisuRDFGenerateur(VisuRDFDessinateur *dessinateur) {
+VisuRDFGenerateur::VisuRDFGenerateur(VisuRDFDessinateur *dessinateur,VisuRDFParametreur* parametreur) {
 
     this->dessinateur = dessinateur;
+    this->parametreur = parametreur;
 
     int hauteur = dessinateur->calculHauteurDessin();
     color = Qt::black;
@@ -45,8 +46,13 @@ void VisuRDFGenerateur::dessin() {
    // f.setPixelSize(fontSize);
    // painter.setPen(pen);
    // painter.setFont(f);
-
-    dessinateur->dessinModeTableau(painter);
+    cout << parametreur->getParamMode() << endl;
+    if (parametreur->getParamMode()=="tableau"){
+        dessinateur->dessinModeTableau(painter);
+    }
+    else{
+        dessinateur->dessinModeBoite(painter);
+    }
     //dessinateur->dessinToutesLiaisons(painter);
 
     painter.end();

@@ -302,7 +302,7 @@ float VisuRDFDessinateur::calculHauteurBoite(VisuRDFObjet *objet){
 
     }
 
-    return (hauteur*pourcentagePoliceHauteur);
+    return ((hauteur-1)*pourcentagePoliceHauteur);
 }
 
 float VisuRDFDessinateur::calculLargeurType(VisuRDFType *type){
@@ -368,15 +368,25 @@ void VisuRDFDessinateur::dessinBoite(VisuRDFObjet *objet, float x, float y, QPai
         if(valeur!=""){
 
             if(nom == "type"){
-                string typeAffiche = nom + " : " + valeur;
+                string valeurType = valeur;
                 painter.setPen(pen2);
                 f.setBold(true);
                 painter.setFont(f);
-                painter.drawText(x, yTexte, QString(typeAffiche.c_str()));
-                yTexte = yTexte + pourcentagePoliceHauteur;
+                painter.drawText(x, yTexte, QString(valeurType.c_str()));
+                //yTexte = yTexte + pourcentagePoliceHauteur;
             }
 
-            else{
+            else if(nom == "name"){
+                string valeurName = valeur;
+                painter.setPen(pen2);
+                f.setBold(true);
+                painter.setFont(f);
+                painter.drawText(x+largeurNom, yTexte, QString(valeurName.c_str()));
+                yTexte = yTexte + pourcentagePoliceHauteur;
+
+            }
+
+            if((nom!="type")&(nom!="name")){
                 string nomAffiche = nom + " : ";
 
                 painter.setPen(pen1);
