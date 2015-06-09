@@ -9,16 +9,22 @@ VisuRDFDessinateur::VisuRDFDessinateur(VisuRDFAnalyseur * analyseur) {
 
     listeTypes = analyseur->getTousLesTypes(true);
 
-    //Couleur du tableau
+    // Couleur des liaisons
     QColor color; // = Qt::black;
     color.setRgb(14,50,200);
     pen3.setColor(color);
 
-    //Couleur de la police
-    QColor color2 = Qt::red;
-    pen2.setColor(color2);
+    //Couleur de la police du type
+    if(parametreur->getParamColoration()!=0){
+        pen2.setColor(Qt::black);
+    }
+    else{
+        QColor color2 = Qt::red;
+        pen2.setColor(color2);
+    }
 
-    //Couleur des liaisons
+
+    //Couleur du tableau et de la police des propriétés
     pen1.setColor(Qt::black);
 
     //Déclaration de la police
@@ -335,7 +341,7 @@ float VisuRDFDessinateur::calculLargeurType(VisuRDFType *type){
 }
 
 
-void VisuRDFDessinateur::dessinBoite(VisuRDFObjet *objet, float x, float y, QPainter &painter){
+void VisuRDFDessinateur::dessinBoite(VisuRDFObjet *objet, float x, float y, QPainter &painter, QBrush* brush){
 
     float largeurNom;
     float largeurValeur;
@@ -349,6 +355,7 @@ void VisuRDFDessinateur::dessinBoite(VisuRDFObjet *objet, float x, float y, QPai
     painter.setPen(pen1);
     QRect rect(x,y,largeurType,hauteur);
     painter.drawRoundedRect(rect,3,3);
+    painter.fillRect(rect, *brush);
 
     QLine lineType(x,y+pourcentagePoliceHauteur,x+largeurType,y+pourcentagePoliceHauteur);
     painter.drawLine(lineType);
@@ -417,7 +424,7 @@ void VisuRDFDessinateur::dessinBoite(VisuRDFObjet *objet, float x, float y, QPai
 
 }
 
-void VisuRDFDessinateur::dessinBoiteParType(VisuRDFType *type, float x, float y, QPainter &painter){
+void VisuRDFDessinateur::dessinBoiteParType(VisuRDFType *type, float x, float y, QPainter &painter, QBrush* brush){
 
     float yBoite = y;
 
@@ -432,7 +439,7 @@ void VisuRDFDessinateur::dessinBoiteParType(VisuRDFType *type, float x, float y,
 
         VisuRDFObjet* objet = *it;
 
-        dessinBoite(objet, x, yBoite, painter);
+        dessinBoite(objet, x, yBoite, painter, brush);
 
         yBoite = yBoite + calculHauteurBoite(objet) + espacementVertical;
 
@@ -445,12 +452,23 @@ void VisuRDFDessinateur::dessinModeBoite(QPainter &painter){
     float x = 20;
     float y = 20;
 
+
+
+    int i=0;
     for(set<VisuRDFType*>::iterator it = listeTypes.begin(); it!= listeTypes.end(); it++){
         VisuRDFType* type = *it;
+        if(parametreur->getParamColoration()!=0){
+            map<int,QBrush*> mapBrush = parametreur->getListePinceau();
+            QBrush* brush = mapBrush[i];
+            this->dessinBoiteParType(type, x, y, painter,brush);
+        }
+        else{
+            QBrush* brush = new QBrush();
+            this->dessinBoiteParType(type, x, y, painter,brush);
+        }
 
-        this->dessinBoiteParType(type, x, y, painter);
         x = x + calculLargeurType(type) + 20;
-
+        i++;
     }
 
 

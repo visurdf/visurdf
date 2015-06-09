@@ -85,7 +85,7 @@ void VisuRDFGenerateur::dessinBoite(VisuRDFObjet *objet, int x, int y){
     painter.setPen(pen);
     painter.setFont(f);
 
-    dessinateur->dessinBoite(objet, x, y, painter);
+   // dessinateur->dessinBoite(objet, x, y, painter);
 
     painter.end();
     std::cout<<"Fin du dessin"<<std::endl;
@@ -106,7 +106,7 @@ void VisuRDFGenerateur::dessinBoiteParType(VisuRDFType *type, int x, int y){
     painter.setPen(pen);
     painter.setFont(f);
 
-    dessinateur->dessinBoiteParType(type, x, y, painter);
+   // dessinateur->dessinBoiteParType(type, x, y, painter);
 
     painter.end();
     std::cout<<"Fin du dessin"<<std::endl;

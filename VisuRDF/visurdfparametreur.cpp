@@ -34,7 +34,8 @@ VisuRDFParametreur::VisuRDFParametreur() : QWidget(){
     penLiaison.setColor(Qt::black);
 
     //Couleur de fond par défaut
-    listPinceau = new list<QBrush*>();
+    mapPinceau = new map<int,QBrush*>();
+
     listeCouleur = new list<QColor*>();
     listeCouleur->push_back(new QColor(128,191,255));
     listeCouleur->push_back(new QColor(191,128,255));
@@ -47,12 +48,15 @@ VisuRDFParametreur::VisuRDFParametreur() : QWidget(){
     listeCouleur->push_back(new QColor(255,179,102));
     listeCouleur->push_back(new QColor(186,186,186));
 
-
+    int i = 0;
     for (list<QColor*>::iterator it = listeCouleur->begin(); it != listeCouleur->end();it++){
 
         QColor* couleur = *it;
         QBrush pinceau = *couleur;
-        listPinceau->push_back(new QBrush(pinceau));
+        mapPinceau->insert(std::make_pair(i, new QBrush(pinceau)));
+        //mapPinceau[i]=new QBrush(pinceau);
+        i++;
+        //listPinceau->push_back(new QBrush(pinceau));
     }
 
 }
@@ -115,8 +119,8 @@ string VisuRDFParametreur::getParamMode(){
     return mode;
 }
 
-list<QBrush*> VisuRDFParametreur::getListePinceau(){
-    return listPinceau;
+map<int,QBrush*> VisuRDFParametreur::getListePinceau(){
+    return *mapPinceau;
 }
 
 

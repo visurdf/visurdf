@@ -37,14 +37,14 @@ public:
     int getParamColoration();
     int getFontSize();
     string getParamMode();
-    list<QBrush*> getListePinceau();
+    map<int,QBrush*> getListePinceau();
 
 private:
     QColor couleur;
     QPen penPolice;
     QPen penContour;
     QPen penLiaison;
-    list<QBrush*> *listPinceau;
+    map<int, QBrush*> *mapPinceau;
     list<QColor*> *listeCouleur;
 
     QFont police;
