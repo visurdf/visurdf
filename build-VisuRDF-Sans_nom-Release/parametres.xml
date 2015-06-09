@@ -9,7 +9,7 @@ Aide pour le paramètrage du fichier :
 
 <parametres>
 	<couleur value="red"/>
-	<mode value="tableau"/>
+	<mode value="boite"/>
 	<coloration value = "1"/>
 	<essai value="éé"/>
 	<police value="Arial"/>
