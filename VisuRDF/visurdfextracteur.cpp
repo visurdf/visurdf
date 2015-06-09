@@ -234,9 +234,21 @@ void VisuRDFExtracteur::gestionnaireDeTriplets(void* donnee_utilisateur, raptor_
                 relationRDF[listeDeNoms.front()] = listeDeRelations;
 
             } else {
-                list<string> listeDeProprietes2 = objetRDF[predicat->getNom()];
+                /* list<string> listeDeProprietes2 = objetRDF[predicat->getNom()];
                 listeDeProprietes2.push_back(objet->getNom());
                 objetRDF[predicat->getNom()] = listeDeProprietes2;
+*/
+
+                size_t pos = predicat->getNom().find_last_of(".");
+                string val  = predicat->getNom().substr(pos+1, predicat->getNom().size());
+
+                list<string> listeDeProprietes2 = objetRDF[val];
+
+
+                listeDeProprietes2.push_back(objet->getNom());
+
+                objetRDF[val] = listeDeProprietes2;
+
             }
         }
     }
