@@ -39,6 +39,7 @@ public:
     void dessinBoite(VisuRDFObjet* objet, float x, float y, QPainter &painter);
     void dessinBoiteParType(VisuRDFType* type, float x, float y, QPainter &painter);
     void dessinModeBoite(QPainter& painter);
+    void dessin(QPainter& painter);
 
     void dessinLiaison(VisuRDFObjet* objet1, VisuRDFObjet* objet2, QPainter&painter);
     void dessinToutesLiaisons(QPainter &painter);

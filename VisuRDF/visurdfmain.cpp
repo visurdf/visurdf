@@ -57,11 +57,11 @@ int main(int argc, char *argv[])
     unType = analyseur->getTypeParNom(*listeDesClasses.begin(), true);
     cout << endl<< endl << unType->toString() << endl;
 
-     VisuRDFDessinateur* dessinateur = new VisuRDFDessinateur(analyseur);
 
-     VisuRDFParametreur *parametreur = new VisuRDFParametreur();
-     parametreur->lectureParametres();
-     VisuRDFGenerateur* generateur = new VisuRDFGenerateur(dessinateur,parametreur);
+
+
+     VisuRDFDessinateur* dessinateur = new VisuRDFDessinateur(analyseur);
+     VisuRDFGenerateur* generateur = new VisuRDFGenerateur(dessinateur);
 
   /*  set<VisuRDFObjet*>listeDesObjets = analyseur->getObjetsParType(*listeDesClasses.begin(), true);
     typedef set<VisuRDFObjet* > ::const_iterator ObjectIterator;

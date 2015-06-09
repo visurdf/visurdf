@@ -515,3 +515,13 @@ void VisuRDFDessinateur::dessinToutesLiaisons(QPainter &painter){
     }
     cout << "fin "<< endl;
 }
+
+void VisuRDFDessinateur::dessin(QPainter &painter){
+    if (parametreur->getParamMode()=="tableau"){
+        dessinModeTableau(painter);
+    }
+
+    else{
+        dessinModeBoite(painter);
+    }
+}
