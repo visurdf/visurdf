@@ -1,9 +1,8 @@
 #include "visurdfgenerateur.h"
 
-VisuRDFGenerateur::VisuRDFGenerateur(VisuRDFDessinateur *dessinateur,VisuRDFParametreur* parametreur) {
+VisuRDFGenerateur::VisuRDFGenerateur(VisuRDFDessinateur *dessinateur) {
 
     this->dessinateur = dessinateur;
-    this->parametreur = parametreur;
 
     int hauteur = dessinateur->calculHauteurDessin();
     color = Qt::black;
@@ -32,27 +31,9 @@ void VisuRDFGenerateur::dessin() {
 
     painter.begin(&generator);
 
-    /*------------ Déclaration d'une police utilisable en SVG -------------------*/
-    //Famille de Police
- //   QFontDatabase fontDataBase;
-  //  QString firstFont = fontDataBase.families().first();
-   // QFont f(firstFont);
-   //  QFont f = firstFont;
-   // f.setBold(true);
 
 
-    //Paramètres de la police
-   // int fontSize = 6;
-   // f.setPixelSize(fontSize);
-   // painter.setPen(pen);
-   // painter.setFont(f);
-    cout << parametreur->getParamMode() << endl;
-    if (parametreur->getParamMode()=="tableau"){
-        dessinateur->dessinModeTableau(painter);
-    }
-    else{
-        dessinateur->dessinModeBoite(painter);
-    }
+    dessinateur->dessin(painter);
     //dessinateur->dessinToutesLiaisons(painter);
 
     painter.end();

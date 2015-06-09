@@ -8,7 +8,7 @@
 class VisuRDFGenerateur
 {
 public:
-    VisuRDFGenerateur(VisuRDFDessinateur* dessinateur, VisuRDFParametreur* parametreur);
+    VisuRDFGenerateur(VisuRDFDessinateur* dessinateur);
     ~VisuRDFGenerateur();
     void dessin();
     void dessinTableau(VisuRDFType* type, int x, int y);
@@ -18,7 +18,6 @@ public:
 
 private :
     VisuRDFDessinateur* dessinateur;
-    VisuRDFParametreur* parametreur;
     QPainter painter;
     QSvgGenerator generator;
     QPen pen;
