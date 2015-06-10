@@ -24,7 +24,9 @@ SOURCES += \
     visurdfgenerateur.cpp \
     visurdfdessinateur.cpp \
     visurdfboite.cpp\
-    visurdfparametreur.cpp
+    visurdfparametreur.cpp \
+    mainwindow.cpp \
+    visurdfwidget.cpp
 HEADERS += \
     visurdfanalyseur.h \
     visurdfextracteur.h \
@@ -34,5 +36,11 @@ HEADERS += \
     visurdfdessinateur.h \
     visurdfclassesvg.h \
     visurdfboite.h\
-    visurdfparametreur.h
+    visurdfparametreur.h \
+    mainwindow.h \
+    visurdfwidget.h
 OTHER_FILES += Makefile
+
+FORMS += \
+    mainwindow.ui \
+    visurdfwidget.ui
