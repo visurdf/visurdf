@@ -53,6 +53,7 @@ private :
     int espacementVertical;
     float pourcentagePolice;
     int pourcentagePoliceHauteur;
+    int tailleMax;
 
     QFont f;
     QPen pen1;
