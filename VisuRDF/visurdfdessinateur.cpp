@@ -402,6 +402,7 @@ void VisuRDFDessinateur::dessinBoite(VisuRDFObjet *objet, float x, float y, QPai
                 else{
                     string nomAffiche = nom + " : ";
 
+
                     painter.setPen(pen1);
                     f.setBold(true);
                     painter.setFont(f);
@@ -410,8 +411,38 @@ void VisuRDFDessinateur::dessinBoite(VisuRDFObjet *objet, float x, float y, QPai
                     // painter.setPen(pen1);
                     f.setBold(false);
                     painter.setFont(f);
-                    painter.drawText(x+largeurNom, yTexte, QString(valeur.c_str()));
-                    yTexte = yTexte + pourcentagePoliceHauteur;
+
+                    int tailleMax = 20;
+
+
+
+                    if(valeur.size()<=tailleMax){
+                        cout << "valeur : " << valeur << " -- taille : " << valeur.size() << endl;
+                        cout << "petit parametre" << endl;
+                        painter.drawText(x+largeurNom, yTexte, QString(valeur.c_str()));
+                        yTexte = yTexte + pourcentagePoliceHauteur;
+                    }
+
+                    else{
+                        cout << "valeur : " << valeur << endl;
+                        int pos = 0;
+                        int posSub = 0;
+                        int taille = 0;
+                        //pos = valeur.find(" ", 0);
+                        cout << "pos : " << pos << endl;
+                        while((taille<tailleMax)&(pos!=-1)){
+                            posSub = (int)pos;
+                            cout << "posSub : " << posSub << endl;
+                            pos = valeur.find(" ", posSub+1);
+                            cout << "pos : " << pos << endl;
+                            taille = taille + pos;
+                        }
+                        string valeur2 = valeur.substr(0,posSub);
+                        cout << "valeur2 : " << valeur2 << endl;
+                        painter.drawText(x+largeurNom, yTexte, QString(valeur2.c_str()));
+                        yTexte = yTexte + pourcentagePoliceHauteur;
+
+                    }
                 }
             }
         }
