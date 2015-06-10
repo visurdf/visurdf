@@ -303,7 +303,7 @@ float VisuRDFDessinateur::calculLargeurBoite(VisuRDFObjet *objet, float &largeur
 float VisuRDFDessinateur::calculHauteurBoite(VisuRDFObjet *objet){
 
     int hauteur = 0;
-    int tailleMax = 25;
+    int tailleMax = 20;
     ObjetRDF proprietes = objet->getProprietes();
     cout << "objet : " << objet->getNom() << endl;
     for(ObjetRDF::iterator it = proprietes.begin(); it!= proprietes.end(); it++){
@@ -311,7 +311,7 @@ float VisuRDFDessinateur::calculHauteurBoite(VisuRDFObjet *objet){
         list<string> valeurs = proprietes[nomProp];
         list<string>::iterator it2 = valeurs.begin();
         string valeur = *it2;
-        if (valeur != ""){
+        if ((valeur != "")&(nomProp!="type")&(nomProp!="name")){
             int size = valeur.size();
             if(size > tailleMax){
 
@@ -326,7 +326,7 @@ float VisuRDFDessinateur::calculHauteurBoite(VisuRDFObjet *objet){
 
     }
 
-    return ((hauteur-1)*pourcentagePoliceHauteur);
+    return ((hauteur+1)*pourcentagePoliceHauteur);
 }
 
 float VisuRDFDessinateur::calculLargeurType(VisuRDFType *type){
@@ -422,7 +422,7 @@ void VisuRDFDessinateur::dessinBoite(VisuRDFObjet *objet, float x, float y, QPai
                     f.setBold(false);
                     painter.setFont(f);
 
-                    int tailleMax = 25;
+                    int tailleMax = 20;
 
 
 
@@ -438,26 +438,35 @@ void VisuRDFDessinateur::dessinBoite(VisuRDFObjet *objet, float x, float y, QPai
                         int precPos = 0;
 
                         for(int i =0; i< nbLignes; i++){
-                             pos = posSub;
-                            int taille = 0;
 
-                            while((taille<tailleMax)&(pos!=-1)){
-                                posSub = pos;
-                                pos = valeur.find(" ", posSub+1);
-                                taille = pos - precPos;
+                            if(valeur.find(" ",0)==-1){
+                                string valeurTronquee = valeur.substr(i*tailleMax,tailleMax);
+                                painter.drawText(x+largeurNom, yTexte, QString(valeurTronquee.c_str()));
+                                yTexte = yTexte + pourcentagePoliceHauteur;
                             }
 
-                            string valeur2;
-                            if(i!=nbLignes-1){
-                                 valeur2 = valeur.substr(precPos,(posSub-precPos));
+                            else{
+                                pos = posSub;
+                                int taille = 0;
+
+                                while((taille<tailleMax)&(pos!=-1)){
+                                    posSub = pos;
+                                    pos = valeur.find(" ", posSub+1);
+                                    taille = pos - precPos;
+                                }
+
+                                string valeur2;
+                                if(i!=nbLignes-1){
+                                    valeur2 = valeur.substr(precPos,(posSub-precPos));
+                                }
+
+                                else
+                                    valeur2=valeur.substr(precPos);
+
+                                precPos = posSub;
+                                painter.drawText(x+largeurNom, yTexte, QString(valeur2.c_str()));
+                                yTexte = yTexte + pourcentagePoliceHauteur;
                             }
-
-                            else
-                                valeur2=valeur.substr(precPos);
-
-                            precPos = posSub;
-                            painter.drawText(x+largeurNom, yTexte, QString(valeur2.c_str()));
-                            yTexte = yTexte + pourcentagePoliceHauteur;
 
                         }
 
