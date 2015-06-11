@@ -37,6 +37,7 @@ VisuRDFDessinateur::VisuRDFDessinateur(VisuRDFAnalyseur * analyseur) {
     espacementVertical = 20/5.5*fontSize;
     pourcentagePolice = 3.5/5.5*fontSize;
     pourcentagePoliceHauteur = 10/5.5*fontSize;
+    tailleMax = 30;
 
 
 }
@@ -304,19 +305,28 @@ float VisuRDFDessinateur::calculHauteurBoite(VisuRDFObjet *objet){
 
     int hauteur = 0;
     ObjetRDF proprietes = objet->getProprietes();
-
+    cout << "objet : " << objet->getNom() << endl;
     for(ObjetRDF::iterator it = proprietes.begin(); it!= proprietes.end(); it++){
         string nomProp = (*it).first;
         list<string> valeurs = proprietes[nomProp];
         list<string>::iterator it2 = valeurs.begin();
         string valeur = *it2;
-        if (valeur != ""){
-            hauteur = hauteur + 1;
+        if ((valeur != "")&(nomProp!="type")&(nomProp!="name")){
+            int size = valeur.size();
+            if(size > tailleMax){
+
+                hauteur = hauteur + size/tailleMax +1;
+                cout << "valeur :" << valeur << "-- taille : " << hauteur << endl;
+            }
+            else{
+                hauteur = hauteur + 1;
+                cout << "valeur :" << valeur << "-- taille : " << hauteur << endl;
+            }
         }
 
     }
 
-    return ((hauteur-1)*pourcentagePoliceHauteur);
+    return ((hauteur+1)*pourcentagePoliceHauteur);
 }
 
 float VisuRDFDessinateur::calculLargeurType(VisuRDFType *type){
@@ -402,16 +412,70 @@ void VisuRDFDessinateur::dessinBoite(VisuRDFObjet *objet, float x, float y, QPai
                 else{
                     string nomAffiche = nom + " : ";
 
+
                     painter.setPen(pen1);
                     f.setBold(true);
                     painter.setFont(f);
                     painter.drawText(x+1, yTexte, QString(nomAffiche.c_str()));
 
-                    // painter.setPen(pen1);
                     f.setBold(false);
                     painter.setFont(f);
-                    painter.drawText(x+largeurNom, yTexte, QString(valeur.c_str()));
-                    yTexte = yTexte + pourcentagePoliceHauteur;
+
+
+
+                    // Si la valeur est inférieure à la taille max, on l'affiche sur une ligne
+                    if(valeur.size()<=tailleMax){
+                        painter.drawText(x+largeurNom, yTexte, QString(valeur.c_str()));
+                        yTexte = yTexte + pourcentagePoliceHauteur;
+                    }
+
+                    // Sinon on l'affiche sur plusieurs lignes
+                    else{
+                        // Calcul de nbLignes à revoir (dépend de la taille des mots...)
+                        int nbLignes = valeur.size()/tailleMax +1 ;
+                        int pos = 0;
+                        int posEspace = 0;
+                        int precPos = 0;
+
+                        for(int i =0; i< nbLignes; i++){
+
+                            // Si il n'y a aucun espace dans le string
+                            if(valeur.find(" ",0)==-1){
+                                string valeurTronquee = valeur.substr(i*tailleMax,tailleMax);
+                                painter.drawText(x+largeurNom, yTexte, QString(valeurTronquee.c_str()));
+                                yTexte = yTexte + pourcentagePoliceHauteur;
+                            }
+
+                            else{
+                                // On met le curseur sur le précédent espace
+                                pos = posEspace;
+                                int taille = 0;
+
+                                // On cherche le prochain espace pour lequel la suite de mots ne dépasse pas tailleMax
+                                while((taille<tailleMax)&(pos!=-1)){
+                                    posEspace = pos;
+                                    pos = valeur.find(" ", posEspace+1);
+                                    taille = pos - precPos;
+                                }
+
+                                // On récupère la chaîne à afficher
+                                string valeur2;
+                                if(i!=nbLignes-1){
+                                    valeur2 = valeur.substr(precPos,(posEspace-precPos));
+                                }
+
+                                else
+                                    valeur2=valeur.substr(precPos);
+
+                                precPos = posEspace;
+                                //On affiche la chaine et on fait varier le y
+                                painter.drawText(x+largeurNom, yTexte, QString(valeur2.c_str()));
+                                yTexte = yTexte + pourcentagePoliceHauteur;
+                            }
+
+                        }
+
+                    }
                 }
             }
         }
@@ -423,6 +487,7 @@ void VisuRDFDessinateur::dessinBoite(VisuRDFObjet *objet, float x, float y, QPai
 
 
 }
+
 
 void VisuRDFDessinateur::dessinBoiteParType(VisuRDFType *type, float x, float y, QPainter &painter, QBrush* brush){
 

@@ -22,7 +22,7 @@ MainWindow::MainWindow(QWidget *parent) :
     VisuRDFExtracteur visuRDFExtracteur;
     // classesvg C;
 
-    visuRDFExtracteur.parserTripletRdf("PTR-2.rdf");
+    visuRDFExtracteur.parserTripletRdf("2-contextes.rdf");
     visuRDFExtracteur.afficherMap();
     visuRDFExtracteur.afficherRelations();
     // C.drawSvg();

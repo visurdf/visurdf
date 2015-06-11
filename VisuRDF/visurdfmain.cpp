@@ -6,6 +6,8 @@
 #include "visurdfdessinateur.h"
 #include "visurdfgenerateur.h"
 #include "visurdfparametreur.h"
+#include "visurdfwidget.h"
+#include "mainwindow.h"
 #include <QTextCodec>
 
 
@@ -62,6 +64,12 @@ int main(int argc, char *argv[])
 
      VisuRDFDessinateur* dessinateur = new VisuRDFDessinateur(analyseur);
      VisuRDFGenerateur* generateur = new VisuRDFGenerateur(dessinateur);
+
+
+     visuRDFWidget* widget = new  visuRDFWidget(dessinateur);
+     MainWindow* window = new MainWindow(widget);
+     window->show();
+     A.exec();
 
   /*  set<VisuRDFObjet*>listeDesObjets = analyseur->getObjetsParType(*listeDesClasses.begin(), true);
     typedef set<VisuRDFObjet* > ::const_iterator ObjectIterator;
