@@ -165,6 +165,11 @@ map<VisuRDFObjet*, list<VisuRDFObjet*> > VisuRDFAnalyseur::getRelations() {
 }
 
 
+VisuRDFObjet* VisuRDFAnalyseur::getObjetparNom(string nomObjet)
+{
+    return tousLesObjets[nomObjet];
+}
+
 VisuRDFAnalyseur::~VisuRDFAnalyseur() {
 
 }

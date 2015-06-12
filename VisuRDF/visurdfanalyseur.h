@@ -23,6 +23,7 @@ public:
     VisuRDFType* getTypeParNom(string nomDuType,  bool sansProprietesNulles);
     set<VisuRDFObjet*> getObjetsParType(string nomDuType, bool sansProprietesNulles);
     map<VisuRDFObjet*, list<VisuRDFObjet*> > getRelations();
+    VisuRDFObjet* getObjetparNom(string nomObjet);
 
 private:
     VisuRDFExtracteur *extracteur;

@@ -154,8 +154,18 @@ void VisuRDFDessinateur::dessinTableau(VisuRDFType *type, int x, int y, QPainter
     painter.setPen(pen2);
     f.setBold(true);
     painter.setFont(f);
-    // Dessin du nom du type
+
+    float largeurTableau = calculLargeurTableau(type);
+    float hauteurTableau = calculHauteurTableau(type);
+
     string nomType = type->getNom();
+
+    //On remplit la map "type / boite"
+    VisuRDFBoite* boiteTableau = new VisuRDFBoite(x, y, largeurTableau, hauteurTableau);
+    mapBoiteType.insert(std::make_pair(nomType, boiteTableau));
+
+    // Dessin du nom du type
+
     painter.drawText(x, y + hauteurCase/2, QString(nomType.c_str()));
 
     f.setBold(false);
@@ -305,7 +315,6 @@ float VisuRDFDessinateur::calculHauteurBoite(VisuRDFObjet *objet){
 
     int hauteur = 0;
     ObjetRDF proprietes = objet->getProprietes();
-    cout << "objet : " << objet->getNom() << endl;
     for(ObjetRDF::iterator it = proprietes.begin(); it!= proprietes.end(); it++){
         string nomProp = (*it).first;
         list<string> valeurs = proprietes[nomProp];
@@ -316,11 +325,9 @@ float VisuRDFDessinateur::calculHauteurBoite(VisuRDFObjet *objet){
             if(size > tailleMax){
 
                 hauteur = hauteur + size/tailleMax +1;
-                cout << "valeur :" << valeur << "-- taille : " << hauteur << endl;
             }
             else{
                 hauteur = hauteur + 1;
-                cout << "valeur :" << valeur << "-- taille : " << hauteur << endl;
             }
         }
 
@@ -616,4 +623,27 @@ void VisuRDFDessinateur::dessin(QPainter &painter){
     }
 
     dessinToutesLiaisons(painter);
+}
+
+void VisuRDFDessinateur::dessinMap(QPainter &painter){
+
+
+    if(parametreur->getParamMode()=="boite"){
+        for (boiteObjet::iterator it = mapBoiteObjet.begin(); it!=mapBoiteObjet.end(); it++){
+            string nomObjet = (*it).first;
+            VisuRDFBoite* boite = mapBoiteObjet[nomObjet];
+            VisuRDFObjet* objet = analyseur->getObjetparNom(nomObjet);
+            dessinBoite(objet,boite->getX(),boite->getY(),painter,&brush);
+
+        }
+    }
+
+    else{
+        for(boiteObjet::iterator iter = mapBoiteType.begin(); iter!=mapBoiteType.end(); iter++){
+            string nomType = (*iter).first;
+            VisuRDFBoite* boite = mapBoiteType[nomType];
+            VisuRDFType* type = analyseur->getTypeParNom(nomType,false);
+            dessinTableau(type,boite->getX(),boite->getY(),painter);
+        }
+    }
 }

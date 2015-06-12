@@ -44,6 +44,8 @@ public:
     void dessinLiaison(VisuRDFObjet* objet1, VisuRDFObjet* objet2, QPainter&painter);
     void dessinToutesLiaisons(QPainter &painter);
 
+    void dessinMap(QPainter &painter);
+
 private :
    // list<Objet> listeObjets;
     set<VisuRDFType*> listeTypes;
@@ -62,6 +64,7 @@ private :
     QBrush brush;
 
     boiteObjet mapBoiteObjet;
+    boiteObjet mapBoiteType;
     map<int,QString> mapPolice;
 
 };
