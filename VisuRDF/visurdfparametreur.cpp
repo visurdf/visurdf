@@ -171,8 +171,8 @@ void VisuRDFParametreur::lectureParametres(){
         }
         else if (enfant.tagName()=="coloration"){
             if (enfant.attribute("value",0)!= 0){
-                coloration = 1;
-                cout << "l'affichage sera coloré"<<endl;
+                coloration = atoi(enfant.attribute("value",0).toStdString().c_str());
+                cout << "l'affichage sera coloré : "<< coloration << endl;
 
             }
         }

@@ -29,8 +29,14 @@ VisuRDFDessinateur::VisuRDFDessinateur(VisuRDFAnalyseur * analyseur) {
 
     //Déclaration de la police
     f = parametreur->getParamPolice();
-    int fontSize = parametreur->getFontSize();
+    int fontSize = 0;
+    if(parametreur->getFontSize()!=0)
+        fontSize = parametreur->getFontSize();
+    else fontSize = 8;  // Paramètre par défaut
+
+
     f.setPixelSize(fontSize);
+
 
     //calcul des parametres d'affichage des boites en fonction de la taille de la police
     hauteurCase = 15/5.5*fontSize;
@@ -38,7 +44,7 @@ VisuRDFDessinateur::VisuRDFDessinateur(VisuRDFAnalyseur * analyseur) {
     pourcentagePolice = 3.5/5.5*fontSize;
     pourcentagePoliceHauteur = 10/5.5*fontSize;
 
-    tailleMax = 20;
+    tailleMax = 30;
 
 
 }
@@ -241,27 +247,7 @@ void VisuRDFDessinateur::dessinModeTableau(QPainter &painter){
 
 }
 
-/*float VisuRDFDessinateur::calculLargeurBoite(VisuRDFObjet *objet){
 
-    int largeurBoite = 0;
-
-    ObjetRDF proprietes = objet->getProprietes();
-    for(ObjetRDF::iterator it = proprietes.begin(); it!= proprietes.end(); it++){
-        string nomProp = (*it).first;
-        list<string> valeurs = proprietes[nomProp];
-        list<string>::iterator it2 = valeurs.begin();
-        string valeur = *it2;
-        string nomEtValeur = nomProp + " : " + valeur;
-
-        int largeur = nomEtValeur.size();
-        if (largeur > largeurBoite){
-            largeurBoite = largeur;
-        }
-
-    }
-
-    return (largeurBoite*pourcentagePolice);
-}*/
 
 float VisuRDFDessinateur::calculLargeurBoite(VisuRDFObjet *objet, float &largeurNom, float &largeurValeur){
 
@@ -306,7 +292,6 @@ float VisuRDFDessinateur::calculHauteurBoite(VisuRDFObjet *objet){
 
     int hauteur = 0;
     ObjetRDF proprietes = objet->getProprietes();
-    cout << "objet : " << objet->getNom() << endl;
     for(ObjetRDF::iterator it = proprietes.begin(); it!= proprietes.end(); it++){
         string nomProp = (*it).first;
         list<string> valeurs = proprietes[nomProp];
@@ -317,11 +302,9 @@ float VisuRDFDessinateur::calculHauteurBoite(VisuRDFObjet *objet){
             if(size > tailleMax){
 
                 hauteur = hauteur + size/tailleMax +1;
-                cout << "valeur :" << valeur << "-- taille : " << hauteur << endl;
             }
             else{
                 hauteur = hauteur + 1;
-                cout << "valeur :" << valeur << "-- taille : " << hauteur << endl;
             }
         }
 
@@ -365,8 +348,9 @@ void VisuRDFDessinateur::dessinBoite(VisuRDFObjet *objet, float x, float y, QPai
     float yTexte = yTitre + pourcentagePoliceHauteur;
     painter.setPen(pen1);
     QRect rect(x,y,largeurType,hauteur);
-    painter.drawRoundedRect(rect,3,3);
     painter.fillRect(rect, *brush);
+    painter.drawRoundedRect(rect,3,3);
+
 
     QLine lineType(x,y+pourcentagePoliceHauteur,x+largeurType,y+pourcentagePoliceHauteur);
     painter.drawLine(lineType);
@@ -522,7 +506,8 @@ void VisuRDFDessinateur::dessinModeBoite(QPainter &painter){
     int i=0;
     for(set<VisuRDFType*>::iterator it = listeTypes.begin(); it!= listeTypes.end(); it++){
         VisuRDFType* type = *it;
-        if(parametreur->getParamColoration()!=0){
+        cout << "paramcouleur : " << parametreur->getParamColoration() << endl;
+        if(parametreur->getParamColoration()==1){
             map<int,QBrush*> mapBrush = parametreur->getListePinceau();
             QBrush* brush = mapBrush[i];
             this->dessinBoiteParType(type, x, y, painter,brush);

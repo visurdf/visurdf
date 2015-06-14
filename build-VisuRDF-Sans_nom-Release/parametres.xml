@@ -10,9 +10,9 @@ Aide pour le paramètrage du fichier :
 <parametres>
 	<couleur value="red"/>
 	<mode value="boite"/>
-	<coloration value = "1"/>
+	<coloration value = "0"/>
 	<essai value="éé"/>
 	<police value="Arial"/>
-	<taillePolice value="8"/>
+	<taillePolice value="0"/>
 </parametres>
 	
