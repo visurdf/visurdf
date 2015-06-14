@@ -15,7 +15,7 @@ VisuRDFDessinateur::VisuRDFDessinateur(VisuRDFAnalyseur * analyseur) {
     pen3.setColor(color);
 
     //Couleur de la police du type
-    if(parametreur->getParamColoration()!=0){
+    if(parametreur->getParamColoration()==1){
         pen2.setColor(Qt::black);
     }
     else{
@@ -40,11 +40,17 @@ VisuRDFDessinateur::VisuRDFDessinateur(VisuRDFAnalyseur * analyseur) {
 
     //calcul des parametres d'affichage des boites en fonction de la taille de la police
     hauteurCase = 15/5.5*fontSize;
-    espacementVertical = 20/5.5*fontSize;
-    pourcentagePolice = 3.5/5.5*fontSize;
-    pourcentagePoliceHauteur = 10/5.5*fontSize;
 
-    tailleMax = 30;
+    pourcentagePolice = parametreur->getPourcentagePolice();
+    pourcentagePoliceHauteur = parametreur->getPourcentagePoliceHauteur();
+
+    espacementVertical = 20/5.5*fontSize;
+    //pourcentagePolice = 3.5/5.5*fontSize;
+    //pourcentagePoliceHauteur = 10/5.5*fontSize;
+
+
+   // tailleMax = 20;
+    tailleMax = parametreur->getTailleMax();
 
 
 }
@@ -176,6 +182,7 @@ void VisuRDFDessinateur::dessinTableau(VisuRDFType *type, int x, int y, QPainter
 
         int yObjet = y;
         string nomPropriete = *it;
+
         float largeurBoite = this->calculLargeurColonne(type, nomPropriete);
         QRect rect(xPropriete,y,largeurBoite,hauteurCase);
 
@@ -183,8 +190,13 @@ void VisuRDFDessinateur::dessinTableau(VisuRDFType *type, int x, int y, QPainter
         painter.drawRect(rect);
         QBrush brush = Qt::gray;
         painter.fillRect(rect, brush);
-        painter.drawText(rect, Qt::AlignCenter , QString(nomPropriete.c_str()));
 
+        if(nomPropriete == "name"){
+        painter.drawText(rect, Qt::AlignCenter , "id");
+        }
+        else{
+        painter.drawText(rect, Qt::AlignCenter , QString(nomPropriete.c_str()));
+        }
         string nomType = type->getNom();
         set<VisuRDFObjet*> listeObjets = analyseur->getObjetsParType(nomType, false);
 

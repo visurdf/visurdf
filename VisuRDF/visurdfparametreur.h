@@ -38,6 +38,9 @@ public:
     int getFontSize();
     string getParamMode();
     map<int,QBrush*> getListePinceau();
+    int getPourcentagePolice();
+    int getPourcentagePoliceHauteur();
+    int getTailleMax();
 
 private:
     QColor couleur;
@@ -52,6 +55,9 @@ private:
     int interligne;
     string mode;
     int coloration;
+    int pourcentagePoliceHauteur;
+    int pourcentagePolice;
+    int tailleMax;
 };
 
 

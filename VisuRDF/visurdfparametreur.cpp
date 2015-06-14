@@ -14,7 +14,9 @@ using namespace std;
  */
 VisuRDFParametreur::VisuRDFParametreur() : QWidget(){
     //Parametre par défaut du dessin si les informations ne sont pas contenu dans le fichier xml
-    interligne = 1;
+    pourcentagePolice = 5;
+    pourcentagePoliceHauteur = 15;
+    tailleMax = 50;
 
     couleur = Qt::black;
 
@@ -103,10 +105,6 @@ QFont VisuRDFParametreur::getParamPolice(){
 }
 
 
-int VisuRDFParametreur::getParamInterligne(){
-    return interligne;
-}
-
 int VisuRDFParametreur::getParamColoration(){
     return coloration;
 }
@@ -123,6 +121,17 @@ map<int,QBrush*> VisuRDFParametreur::getListePinceau(){
     return *mapPinceau;
 }
 
+int VisuRDFParametreur::getPourcentagePolice(){
+    return pourcentagePolice;
+}
+
+int VisuRDFParametreur::getPourcentagePoliceHauteur(){
+    return pourcentagePoliceHauteur;
+}
+
+int VisuRDFParametreur::getTailleMax(){
+    return tailleMax;
+}
 
 /**
  * @brief VisuRDFParametrage::lectureParametres
@@ -176,14 +185,7 @@ void VisuRDFParametreur::lectureParametres(){
 
             }
         }
-        else if (enfant.tagName()=="interligne"){
-            if (enfant.attribute("value",0)!= 0){
-                interligne = atoi(enfant.attribute("value",0).toStdString().c_str());
-                cout << "la valeur de l'interligne sera : "<< interligne<< endl;
 
-            }
-
-        }
         else if (enfant.tagName()=="taillePolice"){
             if (enfant.attribute("value",0)> 0){
                 fontSize = atoi(enfant.attribute("value",0).toStdString().c_str());
@@ -201,6 +203,24 @@ void VisuRDFParametreur::lectureParametres(){
             }
 
 
+        }
+        else if (enfant.tagName()=="pourcentagePoliceHauteur"){
+            if (enfant.attribute("value",0)!= 0){
+                pourcentagePoliceHauteur = atoi(enfant.attribute("value",0).toStdString().c_str());
+                cout << "le pourcentage hauteur police sera : "<< pourcentagePoliceHauteur<< endl;
+            }
+        }
+        else if (enfant.tagName()=="pourcentagePolice"){
+            if (enfant.attribute("value",0)!= 0){
+                pourcentagePolice = atoi(enfant.attribute("value",0).toStdString().c_str());
+                cout << "le pourcentage police sera : "<< pourcentagePolice<< endl;
+            }
+        }
+        else if (enfant.tagName()=="tailleMax"){
+            if (enfant.attribute("value",0)!= 0){
+                tailleMax = atoi(enfant.attribute("value",0).toStdString().c_str());
+                cout << "la taille max des propriétés sera : "<< tailleMax<< endl;
+            }
         }
         else cout << "le tag : '"<<enfant.tagName().toStdString()
                   <<"' n'est pas reconnu dans le fichier de parametrage"

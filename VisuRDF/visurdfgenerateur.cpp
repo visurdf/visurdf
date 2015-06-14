@@ -12,8 +12,8 @@ VisuRDFGenerateur::VisuRDFGenerateur(VisuRDFDessinateur *dessinateur) {
 
     /*------------- Déclaration des paramètres du fichier SVG -------------------*/
     generator.setFileName("testSVG.svg");
-    generator.setSize(QSize(4000, hauteur));
-    generator.setViewBox(QRect(0, 0, 4000, hauteur));
+    generator.setSize(QSize(3000, hauteur));
+    generator.setViewBox(QRect(0, 0, 3000, hauteur));
     generator.setTitle("SVG Generator Example Drawing");
     generator.setDescription("Dessin svg pour une démonstration");
 }
