@@ -662,4 +662,6 @@ void VisuRDFDessinateur::dessinMap(QPainter &painter){
             dessinTableau(type,boite->getX(),boite->getY(),painter);
         }
     }
+
+    dessinToutesLiaisons(painter);
 }

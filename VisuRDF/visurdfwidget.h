@@ -27,6 +27,7 @@ private:
     VisuRDFGenerateur* generateur;
     bool rdfChoisi;
     bool dessinModifie;
+    bool firstDessin;
 
     QPoint posSouris;
 

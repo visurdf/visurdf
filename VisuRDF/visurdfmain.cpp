@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
     QApplication A(argc,argv);
 
 
-    VisuRDFExtracteur visuRDFExtracteur;
+  /*  VisuRDFExtracteur visuRDFExtracteur;
     // classesvg C;
 
     visuRDFExtracteur.parserTripletRdf(argv[1]);
@@ -66,7 +66,7 @@ int main(int argc, char *argv[])
      VisuRDFDessinateur* dessinateur = new VisuRDFDessinateur(analyseur);
      VisuRDFGenerateur* generateur = new VisuRDFGenerateur(dessinateur);
 
-
+*/
      //visuRDFWidget* widget = new  visuRDFWidget(dessinateur);
      MainWindow* window = new MainWindow();
      window->show();
@@ -88,7 +88,7 @@ int main(int argc, char *argv[])
 
 
     //generateur->dessinTableau(unType, 20, 20);
-    generateur->dessin();
+  //  generateur->dessin();
     // dessinateur->dessinTableau(unType, 20, 20);
     //  cout << "largeur tableau : " << dessinateur->calculLargeurColonne(unType, "Equipement.port") << endl;
 
