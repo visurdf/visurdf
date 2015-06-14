@@ -42,7 +42,7 @@ void visuRDFWidget::open(){
 
     cout<< "chemin : "<< file <<endl;
     //visuRDFExtracteur.parserTripletRdf("const_cast<char*>(file)");
-    visuRDFExtracteur.parserTripletRdf("PTR-2.rdf");
+    visuRDFExtracteur.parserTripletRdf("2-contextes.rdf");
     visuRDFExtracteur.afficherMap();
     visuRDFExtracteur.afficherRelations();
 
@@ -72,6 +72,8 @@ void visuRDFWidget::mousePressEvent(QMouseEvent *qme){
 
     //On met en place le mouse tracking, utilisable dans les autres fonction
     QWidget::setMouseTracking(false);
+    cout<<"clic souris" << endl;
+    dessinModifie=true;
 
 }
 

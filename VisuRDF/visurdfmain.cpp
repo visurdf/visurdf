@@ -84,11 +84,11 @@ int main(int argc, char *argv[])
     }*/
 
     //generateur->dessinBoiteParType(unType, 20, 20);
-    generateur->dessin();
+    //generateur->dessin();
 
 
     //generateur->dessinTableau(unType, 20, 20);
-    //generateur->dessin();
+    generateur->dessin();
     // dessinateur->dessinTableau(unType, 20, 20);
     //  cout << "largeur tableau : " << dessinateur->calculLargeurColonne(unType, "Equipement.port") << endl;
 
