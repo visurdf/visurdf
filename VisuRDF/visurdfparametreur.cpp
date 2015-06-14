@@ -1,4 +1,6 @@
 #include "visurdfparametreur.h"
+
+
 #include <string>
 #include <QtXml>
 #include <QMessageBox>
@@ -12,8 +14,9 @@ using namespace std;
  */
 VisuRDFParametreur::VisuRDFParametreur() : QWidget(){
     //Parametre par défaut du dessin si les informations ne sont pas contenu dans le fichier xml
-    pourcentagePolice = 100;
-    pourcentagePoliceHauteur = 100;
+    pourcentagePolice = 5;
+    pourcentagePoliceHauteur = 15;
+    tailleMax = 50;
 
     couleur = Qt::black;
 
@@ -102,7 +105,6 @@ QFont VisuRDFParametreur::getParamPolice(){
 }
 
 
-
 int VisuRDFParametreur::getParamColoration(){
     return coloration;
 }
@@ -127,6 +129,9 @@ int VisuRDFParametreur::getPourcentagePoliceHauteur(){
     return pourcentagePoliceHauteur;
 }
 
+int VisuRDFParametreur::getTailleMax(){
+    return tailleMax;
+}
 
 /**
  * @brief VisuRDFParametrage::lectureParametres
@@ -175,21 +180,29 @@ void VisuRDFParametreur::lectureParametres(){
         }
         else if (enfant.tagName()=="coloration"){
             if (enfant.attribute("value",0)!= 0){
-                coloration = 1;
-                cout << "l'affichage sera coloré"<<endl;
+                coloration = atoi(enfant.attribute("value",0).toStdString().c_str());
+                cout << "l'affichage sera coloré : "<< coloration << endl;
+
             }
         }
+
         else if (enfant.tagName()=="taillePolice"){
             if (enfant.attribute("value",0)> 0){
                 fontSize = atoi(enfant.attribute("value",0).toStdString().c_str());
                 cout << "la taille de la police sera : "<< fontSize<< endl;
+
             }
+
+
         }
         else if (enfant.tagName()=="police"){
             if (enfant.attribute("value",0)!= 0){
                 police.setFamily( enfant.attribute("value",0));
                 cout << "le type de police sera : "<< police.family().toStdString()<< endl;
+
             }
+
+
         }
         else if (enfant.tagName()=="pourcentagePoliceHauteur"){
             if (enfant.attribute("value",0)!= 0){
@@ -203,10 +216,15 @@ void VisuRDFParametreur::lectureParametres(){
                 cout << "le pourcentage police sera : "<< pourcentagePolice<< endl;
             }
         }
-
+        else if (enfant.tagName()=="tailleMax"){
+            if (enfant.attribute("value",0)!= 0){
+                tailleMax = atoi(enfant.attribute("value",0).toStdString().c_str());
+                cout << "la taille max des propriétés sera : "<< tailleMax<< endl;
+            }
+        }
         else cout << "le tag : '"<<enfant.tagName().toStdString()
                   <<"' n'est pas reconnu dans le fichier de parametrage"
-                 << endl;
+                  << endl;
 
 
         enfant = enfant.nextSibling().toElement();

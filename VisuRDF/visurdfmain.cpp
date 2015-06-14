@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
 
     QApplication A(argc,argv);
 
-    /*
+
     VisuRDFExtracteur visuRDFExtracteur;
     // classesvg C;
 
@@ -66,7 +66,7 @@ int main(int argc, char *argv[])
      VisuRDFDessinateur* dessinateur = new VisuRDFDessinateur(analyseur);
      VisuRDFGenerateur* generateur = new VisuRDFGenerateur(dessinateur);
 
-*/
+
      //visuRDFWidget* widget = new  visuRDFWidget(dessinateur);
      MainWindow* window = new MainWindow();
      window->show();
@@ -84,7 +84,7 @@ int main(int argc, char *argv[])
     }*/
 
     //generateur->dessinBoiteParType(unType, 20, 20);
-  //  generateur->dessin();
+    generateur->dessin();
 
 
     //generateur->dessinTableau(unType, 20, 20);

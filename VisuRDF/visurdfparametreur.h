@@ -33,12 +33,14 @@ public:
     QPen getPenContour();
     QPen getPenLiaison();
     QFont getParamPolice();
-    int getPourcentagePolice();
-    int getPourcentagePoliceHauteur();
+    int getParamInterligne();
     int getParamColoration();
     int getFontSize();
     string getParamMode();
     map<int,QBrush*> getListePinceau();
+    int getPourcentagePolice();
+    int getPourcentagePoliceHauteur();
+    int getTailleMax();
 
 private:
     QColor couleur;
@@ -50,10 +52,12 @@ private:
 
     QFont police;
     int fontSize;
-    int pourcentagePolice;
-    int pourcentagePoliceHauteur;
+    int interligne;
     string mode;
     int coloration;
+    int pourcentagePoliceHauteur;
+    int pourcentagePolice;
+    int tailleMax;
 };
 
 
