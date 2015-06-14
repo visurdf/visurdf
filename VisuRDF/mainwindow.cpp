@@ -47,6 +47,7 @@ MainWindow::MainWindow(QWidget *parent) :
     //Déclaration du widget
 
     RDFWidget = new visuRDFWidget();
+    RDFWidget->setMinimumSize(700,700);
     setCentralWidget(RDFWidget);
 
     //Mise en place de la barre de menu

@@ -33,7 +33,8 @@ public:
     QPen getPenContour();
     QPen getPenLiaison();
     QFont getParamPolice();
-    int getParamInterligne();
+    int getPourcentagePolice();
+    int getPourcentagePoliceHauteur();
     int getParamColoration();
     int getFontSize();
     string getParamMode();
@@ -49,7 +50,8 @@ private:
 
     QFont police;
     int fontSize;
-    int interligne;
+    int pourcentagePolice;
+    int pourcentagePoliceHauteur;
     string mode;
     int coloration;
 };

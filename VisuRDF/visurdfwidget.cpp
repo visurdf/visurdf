@@ -5,7 +5,7 @@
 visuRDFWidget::visuRDFWidget()
 {
     rdfChoisi = false;
-
+    dessinModifie = false;
 
 }
 
@@ -18,13 +18,13 @@ void visuRDFWidget::paintEvent(QPaintEvent *qpe){
     QWidget::paintEvent(qpe);
     QPainter painter(this);
 
-    if (rdfChoisi){
+    if (rdfChoisi && dessinModifie){
         cout<< "dans le painter"<<endl;
         dessinateur->dessin(painter);
+        dessinModifie = false;
         cout<< "sortie le painter"<<endl;
 
     }
-
 }
 
 /**
@@ -46,10 +46,10 @@ void visuRDFWidget::open(){
     visuRDFExtracteur.afficherMap();
     visuRDFExtracteur.afficherRelations();
 
-
     analyseur = new VisuRDFAnalyseur(&visuRDFExtracteur);
     dessinateur = new VisuRDFDessinateur(analyseur);
     rdfChoisi = true;
+    dessinModifie = true;
 
     this->update();
 
@@ -60,4 +60,49 @@ void visuRDFWidget::print(){
 
     VisuRDFGenerateur generateur(dessinateur);
     generateur.dessin();
+}
+
+/**
+ * @brief visuRDFWidget::mousePressEvent
+ * @param qme
+ * fonction réalisée lors du clic souris
+ */
+void visuRDFWidget::mousePressEvent(QMouseEvent *qme){
+    QWidget::mouseMoveEvent(qme);
+
+    //On met en place le mouse tracking, utilisable dans les autres fonction
+    QWidget::setMouseTracking(false);
+
+}
+
+/**
+ * @brief visuRDFWidget::mouseMoveEvent
+ * @param qme
+ * Fonction réalisée lors d'un mouvement de souris
+ */
+void visuRDFWidget::mouseMoveEvent(QMouseEvent *qme){
+    QWidget::mouseMoveEvent(qme);
+       //Si on a clické et pas relaché on met à jour la position de la souris
+    if (QWidget::hasMouseTracking()){
+        posSouris = qme->pos();// On réupère la position de la souris dans un QPoint
+        // A ajouté, traitement sur les positions des boites de l'analyseur
+
+        //On met à jour l'image
+        this->update();
+    }
+}
+
+/**
+ * @brief visuRDFWidget::mouseReleaseEvent
+ * @param qme
+ * Fonction réalisée lors du relachement du bouton de la souris
+ */
+void visuRDFWidget::mouseReleaseEvent(QMouseEvent *qme){
+     QWidget::mouseReleaseEvent(qme);
+     if (QWidget::hasMouseTracking()){
+         QWidget::setMouseTracking(false);
+
+
+     }
+
 }

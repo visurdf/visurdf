@@ -15,6 +15,9 @@ public:
     explicit visuRDFWidget();
     ~visuRDFWidget();
     virtual void paintEvent(QPaintEvent * qpe);
+    virtual void mousePressEvent(QMouseEvent * qme);
+    virtual void mouseMoveEvent(QMouseEvent * qme);
+    virtual void mouseReleaseEvent(QMouseEvent * qme);
     virtual void open();
     virtual void print();
 
@@ -23,6 +26,9 @@ private:
     VisuRDFAnalyseur* analyseur;
     VisuRDFGenerateur* generateur;
     bool rdfChoisi;
+    bool dessinModifie;
+
+    QPoint posSouris;
 
 
 };
