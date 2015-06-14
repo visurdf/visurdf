@@ -121,7 +121,7 @@ void visuRDFWidget::mouseReleaseEvent(QMouseEvent *qme){
     posSouris = qme->pos();
     cout << "x : " << posSouris.x() << ",y : " << posSouris.y() <<endl;
     if(!firstDessin)
-        dessinateur->actualiserMapObjet(xOrigine,yOrigine, posSouris.x(),posSouris.y());
+        dessinateur->actualiserMapBoite(xOrigine,yOrigine, posSouris.x(),posSouris.y());
     dessinModifie=true;
     this->update();
     if (QWidget::hasMouseTracking()){

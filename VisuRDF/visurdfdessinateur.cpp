@@ -3,6 +3,7 @@
 VisuRDFDessinateur::VisuRDFDessinateur(VisuRDFAnalyseur * analyseur) {
 
     this->analyseur = analyseur;
+    isFirst = true;
 
     parametreur = new VisuRDFParametreur();
     parametreur->lectureParametres();
@@ -160,7 +161,6 @@ int VisuRDFDessinateur::calculHauteurDessin() {
 void VisuRDFDessinateur::dessinTableau(VisuRDFType *type, int x, int y, QPainter &painter) {
 
 
-
     painter.setPen(pen2);
     f.setBold(true);
     painter.setFont(f);
@@ -169,7 +169,6 @@ void VisuRDFDessinateur::dessinTableau(VisuRDFType *type, int x, int y, QPainter
     float hauteurTableau = calculHauteurTableau(type);
 
     string nomType = type->getNom();
-
     //On remplit la map "type / boite"
     VisuRDFBoite* boiteTableau = new VisuRDFBoite(x, y, largeurTableau, hauteurTableau);
     mapBoiteType.insert(std::make_pair(nomType, boiteTableau));
@@ -192,7 +191,6 @@ void VisuRDFDessinateur::dessinTableau(VisuRDFType *type, int x, int y, QPainter
         float largeurBoite = this->calculLargeurColonne(type, nomPropriete);
         QRect rect(xPropriete,y,largeurBoite,hauteurCase);
 
-
         painter.drawRect(rect);
         QBrush brush = Qt::gray;
         painter.fillRect(rect, brush);
@@ -203,24 +201,22 @@ void VisuRDFDessinateur::dessinTableau(VisuRDFType *type, int x, int y, QPainter
             painter.drawText(rect, Qt::AlignCenter , QString(nomPropriete.c_str()));
         }
 
-        string nomType = type->getNom();
-        set<VisuRDFObjet*> listeObjets = analyseur->getObjetsParType(nomType, false);
+        if(isFirst){
+            string nomType = type->getNom();
+            set<VisuRDFObjet*> listeObjets = analyseur->getObjetsParType(nomType, false);
 
 
-        // Dessin des lignes représentant les objets
-        for(set<VisuRDFObjet*>::iterator it = listeObjets.begin(); it!= listeObjets.end(); it++) {
+            // On remplit la map
+            for(set<VisuRDFObjet*>::iterator it = listeObjets.begin(); it!= listeObjets.end(); it++) {
 
-            // On fait varier le placement vertical
-            yObjet = yObjet + hauteurCase;
-            VisuRDFObjet* objet = *it;
+                // On fait varier le placement vertical
+                yObjet = yObjet + hauteurCase;
+                VisuRDFObjet* objet = *it;
+                // On remplit la map(id, boite)
+                //   int id = objet->getId();
+                VisuRDFBoite* boite = new VisuRDFBoite(x, yObjet, calculLargeurTableau(type), hauteurCase);
+                mapBoiteObjet.insert(std::make_pair(objet->getNom(), boite));
 
-            // On remplit la map(id, boite)
-            //   int id = objet->getId();
-            VisuRDFBoite* boite = new VisuRDFBoite(x, yObjet, calculLargeurTableau(type), hauteurCase);
-            mapBoiteObjet.insert(std::make_pair(objet->getNom(), boite));
-            ObjetRDF obj = objet->getProprietes();
-
-            if(obj.size() != 0) {
 
                 string valeur = "";
                 // On recupère la valeur de la propriété "nomPropriété"
@@ -231,16 +227,80 @@ void VisuRDFDessinateur::dessinTableau(VisuRDFType *type, int x, int y, QPainter
                     valeur = *it2;
                 }
                 QRect rectValeur(xPropriete, yObjet, largeurBoite, hauteurCase);
-
-
                 painter.drawRect(rectValeur);
-
-
                 painter.drawText(rectValeur, Qt::AlignCenter, QString(valeur.c_str()));
             }
+
+
+            xPropriete = xPropriete + largeurBoite;
         }
-        xPropriete = xPropriete + largeurBoite;
+
+        else{
+            for(boiteObjet::iterator itBoite = mapBoiteObjet.begin(); itBoite!= mapBoiteObjet.end(); itBoite++){
+
+                string nomObjet = (*itBoite).first;
+                VisuRDFBoite* boite = mapBoiteObjet[nomObjet];
+                VisuRDFObjet* objet = analyseur->getObjetparNom(nomObjet);
+
+                if(objet->getType()->getNom()==nomType){
+
+                    string valeur = "";
+                    // On recupère la valeur de la propriété "nomPropriété"
+                    ObjetRDF obj = objet->getProprietes();
+                    if(obj.size() != 0){
+                        list<string> valeurs = obj[nomPropriete];
+                        list<string>::iterator it2 = valeurs.begin();
+                        valeur = *it2;
+                    }
+                    QRect rectValeur(xPropriete, boite->getY(), largeurBoite, hauteurCase);
+                    painter.drawRect(rectValeur);
+                    painter.drawText(rectValeur, Qt::AlignCenter, QString(valeur.c_str()));
+
+                }
+            }
+
+            xPropriete = xPropriete + largeurBoite;
+        }
     }
+
+    //  xPropriete = x;
+
+    /*  if(!isFirst){
+        for(list<string>::iterator it = proprietes.begin(); it!= proprietes.end(); it++){
+
+            string nomPropriete = *it;
+            float largeurBoite = this->calculLargeurColonne(type, nomPropriete);
+
+            for(boiteObjet::iterator itBoite = mapBoiteObjet.begin(); itBoite!= mapBoiteObjet.end(); itBoite++){
+                string nomObjet = (*itBoite).first;
+                VisuRDFBoite* boite = mapBoiteObjet[nomObjet];
+                VisuRDFObjet* objet = analyseur->getObjetparNom(nomObjet);
+
+                ObjetRDF obj = objet->getProprietes();
+
+                if(obj.size() != 0) {
+
+                    string valeur = "";
+                    // On recupère la valeur de la propriété "nomPropriété"
+                    ObjetRDF obj = objet->getProprietes();
+                    if(obj.size() != 0){
+                        list<string> valeurs = obj[nomPropriete];
+                        list<string>::iterator it2 = valeurs.begin();
+                        valeur = *it2;
+                    }
+                    QRect rectValeur(xPropriete, boite->getY(), largeurBoite, hauteurCase);
+                    painter.drawRect(rectValeur);
+                    painter.drawText(rectValeur, Qt::AlignCenter, QString(valeur.c_str()));
+                }
+            }
+
+            xPropriete = xPropriete + largeurBoite;
+        }
+    }
+
+*/
+    //  isFirst = false;
+
 }
 
 
@@ -643,7 +703,7 @@ void VisuRDFDessinateur::dessin(QPainter &painter){
 
 void VisuRDFDessinateur::dessinMap(QPainter &painter){
 
-
+    isFirst = false;
     if(parametreur->getParamMode()=="boite"){
         for (boiteObjet::iterator it = mapBoiteObjet.begin(); it!=mapBoiteObjet.end(); it++){
             string nomObjet = (*it).first;
@@ -658,7 +718,7 @@ void VisuRDFDessinateur::dessinMap(QPainter &painter){
         for(boiteObjet::iterator iter = mapBoiteType.begin(); iter!=mapBoiteType.end(); iter++){
             string nomType = (*iter).first;
             VisuRDFBoite* boite = mapBoiteType[nomType];
-            VisuRDFType* type = analyseur->getTypeParNom(nomType,false);
+            VisuRDFType* type = analyseur->getTypeParNom(nomType,true);
             dessinTableau(type,boite->getX(),boite->getY(),painter);
         }
     }
@@ -666,26 +726,54 @@ void VisuRDFDessinateur::dessinMap(QPainter &painter){
     dessinToutesLiaisons(painter);
 }
 
-void VisuRDFDessinateur::actualiserMapObjet(int xOrigine, int yOrigine, int x, int y){
+void VisuRDFDessinateur::actualiserMapBoite(int xOrigine, int yOrigine, int x, int y){
 
-    for(boiteObjet::iterator it = mapBoiteObjet.begin(); it!=mapBoiteObjet.end(); it++){
-        string nomObjet = (*it).first;
-        VisuRDFBoite* boite = mapBoiteObjet[nomObjet];
-        int xBoite = boite->getX();
-        int yBoite = boite->getY();
-        int hauteur = boite->getHauteur();
-        int largeur = boite->getLargeur();
+    if(parametreur->getParamMode()=="boite"){
+        for(boiteObjet::iterator it = mapBoiteObjet.begin(); it!=mapBoiteObjet.end(); it++){
+            string nomObjet = (*it).first;
+            VisuRDFBoite* boite = mapBoiteObjet[nomObjet];
+            int xBoite = boite->getX();
+            int yBoite = boite->getY();
+            int hauteur = boite->getHauteur();
+            int largeur = boite->getLargeur();
 
 
-        if((xOrigine>=xBoite)&(xOrigine<=xBoite+largeur)&(yOrigine>=yBoite)&(yOrigine<=yBoite+hauteur)){
+            if((xOrigine>=xBoite)&(xOrigine<=xBoite+largeur)&(yOrigine>=yBoite)&(yOrigine<=yBoite+hauteur)){
 
-            VisuRDFBoite* boite2 = new VisuRDFBoite(x-largeur/2,y-hauteur/2,largeur,hauteur);
-            mapBoiteObjet[nomObjet]= boite2;
+                VisuRDFBoite* boite2 = new VisuRDFBoite(x-largeur/2,y-hauteur/2,largeur,hauteur);
+                mapBoiteObjet[nomObjet]= boite2;
+            }
+
         }
-
     }
 
+    else{
+        for(boiteObjet::iterator iter = mapBoiteType.begin(); iter!=mapBoiteType.end(); iter++){
+            string nomType = (*iter).first;
+            VisuRDFBoite* boite = mapBoiteType[nomType];
+            int xBoite = boite->getX();
+            int yBoite = boite->getY();
+            int hauteur = boite->getHauteur();
+            int largeur = boite->getLargeur();
+            if((xOrigine>=xBoite)&(xOrigine<=xBoite+largeur)&(yOrigine>=yBoite)&(yOrigine<=yBoite+hauteur)){
 
+                VisuRDFBoite* boite2 = new VisuRDFBoite(x-largeur/2,y-hauteur/2,largeur,hauteur);
+                mapBoiteType[nomType]= boite2;
+
+                 set<VisuRDFObjet*> objets = analyseur->getObjetsParType(nomType,true);
+                for(set<VisuRDFObjet*>::iterator it = objets.begin(); it!= objets.end(); it++){
+                    VisuRDFObjet* objet = *it;
+                    VisuRDFBoite* boiteObj = mapBoiteObjet[objet->getNom()];
+                    VisuRDFBoite* boiteObj2 = new VisuRDFBoite(x-largeur/2,(boiteObj->getY()-yBoite)+y-hauteur/2,boiteObj->getLargeur(),boiteObj->getHauteur());
+                    mapBoiteObjet[objet->getNom()]=boiteObj2;
+                }
+
+
+
+            }
+
+        }
+    }
 
 
 }

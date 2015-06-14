@@ -46,7 +46,7 @@ public:
 
     void dessinMap(QPainter &painter);
 
-    void actualiserMapObjet(int xOrigine, int yOrigine, int x, int y);
+    void actualiserMapBoite(int xOrigine, int yOrigine, int x, int y);
 
 private :
    // list<Objet> listeObjets;
@@ -68,6 +68,8 @@ private :
     boiteObjet mapBoiteObjet;
     boiteObjet mapBoiteType;
     map<int,QString> mapPolice;
+
+    bool isFirst;
 
 };
 
