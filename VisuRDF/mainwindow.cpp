@@ -9,52 +9,85 @@
 #include <QTextCodec>
 #include "visurdfwidget.h"
 
+using namespace std;
+
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
-    /*Déclaration du widget*/
+    //----- BARRE DE MENU ------//
+    //Définition du menu
+    QMenuBar * menuBar = this->menuBar();
+    QMenu * fileMenu = menuBar->addMenu("&File");
+
+
+
+    //Action dans le menu (bouton)
+    //----- ACTIONS ------//
+    QAction* openAction = new QAction (QIcon(":open.png"),"&Open",this);
+    openAction->setShortcut(tr("Ctrl+O"));
+    openAction->setToolTip(tr("Open File"));
+    cout<< "ici"<<endl;
+
+    QAction* saveAction = new QAction (QIcon(":save.png"),"&Save",this);
+    saveAction->setShortcut(tr("Ctrl+S"));
+    saveAction->setToolTip(tr("Save File"));
+
+
+    QAction* quitAction = new QAction (QIcon(":quit.png"),"&Quit",this);
+    quitAction->setShortcut(tr("Ctrl+Q"));
+    quitAction->setToolTip(tr("Quit"));
+
+
     // Encodage UTF-8
     QTextCodec::setCodecForCStrings(QTextCodec::codecForName("UTF-8"));
     QTextCodec::setCodecForTr(QTextCodec::codecForName("UTF-8"));
     QTextCodec::setCodecForLocale(QTextCodec::codecForName("UTF-8"));
 
-    VisuRDFExtracteur visuRDFExtracteur;
-    // classesvg C;
+    //Déclaration du widget
 
-    visuRDFExtracteur.parserTripletRdf("2-contextes.rdf");
-    visuRDFExtracteur.afficherMap();
-    visuRDFExtracteur.afficherRelations();
-    // C.drawSvg();
+    RDFWidget = new visuRDFWidget();
+    setCentralWidget(RDFWidget);
 
+    //Mise en place de la barre de menu
+    fileMenu->addAction(openAction);
+    fileMenu->addAction(saveAction);
+    fileMenu->addAction(quitAction);
+    QToolBar * toolBar = this->addToolBar(tr("&File"));
 
+    //Action dans la toolbar
 
-    VisuRDFAnalyseur* analyseur = new VisuRDFAnalyseur(&visuRDFExtracteur);
+    toolBar->addAction(openAction);
+    toolBar->addAction(saveAction);
+    toolBar->addAction(quitAction);
 
-
-
-
-     VisuRDFDessinateur* dessinateur = new VisuRDFDessinateur(analyseur);
-     VisuRDFGenerateur* generateur = new VisuRDFGenerateur(dessinateur);
-
-
-    //generateur->dessinBoiteParType(unType, 20, 20);
-    generateur->dessin();
-
-
-    //generateur->dessinTableau(unType, 20, 20);
-    //generateur->dessin();
-
-
-      RDFWidget = new visuRDFWidget(dessinateur);
-      setCentralWidget(RDFWidget);
+    //Connection des slots
+    QObject::connect(openAction, SIGNAL(triggered()),this,SLOT(openFile()));
+    QObject::connect(quitAction, SIGNAL(triggered()),this,SLOT(quitApp()));
+    QObject::connect(saveAction, SIGNAL(triggered()),this,SLOT(printFile()));
 
 
 
+    cout<< "ici"<<endl;
 
 }
 
 MainWindow::~MainWindow()
 {
     delete ui;
+}
+
+void MainWindow::quitApp(){
+    close();
+}
+
+void MainWindow::openFile(){
+
+    RDFWidget->open();
+
+}
+
+void MainWindow::printFile(){
+    cout<<"impression"<<endl;
+    RDFWidget->print();
 }

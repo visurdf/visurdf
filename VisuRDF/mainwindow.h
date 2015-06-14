@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 #include "visurdfwidget.h"
 #include "visurdfdessinateur.h"
+#include "QToolBar"
 
 #include <QMainWindow>
 
@@ -20,6 +21,11 @@ public:
 private:
     Ui::MainWindow *ui;
     visuRDFWidget * RDFWidget;
+
+public slots:
+    void openFile();
+    void printFile();
+    void quitApp();
 };
 
 #endif // MAINWINDOW_H

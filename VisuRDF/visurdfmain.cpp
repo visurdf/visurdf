@@ -20,6 +20,7 @@ int main(int argc, char *argv[])
 
     QApplication A(argc,argv);
 
+    /*
     VisuRDFExtracteur visuRDFExtracteur;
     // classesvg C;
 
@@ -65,11 +66,11 @@ int main(int argc, char *argv[])
      VisuRDFDessinateur* dessinateur = new VisuRDFDessinateur(analyseur);
      VisuRDFGenerateur* generateur = new VisuRDFGenerateur(dessinateur);
 
-
-     visuRDFWidget* widget = new  visuRDFWidget(dessinateur);
-     MainWindow* window = new MainWindow(widget);
+*/
+     //visuRDFWidget* widget = new  visuRDFWidget(dessinateur);
+     MainWindow* window = new MainWindow();
      window->show();
-     A.exec();
+
 
   /*  set<VisuRDFObjet*>listeDesObjets = analyseur->getObjetsParType(*listeDesClasses.begin(), true);
     typedef set<VisuRDFObjet* > ::const_iterator ObjectIterator;
@@ -83,7 +84,7 @@ int main(int argc, char *argv[])
     }*/
 
     //generateur->dessinBoiteParType(unType, 20, 20);
-    generateur->dessin();
+  //  generateur->dessin();
 
 
     //generateur->dessinTableau(unType, 20, 20);
@@ -91,7 +92,7 @@ int main(int argc, char *argv[])
     // dessinateur->dessinTableau(unType, 20, 20);
     //  cout << "largeur tableau : " << dessinateur->calculLargeurColonne(unType, "Equipement.port") << endl;
 
-    return 0;
+    return A.exec();
 }
 
 

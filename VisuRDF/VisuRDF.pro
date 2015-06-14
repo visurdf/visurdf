@@ -44,3 +44,6 @@ OTHER_FILES += Makefile
 FORMS += \
     mainwindow.ui \
     visurdfwidget.ui
+
+RESOURCES += \
+    images.qrc
