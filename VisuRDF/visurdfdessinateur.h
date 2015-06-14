@@ -46,6 +46,8 @@ public:
 
     void dessinMap(QPainter &painter);
 
+    void actualiserMapObjet(int xOrigine, int yOrigine, int x, int y);
+
 private :
    // list<Objet> listeObjets;
     set<VisuRDFType*> listeTypes;

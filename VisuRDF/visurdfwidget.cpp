@@ -8,6 +8,7 @@ visuRDFWidget::visuRDFWidget()
     dessinModifie = false;
     firstDessin = true;
 
+
 }
 
 visuRDFWidget::~visuRDFWidget()
@@ -19,7 +20,6 @@ void visuRDFWidget::paintEvent(QPaintEvent *qpe){
     QWidget::paintEvent(qpe);
     QPainter painter(this);
 
-    cout << dessinModifie << endl;
     if (rdfChoisi && dessinModifie){
         if(firstDessin){
             cout<< "dans le painter"<<endl;
@@ -85,6 +85,9 @@ void visuRDFWidget::mousePressEvent(QMouseEvent *qme){
     //On met en place le mouse tracking, utilisable dans les autres fonction
     QWidget::setMouseTracking(false);
     cout<<"clic souris" << endl;
+    posSouris = qme->pos();
+    xOrigine = posSouris.x();
+    yOrigine = posSouris.y();
 
     dessinModifie=true;
     this->update();
@@ -115,7 +118,14 @@ void visuRDFWidget::mouseMoveEvent(QMouseEvent *qme){
  */
 void visuRDFWidget::mouseReleaseEvent(QMouseEvent *qme){
     QWidget::mouseReleaseEvent(qme);
+    posSouris = qme->pos();
+    cout << "x : " << posSouris.x() << ",y : " << posSouris.y() <<endl;
+    if(!firstDessin)
+        dessinateur->actualiserMapObjet(xOrigine,yOrigine, posSouris.x(),posSouris.y());
+    dessinModifie=true;
+    this->update();
     if (QWidget::hasMouseTracking()){
+
         QWidget::setMouseTracking(false);
 
 

@@ -665,3 +665,27 @@ void VisuRDFDessinateur::dessinMap(QPainter &painter){
 
     dessinToutesLiaisons(painter);
 }
+
+void VisuRDFDessinateur::actualiserMapObjet(int xOrigine, int yOrigine, int x, int y){
+
+    for(boiteObjet::iterator it = mapBoiteObjet.begin(); it!=mapBoiteObjet.end(); it++){
+        string nomObjet = (*it).first;
+        VisuRDFBoite* boite = mapBoiteObjet[nomObjet];
+        int xBoite = boite->getX();
+        int yBoite = boite->getY();
+        int hauteur = boite->getHauteur();
+        int largeur = boite->getLargeur();
+
+
+        if((xOrigine>=xBoite)&(xOrigine<=xBoite+largeur)&(yOrigine>=yBoite)&(yOrigine<=yBoite+hauteur)){
+
+            VisuRDFBoite* boite2 = new VisuRDFBoite(x-largeur/2,y-hauteur/2,largeur,hauteur);
+            mapBoiteObjet[nomObjet]= boite2;
+        }
+
+    }
+
+
+
+
+}
