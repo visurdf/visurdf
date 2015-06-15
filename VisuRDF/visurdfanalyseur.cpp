@@ -119,6 +119,13 @@ VisuRDFType* VisuRDFAnalyseur::getTypeParNom(string nomDuType, bool sansPropriet
 int VisuRDFAnalyseur::id = 1;
 
 
+/**
+ * @brief VisuRDFAnalyseur::getObjetsParType
+ * @param nomDuType
+ * @param sansProprietesNulles
+ * @return
+ */
+
 set<VisuRDFObjet*> VisuRDFAnalyseur::getObjetsParType(string nomDuType, bool sansProprietesNulles) {
 
     set<VisuRDFObjet*>  listeObjets = set<VisuRDFObjet*>();
@@ -137,6 +144,12 @@ set<VisuRDFObjet*> VisuRDFAnalyseur::getObjetsParType(string nomDuType, bool san
     return listeObjets;
 }
 
+/**
+ * @brief VisuRDFAnalyseur::getRelations
+ * @return
+ * Retourne une map associant un objet vers la liste des objets auxquels il est associés
+ * Associe à chaque objet son nombreRelations
+ */
 
 map<VisuRDFObjet*, list<VisuRDFObjet*> > VisuRDFAnalyseur::getRelations() {
     // recuperer la map des relations
@@ -159,11 +172,25 @@ map<VisuRDFObjet*, list<VisuRDFObjet*> > VisuRDFAnalyseur::getRelations() {
         }
 
         mapRelations[objet] = objetsAssocies;
+
+        // definition du nombre de relations de l'objet
+        objet->setNombreRelations(objetsAssocies.size());
+
+        // ajout au nombre de relations du type
+        VisuRDFType* type = objet->getType();
+        int nbRelationsType = type->getNombreRelations();
+        type->setNombreRelations(nbRelationsType + objetsAssocies.size());
     }
 
     return mapRelations;
 }
 
+/**
+ * @brief VisuRDFAnalyseur::getObjetparNom
+ * @param nomObjet
+ * @return
+ * Renvoie un pointeur vers un objet à partir de son nom
+ */
 
 VisuRDFObjet* VisuRDFAnalyseur::getObjetparNom(string nomObjet)
 {

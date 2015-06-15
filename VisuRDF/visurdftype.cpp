@@ -3,6 +3,7 @@ using namespace std;
 
 VisuRDFType::VisuRDFType(string nomType) : nomType(nomType)
 {
+    nombreRelations = 0;
 
 }
 
