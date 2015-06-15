@@ -375,7 +375,10 @@ float VisuRDFDessinateur::calculLargeurBoite(VisuRDFObjet *objet, float &largeur
             largeurNom = largeur1;
         }
 
+        if(largeur2>tailleMax)
+            largeur2 = tailleMax;
         if (largeur2 > largeurValeur){
+
             largeurValeur = largeur2;
         }
 
@@ -744,8 +747,6 @@ int VisuRDFDessinateur::actualiserMapBoite(int xOrigine, int yOrigine, int x, in
                 boite->setX(x-largeur/2);
                 boite->setY(y-hauteur/2);
                 return 1;
-               // VisuRDFBoite* boite2 = new VisuRDFBoite(x-largeur/2,y-hauteur/2,largeur,hauteur);
-               // mapBoiteObjet[nomObjet]= boite2;
             }
 
         }
@@ -763,8 +764,6 @@ int VisuRDFDessinateur::actualiserMapBoite(int xOrigine, int yOrigine, int x, in
 
                 boite->setX(x-largeur/2);
                 boite->setY(y-hauteur/2);
-                //VisuRDFBoite* boite2 = new VisuRDFBoite(x-largeur/2,y-hauteur/2,largeur,hauteur);
-                //mapBoiteType[nomType]= boite2;
 
                  set<VisuRDFObjet*> objets = analyseur->getObjetsParType(nomType,true);
                 for(set<VisuRDFObjet*>::iterator it = objets.begin(); it!= objets.end(); it++){
