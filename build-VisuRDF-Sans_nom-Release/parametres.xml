@@ -8,7 +8,7 @@ Aide pour le paramètrage du fichier :
 
 <parametres>
 	<mode value="tableau"/>
-	<coloration value = "0"/>
+	<coloration value = "1"/>
 	<police value="Arial"/>
 	<taillePolice value="8"/>
     <pourcentagePolice value="5"/>
