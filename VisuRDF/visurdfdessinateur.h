@@ -48,6 +48,10 @@ public:
 
     int actualiserMapBoite(int xOrigine, int yOrigine, int x, int y);
 
+    VisuRDFParametreur* getParametreur();
+     bool isFirst;
+
+
 private :
    // list<Objet> listeObjets;
     set<VisuRDFType*> listeTypes;
@@ -56,8 +60,8 @@ private :
     int hauteurCase;
     int espacementVertical;
     float pourcentagePolice;
-    int pourcentagePoliceHauteur;
-    int tailleMax;
+    float pourcentagePoliceHauteur;
+    float tailleMax;
 
     QFont f;
     QPen pen1;
@@ -69,7 +73,7 @@ private :
     boiteObjet mapBoiteType;
     map<int,QString> mapPolice;
 
-    bool isFirst;
+
 
 };
 

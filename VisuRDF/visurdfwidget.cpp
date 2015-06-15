@@ -1,6 +1,7 @@
 #include "visurdfwidget.h"
 #include "ui_visurdfwidget.h"
 #include "visurdfextracteur.h"
+#include "visurdfparametreur.h"
 
 visuRDFWidget::visuRDFWidget()
 {
@@ -72,8 +73,26 @@ void visuRDFWidget::open(){
 
 void visuRDFWidget::print(){
 
-    VisuRDFGenerateur generateur(dessinateur);
-    generateur.dessin();
+
+
+    /*------------- Déclaration des paramètres du fichier SVG -------------------*/
+    QSvgGenerator generator;
+    int hauteur = dessinateur->calculHauteurDessin();
+
+    generator.setFileName("testSVG.svg");
+    generator.setSize(QSize(2000, hauteur));
+    generator.setViewBox(QRect(0, 0, 2000, hauteur));
+    generator.setTitle("SVG Generator Example Drawing");
+    generator.setDescription("Dessin svg pour une démonstration");
+
+    QPainter painter;
+    painter.begin(&generator);
+    dessinateur->dessinMap(painter);
+    painter.end();
+
+
+
+
 }
 
 /**
@@ -82,10 +101,10 @@ void visuRDFWidget::print(){
  * fonction réalisée lors du clic souris
  */
 void visuRDFWidget::mousePressEvent(QMouseEvent *qme){
-    QWidget::mouseMoveEvent(qme);
+    QWidget::mousePressEvent(qme);
 
     //On met en place le mouse tracking, utilisable dans les autres fonction
-    QWidget::setMouseTracking(false);
+    QWidget::setMouseTracking(true);
     cout<<"clic souris" << endl;
     posSouris = qme->pos();
     xOrigine = posSouris.x();
@@ -106,9 +125,14 @@ void visuRDFWidget::mouseMoveEvent(QMouseEvent *qme){
     //Si on a clické et pas relaché on met à jour la position de la souris
     if (QWidget::hasMouseTracking()){
         posSouris = qme->pos();// On réupère la position de la souris dans un QPoint
-        // A ajouté, traitement sur les positions des boites de l'analyseur
+        xOrigine = posSouris.x();
+        yOrigine = posSouris.y();
+        cout << "x : " << posSouris.x() << ",y : " << posSouris.y() <<endl;
 
-        //On met à jour l'image
+        if(!firstDessin)
+            dessinateur->actualiserMapBoite(xOrigine,yOrigine, posSouris.x(),posSouris.y());
+
+        dessinModifie=true;
         this->update();
     }
 }
@@ -121,17 +145,38 @@ void visuRDFWidget::mouseMoveEvent(QMouseEvent *qme){
 void visuRDFWidget::mouseReleaseEvent(QMouseEvent *qme){
     QWidget::mouseReleaseEvent(qme);
     posSouris = qme->pos();
+
     cout << "x : " << posSouris.x() << ",y : " << posSouris.y() <<endl;
+
     if(!firstDessin)
         dessinateur->actualiserMapBoite(xOrigine,yOrigine, posSouris.x(),posSouris.y());
+
     dessinModifie=true;
     this->update();
     if (QWidget::hasMouseTracking()){
-
         QWidget::setMouseTracking(false);
-
-
     }
+}
 
+void visuRDFWidget::changeColoration(int c){
+
+}
+
+void visuRDFWidget::changeMode(string mode){
+    VisuRDFParametreur *parametreur = dessinateur->getParametreur();
+    parametreur->setMode(mode);
+    firstDessin = true;
+    dessinModifie =true;
+    dessinateur->isFirst = true;
+
+    this->update();
+
+}
+
+void visuRDFWidget::changePourcentagePolice(int p){
+
+}
+
+void visuRDFWidget::changePourcentagePoliceH(int p){
 
 }

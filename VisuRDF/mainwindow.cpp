@@ -7,6 +7,8 @@
 #include "visurdfgenerateur.h"
 #include "visurdfparametreur.h"
 #include <QTextCodec>
+#include <QScrollArea>
+#include <QPushButton>
 #include "visurdfwidget.h"
 
 using namespace std;
@@ -21,22 +23,31 @@ MainWindow::MainWindow(QWidget *parent) :
     QMenu * fileMenu = menuBar->addMenu("&File");
 
 
-
     //Action dans le menu (bouton)
     //----- ACTIONS ------//
     QAction* openAction = new QAction (QIcon(":open.png"),"&Open",this);
     openAction->setShortcut(tr("Ctrl+O"));
     openAction->setToolTip(tr("Open File"));
-    cout<< "ici"<<endl;
 
     QAction* saveAction = new QAction (QIcon(":save.png"),"&Save",this);
     saveAction->setShortcut(tr("Ctrl+S"));
     saveAction->setToolTip(tr("Save File"));
 
-
     QAction* quitAction = new QAction (QIcon(":quit.png"),"&Quit",this);
     quitAction->setShortcut(tr("Ctrl+Q"));
     quitAction->setToolTip(tr("Quit"));
+
+    //----- Boutons choix mode-------//
+    QMenu *menuMode = new QMenu();
+    QAction *boiteAction = new QAction(tr("&mode boite"),this);
+    QAction *tableAction = new QAction(tr("&mode tableau"),this);
+    QActionGroup *modeGroupe = new QActionGroup(this);
+    modeGroupe->addAction(boiteAction);
+    modeGroupe->addAction(tableAction);
+    menuMode->addAction(boiteAction);
+    menuMode->addAction(tableAction);
+    QAction * changementMode = new QAction("mode",this);
+    changementMode->setMenu(menuMode);
 
 
     // Encodage UTF-8
@@ -61,15 +72,13 @@ MainWindow::MainWindow(QWidget *parent) :
     toolBar->addAction(openAction);
     toolBar->addAction(saveAction);
     toolBar->addAction(quitAction);
+    toolBar->addAction(changementMode);
 
     //Connection des slots
     QObject::connect(openAction, SIGNAL(triggered()),this,SLOT(openFile()));
     QObject::connect(quitAction, SIGNAL(triggered()),this,SLOT(quitApp()));
     QObject::connect(saveAction, SIGNAL(triggered()),this,SLOT(printFile()));
-
-
-
-    cout<< "ici"<<endl;
+    QObject::connect(modeGroupe,SIGNAL(triggered(QAction*)),this,SLOT(changerMode(QAction*)));
 
 }
 
@@ -91,4 +100,26 @@ void MainWindow::openFile(){
 void MainWindow::printFile(){
     cout<<"impression"<<endl;
     RDFWidget->print();
+}
+
+void MainWindow::changerColoration(){
+
+}
+
+void MainWindow::changerMode(QAction *action){
+    if (action->iconText()== "mode tableau")
+        RDFWidget->changeMode("tableau");
+
+    if (action->iconText()== "mode boite")
+        RDFWidget->changeMode("boite");
+
+}
+
+void MainWindow::parametrerPourcentagePolice(){
+
+
+}
+
+void MainWindow::parametrerPourcentageHPolice(){
+
 }

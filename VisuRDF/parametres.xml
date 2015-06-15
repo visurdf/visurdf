@@ -10,9 +10,9 @@ Aide pour le paramètrage du fichier :
 	<mode value="boite"/>
 	<coloration value = "0"/>
 	<police value="Arial"/>
-	<taillePolice value="8"/>
-    <pourcentagePolice value="5"/>
-    <pourcentagePoliceHauteur value="15"/>
+	<taillePolice value="15"/>
+    <pourcentagePolice value="0.7"/>
+    <pourcentagePoliceHauteur value="1.2"/>
     <tailleMax value="30"/>
 </parametres>
 	

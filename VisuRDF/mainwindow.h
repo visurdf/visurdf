@@ -26,6 +26,11 @@ public slots:
     void openFile();
     void printFile();
     void quitApp();
+    void changerColoration();
+    void changerMode(QAction *action);
+    void parametrerPourcentagePolice();
+    void parametrerPourcentageHPolice();
+
 };
 
 #endif // MAINWINDOW_H
