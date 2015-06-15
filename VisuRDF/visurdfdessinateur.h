@@ -30,7 +30,8 @@ public:
     float calculLargeurColonne(VisuRDFType* type, string nomPropriete);
     float calculLargeurTableau(VisuRDFType* type);
     int calculHauteurTableau(VisuRDFType* type);
-    int calculHauteurDessin();
+    float calculHauteurDessin();
+    float calculLargeurDessin();
     void dessinTableau(VisuRDFType* type, int x, int y, QPainter &painter);
     void dessinModeTableau(QPainter& painter);
     float calculLargeurBoite(VisuRDFObjet* objet, float &largeurNom, float &largeurValeur);

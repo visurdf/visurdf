@@ -1,16 +1,9 @@
 <!DOCTYPE QtCreatorProject>
-<<<<<<< HEAD
-<qtcreator>
- <data>
-  <variable>RunConfiguration0-BaseEnvironmentBase</variable>
-  <value type="int">2</value>
-=======
-<!-- Written by QtCreator 3.3.0, 2015-06-15T17:58:52. -->
+
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
   <value type="QByteArray">{4d88042b-a3ce-4d0e-a642-3e3fcd006ac6}</value>
->>>>>>> 0f5737f616cf36301d15cd4abd31f6c9c7645bc8
  </data>
  <data>
   <variable>RunConfiguration0-CommandLineArguments</variable>
@@ -168,13 +161,7 @@
  <data>
   <variable>buildconfiguration-Debug-cleanstep0</variable>
   <valuemap type="QVariantMap">
-<<<<<<< HEAD
-   <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString">Debug</value>
-   <value key="cleanConfig" type="bool">true</value>
-   <valuelist key="makeargs" type="QVariantList">
-    <value type="QString">clean</value>
-   </valuelist>
-=======
+
    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Sans nom</value>
    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Sans nom</value>
    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">{e371ced9-2aef-45f7-85c5-373096f913d9}</value>
@@ -360,7 +347,6 @@
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
    </valuemap>
    <value type="int" key="ProjectExplorer.Target.RunConfigurationCount">1</value>
->>>>>>> 0f5737f616cf36301d15cd4abd31f6c9c7645bc8
   </valuemap>
  </data>
  <data>
