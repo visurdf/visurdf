@@ -133,6 +133,33 @@ int VisuRDFParametreur::getTailleMax(){
     return tailleMax;
 }
 
+void VisuRDFParametreur::setPourcentagePolice(int p){
+    if (p > 0)
+        pourcentagePolice = p;
+    else
+        cerr<<"le paramètre pourcentage police doit être positif"<<endl;
+}
+
+
+void VisuRDFParametreur::setPourcentageHPolice(int p){
+    if (p > 0)
+        pourcentagePoliceHauteur = p;
+    else
+        cerr<<"le paramètre pourcentage police hauteur doit être positif"<<endl;
+}
+
+void VisuRDFParametreur::setColoration(int c){
+    coloration = c;
+}
+
+void VisuRDFParametreur::setMode(string _mode){
+    if (_mode!="tableau" && _mode!="boite")
+        cerr<<"le mode parametrer n'est pas correcte"<<endl;
+    else
+        mode = _mode;
+}
+
+
 /**
  * @brief VisuRDFParametrage::lectureParametres
  * fonction parcourant le fichier de paramètre parametres.xml situé dans le dossier du programme

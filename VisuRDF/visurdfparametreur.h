@@ -42,6 +42,11 @@ public:
     int getPourcentagePoliceHauteur();
     int getTailleMax();
 
+    void setMode(string mode);
+    void setPourcentagePolice(int p);
+    void setPourcentageHPolice(int p);
+    void setColoration(int c);
+
 private:
     QColor couleur;
     QPen penPolice;
