@@ -220,10 +220,8 @@ void VisuRDFDessinateur::dessinTableau(VisuRDFType *type, int x, int y, QPainter
                 // On remplit la map(objet, boite)
                 VisuRDFBoite* boite = new VisuRDFBoite(x, yObjet, calculLargeurTableau(type), hauteurCase);
 
-
                 //mapBoiteObjet.insert(std::make_pair(objet->getNom(), boite));
                 mapBoiteObjet[objet->getNom()]=boite;
-
 
 
 
