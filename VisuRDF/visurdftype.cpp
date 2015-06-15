@@ -30,3 +30,11 @@ list<string> VisuRDFType::getProprietes(){
 int VisuRDFType::getNbObjet(){
     return nbObjets;
 }
+
+int VisuRDFType::getNombreRelations(){
+    return nombreRelations;
+}
+
+void VisuRDFType::setNombreRelations(int _nombre){
+    nombreRelations = _nombre;
+}

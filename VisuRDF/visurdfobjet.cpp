@@ -32,7 +32,13 @@ VisuRDFType *VisuRDFObjet::getType(){
     return type;
 }
 
+int VisuRDFObjet::getNombreRelations(){
+    return nombreRelations;
+}
 
+void VisuRDFObjet::setNombreRelations(int _nombre){
+    nombreRelations = _nombre;
+}
 
 /*
 // Méthode qui va calculer la longueur max de la concaténation "nom propriété', "valeur propriété"
