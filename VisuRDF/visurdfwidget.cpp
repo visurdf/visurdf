@@ -51,10 +51,12 @@ void visuRDFWidget::open(){
 
     VisuRDFExtracteur visuRDFExtracteur;
     const char * file = fileName.toStdString().c_str();
-
-    cout<< "chemin : "<< file <<endl;
-    //visuRDFExtracteur.parserTripletRdf("const_cast<char*>(file)");
-    visuRDFExtracteur.parserTripletRdf("2-contextes.rdf");
+    char fileAvecProtocole [strlen(file +8)];
+    strcpy(fileAvecProtocole, "file://");
+    file = strcat(fileAvecProtocole, file );
+    cout<< "chemin : "<< fileAvecProtocole <<endl;
+    visuRDFExtracteur.parserTripletRdf(fileAvecProtocole);
+    //visuRDFExtracteur.parserTripletRdf("file:///home/rodrigue/visurdf/VisuRDF/FacetteA test v2.rdf");
     visuRDFExtracteur.afficherMap();
     visuRDFExtracteur.afficherRelations();
 

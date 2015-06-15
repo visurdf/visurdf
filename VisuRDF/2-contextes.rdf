@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- edited with XMLSpy v2014 rel. 2 sp1 (http://www.altova.com) by Jean-François Cabadi (ALSTOM POWER TURBO SYSTEM) -->
+<rdf:RDF xmlns:cims="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#" xmlns:m="http://www.cluster-connexion.org/SDS#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+	<m:Equipement rdf:about="dom.eq.PTR021PO">
+		<m:Equipement.catégorie>Pompe</m:Equipement.catégorie>
+		<m:Objet_identifié.définition/>
+		<m:Objet_identifié.icone/>
+	</m:Equipement>
+	<m:Equipement rdf:about="dom.eq.PTR022PO">
+		<m:Equipement.catégorie>Pompe</m:Equipement.catégorie>
+		<m:Objet_identifié.définition/>
+		<m:Objet_identifié.icone/>
+	</m:Equipement>
+	<m:Tranche rdf:about="dom.tr.LEGO">
+		<m:Objet_identifié.définition>Centrale simulée CONNEXION</m:Objet_identifié.définition>
+		<m:Objet_identifié.icone/>
+	</m:Tranche>
+	<m:Système_élémentaire rdf:about="dom.se.PTR">
+		<m:Objet_identifié.définition>Refroidissement et conditionnement des piscines</m:Objet_identifié.définition>
+		<m:Objet_identifié.icone/>
+	</m:Système_élémentaire>
+	<m:Système_élémentaire rdf:about="dom.se.RRA">
+		<m:Objet_identifié.définition>Refroidissement du réacteur à l'arrêt</m:Objet_identifié.définition>
+		<m:Objet_identifié.icone/>
+	</m:Système_élémentaire>
+	<m:Système_élémentaire rdf:about="dom.se.REA">
+		<m:Objet_identifié.définition>Appoint d'eau au réacteur</m:Objet_identifié.définition>
+		<m:Objet_identifié.icone/>
+	</m:Système_élémentaire>
+	<m:Système_élémentaire rdf:about="dom.se.TEP">
+		<m:Objet_identifié.définition>Traitement des effluents primaires</m:Objet_identifié.définition>
+		<m:Objet_identifié.icone/>
+	</m:Système_élémentaire>
+	<m:Système_élémentaire rdf:about="dom.se.RCV">
+		<m:Objet_identifié.définition>Contrôle chimique et volumétrique</m:Objet_identifié.définition>
+		<m:Objet_identifié.icone/>
+	</m:Système_élémentaire>
+	<m:Contexte_de_service rdf:about="ctx.cs.DiagPTR021PO">
+		<m:Contexte_de_service.equipement rdf:resource="dom.eq.PTR021PO"/>
+		<m:Contexte_de_service.mode_de_fonctionnement>RCD</m:Contexte_de_service.mode_de_fonctionnement>
+		<m:Contexte_de_service.métier>chimie</m:Contexte_de_service.métier>
+		<m:Contexte_de_service.système_élémentaire rdf:resource="dom.se.PTR"/>
+		<m:Contexte_de_service.terrain>true</m:Contexte_de_service.terrain>
+		<m:Contexte_de_service.tranche rdf:resource="dom.tr.LEGO"/>
+		<m:Objet_identifié.catégorie_AP929>exigence_de_conception</m:Objet_identifié.catégorie_AP929>
+		<m:Objet_identifié.définition>Mise à disposition de diagnostic PTR021PO</m:Objet_identifié.définition>
+		<m:Objet_identifié.icone/>
+	</m:Contexte_de_service>
+	<m:Contexte_de_service rdf:about="ctx.cs.DiagPTR022PO">
+		<m:Contexte_de_service.equipement rdf:resource="dom.eq.PTR022PO"/>
+		<m:Contexte_de_service.mode_de_fonctionnement>RCD</m:Contexte_de_service.mode_de_fonctionnement>
+		<m:Contexte_de_service.métier>chimie</m:Contexte_de_service.métier>
+		<m:Contexte_de_service.système_élémentaire rdf:resource="dom.se.PTR"/>
+		<m:Contexte_de_service.terrain>true</m:Contexte_de_service.terrain>
+		<m:Contexte_de_service.tranche rdf:resource="dom.tr.LEGO"/>
+		<m:Objet_identifié.catégorie_AP929>exigence_de_conception</m:Objet_identifié.catégorie_AP929>
+		<m:Objet_identifié.définition>Diagnostic PTR022PO</m:Objet_identifié.définition>
+		<m:Objet_identifié.icone/>
+	</m:Contexte_de_service>
+</rdf:RDF>

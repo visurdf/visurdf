@@ -4,6 +4,7 @@
 #include "visurdfgenerateur.h"
 #include <QWidget>
 #include <QMouseEvent>
+#include <string.h>
 
 #include <QWidget>
 
