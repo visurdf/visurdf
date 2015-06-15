@@ -375,7 +375,10 @@ float VisuRDFDessinateur::calculLargeurBoite(VisuRDFObjet *objet, float &largeur
             largeurNom = largeur1;
         }
 
+        if(largeur2>tailleMax)
+            largeur2 = tailleMax;
         if (largeur2 > largeurValeur){
+
             largeurValeur = largeur2;
         }
 
@@ -454,6 +457,7 @@ void VisuRDFDessinateur::dessinBoite(VisuRDFObjet *objet, float x, float y, QPai
     painter.drawLine(lineType);
     // On remplit la map(objet, boite)
     VisuRDFBoite* boite = new VisuRDFBoite(x, y, largeurType, hauteur);
+    boite->setBrush(brush);
     mapBoiteObjet.insert(std::make_pair(objet->getNom(), boite));
 
 
@@ -709,7 +713,7 @@ void VisuRDFDessinateur::dessinMap(QPainter &painter){
             string nomObjet = (*it).first;
             VisuRDFBoite* boite = mapBoiteObjet[nomObjet];
             VisuRDFObjet* objet = analyseur->getObjetparNom(nomObjet);
-            dessinBoite(objet,boite->getX(),boite->getY(),painter,&brush);
+            dessinBoite(objet,boite->getX(),boite->getY(),painter,boite->getBrush());
 
         }
     }
@@ -726,7 +730,7 @@ void VisuRDFDessinateur::dessinMap(QPainter &painter){
     dessinToutesLiaisons(painter);
 }
 
-void VisuRDFDessinateur::actualiserMapBoite(int xOrigine, int yOrigine, int x, int y){
+int VisuRDFDessinateur::actualiserMapBoite(int xOrigine, int yOrigine, int x, int y){
 
     if(parametreur->getParamMode()=="boite"){
         for(boiteObjet::iterator it = mapBoiteObjet.begin(); it!=mapBoiteObjet.end(); it++){
@@ -740,8 +744,9 @@ void VisuRDFDessinateur::actualiserMapBoite(int xOrigine, int yOrigine, int x, i
 
             if((xOrigine>=xBoite)&(xOrigine<=xBoite+largeur)&(yOrigine>=yBoite)&(yOrigine<=yBoite+hauteur)){
 
-                VisuRDFBoite* boite2 = new VisuRDFBoite(x-largeur/2,y-hauteur/2,largeur,hauteur);
-                mapBoiteObjet[nomObjet]= boite2;
+                boite->setX(x-largeur/2);
+                boite->setY(y-hauteur/2);
+                return 1;
             }
 
         }
@@ -757,23 +762,26 @@ void VisuRDFDessinateur::actualiserMapBoite(int xOrigine, int yOrigine, int x, i
             int largeur = boite->getLargeur();
             if((xOrigine>=xBoite)&(xOrigine<=xBoite+largeur)&(yOrigine>=yBoite)&(yOrigine<=yBoite+hauteur)){
 
-                VisuRDFBoite* boite2 = new VisuRDFBoite(x-largeur/2,y-hauteur/2,largeur,hauteur);
-                mapBoiteType[nomType]= boite2;
+                boite->setX(x-largeur/2);
+                boite->setY(y-hauteur/2);
 
                  set<VisuRDFObjet*> objets = analyseur->getObjetsParType(nomType,true);
                 for(set<VisuRDFObjet*>::iterator it = objets.begin(); it!= objets.end(); it++){
                     VisuRDFObjet* objet = *it;
                     VisuRDFBoite* boiteObj = mapBoiteObjet[objet->getNom()];
-                    VisuRDFBoite* boiteObj2 = new VisuRDFBoite(x-largeur/2,(boiteObj->getY()-yBoite)+y-hauteur/2,boiteObj->getLargeur(),boiteObj->getHauteur());
-                    mapBoiteObjet[objet->getNom()]=boiteObj2;
+                    int yObj = boiteObj->getY();
+                    boiteObj->setX(x-largeur/2);
+                    boiteObj->setY(yObj-yBoite+y-hauteur/2);
+                  //  VisuRDFBoite* boiteObj2 = new VisuRDFBoite(x-largeur/2,(boiteObj->getY()-yBoite)+y-hauteur/2,boiteObj->getLargeur(),boiteObj->getHauteur());
+                  //  mapBoiteObjet[objet->getNom()]=boiteObj2;
                 }
 
 
-
+            return 1;
             }
 
         }
     }
 
-
+return 0;
 }

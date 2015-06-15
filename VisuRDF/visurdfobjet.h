@@ -29,7 +29,8 @@ public:
    // int getLargeur();
     string getNom();
     string toString();
-
+    int getNombreRelations();
+    void setNombreRelations(int _nombre);
 
 private :
 
@@ -37,6 +38,7 @@ private :
     VisuRDFType *type;
     ObjetRDF proprietes;
   //  int largeurMax;
+    int nombreRelations;
 
 };
 

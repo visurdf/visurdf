@@ -46,7 +46,7 @@ public:
 
     void dessinMap(QPainter &painter);
 
-    void actualiserMapBoite(int xOrigine, int yOrigine, int x, int y);
+    int actualiserMapBoite(int xOrigine, int yOrigine, int x, int y);
 
 private :
    // list<Objet> listeObjets;

@@ -7,12 +7,12 @@ Aide pour le paramètrage du fichier :
 -->
 
 <parametres>
-	<mode value="boite"/>
-	<coloration value = "1"/>
+	<mode value="tableau"/>
+	<coloration value = "0"/>
 	<police value="Arial"/>
 	<taillePolice value="8"/>
     <pourcentagePolice value="5"/>
     <pourcentagePoliceHauteur value="15"/>
-    <tailleMax value="20"/>
+    <tailleMax value="30"/>
 </parametres>
 	
