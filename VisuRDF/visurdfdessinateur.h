@@ -48,6 +48,10 @@ public:
 
     int actualiserMapBoite(int xOrigine, int yOrigine, int x, int y);
 
+    VisuRDFParametreur* getParametreur();
+     bool isFirst;
+
+
 private :
    // list<Objet> listeObjets;
     set<VisuRDFType*> listeTypes;
@@ -69,7 +73,7 @@ private :
     boiteObjet mapBoiteType;
     map<int,QString> mapPolice;
 
-    bool isFirst;
+
 
 };
 

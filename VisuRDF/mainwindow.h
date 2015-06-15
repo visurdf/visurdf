@@ -27,7 +27,7 @@ public slots:
     void printFile();
     void quitApp();
     void changerColoration();
-    void changerMode();
+    void changerMode(QAction *action);
     void parametrerPourcentagePolice();
     void parametrerPourcentageHPolice();
 

@@ -59,6 +59,10 @@ VisuRDFDessinateur::~VisuRDFDessinateur() {
 
 }
 
+VisuRDFParametreur* VisuRDFDessinateur::getParametreur(){
+    return parametreur;
+}
+
 
 /**
  * @brief Dessinateur::calculLargeurColonne
@@ -215,7 +219,8 @@ void VisuRDFDessinateur::dessinTableau(VisuRDFType *type, int x, int y, QPainter
                 // On remplit la map(id, boite)
                 //   int id = objet->getId();
                 VisuRDFBoite* boite = new VisuRDFBoite(x, yObjet, calculLargeurTableau(type), hauteurCase);
-                mapBoiteObjet.insert(std::make_pair(objet->getNom(), boite));
+                //mapBoiteObjet.insert(std::make_pair(objet->getNom(), boite));
+                mapBoiteObjet[objet->getNom()]=boite;
 
 
                 string valeur = "";
@@ -458,8 +463,8 @@ void VisuRDFDessinateur::dessinBoite(VisuRDFObjet *objet, float x, float y, QPai
     // On remplit la map(objet, boite)
     VisuRDFBoite* boite = new VisuRDFBoite(x, y, largeurType, hauteur);
     boite->setBrush(brush);
-    mapBoiteObjet.insert(std::make_pair(objet->getNom(), boite));
-
+    //mapBoiteObjet.insert(std::make_pair(objet->getNom(), boite));
+    mapBoiteObjet[objet->getNom()]=boite;
 
     list<string> listeNom;
     for(ObjetRDF::iterator it = proprietes.begin(); it!= proprietes.end(); it++){
