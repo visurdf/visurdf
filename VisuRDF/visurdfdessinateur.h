@@ -60,8 +60,8 @@ private :
     int hauteurCase;
     int espacementVertical;
     float pourcentagePolice;
-    int pourcentagePoliceHauteur;
-    int tailleMax;
+    float pourcentagePoliceHauteur;
+    float tailleMax;
 
     QFont f;
     QPen pen1;

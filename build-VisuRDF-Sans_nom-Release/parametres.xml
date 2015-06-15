@@ -10,9 +10,9 @@ Aide pour le paramètrage du fichier :
 	<mode value="tableau"/>
 	<coloration value = "1"/>
 	<police value="Arial"/>
-	<taillePolice value="8"/>
-    <pourcentagePolice value="5"/>
-    <pourcentagePoliceHauteur value="15"/>
+	<taillePolice value="10"/>
+    <pourcentagePolice value="0.8"/>
+    <pourcentagePoliceHauteur value="1.2"/>
     <tailleMax value="20"/>
 </parametres>
 	

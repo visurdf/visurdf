@@ -121,15 +121,15 @@ map<int,QBrush*> VisuRDFParametreur::getListePinceau(){
     return *mapPinceau;
 }
 
-int VisuRDFParametreur::getPourcentagePolice(){
+float VisuRDFParametreur::getPourcentagePolice(){
     return pourcentagePolice;
 }
 
-int VisuRDFParametreur::getPourcentagePoliceHauteur(){
+float VisuRDFParametreur::getPourcentagePoliceHauteur(){
     return pourcentagePoliceHauteur;
 }
 
-int VisuRDFParametreur::getTailleMax(){
+float VisuRDFParametreur::getTailleMax(){
     return tailleMax;
 }
 
@@ -233,19 +233,25 @@ void VisuRDFParametreur::lectureParametres(){
         }
         else if (enfant.tagName()=="pourcentagePoliceHauteur"){
             if (enfant.attribute("value",0)!= 0){
-                pourcentagePoliceHauteur = atoi(enfant.attribute("value",0).toStdString().c_str());
+                QString attribut = enfant.attribute("value",0);
+                pourcentagePoliceHauteur = attribut.toFloat();
+               // pourcentagePoliceHauteur = atof(enfant.attribute("value",0).toStdString().c_str());
                 cout << "le pourcentage hauteur police sera : "<< pourcentagePoliceHauteur<< endl;
             }
         }
         else if (enfant.tagName()=="pourcentagePolice"){
             if (enfant.attribute("value",0)!= 0){
-                pourcentagePolice = atoi(enfant.attribute("value",0).toStdString().c_str());
+                QString attribut = enfant.attribute("value",0);
+                pourcentagePolice = attribut.toFloat();
+               // pourcentagePolice = atof(enfant.attribute("value",0).toStdString().c_str());
                 cout << "le pourcentage police sera : "<< pourcentagePolice<< endl;
             }
         }
         else if (enfant.tagName()=="tailleMax"){
             if (enfant.attribute("value",0)!= 0){
-                tailleMax = atoi(enfant.attribute("value",0).toStdString().c_str());
+                QString attribut = enfant.attribute("value",0);
+                tailleMax = attribut.toFloat();
+                //tailleMax = atof(enfant.attribute("value",0).toStdString().c_str());
                 cout << "la taille max des propriétés sera : "<< tailleMax<< endl;
             }
         }

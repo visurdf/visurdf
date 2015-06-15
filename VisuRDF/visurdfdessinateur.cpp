@@ -44,8 +44,10 @@ VisuRDFDessinateur::VisuRDFDessinateur(VisuRDFAnalyseur * analyseur) {
 
 
     espacementVertical = 20/5.5*fontSize;
-    pourcentagePolice = parametreur->getPourcentagePolice();
-    pourcentagePoliceHauteur = parametreur->getPourcentagePoliceHauteur();
+
+    pourcentagePolice = (parametreur->getPourcentagePolice())*fontSize;
+    cout << "pourcentage : " << pourcentagePolice << endl;
+    pourcentagePoliceHauteur = (parametreur->getPourcentagePoliceHauteur())*fontSize;
 
 
     tailleMax = parametreur->getTailleMax();
