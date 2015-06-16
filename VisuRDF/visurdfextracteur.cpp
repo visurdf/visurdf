@@ -227,7 +227,8 @@ void VisuRDFExtracteur::gestionnaireDeTriplets(void* donnee_utilisateur, raptor_
         } else {
         // c'est soit une propriete simple soit une ressource
             QName* objet = getObjet(triple);
-            if(objet->getUriDeBase().compare(uriDeBase) == 0){// cest une association
+            cout << "uriDeBase="<<objet->getUriDeBase()<<" ? = " <<uriDeBase<<endl;
+            if(objet->getUriDeBase().find(uriDeBase) == 0){// cest une association
                 list<string> listeDeNoms = objetRDF["name"];
                 list < string > listeDeRelations = relationRDF[listeDeNoms.front()];
                 listeDeRelations.push_back(objet->getNom());
