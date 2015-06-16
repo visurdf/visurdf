@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:cims="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:m="http://www.cluster-connexion.org/SDS#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <m:Repère_fonctionnel rdf:ID="_30">
+    <m:Repère_fonctionnel.nom>1SRI001VP</m:Repère_fonctionnel.nom>
+  </m:Repère_fonctionnel>
+  <m:Grandeur_discrète rdf:ID="_31">
+    <m:Objet_identifié.définition>Appoint eau froide</m:Objet_identifié.définition>
+    <m:Grandeur.période_acquisition>10</m:Grandeur.période_acquisition>
+    <m:Grandeur.période_historisation>60</m:Grandeur.période_historisation>
+    <m:Grandeur_discrète.minimum>0</m:Grandeur_discrète.minimum>
+    <m:Grandeur_discrète.maximum>1</m:Grandeur_discrète.maximum>
+    <m:Objet_identifié.repère_fonctionnel rdf:resource="#_30" />
+  </m:Grandeur_discrète>
+  <m:Valeur_discrète rdf:ID="_32">
+    <m:Objet_identifié.définition>Appoint eau froide (état)</m:Objet_identifié.définition>
+    <m:Valeur_discrète.grandeur_discrète rdf:resource="#_31" />
+  </m:Valeur_discrète>
+</rdf:RDF>

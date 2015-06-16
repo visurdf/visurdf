@@ -25,6 +25,20 @@ string VisuRDFType::getNom(){
 }
 
 list<string> VisuRDFType::getProprietes(){
+
+    // Si il y a bien une propriété "name", on la met en première position
+    bool name = false;
+    for(list<string>::iterator it = proprietesNonVides.begin(); it!=proprietesNonVides.end(); it++){
+        string nomPropriete = *it;
+        if(nomPropriete=="name")
+            name = true;
+    }
+
+    if(name){
+    proprietesNonVides.remove("name");
+    proprietesNonVides.push_front("name");
+    }
+
     return proprietesNonVides;
 }
 

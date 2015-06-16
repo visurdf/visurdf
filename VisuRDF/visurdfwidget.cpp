@@ -53,6 +53,7 @@ void visuRDFWidget::open(){
     VisuRDFExtracteur visuRDFExtracteur;
     const char * file = fileName.toStdString().c_str();
 
+
     char fileAvecProtocole [strlen(file +8)];
     strcpy(fileAvecProtocole, "file://");
     file = strcat(fileAvecProtocole, file );
@@ -62,6 +63,7 @@ void visuRDFWidget::open(){
 
    // visuRDFExtracteur.afficherMap();
     //visuRDFExtracteur.afficherRelations();
+
 
     analyseur = new VisuRDFAnalyseur(&visuRDFExtracteur);
     dessinateur = new VisuRDFDessinateur(analyseur);
