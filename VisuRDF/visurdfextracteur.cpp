@@ -262,7 +262,7 @@ void VisuRDFExtracteur::gestionnaireDeTriplets(void* donnee_utilisateur, raptor_
  * @param fichierRdf
  */
 
-void VisuRDFExtracteur::parserTripletRdf(char *fichierRdf) {
+void VisuRDFExtracteur::parserTripletRdf(const char *fichierRdf) {
 
     raptor_world* world = NULL;
     raptor_parser* parserRdf = NULL;
@@ -275,7 +275,7 @@ void VisuRDFExtracteur::parserTripletRdf(char *fichierRdf) {
 
     raptor_parser_set_statement_handler(parserRdf, NULL, gestionnaireDeTriplets);
 
-    stringUri = raptor_uri_filename_to_uri_string(fichierRdf);
+    stringUri = (unsigned char*)fichierRdf;//raptor_uri_filename_to_uri_string(fichierRdf);    
     uri = raptor_new_uri(world, stringUri);
     uriDeBase1 = raptor_uri_copy(uri);
 
@@ -295,7 +295,7 @@ void VisuRDFExtracteur::parserTripletRdf(char *fichierRdf) {
 
     raptor_free_uri(uriDeBase1);
     raptor_free_uri(uri);
-    raptor_free_memory(stringUri);
+    //raptor_free_memory(stringUri);
 
     raptor_free_world(world);
 

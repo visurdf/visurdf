@@ -71,7 +71,7 @@ public:
     VisuRDFExtracteur();
     void afficherMap();
     void afficherRelations();
-    void parserTripletRdf(char* fichierRdf);
+    void parserTripletRdf(const  char* fichierRdf);
     set<string> getClasses();
     GrapheRDF getGrapheRDF() { return grapheRDF; }
     RelationRDF getRelationRDF() { return relationRDF; }

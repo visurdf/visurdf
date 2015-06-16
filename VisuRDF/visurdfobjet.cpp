@@ -4,13 +4,13 @@
 
 VisuRDFObjet::VisuRDFObjet( VisuRDFType *type, ObjetRDF proprietes) :  type(type), proprietes(proprietes)
 {
-
+nombreRelations = 0;
 }
 
 
 VisuRDFObjet::~VisuRDFObjet()
 {
-
+nombreRelations = 0;
 }
 
 string VisuRDFObjet::getNom() {

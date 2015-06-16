@@ -9,7 +9,7 @@ VisuRDFType::VisuRDFType(string nomType) : nomType(nomType)
 
 VisuRDFType::~VisuRDFType()
 {
-
+    nombreRelations = 0;
 }
 
 void VisuRDFType::setProprietes(list<string> proprietes){
