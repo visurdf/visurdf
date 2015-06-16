@@ -139,21 +139,7 @@ int VisuRDFDessinateur::calculHauteurTableau(VisuRDFType* type) {
 }
 
 
-/**
- * @brief Dessinateur::calculHauteurDessin
- * @return hauteur du dessin
- */
 
-int VisuRDFDessinateur::calculHauteurDessin() {
-
-    int hauteur = espacementVertical;
-    for (set<VisuRDFType*>::iterator it = listeTypes.begin(); it!= listeTypes.end(); it++){
-        VisuRDFType* unType = *it;
-        hauteur = hauteur + calculHauteurTableau(unType) + espacementVertical;
-    }
-
-    return hauteur;
-}
 
 
 /**
@@ -758,4 +744,41 @@ int VisuRDFDessinateur::actualiserMapBoite(int xOrigine, int yOrigine, int x, in
     }
 
 return 0;
+}
+
+
+float VisuRDFDessinateur::calculLargeurDessin(){
+
+    float largeur;
+    for(boiteObjet::iterator it = mapBoiteObjet.begin(); it!= mapBoiteObjet.end(); it++){
+        string nomObjet = (*it).first;
+        VisuRDFBoite* boite = mapBoiteObjet[nomObjet];
+        float x = boite->getX();
+        float largeurBoite = boite->getLargeur();
+        if(x+largeurBoite > largeur)
+            largeur = x+largeurBoite;
+
+    }
+    return largeur + 20;
+
+}
+
+/**
+ * @brief Dessinateur::calculHauteurDessin
+ * @return hauteur du dessin
+ */
+
+float VisuRDFDessinateur::calculHauteurDessin() {
+
+    float hauteur;
+    for(boiteObjet::iterator it = mapBoiteObjet.begin(); it!= mapBoiteObjet.end(); it++){
+        string nomObjet = (*it).first;
+        VisuRDFBoite* boite = mapBoiteObjet[nomObjet];
+        float y = boite->getY();
+        float hauteurBoite = boite->getHauteur();
+        if(y+hauteurBoite > hauteur)
+            hauteur = y+hauteurBoite;
+
+    }
+    return hauteur + 20;
 }

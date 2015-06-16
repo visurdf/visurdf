@@ -55,7 +55,7 @@ void visuRDFWidget::open(){
 
     cout<< "chemin : "<< file <<endl;
     //visuRDFExtracteur.parserTripletRdf("const_cast<char*>(file)");
-    visuRDFExtracteur.parserTripletRdf("2-contextes.rdf");
+    visuRDFExtracteur.parserTripletRdf("PTR-1.rdf");
     visuRDFExtracteur.afficherMap();
     visuRDFExtracteur.afficherRelations();
 
@@ -75,11 +75,12 @@ void visuRDFWidget::print(){
 
     /*------------- Déclaration des paramètres du fichier SVG -------------------*/
     QSvgGenerator generator;
-    int hauteur = dessinateur->calculHauteurDessin();
 
+    float hauteur = dessinateur->calculHauteurDessin();
+    float largeur = dessinateur->calculLargeurDessin();
     generator.setFileName("testSVG.svg");
-    generator.setSize(QSize(2000, hauteur));
-    generator.setViewBox(QRect(0, 0, 2000, hauteur));
+    generator.setSize(QSize(largeur, hauteur));
+    generator.setViewBox(QRect(0, 0, largeur, hauteur));
     generator.setTitle("SVG Generator Example Drawing");
     generator.setDescription("Dessin svg pour une démonstration");
 

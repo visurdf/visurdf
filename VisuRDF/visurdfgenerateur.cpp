@@ -4,14 +4,15 @@ VisuRDFGenerateur::VisuRDFGenerateur(VisuRDFDessinateur *dessinateur) {
 
     this->dessinateur = dessinateur;
 
-    int hauteur = dessinateur->calculHauteurDessin();
+    float hauteur = dessinateur->calculHauteurDessin();
+    float largeur = dessinateur->calculLargeurDessin();
     color = Qt::black;
     pen.setColor(color);
 
     /*------------- Déclaration des paramètres du fichier SVG -------------------*/
     generator.setFileName("testSVG.svg");
-    generator.setSize(QSize(2000, hauteur));
-    generator.setViewBox(QRect(0, 0, 2000, hauteur));
+    generator.setSize(QSize(largeur, hauteur));
+    generator.setViewBox(QRect(0, 0, largeur, hauteur));
     generator.setTitle("SVG Generator Example Drawing");
     generator.setDescription("Dessin svg pour une démonstration");
 }
@@ -29,6 +30,11 @@ VisuRDFGenerateur::~VisuRDFGenerateur() {
 
 void VisuRDFGenerateur::dessin() {
 
+    float hauteur = dessinateur->calculHauteurDessin();
+    float largeur = dessinateur->calculLargeurDessin();
+
+    generator.setSize(QSize(largeur, hauteur));
+    generator.setViewBox(QRect(0, 0, largeur, hauteur));
     painter.begin(&generator);
 
 
