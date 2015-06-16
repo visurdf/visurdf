@@ -55,7 +55,7 @@ void visuRDFWidget::open(){
 
     cout<< "chemin : "<< file <<endl;
     //visuRDFExtracteur.parserTripletRdf("const_cast<char*>(file)");
-    visuRDFExtracteur.parserTripletRdf("PTR-1.rdf");
+    visuRDFExtracteur.parserTripletRdf("2-contextes.rdf");
     visuRDFExtracteur.afficherMap();
     visuRDFExtracteur.afficherRelations();
 
