@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="897.819mm" height="272.697mm"
- viewBox="0 0 2545 773"
+<svg width="345.017mm" height="337.961mm"
+ viewBox="0 0 978 958"
  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  version="1.2" baseProfile="tiny">
 <title>SVG Generator Example Drawing</title>
 <desc>Dessin svg pour une démonstration</desc>
@@ -8,1412 +8,339 @@
 </defs>
 <g fill="none" stroke="black" stroke-width="1" fill-rule="evenodd" stroke-linecap="square" stroke-linejoin="bevel" >
 
-<g fill="#0073e6" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,0,0)"
-font-family=".Helvetica Neue DeskInterface" font-size="13" font-weight="400" font-style="normal" 
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
 >
-<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M1590,20 L1863,20 L1863,80 L1590,80 L1590,20"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="20" y="33" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
+ >Contexte_de_service</text>
 </g>
 
 <g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family=".Helvetica Neue DeskInterface" font-size="13" font-weight="400" font-style="normal" 
+font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
 >
-<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M1590,23 C1590,21.3431 1591.34,20 1593,20 L1860,20 C1861.66,20 1863,21.3431 1863,23 L1863,77 C1863,78.6569 1861.66,80 1860,80 L1593,80 C1591.34,80 1590,78.6569 1590,77 L1590,23"/>
-<polyline fill="none" vector-effect="non-scaling-stroke" points="1590,32 1863,32 " />
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,47 L153,47 L153,74 L20,74 L20,47"/>
+</g>
+
+<g fill="#a0a0a4" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,0,0)"
+font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
+>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,47 L153,47 L153,74 L20,74 L20,47"/>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="82.6094" y="63.0469" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
+ >id</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,74 L153,74 L153,128 L20,128 L20,74"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="36.5625" y="104.047" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
+ >ctx.cs.DiagPTR021PO</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,128 L153,128 L153,182 L20,182 L20,128"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="36.5625" y="158.047" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
+ >ctx.cs.DiagPTR022PO</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M153,47 L202,47 L202,74 L153,74 L153,47"/>
+</g>
+
+<g fill="#a0a0a4" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,0,0)"
+font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
+>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M153,47 L202,47 L202,74 L153,74 L153,47"/>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="163.359" y="63.0469" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
+ >terrain</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M153,74 L202,74 L202,128 L153,128 L153,74"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="168.906" y="104.047" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
+ >true</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M153,128 L202,128 L202,182 L153,182 L153,128"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="168.906" y="158.047" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
+ >true</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M202,47 L251,47 L251,74 L202,74 L202,47"/>
+</g>
+
+<g fill="#a0a0a4" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,0,0)"
+font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
+>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M202,47 L251,47 L251,74 L202,74 L202,47"/>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="212.625" y="63.0469" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
+ >métier</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M202,74 L251,74 L251,128 L202,128 L202,74"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="212.062" y="104.047" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
+ >chimie</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M202,128 L251,128 L251,182 L202,182 L202,128"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="212.062" y="158.047" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
+ >chimie</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M251,47 L405,47 L405,74 L251,74 L251,47"/>
+</g>
+
+<g fill="#a0a0a4" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,0,0)"
+font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
+>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M251,47 L405,47 L405,74 L251,74 L251,47"/>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="270.312" y="63.0469" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
+ >mode_de_fonctionnement</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M251,74 L405,74 L405,128 L251,128 L251,74"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="317.172" y="104.047" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
+ >RCD</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M251,128 L405,128 L405,182 L251,182 L251,128"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="317.172" y="158.047" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
+ >RCD</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M405,47 L545,47 L545,74 L405,74 L405,47"/>
+</g>
+
+<g fill="#a0a0a4" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,0,0)"
+font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
+>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M405,47 L545,47 L545,74 L405,74 L405,47"/>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="455.031" y="63.0469" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
+ >définition</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M405,74 L545,74 L545,128 L405,128 L405,74"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="435.328" y="90.0469" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
+ >Mise à disposition</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="444.219" y="117.047" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
+ > de diagnostic</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="448.094" y="144.047" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
+ > PTR021PO</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M405,128 L545,128 L545,182 L405,182 L405,128"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="424.797" y="158.047" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
+ >Diagnostic PTR022PO</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M545,47 L685,47 L685,74 L545,74 L545,47"/>
+</g>
+
+<g fill="#a0a0a4" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,0,0)"
+font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
+>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M545,47 L685,47 L685,74 L545,74 L545,47"/>
+</g>
+
+<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
+>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="576.719" y="63.0469" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
+ >catégorie_AP929</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M545,74 L685,74 L685,128 L545,128 L545,74"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="565.344" y="90.0469" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
+ >exigence_de_concepti</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="609.453" y="117.047" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
+ >on</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M545,128 L685,128 L685,182 L545,182 L545,128"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="565.344" y="144.047" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
+ >exigence_de_concepti</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="609.453" y="171.047" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
+ >on</text>
 </g>
 
 <g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
 font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
 >
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="1591" y="30" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="20" y="843" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
  >Equipement</text>
 </g>
 
 <g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
+font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
 >
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="1723" y="30" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
- >eq.PTR007VB</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,857 L125,857 L125,884 L20,884 L20,857"/>
 </g>
 
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
+<g fill="#a0a0a4" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,0,0)"
+font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
 >
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="1591" y="42" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
- >définition : </text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,857 L125,857 L125,884 L20,884 L20,857"/>
 </g>
 
 <g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
 font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
 >
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="1723" y="42" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
- >Vanne d'isolement</text>
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="1723" y="54" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
- > amont 021PO</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="68.6094" y="873.047" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
+ >id</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,884 L125,884 L125,911 L20,911 L20,884"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="28.9531" y="900.047" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
+ >dom.eq.PTR021PO</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,911 L125,911 L125,938 L20,938 L20,911"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="28.9531" y="927.047" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
+ >dom.eq.PTR022PO</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M125,857 L195,857 L195,884 L125,884 L125,857"/>
 </g>
 
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
+<g fill="#a0a0a4" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,0,0)"
+font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
 >
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="1591" y="66" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
- >catégorie_AP929 : </text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M125,857 L195,857 L195,884 L125,884 L125,857"/>
 </g>
 
 <g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
 font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
 >
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="1723" y="66" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
- >configuration_physiq</text>
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="1723" y="78" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
- >ue</text>
-</g>
-
-<g fill="#0073e6" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
->
-<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M1590,116 L1863,116 L1863,176 L1590,176 L1590,116"/>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
->
-<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M1590,119 C1590,117.343 1591.34,116 1593,116 L1860,116 C1861.66,116 1863,117.343 1863,119 L1863,173 C1863,174.657 1861.66,176 1860,176 L1593,176 C1591.34,176 1590,174.657 1590,173 L1590,119"/>
-<polyline fill="none" vector-effect="non-scaling-stroke" points="1590,128 1863,128 " />
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="1591" y="126" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
- >Equipement</text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="1723" y="126" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
- >eq.PTR021PO</text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="1591" y="138" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
- >définition : </text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="1723" y="138" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="139.469" y="873.047" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
+ >catégorie</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M125,884 L195,884 L195,911 L125,911 L125,884"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="144.188" y="900.047" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
  >Pompe</text>
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="1723" y="150" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
- > refroidissement ligne 1</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M125,911 L195,911 L195,938 L125,938 L125,911"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="144.188" y="927.047" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
+ >Pompe</text>
 </g>
 
 <g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
 font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
 >
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="1591" y="162" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
- >catégorie_AP929 : </text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="20" y="285" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
+ >Système_élémentaire</text>
 </g>
 
 <g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
 font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
 >
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="1723" y="162" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
- >configuration_physiq</text>
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="1723" y="174" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
- >ue</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,299 L90,299 L90,326 L20,326 L20,299"/>
 </g>
 
-<g fill="#80bfff" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,0,0)"
+<g fill="#a0a0a4" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,0,0)"
 font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
 >
-<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,20 L293,20 L293,92 L20,92 L20,20"/>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,299 L90,299 L90,326 L20,326 L20,299"/>
 </g>
 
 <g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
 font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
 >
-<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,23 C20,21.3431 21.3431,20 23,20 L290,20 C291.657,20 293,21.3431 293,23 L293,89 C293,90.6569 291.657,92 290,92 L23,92 C21.3431,92 20,90.6569 20,89 L20,23"/>
-<polyline fill="none" vector-effect="non-scaling-stroke" points="20,32 293,32 " />
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="51.1094" y="315.047" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
+ >id</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,407 L90,407 L90,488 L20,488 L20,407"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="27.2656" y="450.047" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
+ >dom.se.PTR</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,596 L90,596 L90,650 L20,650 L20,596"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="26.7031" y="626.047" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
+ >dom.se.RCV</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,488 L90,488 L90,542 L20,542 L20,488"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="26.9844" y="518.047" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
+ >dom.se.REA</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,326 L90,326 L90,407 L20,407 L20,326"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="26.7031" y="369.047" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
+ >dom.se.RRA</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,542 L90,542 L90,596 L20,596 L20,542"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="27.5469" y="572.047" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
+ >dom.se.TEP</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M90,299 L230,299 L230,326 L90,326 L90,299"/>
 </g>
 
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="21" y="30" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
- >Fonction_procédé</text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="153" y="30" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
- >fp.PTR.REF001</text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="21" y="42" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
- >définition : </text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="153" y="42" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
- >Brassage</text>
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="153" y="54" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
- > refroidissement</text>
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="153" y="66" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
- > bâche PTR par 021PO et 031RF</text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="21" y="78" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
- >catégorie_AP929 : </text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="153" y="78" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
- >exigence_de_concepti</text>
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="153" y="90" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
- >on</text>
-</g>
-
-<g fill="#80bfff" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
->
-<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M433,612 L706,612 L706,684 L433,684 L433,612"/>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
->
-<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M433,615 C433,613.343 434.343,612 436,612 L703,612 C704.657,612 706,613.343 706,615 L706,681 C706,682.657 704.657,684 703,684 L436,684 C434.343,684 433,682.657 433,681 L433,615"/>
-<polyline fill="none" vector-effect="non-scaling-stroke" points="433,624 706,624 " />
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="434" y="622" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
- >Fonction_procédé</text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="566" y="622" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
- >fp.PTR.REF002</text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="434" y="634" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
- >définition : </text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="566" y="634" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
- >Brassage</text>
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="566" y="646" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
- > refroidissement</text>
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="566" y="658" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
- > bâche PTR par 021PO et 032RF</text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="434" y="670" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
- >catégorie_AP929 : </text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="566" y="670" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
- >exigence_de_concepti</text>
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="566" y="682" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
- >on</text>
-</g>
-
-<g fill="#80bfff" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
->
-<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,128 L293,128 L293,200 L20,200 L20,128"/>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
->
-<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,131 C20,129.343 21.3431,128 23,128 L290,128 C291.657,128 293,129.343 293,131 L293,197 C293,198.657 291.657,200 290,200 L23,200 C21.3431,200 20,198.657 20,197 L20,131"/>
-<polyline fill="none" vector-effect="non-scaling-stroke" points="20,140 293,140 " />
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="21" y="138" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
- >Fonction_procédé</text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="153" y="138" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
- >fp.PTR.REF003</text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="21" y="150" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
- >définition : </text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="153" y="150" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
- >Brassage</text>
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="153" y="162" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
- > refroidissement</text>
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="153" y="174" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
- > bâche PTR par 022PO et 031RF</text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="21" y="186" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
- >catégorie_AP929 : </text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="153" y="186" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
- >exigence_de_concepti</text>
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="153" y="198" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
- >on</text>
-</g>
-
-<g fill="#ffff80" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
->
-<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M962,20 L1277,20 L1277,116 L962,116 L962,20"/>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
->
-<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M962,23 C962,21.3431 963.343,20 965,20 L1274,20 C1275.66,20 1277,21.3431 1277,23 L1277,113 C1277,114.657 1275.66,116 1274,116 L965,116 C963.343,116 962,114.657 962,113 L962,23"/>
-<polyline fill="none" vector-effect="non-scaling-stroke" points="962,32 1277,32 " />
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="963" y="30" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
- >Grandeur_discrète</text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="963" y="42" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
- >période_historisation : </text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="1137" y="42" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
- >60</text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="963" y="54" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
- >période_acquisition : </text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="1137" y="54" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
- >10</text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="1137" y="30" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
- >gd.PTR021PO_EO</text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="963" y="66" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
- >minimum : </text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="1137" y="66" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
- >0</text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="963" y="78" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
- >maximum : </text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="1137" y="78" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
- >1</text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="963" y="90" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
- >définition : </text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="1137" y="90" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
- >Etat enclenché</text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="963" y="102" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
- >catégorie_AP929 : </text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="1137" y="102" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
- >configuration_physiq</text>
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="1137" y="114" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
- >ue</text>
-</g>
-
-<g fill="#ffb366" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
->
-<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M2427,20 L2525,20 L2525,32 L2427,32 L2427,20"/>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
->
-<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M2427,23 C2427,21.3431 2428.34,20 2430,20 L2522,20 C2523.66,20 2525,21.3431 2525,23 L2525,29 C2525,30.6569 2523.66,32 2522,32 L2430,32 C2428.34,32 2427,30.6569 2427,29 L2427,23"/>
-<polyline fill="none" vector-effect="non-scaling-stroke" points="2427,32 2525,32 " />
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="2428" y="30" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
- >Jonction</text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="2483" y="30" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
- >jo.199</text>
-</g>
-
-<g fill="#bfff80" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
->
-<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M627,212 L942,212 L942,272 L627,272 L627,212"/>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
->
-<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M627,215 C627,213.343 628.343,212 630,212 L939,212 C940.657,212 942,213.343 942,215 L942,269 C942,270.657 940.657,272 939,272 L630,272 C628.343,272 627,270.657 627,269 L627,215"/>
-<polyline fill="none" vector-effect="non-scaling-stroke" points="627,224 942,224 " />
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="628" y="234" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
- >valeur : </text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="802" y="234" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
- >0</text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="628" y="222" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
- >Libellé_valeur_discrète</text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="802" y="222" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
- >li.ARRET</text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="628" y="246" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
- >message : </text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="802" y="246" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
- >ARRET</text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="628" y="258" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
- >catégorie_AP929 : </text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="802" y="258" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
- >configuration_physiq</text>
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="802" y="270" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
- >ue</text>
-</g>
-
-<g fill="#bfff80" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
->
-<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M627,404 L942,404 L942,464 L627,464 L627,404"/>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
->
-<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M627,407 C627,405.343 628.343,404 630,404 L939,404 C940.657,404 942,405.343 942,407 L942,461 C942,462.657 940.657,464 939,464 L630,464 C628.343,464 627,462.657 627,461 L627,407"/>
-<polyline fill="none" vector-effect="non-scaling-stroke" points="627,416 942,416 " />
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="628" y="426" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
- >valeur : </text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="802" y="426" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
- >1</text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="628" y="414" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
- >Libellé_valeur_discrète</text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="802" y="414" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
- >li.DEFAUT</text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="628" y="438" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
- >message : </text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="802" y="438" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
- >DEFAUT</text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="628" y="450" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
- >catégorie_AP929 : </text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="802" y="450" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
- >configuration_physiq</text>
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="802" y="462" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
- >ue</text>
-</g>
-
-<g fill="#bfff80" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
->
-<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M627,308 L942,308 L942,368 L627,368 L627,308"/>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
->
-<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M627,311 C627,309.343 628.343,308 630,308 L939,308 C940.657,308 942,309.343 942,311 L942,365 C942,366.657 940.657,368 939,368 L630,368 C628.343,368 627,366.657 627,365 L627,311"/>
-<polyline fill="none" vector-effect="non-scaling-stroke" points="627,320 942,320 " />
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="628" y="330" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
- >valeur : </text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="802" y="330" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
- >0</text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="628" y="318" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
- >Libellé_valeur_discrète</text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="802" y="318" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
- >li.FERME</text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="628" y="342" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
- >message : </text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="802" y="342" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
- >FERME</text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="628" y="354" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
- >catégorie_AP929 : </text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="802" y="354" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
- >configuration_physiq</text>
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="802" y="366" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
- >ue</text>
-</g>
-
-<g fill="#bfff80" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
->
-<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M627,116 L942,116 L942,176 L627,176 L627,116"/>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
->
-<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M627,119 C627,117.343 628.343,116 630,116 L939,116 C940.657,116 942,117.343 942,119 L942,173 C942,174.657 940.657,176 939,176 L630,176 C628.343,176 627,174.657 627,173 L627,119"/>
-<polyline fill="none" vector-effect="non-scaling-stroke" points="627,128 942,128 " />
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="628" y="138" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
- >valeur : </text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="802" y="138" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
- >1</text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="628" y="126" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
- >Libellé_valeur_discrète</text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="802" y="126" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
- >li.MARCHE</text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="628" y="150" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
- >message : </text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="802" y="150" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
- >MARCHE</text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="628" y="162" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
- >catégorie_AP929 : </text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="802" y="162" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
- >configuration_physiq</text>
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="802" y="174" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
- >ue</text>
-</g>
-
-<g fill="#bfff80" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
->
-<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M627,20 L942,20 L942,80 L627,80 L627,20"/>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
->
-<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M627,23 C627,21.3431 628.343,20 630,20 L939,20 C940.657,20 942,21.3431 942,23 L942,77 C942,78.6569 940.657,80 939,80 L630,80 C628.343,80 627,78.6569 627,77 L627,23"/>
-<polyline fill="none" vector-effect="non-scaling-stroke" points="627,32 942,32 " />
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="628" y="42" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
- >valeur : </text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="802" y="42" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
- >0</text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="628" y="30" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
- >Libellé_valeur_discrète</text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="802" y="30" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
- >li.NORMAL</text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="628" y="54" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
- >message : </text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="802" y="54" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
- >NORMAL</text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="628" y="66" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
- >catégorie_AP929 : </text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="802" y="66" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
- >configuration_physiq</text>
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="802" y="78" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
- >ue</text>
-</g>
-
-<g fill="#bfff80" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
->
-<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M627,500 L942,500 L942,560 L627,560 L627,500"/>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
->
-<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M627,503 C627,501.343 628.343,500 630,500 L939,500 C940.657,500 942,501.343 942,503 L942,557 C942,558.657 940.657,560 939,560 L630,560 C628.343,560 627,558.657 627,557 L627,503"/>
-<polyline fill="none" vector-effect="non-scaling-stroke" points="627,512 942,512 " />
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="628" y="522" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
- >valeur : </text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="802" y="522" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
- >1</text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="628" y="510" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
- >Libellé_valeur_discrète</text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="802" y="510" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
- >li.OUVERT</text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="628" y="534" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
- >message : </text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="802" y="534" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
- >OUVERT</text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="628" y="546" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
- >catégorie_AP929 : </text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="802" y="546" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
- >configuration_physiq</text>
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="802" y="558" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
- >ue</text>
-</g>
-
-<g fill="#bf80ff" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
->
-<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M313,20 L607,20 L607,80 L313,80 L313,20"/>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
->
-<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M313,23 C313,21.3431 314.343,20 316,20 L604,20 C605.657,20 607,21.3431 607,23 L607,77 C607,78.6569 605.657,80 604,80 L316,80 C314.343,80 313,78.6569 313,77 L313,23"/>
-<polyline fill="none" vector-effect="non-scaling-stroke" points="313,32 607,32 " />
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="314" y="30" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
- >Nature_valeur</text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="314" y="42" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
- >nature_de_la_valeur : </text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="467" y="42" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
- >0</text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="467" y="30" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
- >nv.0</text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="314" y="54" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
- >définition : </text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="467" y="54" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
- >Mesure acquise</text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="314" y="66" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
- >catégorie_AP929 : </text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="467" y="66" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
- >configuration_physiq</text>
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="467" y="78" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
- >ue</text>
-</g>
-
-<g fill="#ff8080" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
->
-<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M956,168 L1229,168 L1229,228 L956,228 L956,168"/>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
->
-<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M956,171 C956,169.343 957.343,168 959,168 L1226,168 C1227.66,168 1229,169.343 1229,171 L1229,225 C1229,226.657 1227.66,228 1226,228 L959,228 C957.343,228 956,226.657 956,225 L956,171"/>
-<polyline fill="none" vector-effect="non-scaling-stroke" points="956,180 1229,180 " />
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="957" y="178" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
- >Port</text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="957" y="190" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
- >rôle : </text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="1089" y="190" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
- >entrée</text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="1089" y="178" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
- >po.PTR007VB.1</text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="957" y="202" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
- >fluide : </text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="1089" y="202" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
- >eau</text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="957" y="214" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
- >catégorie_AP929 : </text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="1089" y="214" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
- >configuration_physiq</text>
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="1089" y="226" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
- >ue</text>
-</g>
-
-<g fill="#ff8080" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
->
-<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M988,376 L1261,376 L1261,436 L988,436 L988,376"/>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
->
-<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M988,379 C988,377.343 989.343,376 991,376 L1258,376 C1259.66,376 1261,377.343 1261,379 L1261,433 C1261,434.657 1259.66,436 1258,436 L991,436 C989.343,436 988,434.657 988,433 L988,379"/>
-<polyline fill="none" vector-effect="non-scaling-stroke" points="988,388 1261,388 " />
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="989" y="386" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
- >Port</text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="989" y="398" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
- >rôle : </text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="1121" y="398" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
- >sortie</text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="1121" y="386" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
- >po.PTR007VB.2</text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="989" y="410" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
- >fluide : </text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="1121" y="410" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
- >eau</text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="989" y="422" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
- >catégorie_AP929 : </text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="1121" y="422" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
- >configuration_physiq</text>
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="1121" y="434" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
- >ue</text>
-</g>
-
-<g fill="#ff8080" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
->
-<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M985,277 L1258,277 L1258,337 L985,337 L985,277"/>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
->
-<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M985,280 C985,278.343 986.343,277 988,277 L1255,277 C1256.66,277 1258,278.343 1258,280 L1258,334 C1258,335.657 1256.66,337 1255,337 L988,337 C986.343,337 985,335.657 985,334 L985,280"/>
-<polyline fill="none" vector-effect="non-scaling-stroke" points="985,289 1258,289 " />
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="986" y="287" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
- >Port</text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="986" y="299" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
- >rôle : </text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="1118" y="299" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
- >entrée</text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="1118" y="287" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
- >po.PTR021PO.1</text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="986" y="311" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
- >fluide : </text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="1118" y="311" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
- >eau</text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="986" y="323" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
- >catégorie_AP929 : </text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="1118" y="323" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
- >configuration_physiq</text>
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="1118" y="335" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
- >ue</text>
-</g>
-
-<g fill="#ff8080" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
->
-<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M748,693 L1021,693 L1021,753 L748,753 L748,693"/>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
->
-<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M748,696 C748,694.343 749.343,693 751,693 L1018,693 C1019.66,693 1021,694.343 1021,696 L1021,750 C1021,751.657 1019.66,753 1018,753 L751,753 C749.343,753 748,751.657 748,750 L748,696"/>
-<polyline fill="none" vector-effect="non-scaling-stroke" points="748,705 1021,705 " />
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="749" y="703" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
- >Port</text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="749" y="715" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
- >rôle : </text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+<g fill="#a0a0a4" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,0,0)"
 font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="881" y="715" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
- >sortie</text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="881" y="703" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
- >po.PTR021PO.2</text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
 >
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="749" y="727" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
- >fluide : </text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M90,299 L230,299 L230,326 L90,326 L90,299"/>
 </g>
 
 <g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
 font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
 >
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="881" y="727" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
- >eau</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="140.031" y="315.047" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
+ >définition</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M90,407 L230,407 L230,488 L90,488 L90,407"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="118.391" y="423.047" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
+ >Refroidissement et</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="122" y="450.047" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
+ > conditionnement</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="131.141" y="477.047" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
+ > des piscines</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M90,596 L230,596 L230,650 L90,650 L90,596"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="119.781" y="612.047" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
+ >Contrôle chimique</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="124.5" y="639.047" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
+ > et volumétrique</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M90,488 L230,488 L230,542 L90,542 L90,488"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="122.719" y="504.047" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
+ >Appoint d'eau au</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="140.312" y="531.047" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
+ > réacteur</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M90,326 L230,326 L230,407 L90,407 L90,326"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="117" y="342.047" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
+ >Refroidissement du</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="136.156" y="369.047" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
+ > réacteur à</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="146.297" y="396.047" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
+ > l'arrêt</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M90,542 L230,542 L230,596 L90,596 L90,542"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="126.906" y="558.047" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
+ >Traitement des</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="117.938" y="585.047" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
+ > effluents primaires</text>
 </g>
 
 <g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
 font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="749" y="739" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
- >catégorie_AP929 : </text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="881" y="739" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
- >configuration_physiq</text>
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="881" y="751" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
- >ue</text>
-</g>
-
-<g fill="#ff80bf" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
 >
-<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M1883,140 L2114,140 L2114,164 L1883,164 L1883,140"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="20" y="699" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
+ >Tranche</text>
 </g>
 
 <g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
 font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
->
-<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M1883,143 C1883,141.343 1884.34,140 1886,140 L2111,140 C2112.66,140 2114,141.343 2114,143 L2114,161 C2114,162.657 2112.66,164 2111,164 L1886,164 C1884.34,164 1883,162.657 1883,161 L1883,143"/>
-<polyline fill="none" vector-effect="non-scaling-stroke" points="1883,152 2114,152 " />
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="1884" y="150" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
- >Repère_fonctionnel</text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
 >
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="1884" y="162" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
- >nom : </text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,713 L97,713 L97,740 L20,740 L20,713"/>
 </g>
 
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+<g fill="#a0a0a4" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,0,0)"
 font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="2016" y="162" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
- >PTR007VB</text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="2016" y="150" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
- >rf.PTR007VB</text>
-</g>
-
-<g fill="#ff80bf" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
->
-<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M1883,20 L2114,20 L2114,44 L1883,44 L1883,20"/>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
->
-<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M1883,23 C1883,21.3431 1884.34,20 1886,20 L2111,20 C2112.66,20 2114,21.3431 2114,23 L2114,41 C2114,42.6569 2112.66,44 2111,44 L1886,44 C1884.34,44 1883,42.6569 1883,41 L1883,23"/>
-<polyline fill="none" vector-effect="non-scaling-stroke" points="1883,32 2114,32 " />
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="1884" y="30" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
- >Repère_fonctionnel</text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
 >
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="1884" y="42" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
- >nom : </text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,713 L97,713 L97,740 L20,740 L20,713"/>
 </g>
 
 <g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
 font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="2016" y="42" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
- >PTR021PO</text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="2016" y="30" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
- >rf.PTR021PO</text>
-</g>
-
-<g fill="#ff80bf" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
->
-<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M1883,80 L2114,80 L2114,104 L1883,104 L1883,80"/>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
->
-<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M1883,83 C1883,81.3431 1884.34,80 1886,80 L2111,80 C2112.66,80 2114,81.3431 2114,83 L2114,101 C2114,102.657 2112.66,104 2111,104 L1886,104 C1884.34,104 1883,102.657 1883,101 L1883,83"/>
-<polyline fill="none" vector-effect="non-scaling-stroke" points="1883,92 2114,92 " />
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="1884" y="90" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
- >Repère_fonctionnel</text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
 >
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="1884" y="102" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
- >nom : </text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="54.6094" y="729.047" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
+ >id</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M20,740 L97,740 L97,794 L20,794 L20,740"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="29.3906" y="770.047" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
+ >dom.tr.LEGO</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M97,713 L237,713 L237,740 L97,740 L97,713"/>
 </g>
 
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
+<g fill="#a0a0a4" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,0,0)"
 font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="2016" y="102" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
- >PTR021PO_EO</text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="2016" y="90" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
- >rf.PTR021PO_EO</text>
-</g>
-
-<g fill="#80ff80" fill-opacity="1" stroke="none" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
->
-<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M2134,20 L2407,20 L2407,56 L2134,56 L2134,20"/>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
->
-<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M2134,23 C2134,21.3431 2135.34,20 2137,20 L2404,20 C2405.66,20 2407,21.3431 2407,23 L2407,53 C2407,54.6569 2405.66,56 2404,56 L2137,56 C2135.34,56 2134,54.6569 2134,53 L2134,23"/>
-<polyline fill="none" vector-effect="non-scaling-stroke" points="2134,32 2407,32 " />
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="2135" y="30" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
- >Valeur_discrète</text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
->
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="2267" y="30" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
- >vd.PTR021PO_EO.ua</text>
-</g>
-
-<g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
-font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
 >
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="2135" y="42" font-family="Arial" font-size="10" font-weight="700" font-style="normal" 
- >catégorie_AP929 : </text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M97,713 L237,713 L237,740 L97,740 L97,713"/>
 </g>
 
 <g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
 font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
 >
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="2267" y="42" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
- >configuration_physiq</text>
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="2267" y="54" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
- >ue</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="147.031" y="729.047" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
+ >définition</text>
+<path vector-effect="non-scaling-stroke" fill-rule="evenodd" d="M97,740 L237,740 L237,794 L97,794 L97,740"/>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="129.547" y="756.047" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
+ >Centrale simulée</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="135.375" y="783.047" font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
+ > CONNEXION</text>
 </g>
 
 <g fill="none" stroke="#0e32c8" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
 font-family="Arial" font-size="10" font-weight="400" font-style="normal" 
 >
-<polyline fill="none" vector-effect="non-scaling-stroke" points="1863,146 1883,32 " />
-<polyline fill="none" vector-effect="non-scaling-stroke" points="1258,307 1590,146 " />
-<polyline fill="none" vector-effect="non-scaling-stroke" points="1021,723 1590,146 " />
-<polyline fill="none" vector-effect="non-scaling-stroke" points="293,56 1590,146 " />
-<polyline fill="none" vector-effect="non-scaling-stroke" points="706,648 1590,146 " />
-<polyline fill="none" vector-effect="non-scaling-stroke" points="1863,50 1883,152 " />
-<polyline fill="none" vector-effect="non-scaling-stroke" points="1229,198 1590,50 " />
-<polyline fill="none" vector-effect="non-scaling-stroke" points="1261,406 1590,50 " />
-<polyline fill="none" vector-effect="non-scaling-stroke" points="1261,406 2427,26 " />
-<polyline fill="none" vector-effect="non-scaling-stroke" points="1258,307 2427,26 " />
-<polyline fill="none" vector-effect="non-scaling-stroke" points="942,242 962,68 " />
-<polyline fill="none" vector-effect="non-scaling-stroke" points="942,146 962,68 " />
-<polyline fill="none" vector-effect="non-scaling-stroke" points="1277,68 2134,38 " />
-<polyline fill="none" vector-effect="non-scaling-stroke" points="1277,68 1883,92 " />
-<polyline fill="none" vector-effect="non-scaling-stroke" points="607,50 2134,38 " />
+<polyline fill="none" vector-effect="non-scaling-stroke" points="352,182 107,911 " />
+<polyline fill="none" vector-effect="non-scaling-stroke" points="352,182 125,407 " />
+<polyline fill="none" vector-effect="non-scaling-stroke" points="352,182 128,740 " />
+<polyline fill="none" vector-effect="non-scaling-stroke" points="352,128 107,884 " />
+<polyline fill="none" vector-effect="non-scaling-stroke" points="352,128 125,407 " />
+<polyline fill="none" vector-effect="non-scaling-stroke" points="352,128 128,740 " />
 </g>
 </g>
 </svg>

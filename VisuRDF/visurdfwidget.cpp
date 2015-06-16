@@ -29,6 +29,7 @@ void visuRDFWidget::paintEvent(QPaintEvent *qpe){
             firstDessin = false;
             cout<< "sortie le painter"<<endl;
         }
+
         else{
             cout<< "dans le painter2"<<endl;
             dessinateur->dessinMap(painter);
@@ -71,6 +72,7 @@ void visuRDFWidget::open(){
     dessinModifie = true;
 
     this->update();
+
 
     //}
 }

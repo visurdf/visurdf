@@ -29,9 +29,10 @@ public:
     ~VisuRDFDessinateur();
     float calculLargeurColonne(VisuRDFType* type, string nomPropriete);
     float calculLargeurTableau(VisuRDFType* type);
-    int calculHauteurTableau(VisuRDFType* type);
+    float calculHauteurTableau(VisuRDFType* type);
     float calculHauteurDessin();
     float calculLargeurDessin();
+    void remplissageTableau(VisuRDFType* type, int x, int y, QPainter &painter);
     void dessinTableau(VisuRDFType* type, int x, int y, QPainter &painter);
     void dessinModeTableau(QPainter& painter);
     float calculLargeurBoite(VisuRDFObjet* objet, float &largeurNom, float &largeurValeur);
