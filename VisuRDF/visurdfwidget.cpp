@@ -20,8 +20,8 @@ visuRDFWidget::~visuRDFWidget()
 void visuRDFWidget::paintEvent(QPaintEvent *qpe){
     QWidget::paintEvent(qpe);
     QPainter painter(this);
-
-    if (rdfChoisi && dessinModifie){
+    //this->setMinimumSize(10000, 10000);
+    if (rdfChoisi){
         if(firstDessin){
             cout<< "dans le painter"<<endl;
             dessinateur->dessin(painter);
@@ -60,8 +60,8 @@ void visuRDFWidget::open(){
     visuRDFExtracteur.parserTripletRdf(fileAvecProtocole);
     //visuRDFExtracteur.parserTripletRdf("file:///home/rodrigue/visurdf/VisuRDF/FacetteA test v2.rdf");
 
-    //visuRDFExtracteur.afficherMap();
-   // visuRDFExtracteur.afficherRelations();
+   // visuRDFExtracteur.afficherMap();
+    //visuRDFExtracteur.afficherRelations();
 
     analyseur = new VisuRDFAnalyseur(&visuRDFExtracteur);
     dessinateur = new VisuRDFDessinateur(analyseur);
