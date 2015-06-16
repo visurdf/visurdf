@@ -128,10 +128,24 @@ float VisuRDFDessinateur::calculLargeurTableau(VisuRDFType *type) {
 float VisuRDFDessinateur::calculHauteurTableau(VisuRDFType* type) {
 
 
-    float hauteur = 0;
+   /* float hauteur = 0;
     string nomType = type->getNom();
     if(mapBoiteType[nomType]!=NULL){
         hauteur = mapBoiteType[nomType]->getHauteur();
+    }
+
+    return hauteur;*/
+
+    // On initialise hauteur
+    float hauteur = 2*hauteurCase;
+    set<VisuRDFObjet*> listeObjets = analyseur->getObjetsParType(type->getNom(), false);
+
+    for(set<VisuRDFObjet*>::iterator it = listeObjets.begin(); it!= listeObjets.end(); it++) {
+
+        VisuRDFObjet* obj = *it;
+        string nomObjet = obj->getNom();
+        hauteur = hauteur + mapBoiteObjet[nomObjet]->getHauteur();
+
     }
 
     return hauteur;
@@ -139,39 +153,49 @@ float VisuRDFDessinateur::calculHauteurTableau(VisuRDFType* type) {
 
 }
 
-
+/**
+ * @brief VisuRDFDessinateur::remplissageTableau
+ * Permet de remplir les mapBoiteObjet et mapBoiteType avant le premier dessin
+ * @param type
+ * @param x
+ * @param y
+ */
 void VisuRDFDessinateur::remplissageTableau(VisuRDFType *type, int x, int y){
 
-    cout << "debut remplissage : " << type->getNom() << endl;
+
+    // On calcule la largeur du tableau et on initialise la hauteur du tableau avec 1 ligne pour chaque objet
     float largeurTableau = calculLargeurTableau(type);
     float hauteurTableau = (type->getNbObjet()+2)*hauteurCase;
     string nomType = type->getNom();
+
     //On remplit la map "type / boite"
     VisuRDFBoite* boiteTableau = new VisuRDFBoite(x, y, largeurTableau, hauteurTableau);
     mapBoiteType[nomType]=boiteTableau;
 
+    // On écrira le nom du Type en y, on décale donc le y pour la première ligne
     y = y + hauteurCase;
+    // On parcourt colonne par colonne pour mettre à jour les boites objets
     list<string> proprietes = type->getProprietes();
-    //  int xPropriete = x;
     for(list<string>::iterator it = proprietes.begin(); it!= proprietes.end(); it++) {
-    cout << "dans la boucle proprietes" << endl;
-        // On dessine en premier le nom de la propriété (première ligne)
+
+
         int yObjet = y;
         string nomPropriete = *it;
-        //     float largeurBoite = this->calculLargeurColonne(type, nomPropriete);
 
-        // On parcourt la liste des objets du type, on remplit la map des objets
+        // On parcourt la liste des objets du type, et on va récupérer la valeur correspondant à nomPropriete
 
         set<VisuRDFObjet*> listeObjets = analyseur->getObjetsParType(nomType, false);
 
         for(set<VisuRDFObjet*>::iterator it = listeObjets.begin(); it!= listeObjets.end(); it++) {
-        cout << "dans la boucle objets" << endl;
+
             // On fait varier le placement vertical
             yObjet = yObjet + hauteurCase;
+
             VisuRDFObjet* objet = *it;
             string valeur = "";
-            // On recupère la valeur de la propriété "nomPropriété" pour savoir combien de lignes elle prendra
             ObjetRDF obj = objet->getProprietes();
+
+            // On calcule la taille de la valeur pour savoir combien de lignes elle prendra
             if(obj.size() != 0){
                 list<string> valeurs = obj[nomPropriete];
                 list<string>::iterator it2 = valeurs.begin();
@@ -181,27 +205,37 @@ void VisuRDFDessinateur::remplissageTableau(VisuRDFType *type, int x, int y){
             if(valeur.size()>tailleMax){
                 nbLignes = valeur.size()/tailleMax +1 ;
             }
-            // On remplit la map(objet, boite)
 
+            // On met à jour la mapBoiteObjet si elle existe déjà
             if(mapBoiteObjet[objet->getNom()]!=NULL){
+
                 mapBoiteObjet[objet->getNom()]->setY(yObjet);
-                mapBoiteObjet[objet->getNom()]->setHauteur(hauteurCase*nbLignes);
+                // On vérifie si la boite n'était pas déjà plus grande que cette propriété
+                // Si elle est la nouvelle boite la plus grande, on met à jour la hauteur de la boite
+                if(mapBoiteObjet[objet->getNom()]->getHauteur()<hauteurCase*nbLignes){
+                    mapBoiteObjet[objet->getNom()]->setHauteur(hauteurCase*nbLignes);
+                    yObjet = yObjet + (nbLignes-1)*hauteurCase;
+                }
+                // Sinon, on met yObjet sur la bonne ligne
+                else{
+                    float hauteur = mapBoiteObjet[objet->getNom()]->getHauteur();
+                    yObjet = yObjet + hauteur - hauteurCase;
+                }
+
             }
+            // Si mapBoiteObjet n'existe pas, on remplit la map
             else{
                 VisuRDFBoite* boite = new VisuRDFBoite(x, yObjet, calculLargeurTableau(type), hauteurCase*nbLignes);
                 mapBoiteObjet[objet->getNom()]=boite;
+                yObjet = yObjet + (nbLignes-1)*hauteurCase;
             }
 
-            cout << "ici" << endl;
-            // On met à jour la map(type,boite)
-            float hauteurType = mapBoiteType[nomType]->getHauteur();
-            cout << "hauteur : " << hauteurType << endl;
-            mapBoiteType[nomType]->setHauteur(hauteurType+(nbLignes-1)*hauteurCase);
-            yObjet = yObjet + (nbLignes-1)*hauteurCase;
-            cout << "fin objet" << endl;
         }
-        //xPropriete = xPropriete + largeurBoite;
+
     }
+
+    // On met à jour la hauteur du tableau dans mapBoiteType
+    mapBoiteType[nomType]->setHauteur(calculHauteurTableau(type));
 
 }
 
