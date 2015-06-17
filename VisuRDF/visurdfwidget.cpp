@@ -72,12 +72,15 @@ void visuRDFWidget::open(){
 void visuRDFWidget::print(){
 
 
+    /*-------------Choix de l'emplacement de l'enregistrement -------------------*/
+    QString fileName =  QFileDialog::getSaveFileName(this,"Choose File","","SVG files (*.svg)");
+    //const char * file = fileName.toStdString().c_str();
 
     /*------------- Déclaration des paramètres du fichier SVG -------------------*/
     QSvgGenerator generator;
     int hauteur = dessinateur->calculHauteurDessin();
 
-    generator.setFileName("testSVG.svg");
+    generator.setFileName(fileName);
     generator.setSize(QSize(2000, hauteur));
     generator.setViewBox(QRect(0, 0, 2000, hauteur));
     generator.setTitle("SVG Generator Example Drawing");
@@ -87,9 +90,6 @@ void visuRDFWidget::print(){
     painter.begin(&generator);
     dessinateur->dessinMap(painter);
     painter.end();
-
-
-
 
 }
 
@@ -169,6 +169,11 @@ void visuRDFWidget::changeMode(string mode){
 
     this->update();
 
+}
+
+void visuRDFWidget::changePolice(QString police){
+    VisuRDFParametreur *parametreur = dessinateur->getParametreur();
+    parametreur->setPolice(police);
 }
 
 void visuRDFWidget::changePourcentagePolice(int p){

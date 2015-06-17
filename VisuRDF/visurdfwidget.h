@@ -24,6 +24,7 @@ public:
     virtual void changePourcentagePoliceH(int p);
     virtual void changeColoration(int c);
     virtual void changeMode(string mode);
+    virtual void changePolice(QString police);
 
 private:
     VisuRDFDessinateur * dessinateur;

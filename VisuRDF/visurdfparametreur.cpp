@@ -14,8 +14,8 @@ using namespace std;
  */
 VisuRDFParametreur::VisuRDFParametreur() : QWidget(){
     //Parametre par défaut du dessin si les informations ne sont pas contenu dans le fichier xml
-    pourcentagePolice = 5;
-    pourcentagePoliceHauteur = 15;
+    pourcentagePolice = 0.7;
+    pourcentagePoliceHauteur = 1.2;
     tailleMax = 50;
 
     couleur = Qt::black;
@@ -157,6 +157,10 @@ void VisuRDFParametreur::setMode(string _mode){
         cerr<<"le mode parametrer n'est pas correcte"<<endl;
     else
         mode = _mode;
+}
+
+void VisuRDFParametreur::setPolice(QString _police){
+    police.setFamily(_police);
 }
 
 

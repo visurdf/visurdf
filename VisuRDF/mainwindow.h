@@ -21,6 +21,8 @@ public:
 private:
     Ui::MainWindow *ui;
     visuRDFWidget * RDFWidget;
+    QAction * changementMode;
+    QAction * changementPolice;
 
 public slots:
     void openFile();
@@ -30,6 +32,7 @@ public slots:
     void changerMode(QAction *action);
     void parametrerPourcentagePolice();
     void parametrerPourcentageHPolice();
+    void changerPolice(QAction *action);
 
 };
 

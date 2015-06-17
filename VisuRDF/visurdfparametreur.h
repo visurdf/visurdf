@@ -46,6 +46,7 @@ public:
     void setPourcentagePolice(int p);
     void setPourcentageHPolice(int p);
     void setColoration(int c);
+    void setPolice(QString _police);
 
 private:
     QColor couleur;
