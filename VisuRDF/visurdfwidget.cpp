@@ -177,8 +177,11 @@ void visuRDFWidget::changeMode(string mode){
 }
 
 void visuRDFWidget::changePolice(QString police){
-    VisuRDFParametreur *parametreur = dessinateur->getParametreur();
-    parametreur->setPolice(police);
+    //VisuRDFParametreur *parametreur = dessinateur->getParametreur();
+    //parametreur->setPolice(police);
+
+    QFont f(police);
+    dessinateur->setFont(police);
 }
 
 void visuRDFWidget::changePourcentagePolice(int p){
