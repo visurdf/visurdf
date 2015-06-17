@@ -77,8 +77,12 @@ MainWindow::MainWindow(QWidget *parent) :
     //Déclaration du widget
 
     RDFWidget = new visuRDFWidget();
-    RDFWidget->setMinimumSize(700,700);
-    setCentralWidget(RDFWidget);
+    RDFWidget->setMinimumSize(10000,10000);
+
+    QScrollArea* mQScrollArea = new QScrollArea ();
+    mQScrollArea ->setWidget(RDFWidget);
+//mQScrollArea->setMinimumSize(700,700);
+    setCentralWidget(mQScrollArea);
 
     //Mise en place de la barre de menu
     fileMenu->addAction(openAction);

@@ -20,8 +20,8 @@ visuRDFWidget::~visuRDFWidget()
 void visuRDFWidget::paintEvent(QPaintEvent *qpe){
     QWidget::paintEvent(qpe);
     QPainter painter(this);
-
-    if (rdfChoisi && dessinModifie){
+    //this->setMinimumSize(10000, 10000);
+    if (rdfChoisi){
         if(firstDessin){
             cout<< "dans le painter"<<endl;
             dessinateur->dessin(painter);
@@ -29,6 +29,7 @@ void visuRDFWidget::paintEvent(QPaintEvent *qpe){
             firstDessin = false;
             cout<< "sortie le painter"<<endl;
         }
+
         else{
             cout<< "dans le painter2"<<endl;
             dessinateur->dessinMap(painter);
@@ -53,11 +54,17 @@ void visuRDFWidget::open(){
     VisuRDFExtracteur visuRDFExtracteur;
     const char * file = fileName.toStdString().c_str();
 
-    cout<< "chemin : "<< file <<endl;
-    //visuRDFExtracteur.parserTripletRdf("const_cast<char*>(file)");
-    visuRDFExtracteur.parserTripletRdf("2-contextes.rdf");
-    visuRDFExtracteur.afficherMap();
-    visuRDFExtracteur.afficherRelations();
+
+    char fileAvecProtocole [strlen(file +8)];
+    strcpy(fileAvecProtocole, "file://");
+    file = strcat(fileAvecProtocole, file );
+    cout<< "chemin : "<< fileAvecProtocole <<endl;
+    visuRDFExtracteur.parserTripletRdf(fileAvecProtocole);
+    //visuRDFExtracteur.parserTripletRdf("file:///home/rodrigue/visurdf/VisuRDF/FacetteA test v2.rdf");
+
+   // visuRDFExtracteur.afficherMap();
+    //visuRDFExtracteur.afficherRelations();
+
 
     analyseur = new VisuRDFAnalyseur(&visuRDFExtracteur);
     dessinateur = new VisuRDFDessinateur(analyseur);
@@ -65,6 +72,7 @@ void visuRDFWidget::open(){
     dessinModifie = true;
 
     this->update();
+
 
     //}
 }
@@ -78,11 +86,18 @@ void visuRDFWidget::print(){
 
     /*------------- Déclaration des paramètres du fichier SVG -------------------*/
     QSvgGenerator generator;
-    int hauteur = dessinateur->calculHauteurDessin();
 
+<<<<<<< HEAD
     generator.setFileName(fileName);
     generator.setSize(QSize(2000, hauteur));
     generator.setViewBox(QRect(0, 0, 2000, hauteur));
+=======
+    float hauteur = dessinateur->calculHauteurDessin();
+    float largeur = dessinateur->calculLargeurDessin();
+    generator.setFileName("testSVG.svg");
+    generator.setSize(QSize(largeur, hauteur));
+    generator.setViewBox(QRect(0, 0, largeur, hauteur));
+>>>>>>> e6e22501d4bed7ae22a15717329091c2c409c075
     generator.setTitle("SVG Generator Example Drawing");
     generator.setDescription("Dessin svg pour une démonstration");
 

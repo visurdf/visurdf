@@ -35,6 +35,10 @@ float VisuRDFBoite::getHauteur(){
     return hauteur;
 }
 
+void VisuRDFBoite::setHauteur(float new_hauteur){
+    hauteur = new_hauteur;
+}
+
 QBrush* VisuRDFBoite::getBrush(){
     return brush;
 }

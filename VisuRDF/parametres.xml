@@ -11,8 +11,8 @@ Aide pour le paramètrage du fichier :
 	<coloration value = "0"/>
 	<police value="Arial"/>
 	<taillePolice value="15"/>
-    <pourcentagePolice value="5"/>
-    <pourcentagePoliceHauteur value="15"/>
+    <pourcentagePolice value="0.7"/>
+    <pourcentagePoliceHauteur value="1.2"/>
     <tailleMax value="30"/>
 </parametres>
 	

@@ -227,7 +227,8 @@ void VisuRDFExtracteur::gestionnaireDeTriplets(void* donnee_utilisateur, raptor_
         } else {
         // c'est soit une propriete simple soit une ressource
             QName* objet = getObjet(triple);
-            if(objet->getUriDeBase().compare(uriDeBase) == 0){// cest une association
+            cout << "uriDeBase="<<objet->getUriDeBase()<<" ? = " <<uriDeBase<<endl;
+            if(objet->getUriDeBase().find(uriDeBase) == 0){// cest une association
                 list<string> listeDeNoms = objetRDF["name"];
                 list < string > listeDeRelations = relationRDF[listeDeNoms.front()];
                 listeDeRelations.push_back(objet->getNom());
@@ -262,7 +263,7 @@ void VisuRDFExtracteur::gestionnaireDeTriplets(void* donnee_utilisateur, raptor_
  * @param fichierRdf
  */
 
-void VisuRDFExtracteur::parserTripletRdf(char *fichierRdf) {
+void VisuRDFExtracteur::parserTripletRdf(const char *fichierRdf) {
 
     raptor_world* world = NULL;
     raptor_parser* parserRdf = NULL;
@@ -275,7 +276,7 @@ void VisuRDFExtracteur::parserTripletRdf(char *fichierRdf) {
 
     raptor_parser_set_statement_handler(parserRdf, NULL, gestionnaireDeTriplets);
 
-    stringUri = raptor_uri_filename_to_uri_string(fichierRdf);
+    stringUri = (unsigned char*)fichierRdf;//raptor_uri_filename_to_uri_string(fichierRdf);    
     uri = raptor_new_uri(world, stringUri);
     uriDeBase1 = raptor_uri_copy(uri);
 
@@ -295,7 +296,7 @@ void VisuRDFExtracteur::parserTripletRdf(char *fichierRdf) {
 
     raptor_free_uri(uriDeBase1);
     raptor_free_uri(uri);
-    raptor_free_memory(stringUri);
+    //raptor_free_memory(stringUri);
 
     raptor_free_world(world);
 

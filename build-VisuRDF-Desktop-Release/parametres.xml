@@ -1,18 +1,36 @@
 <!--
 Aide pour le paramètrage du fichier :
-	modes: tableau ou boite
-	coloration : 0 -> pas de coloration, autre valeur : coloration
-	polices acceptées: ...
+
+	mode : 						tableau ou boite
 	
+	coloration : 				0 -> pas de coloration, 
+								autre valeur : coloration
+					
+	polices acceptées : 		Arial,
+								Calibri,
+								Cambria,
+								Comic Sans Ms,
+								Courier,
+								Helvetica,
+								Times New Roman,
+								Verdana
+						
+	pourcentagePolice : 		définit la largeur des objets
+								valeur conseillée : entre 0.5 et 1, en fonction de la taille de police
+								
+	pourcentagePoiceHauteur : 	définit l'interligne
+								valeur conseillée : entre 1 et 2
+								
+	tailleMax : 				définit la largeur maximale d'une ligne
 -->
 
 <parametres>
 	<mode value="boite"/>
-	<coloration value = "0"/>
+	<coloration value = "1"/>
 	<police value="Arial"/>
-	<taillePolice value="8"/>
-    <pourcentagePolice value="5"/>
-    <pourcentagePoliceHauteur value="15"/>
+	<taillePolice value="12"/>
+    <pourcentagePolice value="0.6"/>
+    <pourcentagePoliceHauteur value="1.5"/>
     <tailleMax value="30"/>
 </parametres>
 	
