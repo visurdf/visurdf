@@ -24,7 +24,6 @@ VisuRDFDessinateur::VisuRDFDessinateur(VisuRDFAnalyseur * analyseur) {
         pen2.setColor(color2);
     }
 
-
     //Pen 1 : Couleur du tableau et de la police des propriétés
     pen1.setColor(Qt::black);
 
@@ -32,20 +31,32 @@ VisuRDFDessinateur::VisuRDFDessinateur(VisuRDFAnalyseur * analyseur) {
     f = parametreur->getParamPolice();
     int fontSize = 0;
 
+    // Déclaration taille police
     if(parametreur->getFontSize()!=0){
-
         fontSize = parametreur->getFontSize();
     }
     else fontSize = 8;  // Paramètre par défaut
     f.setPixelSize(fontSize);
 
-    //calcul des parametres d'affichage des boites en fonction de la taille de la police
+    // Déclaration pourcentages police et taille Max
+    if(parametreur->getPourcentagePolice()!=0){
+        pourcentagePolice = (parametreur->getPourcentagePolice())*fontSize;
+    }
+    else pourcentagePolice = 0.7*fontSize;
+
+    if(parametreur->getPourcentagePoliceHauteur()!=0){
+        pourcentagePoliceHauteur = (parametreur->getPourcentagePoliceHauteur())*fontSize;
+    }
+    else pourcentagePoliceHauteur = 1.2*fontSize;
+
+    if(parametreur->getTailleMax()!=0){
+        tailleMax = parametreur->getTailleMax();
+    }
+    else tailleMax = 50;
+
+    // Calcul des parametres d'affichage des boites en fonction de la taille de la police
     hauteurCase = 15/5.5*fontSize;
     espacementVertical = 20/5.5*fontSize;
-    pourcentagePolice = (parametreur->getPourcentagePolice())*fontSize;
-    pourcentagePoliceHauteur = (parametreur->getPourcentagePoliceHauteur())*fontSize;
-    tailleMax = parametreur->getTailleMax();
-
 
 }
 
@@ -234,7 +245,7 @@ void VisuRDFDessinateur::remplissageTableau(VisuRDFType *type, int x, int y){
                 mapBoiteObjet[objet->getNom()]->setLargeur(calculLargeurTableau(type));
                 // On vérifie si la boite n'était pas déjà plus grande que cette propriété
                 // Si elle est la nouvelle boite la plus grande, on met à jour la hauteur de la boite
-                if(mapBoiteObjet[objet->getNom()]->getHauteur()<hauteurCase*nbLignes){
+                if(mapBoiteObjet[objet->getNom()]->getHauteur()<hauteurCase*nbLignes||nomPropriete=="name"){
                     mapBoiteObjet[objet->getNom()]->setHauteur(hauteurCase*nbLignes);
                     yObjet = yObjet + (nbLignes-1)*hauteurCase;
                 }

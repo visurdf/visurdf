@@ -13,6 +13,6 @@ Aide pour le paramètrage du fichier :
 	<taillePolice value="10"/>
     <pourcentagePolice value="0.7"/>
     <pourcentagePoliceHauteur value="1.2"/>
-    <tailleMax value="20"/>
+    <tailleMax value="50"/>
 </parametres>
 	
