@@ -22,7 +22,8 @@ private:
     Ui::MainWindow *ui;
     visuRDFWidget * RDFWidget;
     QAction * changementMode;
-    QAction * changementPolice;
+    QPushButton * colorationButton;
+
 
 public slots:
     void openFile();
@@ -30,9 +31,10 @@ public slots:
     void quitApp();
     void changerColoration();
     void changerMode(QAction *action);
-    void parametrerPourcentagePolice();
-    void parametrerPourcentageHPolice();
-    void changerPolice(QAction *action);
+    void parametrerPourcentagePolice(int rang);
+    void parametrerPourcentageHPolice(int rang);
+    void parametrerTaillePolice(int rang);
+    void changerPolice(QFont f);
 
 };
 

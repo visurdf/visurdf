@@ -23,19 +23,15 @@ void visuRDFWidget::paintEvent(QPaintEvent *qpe){
     //this->setMinimumSize(10000, 10000);
     if (rdfChoisi){
         if(firstDessin){
-            cout<< "dans le painter"<<endl;
             dessinateur->dessin(painter);
             dessinModifie = false;
             firstDessin = false;
-            cout<< "sortie le painter"<<endl;
         }
 
         else{
-            cout<< "dans le painter2"<<endl;
             dessinateur->dessinMap(painter);
             dessinModifie = false;
             firstDessin = false;
-            cout<< "sortie le painter"<<endl;
         }
     }
 
@@ -48,20 +44,17 @@ void visuRDFWidget::paintEvent(QPaintEvent *qpe){
 void visuRDFWidget::open(){
     //Boite de dialogue pour selection fichier
 
-
     QString fileName =  QFileDialog::getOpenFileName(this,"Open File","","RDF files (*.rdf)");
 
     VisuRDFExtracteur visuRDFExtracteur;
     visuRDFExtracteur.clearModule();
     const char * file = fileName.toStdString().c_str();
 
-
     char fileAvecProtocole [strlen(file +8)];
     strcpy(fileAvecProtocole, "file://");
     file = strcat(fileAvecProtocole, file );
     cout<< "chemin : "<< fileAvecProtocole <<endl;
     visuRDFExtracteur.parserTripletRdf(fileAvecProtocole);
-
 
     analyseur = new VisuRDFAnalyseur(&visuRDFExtracteur);
     dessinateur = new VisuRDFDessinateur(analyseur);
@@ -71,8 +64,6 @@ void visuRDFWidget::open(){
 
     this->update();
 
-
-    //}
 }
 
 void visuRDFWidget::print(){
@@ -110,7 +101,6 @@ void visuRDFWidget::mousePressEvent(QMouseEvent *qme){
 
     //On met en place le mouse tracking, utilisable dans les autres fonction
     QWidget::setMouseTracking(true);
-    cout<<"clic souris" << endl;
     posSouris = qme->pos();
     xOrigine = posSouris.x();
     yOrigine = posSouris.y();
@@ -132,7 +122,6 @@ void visuRDFWidget::mouseMoveEvent(QMouseEvent *qme){
         posSouris = qme->pos();// On réupère la position de la souris dans un QPoint
         xOrigine = posSouris.x();
         yOrigine = posSouris.y();
-        cout << "x : " << posSouris.x() << ",y : " << posSouris.y() <<endl;
 
         if(!firstDessin)
             dessinateur->actualiserMapBoite(xOrigine,yOrigine, posSouris.x(),posSouris.y());
@@ -151,7 +140,6 @@ void visuRDFWidget::mouseReleaseEvent(QMouseEvent *qme){
     QWidget::mouseReleaseEvent(qme);
     posSouris = qme->pos();
 
-    cout << "x : " << posSouris.x() << ",y : " << posSouris.y() <<endl;
 
     if(!firstDessin)
         dessinateur->actualiserMapBoite(xOrigine,yOrigine, posSouris.x(),posSouris.y());
@@ -168,6 +156,9 @@ void visuRDFWidget::changeColoration(int c){
 }
 
 void visuRDFWidget::changeMode(string mode){
+    if (!rdfChoisi)
+        return;
+
     VisuRDFParametreur *parametreur = dessinateur->getParametreur();
     parametreur->setMode(mode);
     firstDessin = true;
@@ -178,18 +169,36 @@ void visuRDFWidget::changeMode(string mode){
 
 }
 
-void visuRDFWidget::changePolice(QString police){
-    //VisuRDFParametreur *parametreur = dessinateur->getParametreur();
-    //parametreur->setPolice(police);
+void visuRDFWidget::changePolice(QFont f){
+    if (!rdfChoisi)
+        return;
 
-    QFont f(police);
-    dessinateur->setFont(police);
+    dessinateur->setFont(f);
+    this->update();
 }
 
 void visuRDFWidget::changePourcentagePolice(int p){
+    if (!rdfChoisi)
+        return;
+
+    dessinateur->setPourcentagePolice((float)(p * 0.1));
+    this->update();
 
 }
 
 void visuRDFWidget::changePourcentagePoliceH(int p){
+    if (!rdfChoisi)
+        return;
 
+    dessinateur->setPourcentagePoliceHauteur((float)(p * 0.1));
+    this->update();
+
+}
+
+void visuRDFWidget::changeTaillePolice(int p){
+    if (!rdfChoisi)
+        return;
+
+    dessinateur->setFontSize(p);
+    this->update();
 }

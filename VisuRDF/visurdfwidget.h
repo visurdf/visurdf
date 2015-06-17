@@ -25,7 +25,8 @@ public:
     virtual void changePourcentagePoliceH(int p);
     virtual void changeColoration(int c);
     virtual void changeMode(string mode);
-    virtual void changePolice(QString police);
+    virtual void changePolice(QFont f);
+    virtual void changeTaillePolice(int p);
 
 private:
     VisuRDFDessinateur * dessinateur;

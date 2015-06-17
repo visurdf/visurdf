@@ -84,15 +84,32 @@ void VisuRDFDessinateur::setFont(QFont font){
 
 
 void VisuRDFDessinateur::setFontSize(int size){
+
     f.setPixelSize(size);
+
+    cout<<"Font size = "<< size<<endl;
+    parametreur->setFont(f);
 }
 
 void VisuRDFDessinateur::setPourcentagePolice(float pourcentage){
-    pourcentagePolice = pourcentage;
+
+    f.setPixelSize( parametreur->getFontSize());
+    if (f.pixelSize()!=0)
+        pourcentagePolice = pourcentage*f.pixelSize();
+    else
+        pourcentagePolice = pourcentage*f.pointSize();
+
 }
 
 void VisuRDFDessinateur::setPourcentagePoliceHauteur(float pourcentage){
-    pourcentagePoliceHauteur = pourcentage;
+
+    f.setPixelSize( parametreur->getFontSize());
+    if (f.pixelSize()!=0)
+        pourcentagePoliceHauteur = pourcentage*f.pixelSize();
+    else
+        pourcentagePoliceHauteur = pourcentage*f.pointSize();
+
+
 }
 
 void VisuRDFDessinateur::setTailleMax(float taille){
@@ -442,6 +459,7 @@ void VisuRDFDessinateur::dessinModeTableau(QPainter &painter){
         //x = x + 50;
         y = y + this->calculHauteurTableau(type) + espacementVertical ;
     }
+
 
     isFirst = false;
 }
