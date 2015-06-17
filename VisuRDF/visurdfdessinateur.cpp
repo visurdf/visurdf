@@ -111,7 +111,7 @@ void VisuRDFDessinateur::setFontSize(int size){
         string nomObjet = (*it).first;
         VisuRDFBoite* boite = mapBoiteObjet[nomObjet];
         boite->setX(boite->getX()*pourcentagePolice/ancienPourcentage);
-        boite->setY(boite->getY()*pourcentagePolice/ancienPourcentage);
+        boite->setY(boite->getY()*pourcentagePoliceHauteur/ancienPourcentageH);
         boite->setHauteur(boite->getHauteur()*pourcentagePolice/ancienPourcentage);
     }
 
@@ -119,7 +119,7 @@ void VisuRDFDessinateur::setFontSize(int size){
         string nomType = (*it2).first;
         VisuRDFType* type = analyseur->getTypeParNom(nomType,true);
         VisuRDFBoite* boite = mapBoiteType[nomType];
-        boite->setX(boite->getX()*pourcentagePoliceHauteur/ancienPourcentageH);
+        boite->setX(boite->getX()*pourcentagePolice/ancienPourcentage);
         boite->setY(boite->getY()*pourcentagePoliceHauteur/ancienPourcentageH);
         boite->setLargeur(calculLargeurTableau(type));
         boite->setHauteur(calculHauteurTableau(type));
@@ -154,8 +154,6 @@ void VisuRDFDessinateur::setPourcentagePolice(float pourcentage){
     }
 
 
-
-
 }
 
 /**
@@ -172,15 +170,15 @@ void VisuRDFDessinateur::setPourcentagePoliceHauteur(float pourcentage){
     for (boiteObjet::iterator it = mapBoiteObjet.begin(); it!=mapBoiteObjet.end(); it++){
         string nomObjet = (*it).first;
         VisuRDFBoite* boite = mapBoiteObjet[nomObjet];
-        boite->setY(boite->getY()*pourcentagePolice/ancienPourcentage);
-        boite->setHauteur(boite->getHauteur()*pourcentagePolice/ancienPourcentage);
+        boite->setY(boite->getY()*pourcentagePoliceHauteur/ancienPourcentage);
+        boite->setHauteur(boite->getHauteur()*pourcentagePoliceHauteur/ancienPourcentage);
     }
 
     for(boiteObjet::iterator it2 = mapBoiteType.begin(); it2!= mapBoiteType.end(); it2++){
         string nomType = (*it2).first;
         VisuRDFType* type = analyseur->getTypeParNom(nomType,true);
         VisuRDFBoite* boite = mapBoiteType[nomType];
-        boite->setY(boite->getY()*pourcentagePolice/ancienPourcentage);
+        boite->setY(boite->getY()*pourcentagePoliceHauteur/ancienPourcentage);
         boite->setHauteur(calculHauteurTableau(type));
     }
 
@@ -1009,13 +1007,14 @@ int VisuRDFDessinateur::actualiserMapBoite(int xOrigine, int yOrigine, int x, in
         for(boiteObjet::iterator it = mapBoiteObjet.begin(); it!=mapBoiteObjet.end(); it++){
             string nomObjet = (*it).first;
             VisuRDFBoite* boite = mapBoiteObjet[nomObjet];
-            int xBoite = boite->getX();
-            int yBoite = boite->getY();
-            int hauteur = boite->getHauteur();
-            int largeur = boite->getLargeur();
+            float xBoite = boite->getX();
+            float yBoite = boite->getY();
+            float hauteur = boite->getHauteur();
+            float largeur = boite->getLargeur();
 
             // Si la boite occupe les coordonnées xOrigine, yOrigine, on modifie ses coordonnées
             if((xOrigine>=xBoite)&(xOrigine<=xBoite+largeur)&(yOrigine>=yBoite)&(yOrigine<=yBoite+hauteur)){
+
 
                 boite->setX(x-largeur/2);
                 boite->setY(y-hauteur/2);
