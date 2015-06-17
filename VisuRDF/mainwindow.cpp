@@ -10,6 +10,8 @@
 #include <QTextCodec>
 #include <QScrollArea>
 #include <QPushButton>
+#include <QComboBox>
+#include <QFontComboBox>
 #include "visurdfwidget.h"
 
 using namespace std;
@@ -50,24 +52,50 @@ MainWindow::MainWindow(QWidget *parent) :
     changementMode = new QAction("mode",this);
     changementMode->setMenu(menuMode);
 
-    //---- Bouton choix police -----//
-    QMenu* menuPolice = new QMenu();
-    QFontDatabase fontDataBase;
-    QActionGroup *policeGroupe = new QActionGroup(this);
-    list<QString> fontFamilies = fontDataBase.families().toStdList();
-    cout<<fontFamilies.size()<<endl;
+    //----- Boutons choix couleur-------//
+    colorationButton = new QPushButton("Avec Couleur",this);
 
-    for (list<QString>::iterator fontIter = fontFamilies.begin();fontIter != fontFamilies.end();fontIter++){
 
-        QString police = *fontIter;
-        QAction * action = new QAction(police,this);
+    //-------Choix parametre police-------//
+    QComboBox * boxLargeur = new QComboBox();
+    QComboBox * boxHauteur = new QComboBox();
+    QComboBox * boxTaillePolice = new QComboBox();
+    QFontComboBox * boxFont = new QFontComboBox();
 
-        policeGroupe->addAction(action);
-        menuPolice->addAction(action);
+    float i = 0;
+    while (i < 2){
+        ostringstream oss;
 
+        i += 0.1;
+        oss << i;
+
+        QString value = oss.str().c_str();
+        QString textBox("coef largeur : " + value);
+        boxLargeur->addItem(textBox);
     }
-    changementPolice = new QAction("police",this);
-    changementPolice->setMenu(menuPolice);
+    i = 0;
+    while (i < 2){
+        ostringstream oss;
+
+        i += 0.1;
+        oss << i;
+
+        QString value = oss.str().c_str();
+        QString textBox("coef hauteur : " + value);
+        boxHauteur->addItem(textBox);
+    }
+    i =0;
+    while (i < 20){
+        ostringstream oss;
+
+        i += 1;
+        oss << i;
+
+        QString value = oss.str().c_str();
+        QString textBox("taille police: " + value);
+        boxTaillePolice->addItem(textBox);
+    }
+
 
     // Encodage UTF-8
     QTextCodec::setCodecForCStrings(QTextCodec::codecForName("UTF-8"));
@@ -81,29 +109,39 @@ MainWindow::MainWindow(QWidget *parent) :
 
     QScrollArea* mQScrollArea = new QScrollArea ();
     mQScrollArea ->setWidget(RDFWidget);
-//mQScrollArea->setMinimumSize(700,700);
+    //mQScrollArea->setMinimumSize(700,700);
     setCentralWidget(mQScrollArea);
 
     //Mise en place de la barre de menu
     fileMenu->addAction(openAction);
     fileMenu->addAction(saveAction);
     fileMenu->addAction(quitAction);
-    QToolBar * toolBar = this->addToolBar(tr("&File"));
+    QToolBar * toolBarMenu = this->addToolBar(tr("&File"));
+    QToolBar * toolBarParam = this->addToolBar(tr("&Parametre"));
 
     //Action dans la toolbar
 
-    toolBar->addAction(openAction);
-    toolBar->addAction(saveAction);
-    toolBar->addAction(quitAction);
-    toolBar->addAction(changementMode);
-    toolBar->addAction(changementPolice);
+    toolBarMenu->addAction(openAction);
+    toolBarMenu->addAction(saveAction);
+    toolBarMenu->addAction(quitAction);
+    toolBarParam->addAction(changementMode);
+    toolBarParam->addWidget(boxLargeur);
+    toolBarParam->addWidget(boxHauteur);
+    toolBarParam->addWidget(boxFont);
+    toolBarParam->addWidget(boxTaillePolice);
+    toolBarParam->addWidget(colorationButton);
 
     //Connection des slots
     QObject::connect(openAction, SIGNAL(triggered()),this,SLOT(openFile()));
     QObject::connect(quitAction, SIGNAL(triggered()),this,SLOT(quitApp()));
     QObject::connect(saveAction, SIGNAL(triggered()),this,SLOT(printFile()));
     QObject::connect(modeGroupe, SIGNAL(triggered(QAction*)),this,SLOT(changerMode(QAction*)));
-    QObject::connect(policeGroupe, SIGNAL(triggered(QAction*)),this,SLOT(changerPolice(QAction*)));
+    QObject::connect(boxLargeur,SIGNAL(currentIndexChanged(int)),this,SLOT(parametrerPourcentagePolice(int)));
+    QObject::connect(boxHauteur,SIGNAL(currentIndexChanged(int)),this,SLOT(parametrerPourcentageHPolice(int)));
+    QObject::connect(boxFont,SIGNAL(currentFontChanged(QFont)),this,SLOT(changerPolice(QFont )));
+    QObject::connect(boxTaillePolice,SIGNAL(currentIndexChanged(int)),this,SLOT(parametrerTaillePolice(int)));
+    QObject::connect(colorationButton,SIGNAL(clicked()),this,SLOT(changerColoration()));
+
 
 }
 
@@ -129,6 +167,12 @@ void MainWindow::printFile(){
 
 void MainWindow::changerColoration(){
 
+    if (colorationButton->text() == "Avec Couleur")
+        colorationButton->setText("Sans Couleur");
+    else
+        colorationButton->setText("Avec Couleur");
+
+
 }
 
 void MainWindow::changerMode(QAction *action){
@@ -144,18 +188,23 @@ void MainWindow::changerMode(QAction *action){
     }
 }
 
-void MainWindow::changerPolice(QAction *action){
-    RDFWidget->changePolice(action->iconText());
-    changementPolice->setIconText(action->iconText());
+void MainWindow::changerPolice(QFont f){
+    RDFWidget->changePolice(f);
 
 }
 
 
-void MainWindow::parametrerPourcentagePolice(){
-
+void MainWindow::parametrerPourcentagePolice(int rang){
+    RDFWidget->changePourcentagePolice(rang +1);
 
 }
 
-void MainWindow::parametrerPourcentageHPolice(){
+void MainWindow::parametrerPourcentageHPolice(int rang){
+    RDFWidget->changePourcentagePoliceH(rang + 1);
+
+}
+
+void MainWindow::parametrerTaillePolice(int rang){
+    RDFWidget->changeTaillePolice(rang+1);
 
 }
