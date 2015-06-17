@@ -59,6 +59,10 @@ VisuRDFParametreur* VisuRDFDessinateur::getParametreur(){
     return parametreur;
 }
 
+void VisuRDFDessinateur::setFont(QFont font){
+    f = font;
+}
+
 
 /**
  * @brief Dessinateur::calculLargeurColonne

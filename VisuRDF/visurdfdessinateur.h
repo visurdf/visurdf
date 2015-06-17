@@ -51,6 +51,8 @@ public:
     int actualiserMapBoite(int xOrigine, int yOrigine, int x, int y);
 
     VisuRDFParametreur* getParametreur();
+
+    void setFont(QFont);
      bool isFirst;
 
 
