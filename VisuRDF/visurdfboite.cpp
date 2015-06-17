@@ -27,6 +27,10 @@ void VisuRDFBoite::setY(float new_y){
     y = new_y;
 }
 
+void VisuRDFBoite::setLargeur(float new_largeur){
+    largeur = new_largeur;
+}
+
 float VisuRDFBoite::getLargeur(){
     return largeur;
 }

@@ -230,6 +230,8 @@ void VisuRDFDessinateur::remplissageTableau(VisuRDFType *type, int x, int y){
             if(mapBoiteObjet[objet->getNom()]!=NULL){
 
                 mapBoiteObjet[objet->getNom()]->setY(yObjet);
+                mapBoiteObjet[objet->getNom()]->setX(x);
+                mapBoiteObjet[objet->getNom()]->setLargeur(calculLargeurTableau(type));
                 // On vérifie si la boite n'était pas déjà plus grande que cette propriété
                 // Si elle est la nouvelle boite la plus grande, on met à jour la hauteur de la boite
                 if(mapBoiteObjet[objet->getNom()]->getHauteur()<hauteurCase*nbLignes){

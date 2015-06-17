@@ -14,6 +14,7 @@ public:
     void setX(float);
     void setY(float);
     void setHauteur(float);
+    void setLargeur(float);
     QBrush* getBrush();
     void setBrush(QBrush*);
 
