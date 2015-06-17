@@ -227,7 +227,6 @@ void VisuRDFExtracteur::gestionnaireDeTriplets(void* donnee_utilisateur, raptor_
         } else {
         // c'est soit une propriete simple soit une ressource
             QName* objet = getObjet(triple);
-            cout << "uriDeBase="<<objet->getUriDeBase()<<" ? = " <<uriDeBase<<endl;
             if(objet->getUriDeBase().find(uriDeBase) == 0){// cest une association
                 list<string> listeDeNoms = objetRDF["name"];
                 list < string > listeDeRelations = relationRDF[listeDeNoms.front()];
@@ -320,6 +319,14 @@ void VisuRDFExtracteur::parserTripletRdf(const char *fichierRdf) {
     return listeDesClasses;
  }
 
+ void VisuRDFExtracteur::clearModule(){
+
+     VisuRDFExtracteur::objetRDF.clear();
+     VisuRDFExtracteur::uriDeBase = "";
+     VisuRDFExtracteur::grapheRDF.clear();
+     VisuRDFExtracteur::relationRDF.clear();
+
+ }
  /*
  set< string > VisuRDFExtracteur::getProperties(string clazz){
      list< ObjetRDF > listOfObjetRDF = grapheRDF[clazz];
