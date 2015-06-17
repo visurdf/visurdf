@@ -112,7 +112,8 @@ void VisuRDFDessinateur::setFontSize(int size){
         VisuRDFBoite* boite = mapBoiteObjet[nomObjet];
         boite->setX(boite->getX()*pourcentagePolice/ancienPourcentage);
         boite->setY(boite->getY()*pourcentagePoliceHauteur/ancienPourcentageH);
-        boite->setHauteur(boite->getHauteur()*pourcentagePolice/ancienPourcentage);
+        boite->setHauteur(boite->getHauteur()*pourcentagePoliceHauteur/ancienPourcentageH);
+        boite->setLargeur(boite->getLargeur()*pourcentagePolice/ancienPourcentage);
     }
 
     for(boiteObjet::iterator it2 = mapBoiteType.begin(); it2!= mapBoiteType.end(); it2++){
@@ -143,6 +144,7 @@ void VisuRDFDessinateur::setPourcentagePolice(float pourcentage){
         string nomObjet = (*it).first;
         VisuRDFBoite* boite = mapBoiteObjet[nomObjet];
         boite->setX(boite->getX()*pourcentagePolice/ancienPourcentage);
+        boite->setLargeur(boite->getLargeur()*pourcentagePolice/ancienPourcentage);
     }
 
     for(boiteObjet::iterator it2 = mapBoiteType.begin(); it2!= mapBoiteType.end(); it2++){
