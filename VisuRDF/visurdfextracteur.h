@@ -75,7 +75,7 @@ public:
     set<string> getClasses();
     GrapheRDF getGrapheRDF() { return grapheRDF; }
     RelationRDF getRelationRDF() { return relationRDF; }
-
+    static void clearModule();
 private:
     static vector<string> split(string str, char delimiteur);
     static void afficherVecteur(string str);
