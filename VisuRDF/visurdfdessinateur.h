@@ -53,7 +53,9 @@ public:
     VisuRDFParametreur* getParametreur();
 
     void setFont(QFont);
-     bool isFirst;
+    void setFontSize(int);
+
+    bool isFirst;
 
 
 private :

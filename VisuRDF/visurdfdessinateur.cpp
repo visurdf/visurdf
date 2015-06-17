@@ -64,6 +64,10 @@ void VisuRDFDessinateur::setFont(QFont font){
 }
 
 
+void VisuRDFDessinateur::setFontSize(int size){
+    f.setPixelSize(size);
+}
+
 /**
  * @brief Dessinateur::calculLargeurColonne
  * @param type
