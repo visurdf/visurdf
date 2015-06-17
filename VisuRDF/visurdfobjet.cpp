@@ -13,6 +13,10 @@ VisuRDFObjet::~VisuRDFObjet()
 nombreRelations = 0;
 }
 
+/**
+ * @brief VisuRDFObjet::getNom
+ * @return nom de l'objet
+ */
 string VisuRDFObjet::getNom() {
     ObjetRDF::iterator it = proprietes.find("name");
     list<string> listNom = it->second;
@@ -20,22 +24,34 @@ string VisuRDFObjet::getNom() {
     return nom;
 }
 
-/*int VisuRDFObjet::getLargeur(){
-    return largeurMax;
-}`*/
-
+/**
+ * @brief VisuRDFObjet::getProprietes
+ * @return map des propriétés de l'objet
+ */
 ObjetRDF VisuRDFObjet::getProprietes(){
     return proprietes;
 }
 
+/**
+ * @brief VisuRDFObjet::getType
+ * @return type de l'objet
+ */
 VisuRDFType *VisuRDFObjet::getType(){
     return type;
 }
 
+/**
+ * @brief VisuRDFObjet::getNombreRelations
+ * @return nombre de relations de l'objet
+ */
 int VisuRDFObjet::getNombreRelations(){
     return nombreRelations;
 }
 
+/**
+ * @brief VisuRDFObjet::setNombreRelations
+ * @param _nombre
+ */
 void VisuRDFObjet::setNombreRelations(int _nombre){
     nombreRelations = _nombre;
 }
