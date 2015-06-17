@@ -60,10 +60,6 @@ void visuRDFWidget::open(){
     file = strcat(fileAvecProtocole, file );
     cout<< "chemin : "<< fileAvecProtocole <<endl;
     visuRDFExtracteur.parserTripletRdf(fileAvecProtocole);
-    //visuRDFExtracteur.parserTripletRdf("file:///home/rodrigue/visurdf/VisuRDF/FacetteA test v2.rdf");
-
-   // visuRDFExtracteur.afficherMap();
-    //visuRDFExtracteur.afficherRelations();
 
 
     analyseur = new VisuRDFAnalyseur(&visuRDFExtracteur);
@@ -80,25 +76,25 @@ void visuRDFWidget::open(){
 void visuRDFWidget::print(){
 
 
+    /*-------------Choix de l'emplacement de l'enregistrement -------------------*/
+    QString fileName =  QFileDialog::getSaveFileName(this,"Choose File","","SVG files (*.svg)");
+    //const char * file = fileName.toStdString().c_str();
 
     /*------------- Déclaration des paramètres du fichier SVG -------------------*/
-    QSvgGenerator generator;
 
+
+    QSvgGenerator generator;
     float hauteur = dessinateur->calculHauteurDessin();
     float largeur = dessinateur->calculLargeurDessin();
-    generator.setFileName("testSVG.svg");
+    generator.setFileName(fileName);
     generator.setSize(QSize(largeur, hauteur));
     generator.setViewBox(QRect(0, 0, largeur, hauteur));
     generator.setTitle("SVG Generator Example Drawing");
     generator.setDescription("Dessin svg pour une démonstration");
-
     QPainter painter;
     painter.begin(&generator);
     dessinateur->dessinMap(painter);
     painter.end();
-
-
-
 
 }
 
@@ -178,6 +174,11 @@ void visuRDFWidget::changeMode(string mode){
 
     this->update();
 
+}
+
+void visuRDFWidget::changePolice(QString police){
+    VisuRDFParametreur *parametreur = dessinateur->getParametreur();
+    parametreur->setPolice(police);
 }
 
 void visuRDFWidget::changePourcentagePolice(int p){
