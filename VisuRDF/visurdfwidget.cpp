@@ -60,10 +60,6 @@ void visuRDFWidget::open(){
     file = strcat(fileAvecProtocole, file );
     cout<< "chemin : "<< fileAvecProtocole <<endl;
     visuRDFExtracteur.parserTripletRdf(fileAvecProtocole);
-    //visuRDFExtracteur.parserTripletRdf("file:///home/rodrigue/visurdf/VisuRDF/FacetteA test v2.rdf");
-
-   // visuRDFExtracteur.afficherMap();
-    //visuRDFExtracteur.afficherRelations();
 
 
     analyseur = new VisuRDFAnalyseur(&visuRDFExtracteur);
@@ -85,22 +81,16 @@ void visuRDFWidget::print(){
     //const char * file = fileName.toStdString().c_str();
 
     /*------------- Déclaration des paramètres du fichier SVG -------------------*/
-    QSvgGenerator generator;
 
-<<<<<<< HEAD
-    generator.setFileName(fileName);
-    generator.setSize(QSize(2000, hauteur));
-    generator.setViewBox(QRect(0, 0, 2000, hauteur));
-=======
+
+    QSvgGenerator generator;
     float hauteur = dessinateur->calculHauteurDessin();
     float largeur = dessinateur->calculLargeurDessin();
-    generator.setFileName("testSVG.svg");
+    generator.setFileName(fileName);
     generator.setSize(QSize(largeur, hauteur));
     generator.setViewBox(QRect(0, 0, largeur, hauteur));
->>>>>>> e6e22501d4bed7ae22a15717329091c2c409c075
     generator.setTitle("SVG Generator Example Drawing");
     generator.setDescription("Dessin svg pour une démonstration");
-
     QPainter painter;
     painter.begin(&generator);
     dessinateur->dessinMap(painter);
