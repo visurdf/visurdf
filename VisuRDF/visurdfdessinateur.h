@@ -57,6 +57,7 @@ public:
     void setPourcentagePolice(float);
     void setPourcentagePoliceHauteur(float);
     void setTailleMax(float);
+    void setCouleur(int);
 
 
     bool isFirst;
@@ -78,6 +79,7 @@ private :
     QPen pen2;
     QPen pen3;
     QBrush brush;
+    int couleur;
 
     boiteObjet mapBoiteObjet;
     boiteObjet mapBoiteType;

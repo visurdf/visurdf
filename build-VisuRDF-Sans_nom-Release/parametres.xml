@@ -7,7 +7,7 @@ Aide pour le paramètrage du fichier :
 -->
 
 <parametres>
-	<mode value="tableau"/>
+	<mode value="boite"/>
 	<coloration value = "1"/>
 	<police value="Arial"/>
 	<taillePolice value="10"/>

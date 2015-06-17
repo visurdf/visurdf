@@ -29,9 +29,9 @@ public:
         delimiteurDiese ="#";
         delimiteurSlash ="/";
         size_t pos = uri.find_last_of(delimiteurDiese);
-        if(pos == -1) {
+        if((int)pos == -1) {
             pos = uri.find_last_of(delimiteurSlash);
-            if(pos != -1){
+            if((int)pos != -1){
                 delimiteur = delimiteurSlash;
                 uriDeBase = uri.substr(0,pos+1);
                 nom = uri.substr(pos+1, uri.size());

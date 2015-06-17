@@ -24,7 +24,7 @@ public:
         int i =0;
         for(ListIterator itr = proprietesNonVides.begin(); itr != proprietesNonVides.end(); itr++ ){
             strprop.append(*itr);
-            if(i  != proprietesNonVides.size() -1)
+            if(i  != (int)(proprietesNonVides.size() -1))
                 strprop.append(", ");
             i++;
         }

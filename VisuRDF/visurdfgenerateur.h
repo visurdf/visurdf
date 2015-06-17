@@ -11,10 +11,7 @@ public:
     VisuRDFGenerateur(VisuRDFDessinateur* dessinateur);
     ~VisuRDFGenerateur();
     void dessin();
-    void dessinTableau(VisuRDFType* type, int x, int y);
-    void dessinBoite(VisuRDFObjet* objet, int x, int y);
-    void dessinBoiteParType(VisuRDFType* type, int x, int y);
-    void dessinModeBoite();
+
 
 private :
     VisuRDFDessinateur* dessinateur;

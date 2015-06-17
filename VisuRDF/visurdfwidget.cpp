@@ -52,6 +52,7 @@ void visuRDFWidget::open(){
     QString fileName =  QFileDialog::getOpenFileName(this,"Open File","","RDF files (*.rdf)");
 
     VisuRDFExtracteur visuRDFExtracteur;
+    visuRDFExtracteur.clearModule();
     const char * file = fileName.toStdString().c_str();
 
 
@@ -66,6 +67,7 @@ void visuRDFWidget::open(){
     dessinateur = new VisuRDFDessinateur(analyseur);
     rdfChoisi = true;
     dessinModifie = true;
+    firstDessin = true;
 
     this->update();
 
