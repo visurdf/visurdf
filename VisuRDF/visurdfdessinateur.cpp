@@ -68,6 +68,18 @@ void VisuRDFDessinateur::setFontSize(int size){
     f.setPixelSize(size);
 }
 
+void VisuRDFDessinateur::setPourcentagePolice(float pourcentage){
+    pourcentagePolice = pourcentage;
+}
+
+void VisuRDFDessinateur::setPourcentagePoliceHauteur(float pourcentage){
+    pourcentagePoliceHauteur = pourcentage;
+}
+
+void VisuRDFDessinateur::setTailleMax(float taille){
+    tailleMax = taille;
+}
+
 /**
  * @brief Dessinateur::calculLargeurColonne
  * @param type

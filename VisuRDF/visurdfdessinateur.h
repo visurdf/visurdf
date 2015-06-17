@@ -54,6 +54,10 @@ public:
 
     void setFont(QFont);
     void setFontSize(int);
+    void setPourcentagePolice(float);
+    void setPourcentagePoliceHauteur(float);
+    void setTailleMax(float);
+
 
     bool isFirst;
 
