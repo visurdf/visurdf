@@ -29,7 +29,6 @@ VisuRDFDessinateur::VisuRDFDessinateur(VisuRDFAnalyseur * analyseur) {
 
     //Déclaration de la police
     f = parametreur->getParamPolice();
-    int fontSize = 0;
 
     // Déclaration taille police
     if(parametreur->getFontSize()!=0){
@@ -55,7 +54,8 @@ VisuRDFDessinateur::VisuRDFDessinateur(VisuRDFAnalyseur * analyseur) {
     else tailleMax = 50;
 
     // Calcul des parametres d'affichage des boites en fonction de la taille de la police
-    hauteurCase = 15/5.5*fontSize;
+    hauteurCase = pourcentagePoliceHauteur * 2;
+    // hauteurCase = 15/5.5*fontSize;
     espacementVertical = 20/5.5*fontSize;
 
     // Déclaration mode couleur ou non
@@ -74,48 +74,133 @@ VisuRDFDessinateur::~VisuRDFDessinateur() {
 
 }
 
+/**
+ * @brief VisuRDFDessinateur::getParametreur
+ * @return le parametreur
+ */
 VisuRDFParametreur* VisuRDFDessinateur::getParametreur(){
     return parametreur;
 }
 
+/**
+ * @brief VisuRDFDessinateur::setFont, met à jour la police
+ * @param font
+ */
 void VisuRDFDessinateur::setFont(QFont font){
     f = font;
 }
 
-
+/**
+ * @brief VisuRDFDessinateur::setFontSize, met à jour la taille de la police
+ * @param size
+ */
 void VisuRDFDessinateur::setFontSize(int size){
 
+    float ancienPourcentage = pourcentagePolice;
+    float ancienPourcentageH = pourcentagePoliceHauteur;
+    // On calcule les nouveaux coefficients de pourcentage
+    pourcentagePolice = pourcentagePolice/fontSize*size;
+    pourcentagePoliceHauteur = pourcentagePoliceHauteur/fontSize*size;
+    hauteurCase = pourcentagePoliceHauteur * 2;
+    // On modifie la taille de la police actuelle
+    fontSize = size;
     f.setPixelSize(size);
 
-    cout<<"Font size = "<< size<<endl;
-    parametreur->setFont(f);
+    // On met à jour les informations des boites (actualisées avec la nouvelle taille de police)
+    for (boiteObjet::iterator it = mapBoiteObjet.begin(); it!=mapBoiteObjet.end(); it++){
+        string nomObjet = (*it).first;
+        VisuRDFBoite* boite = mapBoiteObjet[nomObjet];
+        boite->setX(boite->getX()*pourcentagePolice/ancienPourcentage);
+        boite->setY(boite->getY()*pourcentagePolice/ancienPourcentage);
+        boite->setHauteur(boite->getHauteur()*pourcentagePolice/ancienPourcentage);
+    }
+
+    for(boiteObjet::iterator it2 = mapBoiteType.begin(); it2!= mapBoiteType.end(); it2++){
+        string nomType = (*it2).first;
+        VisuRDFType* type = analyseur->getTypeParNom(nomType,true);
+        VisuRDFBoite* boite = mapBoiteType[nomType];
+        boite->setX(boite->getX()*pourcentagePoliceHauteur/ancienPourcentageH);
+        boite->setY(boite->getY()*pourcentagePoliceHauteur/ancienPourcentageH);
+        boite->setLargeur(calculLargeurTableau(type));
+        boite->setHauteur(calculHauteurTableau(type));
+    }
+
+
 }
 
+/**
+ * @brief VisuRDFDessinateur::setPourcentagePolice
+ * @param pourcentage
+ */
 void VisuRDFDessinateur::setPourcentagePolice(float pourcentage){
 
-    f.setPixelSize( parametreur->getFontSize());
-    if (f.pixelSize()!=0)
-        pourcentagePolice = pourcentage*f.pixelSize();
-    else
-        pourcentagePolice = pourcentage*f.pointSize();
+    float ancienPourcentage = pourcentagePolice;
+    pourcentagePolice = pourcentage*fontSize;
+
+
+    // On met à jour les informations des boites (actualisées avec les nouveaux coefficients)
+    for (boiteObjet::iterator it = mapBoiteObjet.begin(); it!=mapBoiteObjet.end(); it++){
+        string nomObjet = (*it).first;
+        VisuRDFBoite* boite = mapBoiteObjet[nomObjet];
+        boite->setX(boite->getX()*pourcentagePolice/ancienPourcentage);
+    }
+
+    for(boiteObjet::iterator it2 = mapBoiteType.begin(); it2!= mapBoiteType.end(); it2++){
+        string nomType = (*it2).first;
+        VisuRDFType* type = analyseur->getTypeParNom(nomType,true);
+        VisuRDFBoite* boite = mapBoiteType[nomType];
+        boite->setX(boite->getX()*pourcentagePolice/ancienPourcentage);
+        boite->setLargeur(calculLargeurTableau(type));
+    }
+
+
+
 
 }
 
+/**
+ * @brief VisuRDFDessinateur::setPourcentagePoliceHauteur
+ * @param pourcentage
+ */
 void VisuRDFDessinateur::setPourcentagePoliceHauteur(float pourcentage){
 
-    f.setPixelSize( parametreur->getFontSize());
-    if (f.pixelSize()!=0)
-        pourcentagePoliceHauteur = pourcentage*f.pixelSize();
-    else
-        pourcentagePoliceHauteur = pourcentage*f.pointSize();
+    float ancienPourcentage = pourcentagePoliceHauteur;
+    pourcentagePoliceHauteur = pourcentage*fontSize;
+    hauteurCase = pourcentagePoliceHauteur * 2;
+
+    // On met à jour les informations des boites (actualisées avec les nouveaux coefficients)
+    for (boiteObjet::iterator it = mapBoiteObjet.begin(); it!=mapBoiteObjet.end(); it++){
+        string nomObjet = (*it).first;
+        VisuRDFBoite* boite = mapBoiteObjet[nomObjet];
+        boite->setY(boite->getY()*pourcentagePolice/ancienPourcentage);
+        boite->setHauteur(boite->getHauteur()*pourcentagePolice/ancienPourcentage);
+    }
+
+    for(boiteObjet::iterator it2 = mapBoiteType.begin(); it2!= mapBoiteType.end(); it2++){
+        string nomType = (*it2).first;
+        VisuRDFType* type = analyseur->getTypeParNom(nomType,true);
+        VisuRDFBoite* boite = mapBoiteType[nomType];
+        boite->setY(boite->getY()*pourcentagePolice/ancienPourcentage);
+        boite->setHauteur(calculHauteurTableau(type));
+    }
+
+
 
 
 }
 
+/**
+ * @brief VisuRDFDessinateur::setTailleMax
+ * @param taille
+ */
 void VisuRDFDessinateur::setTailleMax(float taille){
     tailleMax = taille;
 }
 
+/**
+ * @brief VisuRDFDessinateur::setCouleur, modifie le mode (coloré ou non coloré)
+ * @param isCouleur
+ */
 void VisuRDFDessinateur::setCouleur(int isCouleur){
     couleur = isCouleur;
 
@@ -188,14 +273,6 @@ float VisuRDFDessinateur::calculLargeurTableau(VisuRDFType *type) {
 
 float VisuRDFDessinateur::calculHauteurTableau(VisuRDFType* type) {
 
-
-    /* float hauteur = 0;
-    string nomType = type->getNom();
-    if(mapBoiteType[nomType]!=NULL){
-        hauteur = mapBoiteType[nomType]->getHauteur();
-    }
-
-    return hauteur;*/
 
     // On initialise hauteur
     float hauteur = 2*hauteurCase;
@@ -338,9 +415,9 @@ void VisuRDFDessinateur::dessinTableau(VisuRDFType *type, int x, int y, QPainter
         float largeurBoite = this->calculLargeurColonne(type, nomPropriete);
         QRect rect(xPropriete,y,largeurBoite,hauteurCase);
 
-        painter.drawRect(rect);
         QBrush brush = Qt::gray;
         painter.fillRect(rect, brush);
+        painter.drawRect(rect);
         // On remplace la propriété "name" par "id"
         if(nomPropriete == "name"){
             painter.drawText(rect, Qt::AlignCenter , "id");

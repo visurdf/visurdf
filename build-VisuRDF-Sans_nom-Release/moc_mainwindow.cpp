@@ -22,7 +22,7 @@ static const uint qt_meta_data_MainWindow[] = {
        6,       // revision
        0,       // classname
        0,    0, // classinfo
-       8,   14, // methods
+       9,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -35,9 +35,10 @@ static const uint qt_meta_data_MainWindow[] = {
       35,   22,   22,   22, 0x0a,
       45,   22,   22,   22, 0x0a,
       65,   87,   22,   22, 0x0a,
-      94,   22,   22,   22, 0x0a,
-     124,   22,   22,   22, 0x0a,
-     155,   87,   22,   22, 0x0a,
+      94,  127,   22,   22, 0x0a,
+     132,  127,   22,   22, 0x0a,
+     166,  127,   22,   22, 0x0a,
+     194,  215,   22,   22, 0x0a,
 
        0        // eod
 };
@@ -46,9 +47,10 @@ static const char qt_meta_stringdata_MainWindow[] = {
     "MainWindow\0openFile()\0\0printFile()\0"
     "quitApp()\0changerColoration()\0"
     "changerMode(QAction*)\0action\0"
-    "parametrerPourcentagePolice()\0"
-    "parametrerPourcentageHPolice()\0"
-    "changerPolice(QAction*)\0"
+    "parametrerPourcentagePolice(int)\0rang\0"
+    "parametrerPourcentageHPolice(int)\0"
+    "parametrerTaillePolice(int)\0"
+    "changerPolice(QFont)\0f\0"
 };
 
 void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
@@ -62,9 +64,10 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 2: _t->quitApp(); break;
         case 3: _t->changerColoration(); break;
         case 4: _t->changerMode((*reinterpret_cast< QAction*(*)>(_a[1]))); break;
-        case 5: _t->parametrerPourcentagePolice(); break;
-        case 6: _t->parametrerPourcentageHPolice(); break;
-        case 7: _t->changerPolice((*reinterpret_cast< QAction*(*)>(_a[1]))); break;
+        case 5: _t->parametrerPourcentagePolice((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 6: _t->parametrerPourcentageHPolice((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 7: _t->parametrerTaillePolice((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 8: _t->changerPolice((*reinterpret_cast< QFont(*)>(_a[1]))); break;
         default: ;
         }
     }
@@ -102,9 +105,9 @@ int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 8)
+        if (_id < 9)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 8;
+        _id -= 9;
     }
     return _id;
 }

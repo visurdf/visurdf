@@ -68,7 +68,7 @@ private :
     set<VisuRDFType*> listeTypes;
     VisuRDFAnalyseur* analyseur;
     VisuRDFParametreur* parametreur;
-    int hauteurCase;
+    float hauteurCase;
     int espacementVertical;
     float pourcentagePolice;
     float pourcentagePoliceHauteur;
@@ -80,6 +80,7 @@ private :
     QPen pen3;
     QBrush brush;
     int couleur;
+    int fontSize;
 
     boiteObjet mapBoiteObjet;
     boiteObjet mapBoiteType;
