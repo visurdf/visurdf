@@ -89,6 +89,8 @@ private :
     boiteObjet mapBoiteType;
     map<int,QString> mapPolice;
 
+    int dX;
+    int dY;
 
 
 };

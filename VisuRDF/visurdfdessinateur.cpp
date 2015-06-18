@@ -1024,7 +1024,9 @@ VisuRDFBoite* VisuRDFDessinateur::recupererBoite(int xOrigine, int yOrigine){
 
             // Si la boite occupe les coordonnées xOrigine, yOrigine, on modifie ses coordonnées
             if((xOrigine>=xBoite)&(xOrigine<=xBoite+largeur)&(yOrigine>=yBoite)&(yOrigine<=yBoite+hauteur)){
-
+                // On calcule le dX et dY (pour savoir à quel endroit de la boite on a cliqué)
+                dX = xOrigine-xBoite;
+                dY = yOrigine-yBoite;
                 return boite;
             }
         }
@@ -1042,7 +1044,9 @@ VisuRDFBoite* VisuRDFDessinateur::recupererBoite(int xOrigine, int yOrigine){
             int largeur = boite->getLargeur();
             // Si le tableau occupe les coordonnées xOrigine, yOrigine, on modifie ses coordonnées
             if((xOrigine>=xBoite)&(xOrigine<=xBoite+largeur)&(yOrigine>=yBoite)&(yOrigine<=yBoite+hauteur)){
-
+                // On calcule le dX et dY (pour savoir à quel endroit de la boite on a cliqué)
+                dX = xOrigine-xBoite;
+                dY = yOrigine-yBoite;
                 return boite;
 
             }
@@ -1066,8 +1070,8 @@ void VisuRDFDessinateur::actualiserMapBoite(VisuRDFBoite *boite, int x, int y){
         // Cas du mode boite
         if(mode=="boite"){
 
-            boite->setX(x-boite->getLargeur()/2);
-            boite->setY(y-boite->getHauteur()/2);
+            boite->setX(x-dX);
+            boite->setY(y-dY);
 
         }
 
@@ -1075,8 +1079,8 @@ void VisuRDFDessinateur::actualiserMapBoite(VisuRDFBoite *boite, int x, int y){
         else{
 
             int yBoite = boite->getY();
-            boite->setX(x-boite->getLargeur()/2);
-            boite->setY(y-boite->getHauteur()/2);
+            boite->setX(x-dX);
+            boite->setY(y-dY);
             string nomType;
             for( boiteObjet::iterator iter = mapBoiteType.begin(); iter!=mapBoiteType.end(); iter++)
                 if((*iter).second == boite)
@@ -1088,8 +1092,8 @@ void VisuRDFDessinateur::actualiserMapBoite(VisuRDFBoite *boite, int x, int y){
                 VisuRDFObjet* objet = *it;
                 VisuRDFBoite* boiteObj = mapBoiteObjet[objet->getNom()];
                 int yObj = boiteObj->getY();
-                boiteObj->setX(x-boite->getLargeur()/2);
-                boiteObj->setY(yObj-yBoite+y-boite->getHauteur()/2);
+                boiteObj->setX(x-dX);
+                boiteObj->setY(yObj-yBoite+y-dY);
             }
 
         }
