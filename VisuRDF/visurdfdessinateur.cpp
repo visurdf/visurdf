@@ -16,7 +16,7 @@ VisuRDFDessinateur::VisuRDFDessinateur(VisuRDFAnalyseur * analyseur) {
     pen3.setColor(color);
 
     //Pen 2 : Couleur de la police du type
-    if(parametreur->getParamColoration()==1){
+    if(parametreur->getParamMode()=="boite" && parametreur->getParamColoration()==1){
         pen2.setColor(Qt::black);
     }
     else{
@@ -211,6 +211,43 @@ void VisuRDFDessinateur::setTailleMax(float taille){
  */
 void VisuRDFDessinateur::setCouleur(int isCouleur){
     couleur = isCouleur;
+    cout << "couleur : " << couleur << endl;
+
+    // On actualise les couleurs des boites
+    // if(mode=="boite"){
+    int i=0;
+    for(set<VisuRDFType*>::iterator it = listeTypes.begin(); it!= listeTypes.end(); it++){
+        VisuRDFType* type = *it;
+        string nomType = type->getNom();
+        set<VisuRDFObjet*> listeObjets = analyseur->getObjetsParType(nomType, true);
+
+
+        QBrush* brush = new QBrush();
+
+        if(couleur==1){
+            map<int,QBrush*> mapBrush = parametreur->getListePinceau();
+            brush = mapBrush[i];
+        }
+
+        for(set<VisuRDFObjet*>::iterator it = listeObjets.begin(); it!= listeObjets.end(); it++) {
+
+            VisuRDFObjet* objet = *it;
+            string nomObjet = objet->getNom();
+
+
+            mapBoiteObjet[nomObjet]->setBrush(brush);
+        }
+
+        i++;
+    }
+
+    if(mode=="boite" && couleur==1){
+        pen2.setColor(Qt::black);
+    }
+    else{
+        QColor color2 = Qt::red;
+        pen2.setColor(color2);
+    }
 
 }
 
@@ -253,6 +290,12 @@ float VisuRDFDessinateur::calculLargeurColonne(VisuRDFType * type, string nomPro
 
 void VisuRDFDessinateur::setMode(string new_mode){
     mode = new_mode;
+    if(mode=="boite" && couleur==1){
+        pen2.setColor(Qt::black);
+    }
+    else{
+        pen2.setColor(Qt::red);
+    }
 }
 
 /**

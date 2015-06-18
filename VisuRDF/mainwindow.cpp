@@ -185,7 +185,7 @@ void MainWindow::changerColoration(){
     }
     else{
         colorationButton->setText("Avec Couleur");
-        RDFWidget->changeColoration(0);
+        RDFWidget->changeColoration(1);
 }
 
 }
