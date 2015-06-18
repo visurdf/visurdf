@@ -62,6 +62,7 @@ MainWindow::MainWindow(QWidget *parent) :
     QComboBox * boxTaillePolice = new QComboBox();
     QFontComboBox * boxFont = new QFontComboBox();
 
+
     float i = 0;
     while (i < 2){
         ostringstream oss;
@@ -95,6 +96,10 @@ MainWindow::MainWindow(QWidget *parent) :
         QString textBox("taille police: " + value);
         boxTaillePolice->addItem(textBox);
     }
+
+    VisuRDFParametreur parametreur;
+    parametreur.lectureParametres();
+
 
 
     // Encodage UTF-8
@@ -130,6 +135,11 @@ MainWindow::MainWindow(QWidget *parent) :
     toolBarParam->addWidget(boxFont);
     toolBarParam->addWidget(boxTaillePolice);
     toolBarParam->addWidget(colorationButton);
+    boxLargeur->setCurrentIndex(parametreur.getPourcentagePolice()*10 - 1);
+    boxHauteur->setCurrentIndex(parametreur.getPourcentagePoliceHauteur()*10 - 1);
+    boxTaillePolice->setCurrentIndex(parametreur.getFontSize()- 1);
+
+
 
     //Connection des slots
     QObject::connect(openAction, SIGNAL(triggered()),this,SLOT(openFile()));
@@ -187,6 +197,7 @@ void MainWindow::changerColoration(){
         colorationButton->setText("Avec Couleur");
         RDFWidget->changeColoration(1);
 }
+
 
 }
 
