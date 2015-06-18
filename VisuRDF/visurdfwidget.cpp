@@ -72,6 +72,7 @@ void visuRDFWidget::print(){
 
     /*-------------Choix de l'emplacement de l'enregistrement -------------------*/
     QString fileName =  QFileDialog::getSaveFileName(this,"Choose File","","SVG files (*.svg)");
+
     //const char * file = fileName.toStdString().c_str();
 
     /*------------- Déclaration des paramètres du fichier SVG -------------------*/
@@ -90,6 +91,27 @@ void visuRDFWidget::print(){
     dessinateur->dessinMap(painter);
     painter.end();
 
+}
+
+void visuRDFWidget::printPNG(){
+    /*-------------Choix de l'emplacement de l'enregistrement -------------------*/
+
+    QString fileName =  QFileDialog::getSaveFileName(this,"Choose File","","PNG files (*.png)");
+    //const char * file = fileName.toStdString().c_str();
+
+    /*------------- Déclaration des paramètres du fichier SVG -------------------*/
+
+
+
+    float hauteur = dessinateur->calculHauteurDessin();
+    float largeur = dessinateur->calculLargeurDessin();
+
+    QImage img(largeur,hauteur, QImage::Format_ARGB32);
+    QPainter painter;
+    painter.begin(&img);
+    dessinateur->dessinMap(painter);
+    painter.end();
+    img.save(fileName);
 }
 
 /**

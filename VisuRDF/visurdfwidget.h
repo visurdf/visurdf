@@ -21,6 +21,7 @@ public:
     virtual void mouseReleaseEvent(QMouseEvent * qme);
     virtual void open();
     virtual void print();
+    virtual void printPNG();
     virtual void changePourcentagePolice(int p);
     virtual void changePourcentagePoliceH(int p);
     virtual void changeColoration(int c);
