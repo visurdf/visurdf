@@ -40,12 +40,12 @@ VisuRDFParametreur::VisuRDFParametreur() : QWidget(){
 
     listeCouleur = new list<QColor*>();
     listeCouleur->push_back(new QColor(128,191,255));
-    listeCouleur->push_back(new QColor(191,128,255));
+    listeCouleur->push_back(new QColor(211,168,255));
     listeCouleur->push_back(new QColor(191,255,128));
     listeCouleur->push_back(new QColor(255,255,128));
-    listeCouleur->push_back(new QColor(255,128,128));
-    listeCouleur->push_back(new QColor(0,115,230));
-    listeCouleur->push_back(new QColor(255,128,191));
+    listeCouleur->push_back(new QColor(255,145,145));
+    listeCouleur->push_back(new QColor(179,217,255));
+    listeCouleur->push_back(new QColor(255,166,210));
     listeCouleur->push_back(new QColor(128,255,128));
     listeCouleur->push_back(new QColor(255,179,102));
     listeCouleur->push_back(new QColor(186,186,186));
