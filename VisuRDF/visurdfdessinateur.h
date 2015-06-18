@@ -48,7 +48,8 @@ public:
 
     void dessinMap(QPainter &painter);
 
-    int actualiserMapBoite(int xOrigine, int yOrigine, int x, int y);
+    VisuRDFBoite* recupererBoite(int x, int y);
+    void actualiserMapBoite(VisuRDFBoite* boite, int x, int y);
 
     VisuRDFParametreur* getParametreur();
 
@@ -58,6 +59,7 @@ public:
     void setPourcentagePoliceHauteur(float);
     void setTailleMax(float);
     void setCouleur(int);
+    void setMode(string);
 
 
     bool isFirst;
@@ -74,6 +76,7 @@ private :
     float pourcentagePoliceHauteur;
     float tailleMax;
 
+
     QFont f;
     QPen pen1;
     QPen pen2;
@@ -81,7 +84,7 @@ private :
     QBrush brush;
     int couleur;
     int fontSize;
-
+    string mode;
     boiteObjet mapBoiteObjet;
     boiteObjet mapBoiteType;
     map<int,QString> mapPolice;

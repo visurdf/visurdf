@@ -36,8 +36,7 @@ private:
     bool dessinModifie;
     bool firstDessin;
 
-    int xOrigine;
-    int yOrigine;
+    VisuRDFBoite* boiteChoisie;
 
     QPoint posSouris;
 

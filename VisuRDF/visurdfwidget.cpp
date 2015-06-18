@@ -8,6 +8,7 @@ visuRDFWidget::visuRDFWidget()
     rdfChoisi = false;
     dessinModifie = false;
     firstDessin = true;
+    boiteChoisie = NULL;
 
 
 }
@@ -102,9 +103,9 @@ void visuRDFWidget::mousePressEvent(QMouseEvent *qme){
     //On met en place le mouse tracking, utilisable dans les autres fonction
     QWidget::setMouseTracking(true);
     posSouris = qme->pos();
-    xOrigine = posSouris.x();
-    yOrigine = posSouris.y();
-
+    if(!firstDessin){
+    boiteChoisie = dessinateur->recupererBoite(posSouris.x(),posSouris.y());
+    }
     dessinModifie=true;
     this->update();
 
@@ -120,11 +121,10 @@ void visuRDFWidget::mouseMoveEvent(QMouseEvent *qme){
     //Si on a clické et pas relaché on met à jour la position de la souris
     if (QWidget::hasMouseTracking()){
         posSouris = qme->pos();// On réupère la position de la souris dans un QPoint
-        xOrigine = posSouris.x();
-        yOrigine = posSouris.y();
+
 
         if(!firstDessin)
-            dessinateur->actualiserMapBoite(xOrigine,yOrigine, posSouris.x(),posSouris.y());
+            dessinateur->actualiserMapBoite(boiteChoisie, posSouris.x(),posSouris.y());
 
         dessinModifie=true;
         this->update();
@@ -142,8 +142,8 @@ void visuRDFWidget::mouseReleaseEvent(QMouseEvent *qme){
 
 
     if(!firstDessin)
-        dessinateur->actualiserMapBoite(xOrigine,yOrigine, posSouris.x(),posSouris.y());
-
+        dessinateur->actualiserMapBoite(boiteChoisie, posSouris.x(),posSouris.y());
+    boiteChoisie = NULL;
     dessinModifie=true;
     this->update();
     if (QWidget::hasMouseTracking()){
@@ -159,8 +159,7 @@ void visuRDFWidget::changeMode(string mode){
     if (!rdfChoisi)
         return;
 
-    VisuRDFParametreur *parametreur = dessinateur->getParametreur();
-    parametreur->setMode(mode);
+    dessinateur->setMode(mode);
     firstDessin = true;
     dessinModifie =true;
     dessinateur->isFirst = true;

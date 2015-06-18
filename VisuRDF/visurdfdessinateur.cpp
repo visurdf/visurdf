@@ -66,6 +66,14 @@ VisuRDFDessinateur::VisuRDFDessinateur(VisuRDFAnalyseur * analyseur) {
         couleur = 0;
     }
 
+    // Déclaration du mode (tableau ou boite)
+    if(parametreur->getParamMode()=="boite"){
+        mode = "boite";
+    }
+    else{
+        mode = "tableau";
+    }
+
 }
 
 
@@ -243,6 +251,9 @@ float VisuRDFDessinateur::calculLargeurColonne(VisuRDFType * type, string nomPro
     return (largeur*pourcentagePolice);
 }
 
+void VisuRDFDessinateur::setMode(string new_mode){
+    mode = new_mode;
+}
 
 /**
  * @brief Dessinateur::calculLargeurTableau
@@ -947,7 +958,7 @@ void VisuRDFDessinateur::dessinToutesLiaisons(QPainter &painter){
  * @param painter
  */
 void VisuRDFDessinateur::dessin(QPainter &painter){
-    if (parametreur->getParamMode()=="tableau"){
+    if (mode=="tableau"){
         dessinModeTableau(painter);
     }
 
@@ -971,7 +982,7 @@ void VisuRDFDessinateur::dessinMap(QPainter &painter){
     }
 
     else{
-        if(parametreur->getParamMode()=="boite"){
+        if(mode=="boite"){
             for (boiteObjet::iterator it = mapBoiteObjet.begin(); it!=mapBoiteObjet.end(); it++){
                 string nomObjet = (*it).first;
                 VisuRDFBoite* boite = mapBoiteObjet[nomObjet];
@@ -993,18 +1004,15 @@ void VisuRDFDessinateur::dessinMap(QPainter &painter){
 }
 
 /**
- * @brief VisuRDFDessinateur::actualiserMapBoite, modifie les coordonnées de la boite qui se trouve aux coordonnées xOrigine, yOrigne :
- * place le centre de cette boite aux coordonnées x, y
+ * @brief VisuRDFDessinateur::recupererBoite
  * @param xOrigine
  * @param yOrigine
- * @param x
- * @param y
- * @return
+ * @return la boite qui se trouve aux coordonnées données, NULL sinon
  */
-int VisuRDFDessinateur::actualiserMapBoite(int xOrigine, int yOrigine, int x, int y){
+VisuRDFBoite* VisuRDFDessinateur::recupererBoite(int xOrigine, int yOrigine){
 
     // Cas du mode boite
-    if(parametreur->getParamMode()=="boite"){
+    if(mode=="boite"){
         //On parcourt toutes les boites des objets
         for(boiteObjet::iterator it = mapBoiteObjet.begin(); it!=mapBoiteObjet.end(); it++){
             string nomObjet = (*it).first;
@@ -1017,10 +1025,7 @@ int VisuRDFDessinateur::actualiserMapBoite(int xOrigine, int yOrigine, int x, in
             // Si la boite occupe les coordonnées xOrigine, yOrigine, on modifie ses coordonnées
             if((xOrigine>=xBoite)&(xOrigine<=xBoite+largeur)&(yOrigine>=yBoite)&(yOrigine<=yBoite+hauteur)){
 
-
-                boite->setX(x-largeur/2);
-                boite->setY(y-hauteur/2);
-                return 1;
+                return boite;
             }
         }
     }
@@ -1038,27 +1043,61 @@ int VisuRDFDessinateur::actualiserMapBoite(int xOrigine, int yOrigine, int x, in
             // Si le tableau occupe les coordonnées xOrigine, yOrigine, on modifie ses coordonnées
             if((xOrigine>=xBoite)&(xOrigine<=xBoite+largeur)&(yOrigine>=yBoite)&(yOrigine<=yBoite+hauteur)){
 
-                boite->setX(x-largeur/2);
-                boite->setY(y-hauteur/2);
+                return boite;
 
-                // On modifie les coordonnées des boites des objets du tableau
-                set<VisuRDFObjet*> objets = analyseur->getObjetsParType(nomType,true);
-                for(set<VisuRDFObjet*>::iterator it = objets.begin(); it!= objets.end(); it++){
-                    VisuRDFObjet* objet = *it;
-                    VisuRDFBoite* boiteObj = mapBoiteObjet[objet->getNom()];
-                    int yObj = boiteObj->getY();
-                    boiteObj->setX(x-largeur/2);
-                    boiteObj->setY(yObj-yBoite+y-hauteur/2);
-                }
-
-                return 1;
             }
 
         }
     }
 
-    return 0;
+    return NULL;
+
 }
+
+/**
+ * @brief VisuRDFDessinateur::actualiserMapBoite, met à jour les coordonnées de la boite
+ * @param boite
+ * @param x
+ * @param y
+ */
+void VisuRDFDessinateur::actualiserMapBoite(VisuRDFBoite *boite, int x, int y){
+
+    if(boite!=NULL){
+        // Cas du mode boite
+        if(mode=="boite"){
+
+            boite->setX(x-boite->getLargeur()/2);
+            boite->setY(y-boite->getHauteur()/2);
+
+        }
+
+        // Cas du mode tableau
+        else{
+
+            int yBoite = boite->getY();
+            boite->setX(x-boite->getLargeur()/2);
+            boite->setY(y-boite->getHauteur()/2);
+            string nomType;
+            for( boiteObjet::iterator iter = mapBoiteType.begin(); iter!=mapBoiteType.end(); iter++)
+                if((*iter).second == boite)
+                    nomType = (*iter).first;
+            cout << "nomType : " << nomType << endl;
+            // On modifie les coordonnées des boites des objets du tableau
+            set<VisuRDFObjet*> objets = analyseur->getObjetsParType(nomType,true);
+            for(set<VisuRDFObjet*>::iterator it = objets.begin(); it!= objets.end(); it++){
+                VisuRDFObjet* objet = *it;
+                VisuRDFBoite* boiteObj = mapBoiteObjet[objet->getNom()];
+                int yObj = boiteObj->getY();
+                boiteObj->setX(x-boite->getLargeur()/2);
+                boiteObj->setY(yObj-yBoite+y-boite->getHauteur()/2);
+            }
+
+        }
+    }
+
+}
+
+
 
 /**
  * @brief VisuRDFDessinateur::calculLargeurDessin
