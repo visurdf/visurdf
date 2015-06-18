@@ -2,6 +2,7 @@
 #include "ui_visurdfwidget.h"
 #include "visurdfextracteur.h"
 #include "visurdfparametreur.h"
+#include <QMessageBox>
 
 visuRDFWidget::visuRDFWidget()
 {
@@ -18,17 +19,22 @@ visuRDFWidget::~visuRDFWidget()
 
 }
 
+/**
+ * @brief visuRDFWidget::paintEvent, redessine le dessin dans la fenetre du widget
+ * @param qpe
+ */
 void visuRDFWidget::paintEvent(QPaintEvent *qpe){
     QWidget::paintEvent(qpe);
     QPainter painter(this);
-    //this->setMinimumSize(10000, 10000);
+    //Si il n'y a pas eu de rdf choisi, on ne fait rien
     if (rdfChoisi){
+        //Si c'est la premère fois qu'on dessine, on appelle la fonction dessin
         if(firstDessin){
             dessinateur->dessin(painter);
             dessinModifie = false;
             firstDessin = false;
         }
-
+//Sinon la fonction dessinMap
         else{
             dessinateur->dessinMap(painter);
             dessinModifie = false;
@@ -43,22 +49,27 @@ void visuRDFWidget::paintEvent(QPaintEvent *qpe){
  * Fonction permettant d'ouvrir un fichier RDF dans la fenêtre
  */
 void visuRDFWidget::open(){
-    //Boite de dialogue pour selection fichier
 
+    //Boite de dialogue pour selection fichier
     QString fileName =  QFileDialog::getOpenFileName(this,"Open File","","RDF files (*.rdf)");
 
+    //On supprime les données déjà présente dans l'extracteur
     VisuRDFExtracteur visuRDFExtracteur;
     visuRDFExtracteur.clearModule();
-    const char * file = fileName.toStdString().c_str();
 
+    //Traitement chaine de caractère pour l'ouverture du fichier
+    const char * file = fileName.toStdString().c_str();
     char fileAvecProtocole [strlen(file +8)];
     strcpy(fileAvecProtocole, "file://");
     file = strcat(fileAvecProtocole, file );
     cout<< "chemin : "<< fileAvecProtocole <<endl;
-    visuRDFExtracteur.parserTripletRdf(fileAvecProtocole);
 
+    //création des différents objets necessaires
+    visuRDFExtracteur.parserTripletRdf(fileAvecProtocole);
     analyseur = new VisuRDFAnalyseur(&visuRDFExtracteur);
     dessinateur = new VisuRDFDessinateur(analyseur);
+
+    //Mise à jour des booléen de la classe
     rdfChoisi = true;
     dessinModifie = true;
     firstDessin = true;
@@ -67,29 +78,53 @@ void visuRDFWidget::open(){
 
 }
 
+/**
+ * @brief visuRDFWidget::print
+ * Fonction permettant d'imprimer la figure présente dans la fenêtre au format SVG ou PNG
+ */
 void visuRDFWidget::print(){
 
 
     /*-------------Choix de l'emplacement de l'enregistrement -------------------*/
-    QString fileName =  QFileDialog::getSaveFileName(this,"Choose File","","SVG files (*.svg)");
+    QFileDialog fileDialogue(this);
 
-    //const char * file = fileName.toStdString().c_str();
+    QString fileName = fileDialogue.getSaveFileName(this,"Choose File","","Format SVG (*.svg);; Format PNG(*.png)");
 
-    /*------------- Déclaration des paramètres du fichier SVG -------------------*/
+    //Cas d'un SVG
+    if (fileName.contains(".svg")){
 
+        /*------------- Déclaration des paramètres du fichier SVG -------------------*/
 
-    QSvgGenerator generator;
-    float hauteur = dessinateur->calculHauteurDessin();
-    float largeur = dessinateur->calculLargeurDessin();
-    generator.setFileName(fileName);
-    generator.setSize(QSize(largeur, hauteur));
-    generator.setViewBox(QRect(0, 0, largeur, hauteur));
-    generator.setTitle("SVG Generator Example Drawing");
-    generator.setDescription("Dessin svg pour une démonstration");
-    QPainter painter;
-    painter.begin(&generator);
-    dessinateur->dessinMap(painter);
-    painter.end();
+        QSvgGenerator generator;
+        float hauteur = dessinateur->calculHauteurDessin();
+        float largeur = dessinateur->calculLargeurDessin();
+        generator.setFileName(fileName);
+        generator.setSize(QSize(largeur, hauteur));
+        generator.setViewBox(QRect(0, 0, largeur, hauteur));
+        generator.setTitle("SVG Generator Example Drawing");
+        generator.setDescription("Dessin svg pour une démonstration");
+
+        QPainter painter;
+        painter.begin(&generator);
+        dessinateur->dessinMap(painter);
+        painter.end();
+    }
+    //Cas d'un png
+    else if (fileName.contains(".png")){
+        float hauteur = dessinateur->calculHauteurDessin();
+        float largeur = dessinateur->calculLargeurDessin();
+
+        QImage img(largeur,hauteur, QImage::Format_ARGB32);
+        QPainter painter;
+        painter.begin(&img);
+        dessinateur->dessinMap(painter);
+        painter.end();
+        img.save(fileName);
+    }
+    //Sinon erreur sur l'extension du fichier
+    else
+        QMessageBox::warning(this,"erreur","Veuillez saisir une extension correcte");
+
 
 }
 
@@ -98,10 +133,6 @@ void visuRDFWidget::printPNG(){
 
     QString fileName =  QFileDialog::getSaveFileName(this,"Choose File","","PNG files (*.png)");
     //const char * file = fileName.toStdString().c_str();
-
-    /*------------- Déclaration des paramètres du fichier SVG -------------------*/
-
-
 
     float hauteur = dessinateur->calculHauteurDessin();
     float largeur = dessinateur->calculLargeurDessin();
@@ -125,8 +156,10 @@ void visuRDFWidget::mousePressEvent(QMouseEvent *qme){
     //On met en place le mouse tracking, utilisable dans les autres fonction
     QWidget::setMouseTracking(true);
     posSouris = qme->pos();
+
+    //On recupere la boite choisie
     if(!firstDessin){
-    boiteChoisie = dessinateur->recupererBoite(posSouris.x(),posSouris.y());
+        boiteChoisie = dessinateur->recupererBoite(posSouris.x(),posSouris.y());
     }
     dessinModifie=true;
     this->update();
@@ -143,7 +176,6 @@ void visuRDFWidget::mouseMoveEvent(QMouseEvent *qme){
     //Si on a clické et pas relaché on met à jour la position de la souris
     if (QWidget::hasMouseTracking()){
         posSouris = qme->pos();// On réupère la position de la souris dans un QPoint
-
 
         if(!firstDessin)
             dessinateur->actualiserMapBoite(boiteChoisie, posSouris.x(),posSouris.y());
@@ -162,9 +194,10 @@ void visuRDFWidget::mouseReleaseEvent(QMouseEvent *qme){
     QWidget::mouseReleaseEvent(qme);
     posSouris = qme->pos();
 
-
+    //Si le dessin à été modifié
     if(!firstDessin)
         dessinateur->actualiserMapBoite(boiteChoisie, posSouris.x(),posSouris.y());
+    //On relache la boite choisie
     boiteChoisie = NULL;
     dessinModifie=true;
     this->update();
@@ -174,6 +207,9 @@ void visuRDFWidget::mouseReleaseEvent(QMouseEvent *qme){
 }
 
 void visuRDFWidget::changeColoration(int c){
+    dessinateur->setCouleur(c);
+    this->update();
+
 
 }
 

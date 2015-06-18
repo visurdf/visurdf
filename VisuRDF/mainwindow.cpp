@@ -150,31 +150,50 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
+/**
+ * @brief MainWindow::quitApp : ferme l'application
+ */
 void MainWindow::quitApp(){
     close();
 }
 
+/**
+ * @brief MainWindow::openFile : appelle la fonction d'ouverture fichier
+ */
 void MainWindow::openFile(){
 
     RDFWidget->open();
 
 }
 
+/**
+ * @brief MainWindow::printFile : appelle la fonction d'impression fichier
+ */
 void MainWindow::printFile(){
     cout<<"impression"<<endl;
     RDFWidget->print();
 }
 
+/**
+ * @brief MainWindow::changerColoration
+ */
 void MainWindow::changerColoration(){
 
-    if (colorationButton->text() == "Avec Couleur")
+    if (colorationButton->text() == "Avec Couleur"){
         colorationButton->setText("Sans Couleur");
-    else
+        RDFWidget->changeColoration(0);
+    }
+    else{
         colorationButton->setText("Avec Couleur");
-
+        RDFWidget->changeColoration(0);
+}
 
 }
 
+/**
+ * @brief MainWindow::changerMode
+ * @param action
+ */
 void MainWindow::changerMode(QAction *action){
 
     if (action->iconText()== "mode tableau"){
@@ -188,22 +207,37 @@ void MainWindow::changerMode(QAction *action){
     }
 }
 
+/**
+ * @brief MainWindow::changerPolice
+ * @param f
+ */
 void MainWindow::changerPolice(QFont f){
     RDFWidget->changePolice(f);
 
 }
 
-
+/**
+ * @brief MainWindow::parametrerPourcentagePolice
+ * @param rang
+ */
 void MainWindow::parametrerPourcentagePolice(int rang){
     RDFWidget->changePourcentagePolice(rang +1);
 
 }
 
+/**
+ * @brief MainWindow::parametrerPourcentageHPolice
+ * @param rang
+ */
 void MainWindow::parametrerPourcentageHPolice(int rang){
     RDFWidget->changePourcentagePoliceH(rang + 1);
 
 }
 
+/**
+ * @brief MainWindow::parametrerTaillePolice
+ * @param rang
+ */
 void MainWindow::parametrerTaillePolice(int rang){
     RDFWidget->changeTaillePolice(rang+1);
 
