@@ -39,6 +39,7 @@ VisuRDFParametreur::VisuRDFParametreur() : QWidget(){
     //Couleur de fond par défaut
     mapPinceau = new map<int,QBrush*>();
 
+    //liste des couleurs pour les brush
     listeCouleur = new list<QColor*>();
     listeCouleur->push_back(new QColor(128,191,255));
     listeCouleur->push_back(new QColor(211,168,255));
@@ -65,7 +66,8 @@ VisuRDFParametreur::VisuRDFParametreur() : QWidget(){
 }
 
 VisuRDFParametreur::~VisuRDFParametreur(){
-
+    delete listeCouleur;
+    delete mapPinceau;
 }
 
 /**
@@ -81,16 +83,24 @@ QColor VisuRDFParametreur::getParamCouleur(){
 /**
  * @brief VisuRDFParametrage::getParamPen
  * retourne la valeur des pen du fichier de parametrage
- * @return QPen pen
+ * @return QPen penPolice
  */
 QPen VisuRDFParametreur::getPenPolice(){
     return penPolice;
 }
 
+/**
+ * @brief VisuRDFParametreur::getPenLiaison : retourne la pen liaison
+ * @return QPen penPolice
+ */
 QPen VisuRDFParametreur::getPenLiaison(){
     return penLiaison;
 }
 
+/**
+ * @brief VisuRDFParametreur::getPenContour : retourne la pen contour
+ * @return
+ */
 QPen VisuRDFParametreur::getPenContour(){
     return penContour;
 }
@@ -98,7 +108,7 @@ QPen VisuRDFParametreur::getPenContour(){
 
 /**
  * @brief VisuRDFParametrage::getParamPolice
- * retourne
+ * retourne la police
  * @return QFont police
  */
 QFont VisuRDFParametreur::getParamPolice(){
@@ -106,34 +116,66 @@ QFont VisuRDFParametreur::getParamPolice(){
 }
 
 
+/**
+ * @brief VisuRDFParametreur::getParamColoration : retourne la valeur de la coloration (1 = coloration, 0 = pas de coloration)
+ * @return  int coloration
+ */
 int VisuRDFParametreur::getParamColoration(){
     return coloration;
 }
 
+/**
+ * @brief VisuRDFParametreur::getFontSize : retourne la taille de la police
+ * @return int fontSize
+ */
 int VisuRDFParametreur::getFontSize(){
     return fontSize;
 }
 
+/**
+ * @brief VisuRDFParametreur::getParamMode : retourne le mode de d'afficher (tableau ou boite)
+ * @return string mode
+ */
 string VisuRDFParametreur::getParamMode(){
     return mode;
 }
 
+/**
+ * @brief VisuRDFParametreur::getListePinceau : retourne la liste des pinceaux utilisé pour la coloration
+ * @return <map int, QBrush*>
+ */
 map<int,QBrush*> VisuRDFParametreur::getListePinceau(){
     return *mapPinceau;
 }
 
+/**
+ * @brief VisuRDFParametreur::getPourcentagePolice : retourne la valeur de poucentagePolice (coef de largeur)
+ * @return float pourcentagePolice
+ */
 float VisuRDFParametreur::getPourcentagePolice(){
     return pourcentagePolice;
 }
 
+/**
+ * @brief VisuRDFParametreur::getPourcentagePoliceHauteur : retourne la valeur de poucentagePolice (coef de hauteur)
+ * @return float poucentagePoliceHauteur
+ */
 float VisuRDFParametreur::getPourcentagePoliceHauteur(){
     return pourcentagePoliceHauteur;
 }
 
+/**
+ * @brief VisuRDFParametreur::getTailleMax :
+ * @return float tailleMax
+ */
 float VisuRDFParametreur::getTailleMax(){
     return tailleMax;
 }
 
+/**
+ * @brief VisuRDFParametreur::setPourcentagePolice : condition, p > 0
+ * @param p
+ */
 void VisuRDFParametreur::setPourcentagePolice(int p){
     if (p > 0)
         pourcentagePolice = p;
@@ -141,7 +183,10 @@ void VisuRDFParametreur::setPourcentagePolice(int p){
         cerr<<"le paramètre pourcentage police doit être positif"<<endl;
 }
 
-
+/**
+ * @brief VisuRDFParametreur::setPourcentageHPolice : condition, p > 0
+ * @param p
+ */
 void VisuRDFParametreur::setPourcentageHPolice(int p){
     if (p > 0)
         pourcentagePoliceHauteur = p;
@@ -149,10 +194,18 @@ void VisuRDFParametreur::setPourcentageHPolice(int p){
         cerr<<"le paramètre pourcentage police hauteur doit être positif"<<endl;
 }
 
+/**
+ * @brief VisuRDFParametreur::setColoration
+ * @param c
+ */
 void VisuRDFParametreur::setColoration(int c){
     coloration = c;
 }
 
+/**
+ * @brief VisuRDFParametreur::setMode: Permet de choisir le mode d'affichage, valeurs acceptée : "boite" ou "tableau"
+ * @param _mode
+ */
 void VisuRDFParametreur::setMode(string _mode){
     if (_mode!="tableau" && _mode!="boite")
         cerr<<"le mode parametrer n'est pas correcte"<<endl;
@@ -160,6 +213,10 @@ void VisuRDFParametreur::setMode(string _mode){
         mode = _mode;
 }
 
+/**
+ * @brief VisuRDFParametreur::setPolice : Permet de changer la famille de police
+ * @param _police
+ */
 void VisuRDFParametreur::setPolice(QString _police){
     police.setFamily(_police);
 }
@@ -174,11 +231,13 @@ void VisuRDFParametreur::lectureParametres(){
     QDomDocument *dom = new QDomDocument("fichier de parmatres");
     QFile parametres("parametres.xml");// On choisit le fichier contenant les informations XML.
 
+    //Ouverture du fichier de paramêtres
     if(!parametres.open(QIODevice::ReadOnly)){// Si l'on n'arrive pas à ouvrir le fichier XML.{
         QMessageBox::warning(this,"Erreur à l'ouverture du document XML","Le document XML n' pas pu être ouvert. Vérifiez que le nom est le bon et que le document est bien placé");
         return;
     }
 
+    //Association du fichier à l'objet de type DOM
     if (!dom->setContent(&parametres)){ // Si l'on n'arrive pas à associer le fichier XML à l'objet DOM.
 
         parametres.close();
@@ -240,7 +299,6 @@ void VisuRDFParametreur::lectureParametres(){
             if (enfant.attribute("value",0)!= 0){
                 QString attribut = enfant.attribute("value",0);
                 pourcentagePoliceHauteur = attribut.toFloat();
-               // pourcentagePoliceHauteur = atof(enfant.attribute("value",0).toStdString().c_str());
                 cout << "le pourcentage hauteur police sera : "<< pourcentagePoliceHauteur<< endl;
             }
         }
@@ -248,7 +306,6 @@ void VisuRDFParametreur::lectureParametres(){
             if (enfant.attribute("value",0)!= 0){
                 QString attribut = enfant.attribute("value",0);
                 pourcentagePolice = attribut.toFloat();
-               // pourcentagePolice = atof(enfant.attribute("value",0).toStdString().c_str());
                 cout << "le pourcentage police sera : "<< pourcentagePolice<< endl;
             }
         }
@@ -256,10 +313,10 @@ void VisuRDFParametreur::lectureParametres(){
             if (enfant.attribute("value",0)!= 0){
                 QString attribut = enfant.attribute("value",0);
                 tailleMax = attribut.toFloat();
-                //tailleMax = atof(enfant.attribute("value",0).toStdString().c_str());
                 cout << "la taille max des propriétés sera : "<< tailleMax<< endl;
             }
         }
+        //Si le tag ne rentre pas dans les types reconnus, message d'erreur
         else cout << "le tag : '"<<enfant.tagName().toStdString()
                   <<"' n'est pas reconnu dans le fichier de parametrage"
                   << endl;

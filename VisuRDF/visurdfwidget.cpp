@@ -206,13 +206,24 @@ void visuRDFWidget::mouseReleaseEvent(QMouseEvent *qme){
     }
 }
 
+/**
+ * @brief visuRDFWidget::changeColoration
+ * permet de changer la valeur de coloration : 1 = coloration, 0 = pas de coloration
+ * @param c
+ */
 void visuRDFWidget::changeColoration(int c){
+    if (!rdfChoisi)
+        return;
     dessinateur->setCouleur(c);
     this->update();
 
 
 }
 
+/**
+ * @brief visuRDFWidget::changeMode : permet de changer le mode d'utilisation
+ * @param string mode
+ */
 void visuRDFWidget::changeMode(string mode){
     if (!rdfChoisi)
         return;
@@ -226,6 +237,10 @@ void visuRDFWidget::changeMode(string mode){
 
 }
 
+/**
+ * @brief visuRDFWidget::changePolice : permet de changer la police utilisée
+ * @param QFont f
+ */
 void visuRDFWidget::changePolice(QFont f){
     if (!rdfChoisi)
         return;
@@ -243,6 +258,11 @@ void visuRDFWidget::changePourcentagePolice(int p){
 
 }
 
+/**
+ * @brief visuRDFWidget::changePourcentagePoliceH
+ * Permet de changer le coefficient de Hauteur des boite
+ * @param int p
+ */
 void visuRDFWidget::changePourcentagePoliceH(int p){
     if (!rdfChoisi)
         return;
@@ -252,6 +272,11 @@ void visuRDFWidget::changePourcentagePoliceH(int p){
 
 }
 
+/**
+ * @brief visuRDFWidget::changeTaillePolice
+ * Permet de changer la taille de la police
+ * @param int p
+ */
 void visuRDFWidget::changeTaillePolice(int p){
     if (!rdfChoisi)
         return;
