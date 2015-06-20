@@ -35,6 +35,7 @@ VisuRDFParametreur::VisuRDFParametreur() : QWidget(){
     penContour.setColor(color);
     penLiaison.setColor(Qt::black);
 
+    coloration = 1;
     //Couleur de fond par défaut
     mapPinceau = new map<int,QBrush*>();
 

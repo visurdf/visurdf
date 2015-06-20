@@ -49,19 +49,12 @@ MainWindow::MainWindow(QWidget *parent) :
     modeGroupe->addAction(tableAction);
     menuMode->addAction(boiteAction);
     menuMode->addAction(tableAction);
-    changementMode = new QAction("mode",this);
-    changementMode->setMenu(menuMode);
-
-    //----- Boutons choix couleur-------//
-    colorationButton = new QPushButton("Avec Couleur",this);
-
 
     //-------Choix parametre police-------//
     QComboBox * boxLargeur = new QComboBox();
     QComboBox * boxHauteur = new QComboBox();
     QComboBox * boxTaillePolice = new QComboBox();
     QFontComboBox * boxFont = new QFontComboBox();
-
 
     float i = 0;
     while (i < 2){
@@ -100,6 +93,26 @@ MainWindow::MainWindow(QWidget *parent) :
     VisuRDFParametreur parametreur;
     parametreur.lectureParametres();
 
+    //----- Boutons choix couleur-------//
+    int coloration = parametreur.getParamColoration();
+    cout << "mise en place : "<<coloration <<endl;
+    //string textMode = parametreur.getParamMode();
+    QString textBoutonColoration;
+
+
+    if ( coloration == 0)
+        textBoutonColoration = "Sans Couleur";
+    else
+        textBoutonColoration = "Avec Couleur";
+    colorationButton = new QPushButton(textBoutonColoration,this);
+
+    ostringstream ss;
+    ss << parametreur.getParamMode();
+    QString textMode = ss.str().c_str();
+    QString textBoutonMode = "mode " + textMode ;
+
+    changementMode = new QAction(textBoutonMode ,this);
+    changementMode->setMenu(menuMode);
 
 
     // Encodage UTF-8
@@ -139,8 +152,6 @@ MainWindow::MainWindow(QWidget *parent) :
     boxHauteur->setCurrentIndex(parametreur.getPourcentagePoliceHauteur()*10 - 1);
     boxTaillePolice->setCurrentIndex(parametreur.getFontSize()- 1);
 
-
-
     //Connection des slots
     QObject::connect(openAction, SIGNAL(triggered()),this,SLOT(openFile()));
     QObject::connect(quitAction, SIGNAL(triggered()),this,SLOT(quitApp()));
@@ -151,7 +162,6 @@ MainWindow::MainWindow(QWidget *parent) :
     QObject::connect(boxFont,SIGNAL(currentFontChanged(QFont)),this,SLOT(changerPolice(QFont )));
     QObject::connect(boxTaillePolice,SIGNAL(currentIndexChanged(int)),this,SLOT(parametrerTaillePolice(int)));
     QObject::connect(colorationButton,SIGNAL(clicked()),this,SLOT(changerColoration()));
-
 
 }
 
