@@ -211,7 +211,6 @@ void VisuRDFDessinateur::setTailleMax(float taille){
  */
 void VisuRDFDessinateur::setCouleur(int isCouleur){
     couleur = isCouleur;
-    cout << "couleur : " << couleur << endl;
 
     // On actualise les couleurs des boites
     // if(mode=="boite"){
@@ -1128,7 +1127,6 @@ void VisuRDFDessinateur::actualiserMapBoite(VisuRDFBoite *boite, int x, int y){
             for( boiteObjet::iterator iter = mapBoiteType.begin(); iter!=mapBoiteType.end(); iter++)
                 if((*iter).second == boite)
                     nomType = (*iter).first;
-            cout << "nomType : " << nomType << endl;
             // On modifie les coordonnées des boites des objets du tableau
             set<VisuRDFObjet*> objets = analyseur->getObjetsParType(nomType,true);
             for(set<VisuRDFObjet*>::iterator it = objets.begin(); it!= objets.end(); it++){
