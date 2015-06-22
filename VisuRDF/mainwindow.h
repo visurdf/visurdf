@@ -3,13 +3,19 @@
 #include "visurdfwidget.h"
 #include "visurdfdessinateur.h"
 #include "QToolBar"
+#include "QComboBox"
 
 #include <QMainWindow>
 
 namespace Ui {
 class MainWindow;
 }
-
+/**
+ * @brief The MainWindow class
+ * @author Clément
+ * Classe affichant la fenêtre principale
+ *
+ */
 class MainWindow : public QMainWindow
 {
     Q_OBJECT
@@ -17,12 +23,17 @@ class MainWindow : public QMainWindow
 public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
+    void resetParametre();
 
 private:
     Ui::MainWindow *ui;
     visuRDFWidget * RDFWidget;
     QAction * changementMode;
     QPushButton * colorationButton;
+    QComboBox * boxLargeur;
+    QComboBox * boxHauteur;
+    QComboBox * boxTaillePolice;
+
 
 
 public slots:
