@@ -1,7 +1,6 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include "visurdfextracteur.h"
-#include "visurdfclassesvg.h"
 #include "visurdfanalyseur.h"
 #include "visurdfdessinateur.h"
 #include "visurdfgenerateur.h"
