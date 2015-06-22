@@ -17,7 +17,6 @@ TEMPLATE = app
 SOURCES += \
     visurdfanalyseur.cpp \
     visurdfextracteur.cpp \
-    visurdfclassesvg.cpp \
     visurdftype.cpp \
     visurdfobjet.cpp \
     visurdfmain.cpp \
@@ -34,7 +33,6 @@ HEADERS += \
     visurdfobjet.h \
     visurdfgenerateur.h \
     visurdfdessinateur.h \
-    visurdfclassesvg.h \
     visurdfboite.h\
     visurdfparametreur.h \
     mainwindow.h \
