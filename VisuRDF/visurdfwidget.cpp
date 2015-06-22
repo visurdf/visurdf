@@ -34,7 +34,7 @@ void visuRDFWidget::paintEvent(QPaintEvent *qpe){
             dessinModifie = false;
             firstDessin = false;
         }
-//Sinon la fonction dessinMap
+        //Sinon la fonction dessinMap
         else{
             dessinateur->dessinMap(painter);
             dessinModifie = false;
@@ -51,30 +51,35 @@ void visuRDFWidget::paintEvent(QPaintEvent *qpe){
 void visuRDFWidget::open(){
 
     //Boite de dialogue pour selection fichier
-    QString fileName =  QFileDialog::getOpenFileName(this,"Open File","","RDF files (*.rdf)");
+    QFileDialog dialogue;
+    QString fileName = dialogue.getOpenFileName(this,"Open File","","RDF files (*.rdf)");
 
-    //On supprime les données déjà présente dans l'extracteur
-    VisuRDFExtracteur visuRDFExtracteur;
-    visuRDFExtracteur.clearModule();
+    if (fileName != NULL){
 
-    //Traitement chaine de caractère pour l'ouverture du fichier
-    const char * file = fileName.toStdString().c_str();
-    char fileAvecProtocole [strlen(file +8)];
-    strcpy(fileAvecProtocole, "file://");
-    file = strcat(fileAvecProtocole, file );
-    cout<< "chemin : "<< fileAvecProtocole <<endl;
+        //On supprime les données déjà présente dans l'extracteur
+        VisuRDFExtracteur visuRDFExtracteur;
+        visuRDFExtracteur.clearModule();
 
-    //création des différents objets necessaires
-    visuRDFExtracteur.parserTripletRdf(fileAvecProtocole);
-    analyseur = new VisuRDFAnalyseur(&visuRDFExtracteur);
-    dessinateur = new VisuRDFDessinateur(analyseur);
+        //Traitement chaine de caractère pour l'ouverture du fichier
+        const char * file = fileName.toStdString().c_str();
+        char fileAvecProtocole [strlen(file +8)];
+        strcpy(fileAvecProtocole, "file://");
+        file = strcat(fileAvecProtocole, file );
+        cout<< "chemin : "<< fileAvecProtocole <<endl;
 
-    //Mise à jour des booléen de la classe
-    rdfChoisi = true;
-    dessinModifie = true;
-    firstDessin = true;
+        //création des différents objets necessaires
+        visuRDFExtracteur.parserTripletRdf(fileAvecProtocole);
+        analyseur = new VisuRDFAnalyseur(&visuRDFExtracteur);
+        dessinateur = new VisuRDFDessinateur(analyseur);
 
-    this->update();
+        //Mise à jour des booléen de la classe
+        rdfChoisi = true;
+        dessinModifie = true;
+        firstDessin = true;
+
+        this->update();
+    }
+
 
 }
 
@@ -88,9 +93,11 @@ void visuRDFWidget::print(){
     /*-------------Choix de l'emplacement de l'enregistrement -------------------*/
     QFileDialog fileDialogue(this);
 
+
     QString fileName = fileDialogue.getSaveFileName(this,"Choose File","","Format SVG (*.svg);; Format PNG(*.png)");
 
     //Cas d'un SVG
+
     if (fileName.contains(".svg")){
 
         /*------------- Déclaration des paramètres du fichier SVG -------------------*/
@@ -124,7 +131,6 @@ void visuRDFWidget::print(){
     //Sinon erreur sur l'extension du fichier
     else
         QMessageBox::warning(this,"erreur","Veuillez saisir une extension correcte");
-
 
 }
 

@@ -51,9 +51,12 @@ MainWindow::MainWindow(QWidget *parent) :
     menuMode->addAction(tableAction);
 
     //-------Choix parametre police-------//
-    QComboBox * boxLargeur = new QComboBox();
-    QComboBox * boxHauteur = new QComboBox();
-    QComboBox * boxTaillePolice = new QComboBox();
+    VisuRDFParametreur parametreur;
+    parametreur.lectureParametres();
+
+    boxLargeur = new QComboBox();
+    boxHauteur = new QComboBox();
+    boxTaillePolice = new QComboBox();
     QFontComboBox * boxFont = new QFontComboBox();
 
     float i = 0;
@@ -90,12 +93,11 @@ MainWindow::MainWindow(QWidget *parent) :
         boxTaillePolice->addItem(textBox);
     }
 
-    VisuRDFParametreur parametreur;
-    parametreur.lectureParametres();
+
 
     //----- Boutons choix couleur-------//
     int coloration = parametreur.getParamColoration();
-    cout << "mise en place : "<<coloration <<endl;
+
     //string textMode = parametreur.getParamMode();
     QString textBoutonColoration;
 
@@ -113,6 +115,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
     changementMode = new QAction(textBoutonMode ,this);
     changementMode->setMenu(menuMode);
+
 
 
     // Encodage UTF-8
@@ -182,6 +185,7 @@ void MainWindow::quitApp(){
  */
 void MainWindow::openFile(){
 
+    resetParametre();
     RDFWidget->open();
 
 }
@@ -261,5 +265,37 @@ void MainWindow::parametrerPourcentageHPolice(int rang){
  */
 void MainWindow::parametrerTaillePolice(int rang){
     RDFWidget->changeTaillePolice(rang+1);
+
+
+}
+
+void MainWindow::resetParametre(){
+
+
+    VisuRDFParametreur parametreur;
+    parametreur.lectureParametres();
+
+    ostringstream ss;
+    ss << parametreur.getParamMode();
+    QString textMode = ss.str().c_str();
+    QString textBoutonMode = "mode " + textMode ;
+    changementMode->setIconText(textBoutonMode);
+
+    int coloration = parametreur.getParamColoration();
+
+    //string textMode = parametreur.getParamMode();
+    QString textBoutonColoration;
+
+
+    if ( coloration == 0)
+        textBoutonColoration = "Sans Couleur";
+    else
+        textBoutonColoration = "Avec Couleur";
+    colorationButton->setText(textBoutonColoration);
+
+
+    boxLargeur->setCurrentIndex(parametreur.getPourcentagePolice()*10 - 1);
+    boxHauteur->setCurrentIndex(parametreur.getPourcentagePoliceHauteur()*10 - 1);
+    boxTaillePolice->setCurrentIndex(parametreur.getFontSize()- 1);
 
 }
