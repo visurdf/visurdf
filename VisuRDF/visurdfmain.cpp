@@ -3,7 +3,6 @@
 #include <QApplication>
 #include "visurdfanalyseur.h"
 #include "visurdfdessinateur.h"
-#include "visurdfgenerateur.h"
 #include "visurdfparametreur.h"
 #include "visurdfwidget.h"
 #include "mainwindow.h"

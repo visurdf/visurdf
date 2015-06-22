@@ -3,6 +3,7 @@
 #include "visurdfextracteur.h"
 #include "visurdfparametreur.h"
 #include <QMessageBox>
+#include <QSvgGenerator>
 
 visuRDFWidget::visuRDFWidget()
 {
