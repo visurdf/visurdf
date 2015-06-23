@@ -55,7 +55,7 @@ void visuRDFWidget::open(){
     QString fileName = dialogue.getOpenFileName(this,"Open File","","RDF files (*.rdf)");
 
     if (fileName != NULL){
-
+        cout << " Ouverture du fichier" << endl;
         //On supprime les données déjà présente dans l'extracteur
         VisuRDFExtracteur visuRDFExtracteur;
         visuRDFExtracteur.clearModule();

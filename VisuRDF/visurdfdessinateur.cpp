@@ -904,7 +904,7 @@ void VisuRDFDessinateur::dessinModeBoite(QPainter &painter){
     for(set<VisuRDFType*>::iterator it = listeTypes.begin(); it!= listeTypes.end(); it++){
         VisuRDFType* type = *it;
         // Si l'affichage est coloré, on récupère la liste des brush
-        cout << "couleur" << couleur << endl;
+
         if(couleur==1){
             map<int,QBrush*> mapBrush = parametreur->getListePinceau();
             QBrush* brush = mapBrush[i];
