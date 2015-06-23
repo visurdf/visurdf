@@ -2,7 +2,7 @@
 
 VisuRDFBoite::VisuRDFBoite(float x, float y, float largeur, float hauteur) : x(x), y(y), largeur(largeur), hauteur(hauteur)
 {
-    brush = new QBrush();
+    brush = QBrush();
 }
 
 
@@ -79,7 +79,7 @@ void VisuRDFBoite::setHauteur(float new_hauteur){
  * @brief VisuRDFBoite::getBrush
  * @return couleur de la boite (QBrush)
  */
-QBrush* VisuRDFBoite::getBrush(){
+QBrush VisuRDFBoite::getBrush(){
     return brush;
 }
 
@@ -87,6 +87,6 @@ QBrush* VisuRDFBoite::getBrush(){
  * @brief VisuRDFBoite::setBrush
  * @param newBrush
  */
-void VisuRDFBoite::setBrush(QBrush * newBrush){
+void VisuRDFBoite::setBrush(QBrush newBrush){
     brush = newBrush;
 }

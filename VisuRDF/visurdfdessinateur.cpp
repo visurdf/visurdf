@@ -221,11 +221,11 @@ void VisuRDFDessinateur::setCouleur(int isCouleur){
         set<VisuRDFObjet*> listeObjets = analyseur->getObjetsParType(nomType, true);
 
 
-        QBrush* brush = new QBrush();
+        QBrush brush = QBrush();
 
         if(couleur==1){
             map<int,QBrush*> mapBrush = parametreur->getListePinceau();
-            brush = mapBrush[i];
+            brush = *mapBrush[i];
         }
 
         for(set<VisuRDFObjet*>::iterator it = listeObjets.begin(); it!= listeObjets.end(); it++) {
@@ -715,7 +715,8 @@ float VisuRDFDessinateur::calculLargeurType(VisuRDFType *type){
  * @param painter
  * @param brush
  */
-void VisuRDFDessinateur::dessinBoite(VisuRDFObjet *objet, float x, float y, QPainter &painter, QBrush* brush){
+void VisuRDFDessinateur::dessinBoite(VisuRDFObjet *objet, float x, float y, QPainter &painter, QBrush brush){
+
 
     float largeurNom;
     float largeurValeur;
@@ -730,7 +731,7 @@ void VisuRDFDessinateur::dessinBoite(VisuRDFObjet *objet, float x, float y, QPai
     // On dessine la boite, et on la colore
     painter.setPen(pen1);
     QRect rect(x,y,largeurType,hauteur);
-    painter.fillRect(rect, *brush);
+    painter.fillRect(rect, brush);
     painter.drawRoundedRect(rect,3,3);
     QLine lineType(x,y+pourcentagePoliceHauteur,x+largeurType,y+pourcentagePoliceHauteur);
     painter.drawLine(lineType);
@@ -871,7 +872,8 @@ void VisuRDFDessinateur::dessinBoite(VisuRDFObjet *objet, float x, float y, QPai
  * @param painter
  * @param brush
  */
-void VisuRDFDessinateur::dessinBoiteParType(VisuRDFType *type, float x, float y, QPainter &painter, QBrush* brush){
+void VisuRDFDessinateur::dessinBoiteParType(VisuRDFType *type, float x, float y, QPainter &painter, QBrush brush){
+
 
     float yBoite = y;
 
@@ -907,16 +909,18 @@ void VisuRDFDessinateur::dessinModeBoite(QPainter &painter){
 
         if(couleur==1){
             map<int,QBrush*> mapBrush = parametreur->getListePinceau();
-            QBrush* brush = mapBrush[i];
+            QBrush brush = *mapBrush[i];
             this->dessinBoiteParType(type, x, y, painter,brush);
         }
         else{
-            QBrush* brush = new QBrush();
+            QBrush brush;
             this->dessinBoiteParType(type, x, y, painter,brush);
         }
 
         x = x + calculLargeurType(type) + 20;
         i++;
+        if(i==10)
+            i = 0;
     }
 
 

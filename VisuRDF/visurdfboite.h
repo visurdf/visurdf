@@ -15,8 +15,8 @@ public:
     void setY(float);
     void setHauteur(float);
     void setLargeur(float);
-    QBrush* getBrush();
-    void setBrush(QBrush*);
+    QBrush getBrush();
+    void setBrush(QBrush);
 
 
 private:
@@ -24,7 +24,7 @@ private:
     float y;
     float largeur;
     float hauteur;
-    QBrush* brush;
+    QBrush brush;
 };
 
 #endif // VISURDFBOITE_H

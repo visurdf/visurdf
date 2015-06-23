@@ -38,8 +38,8 @@ public:
     float calculLargeurBoite(VisuRDFObjet* objet, float &largeurNom, float &largeurValeur);
     float calculHauteurBoite(VisuRDFObjet* objet);
     float calculLargeurType(VisuRDFType* type);
-    void dessinBoite(VisuRDFObjet* objet, float x, float y, QPainter &painter, QBrush* brush);
-    void dessinBoiteParType(VisuRDFType* type, float x, float y, QPainter &painter, QBrush* brush);
+    void dessinBoite(VisuRDFObjet* objet, float x, float y, QPainter &painter, QBrush brush);
+    void dessinBoiteParType(VisuRDFType* type, float x, float y, QPainter &painter, QBrush brush);
     void dessinModeBoite(QPainter& painter);
     void dessin(QPainter& painter);
 
