@@ -3,7 +3,6 @@
 #include "visurdfextracteur.h"
 #include "visurdfanalyseur.h"
 #include "visurdfdessinateur.h"
-#include "visurdfgenerateur.h"
 #include "visurdfparametreur.h"
 #include <vector>
 #include <QTextCodec>

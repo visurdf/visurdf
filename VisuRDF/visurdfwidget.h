@@ -1,10 +1,10 @@
 #ifndef VISURDFWIDGET_H
 #define VISURDFWIDGET_H
 #include "visurdfdessinateur.h"
-#include "visurdfgenerateur.h"
 #include <QWidget>
 #include <QMouseEvent>
 #include <string.h>
+#include <QSvgGenerator>
 
 #include <QWidget>
 
@@ -32,7 +32,6 @@ public:
 private:
     VisuRDFDessinateur * dessinateur;
     VisuRDFAnalyseur* analyseur;
-    VisuRDFGenerateur* generateur;
     bool rdfChoisi;
     bool dessinModifie;
     bool firstDessin;

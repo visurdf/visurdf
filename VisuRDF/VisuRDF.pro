@@ -20,7 +20,6 @@ SOURCES += \
     visurdftype.cpp \
     visurdfobjet.cpp \
     visurdfmain.cpp \
-    visurdfgenerateur.cpp \
     visurdfdessinateur.cpp \
     visurdfboite.cpp\
     visurdfparametreur.cpp \
@@ -31,7 +30,6 @@ HEADERS += \
     visurdfextracteur.h \
     visurdftype.h \
     visurdfobjet.h \
-    visurdfgenerateur.h \
     visurdfdessinateur.h \
     visurdfboite.h\
     visurdfparametreur.h \
