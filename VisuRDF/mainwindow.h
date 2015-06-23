@@ -4,6 +4,7 @@
 #include "visurdfdessinateur.h"
 #include "QToolBar"
 #include "QComboBox"
+#include <QFontComboBox>
 
 #include <QMainWindow>
 
@@ -33,6 +34,7 @@ private:
     QComboBox * boxLargeur;
     QComboBox * boxHauteur;
     QComboBox * boxTaillePolice;
+    QFontComboBox * boxFont;
 
 
 

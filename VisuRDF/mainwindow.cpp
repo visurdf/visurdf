@@ -55,7 +55,7 @@ MainWindow::MainWindow(QWidget *parent) :
     boxLargeur = new QComboBox();
     boxHauteur = new QComboBox();
     boxTaillePolice = new QComboBox();
-    QFontComboBox * boxFont = new QFontComboBox();
+    boxFont = new QFontComboBox();
 
     float i = 0;
     while (i < 2){
@@ -152,6 +152,7 @@ MainWindow::MainWindow(QWidget *parent) :
     boxLargeur->setCurrentIndex(parametreur.getPourcentagePolice()*10 - 1);
     boxHauteur->setCurrentIndex(parametreur.getPourcentagePoliceHauteur()*10 - 1);
     boxTaillePolice->setCurrentIndex(parametreur.getFontSize()- 1);
+    boxFont->setEditText(parametreur.getParamPolice().family());
 
     //Connection des slots
     QObject::connect(openAction, SIGNAL(triggered()),this,SLOT(openFile()));
@@ -295,5 +296,6 @@ void MainWindow::resetParametre(){
     boxLargeur->setCurrentIndex(parametreur.getPourcentagePolice()*10 - 1);
     boxHauteur->setCurrentIndex(parametreur.getPourcentagePoliceHauteur()*10 - 1);
     boxTaillePolice->setCurrentIndex(parametreur.getFontSize()- 1);
+    boxFont->setEditText(parametreur.getParamPolice().family());
 
 }
